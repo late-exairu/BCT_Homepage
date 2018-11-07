@@ -361,3 +361,41 @@ ul.list-blue {
 @media (min-width: 1350px) {
   .container {
     max-width: 1280px; } }
+
+.cart h1 {
+  font-size: 65px;
+  color: black; }
+
+.cart h3 {
+  font-size: 35px; }
+
+.cart .text-small {
+  font-size: 10px;
+  color: black; }
+
+.cart .gray-row {
+  font-family: 'SF Pro Text';
+  font-size: 23px;
+  font-weight: bold;
+  color: #4B4B4B; }
+
+.cart .normal-row {
+  font-size: 20px;
+  color: black; }
+
+.cart .selectize-input {
+  border: 0;
+  box-shadow: none; }
+
+.cart .selectize-control.single .selectize-input:after {
+  border: 0;
+  background: url("../img/svg/arrow-more.svg");
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  transform: rotate(90deg);
+  right: 0px; }
+
+.cart .selectize-input {
+  padding-right: 15px;
+  font-size: 20px; }

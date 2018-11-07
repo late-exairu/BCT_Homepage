@@ -1,0 +1,41 @@
+.cart {
+    h1{
+        font-size: 65px;
+        color: black;
+    }
+    h3{
+        font-size: 35px;
+    }
+    .text-small{
+        font-size: 10px;
+        color: black;
+    }
+    .gray-row{
+	    font-family: 'SF Pro Text';
+        font-size: 23px;
+        font-weight: bold;
+        color: #4B4B4B;
+    }
+    .normal-row {
+        font-size: 20px;
+        color: black;
+    }
+
+    .selectize-input{
+        border: 0;
+        box-shadow: none;
+    }
+    .selectize-control.single .selectize-input:after{
+        border:0;
+        background: url("../img/svg/arrow-more.svg");
+        background-repeat: no-repeat;
+        width: 14px;
+        height: 14px;
+        transform: rotate(90deg);
+        right: 0px;
+    }
+    .selectize-input{
+        padding-right: 15px;
+        font-size: 20px;
+    }
+}

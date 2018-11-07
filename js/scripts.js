@@ -43,4 +43,14 @@ $(document).ready(function () {
     offset: 53,
   });
 
+
+  var select_html = '';
+  for (var i = 1; i <= 60; i++) {
+    select_html += `
+			<option>Qty: ` + i + `</option>
+		`;
+  }
+  $(".one_to_60").html(select_html);
+  $('.cart select').selectize();
+
 });
