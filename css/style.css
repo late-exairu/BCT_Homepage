@@ -235,7 +235,7 @@ ul.list-blue {
     .owl-header .owl-dots .owl-dot:nth-child(7):before {
       content: "Advanced Mode"; }
     .owl-header .owl-dots .owl-dot:nth-child(8):before {
-      content: "Best Execution"; }
+      content: "App's"; }
 
 .owl-body {
   position: relative; }
@@ -579,6 +579,10 @@ ul.list-blue {
     background: linear-gradient(to bottom, #42a1ec 0%, #0473cb 100%);
     cursor: pointer;
     width: 100%; }
+  .checkout-form .button {
+    text-align: center;
+    margin: auto 0 0;
+    padding: 10px 53px 13px; }
   @media only screen and (max-width: 860px) {
     .checkout-form__multi-line {
       flex-direction: column; }
