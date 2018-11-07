@@ -52,5 +52,6 @@ $(document).ready(function () {
   }
   $(".one_to_60").html(select_html);
   $('.cart select').selectize();
+  $('select').selectize();
 
 });
