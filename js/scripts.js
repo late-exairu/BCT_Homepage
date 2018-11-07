@@ -94,7 +94,7 @@ $(document).ready(function () {
 	$('.video-modal').click(function (e) {
 		var videoId = $(this).attr('data-id');
 		var videoDescription = $(this).attr('data-description');
-		var $iframe = '<div class="video-container"><iframe src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allowfullscreen></iframe></div>';
+		var $iframe = '<div class="video-container"><iframe src="https://www.youtube.com/embed/' + videoId + '?rel=0" frameborder="0" allowfullscreen></iframe></div>';
 		$('#youtubeModal').html($iframe + videoDescription);
 		$('#overlay,#youtubeModal').addClass('open');
 	});
