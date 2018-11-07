@@ -403,7 +403,8 @@ ul.list-blue {
         width: 100%; } }
 
 .terminal-form {
-  color: #000; }
+  color: #000;
+  width: 100%; }
   .terminal-form__title {
     font-size: 42px;
     color: #000;
@@ -416,7 +417,7 @@ ul.list-blue {
     width: 100%;
     background: #ccc; }
   .terminal-form__qty-line {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     display: flex;
     justify-content: space-between;
@@ -635,10 +636,88 @@ ul.list-blue {
         height: 2px;
         background: #2C2C2C; }
 
+.inputGroup {
+  background-color: #fff;
+  display: flex;
+  margin: 10px 15px;
+  position: relative;
+  width: 160px;
+  height: 76px;
+  background: #fff;
+  border-radius: 7px;
+  overflow: hidden;
+  align-items: center; }
+  .inputGroup label {
+    padding: 0 10px 0 50px;
+    width: 100%;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    color: #3C454C;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    background: #efefef;
+    transition: color 200ms ease-in;
+    overflow: hidden;
+    line-height: 1.2;
+    margin: 0;
+    height: 100%; }
+    .inputGroup label:before {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      content: '';
+      background-color: #0171B8;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale3d(1, 1, 1);
+      transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 0;
+      z-index: -1; }
+    .inputGroup label:after {
+      width: 32px;
+      height: 32px;
+      content: '';
+      border: 2px solid #D1D7DC;
+      background-color: #fff;
+      background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+      background-repeat: no-repeat;
+      background-position: 2px 3px;
+      border-radius: 50%;
+      z-index: 2;
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      transition: all 200ms ease-in; }
+  .inputGroup input:checked ~ label {
+    color: #fff; }
+    .inputGroup input:checked ~ label:before {
+      transform: translate(-50%, -50%) scale3d(56, 56, 1);
+      opacity: 1; }
+    .inputGroup input:checked ~ label:after {
+      background-color: #54E0C7;
+      border-color: #54E0C7; }
+  .inputGroup input {
+    width: 32px;
+    height: 32px;
+    order: 1;
+    z-index: 2;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    visibility: hidden; }
+
 .payment-method {
   font-family: 'SF Pro Text';
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 32px 0 22px; }
   .payment-method .item {
     position: relative;
@@ -653,7 +732,7 @@ ul.list-blue {
     cursor: pointer;
     letter-spacing: -0.03em;
     transition: all 0.1s;
-    margin: 0 0 0 10px; }
+    margin: 0 0 0 25px; }
     .payment-method .item:first-child {
       margin: 0; }
     .payment-method .item:hover {
@@ -723,6 +802,41 @@ ul.list-blue {
     .order-summary .payment-info:first-child {
       flex: 1 1 50%;
       margin: 0 5% 0 0; }
+
+.pay-form {
+  width: 360px;
+  margin: 50px auto;
+  background: #efefef;
+  border-radius: 5px;
+  padding: 15px; }
+  .pay-form .multi-line {
+    display: flex;
+    width: 100%;
+    margin: 15px 0 0; }
+    .pay-form .multi-line .line {
+      margin: 0 0 0 15px; }
+      .pay-form .multi-line .line:first-child {
+        margin: 0 0 0 0; }
+    .pay-form .multi-line:first-child {
+      margin: 0; }
+  .pay-form .line {
+    width: 100%;
+    margin: 15px 0 0; }
+    .pay-form .line:first-child {
+      margin: 0; }
+  .pay-form .input {
+    height: 48px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0 15px; }
+    .pay-form .input:focus {
+      border-color: #0171B8; }
+    .pay-form .input::placeholder {
+      color: #888; }
+  .pay-form label {
+    padding: 0 15px; }
 
 @media (min-width: 768px) {
   h1, .h1 {
