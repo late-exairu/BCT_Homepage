@@ -77,7 +77,7 @@ $(document).ready(function () {
 			},
 		},
 		margin: 10,
-		loop: true,
+		loop: false,
 		dots: false,
 		nav: true,
 		navText: ["", ""],
