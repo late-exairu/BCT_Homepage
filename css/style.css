@@ -244,15 +244,17 @@ ul.list-blue {
     max-width: 83%; }
 
 .section-5 {
-  padding-top: 120px;
-  padding-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 60px;
   background-color: #000; }
+  .section-5 .owl-carousel.owl-loaded {
+    margin-bottom: 1.5rem !important; }
 
 .video-modal {
   cursor: pointer; }
   .video-modal .img-video {
     transition: 0.2s;
-    padding: 0 1.5rem;
+    padding: 1px 1.5rem;
     border: 1px solid #3D3D3D;
     position: relative; }
     .video-modal .img-video:after {
