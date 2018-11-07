@@ -382,6 +382,23 @@ ul.list-blue {
   font-weight: 700;
   margin: 0px; }
 
+.reel {
+  overflow: visible !important; }
+
+.reel-indicator-bar {
+  width: 99%;
+  background: url("https://dlcdnimgs.asus.com/websites/global/products/kG8zmnBbP9T4sqBA/images/reelbar.png") center/100% no-repeat;
+  height: 18px;
+  bottom: 0px;
+  margin: auto; }
+
+.reel-indicator {
+  background: url("https://dlcdnimgs.asus.com/websites/global/products/kG8zmnBbP9T4sqBA/images/bar_dot.png") center/100% no-repeat;
+  width: 36px !important;
+  height: 18px !important;
+  background-color: transparent !important;
+  top: calc(100%) !important; }
+
 .new-terminal {
   padding: 30px 15px;
   margin: auto 0;
