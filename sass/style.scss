@@ -6,7 +6,12 @@
 }
 
 a {
+  color: #0080CA;
+  transition: 0.2s;
   text-decoration: none !important;
+  &:hover {
+    color: #00A1FF;
+  }
 }
 
 img {
@@ -74,7 +79,7 @@ h6, .h6 {
     margin-left: 4px;
   }
   .button {
-    margin-right: 0.5rem;
+    margin: 7px .5rem;
   }
   .navbar-nav .nav-link {
     color: inherit !important;
@@ -116,7 +121,6 @@ h6, .h6 {
 }
 
 .section-1 {
-  padding-top: 83px;
   flex-grow: 1;
   min-height: calc(100vh - 53px);
   .img-bunner {
@@ -148,7 +152,6 @@ ul.list-blue {
 }
 
 .owl-brands {
-  margin-top: 46px;
   padding: 4px 0;
   background: linear-gradient(#EDEDED, transparent 25%);
   .owl-item img {
@@ -203,7 +206,7 @@ ul.list-blue {
 }
 
 .video-wrap {
-  padding: 115px 0;
+  padding: 80px 0;
   background-color: #000;
 }
 
@@ -294,7 +297,7 @@ ul.list-blue {
 }
 
 .section-5 {
-  padding-top: 123px;
+  padding-top: 120px;
   padding-bottom: 80px;
   background-color: #000;
 }
@@ -303,7 +306,7 @@ ul.list-blue {
   cursor: pointer;
   .img-video {
     transition: 0.2s;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     border: 1px solid #3D3D3D;
     position: relative;
     &:after {
@@ -338,25 +341,25 @@ ul.list-blue {
 }
 
 .section-6 {
-  padding-top: 233px;
-  padding-bottom: 98px;
+  padding-top: 110px;
+  padding-bottom: 100px;
 }
 
 .section-7 {
-  padding-top: 168px;
+  padding-top: 160px;
   padding-bottom: 200px;
   background: url(../img/bg.jpg) center top;
   background-size: cover;
 }
 
 .section-8 {
-  padding-top: 76px;
-  padding-bottom: 111px;
+  padding-top: 80px;
+  padding-bottom: 110px;
 }
 
 .section-9 {
-  padding-top: 82px;
-  padding-bottom: 55px;
+  padding-top: 80px;
+  padding-bottom: 60px;
   background: url(../img/bg-2.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -430,7 +433,7 @@ ul.list-blue {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 100;
+  z-index: 1030;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, .5);
@@ -446,33 +449,25 @@ ul.list-blue {
 
 #youtubeModal {
   position: fixed;
-  width: 50%;
-  height: 50%;
-  z-index: 105;
+  width: 100%;
+  max-width: 800px;
+  z-index: 1040;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: .3s ease;
-  visibility: hidden;
   opacity: 0;
   text-align: center;
   color: white;
+  visibility: hidden;
 
-  iframe {
-    width: 100%;
-    height: 100%;
+  .video-container {
     margin-bottom: 10px;
   }
 
   &.open {
     opacity: 1;
     visibility: visible;
-  }
-}
-
-@media (min-width: 1350px) {
-  .container {
-    max-width: 1280px;
   }
 }
 

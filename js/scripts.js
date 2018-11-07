@@ -17,6 +17,7 @@ $(document).ready(function () {
     loop: true,
     dots: false,
     nav: true,
+    autoHeight: true,
     navText: ["", ""],
   });
 
@@ -38,7 +39,7 @@ $(document).ready(function () {
     navText: ["", ""],
   });
 
-  $('#aside-nav a').mPageScroll2id({
+  $('#aside-nav a, .scroll-id').mPageScroll2id({
     scrollSpeed: 900,
     offset: 53,
   });
@@ -49,7 +50,7 @@ $(document).ready(function () {
   $('.video-modal').click(function (e) {
     var videoId = $(this).attr('data-id');
     var videoDescription = $(this).attr('data-description');
-    var $iframe = '<iframe src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allowfullscreen></iframe>';
+    var $iframe = '<div class="video-container"><iframe src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allowfullscreen></iframe></div>';
     $('#youtubeModal').html($iframe + videoDescription);
     $('#overlay,#youtubeModal').addClass('open');
   });

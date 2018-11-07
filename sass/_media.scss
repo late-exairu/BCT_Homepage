@@ -1,7 +1,12 @@
+@media (min-width: 992px) {
+	.col-lg-20 {
+	    flex: 0 0 20%;
+	    max-width: 20%;
+	}
+}
 
-
-@media (min-width: 1350px){
-	.container{
+@media (min-width: 1350px) {
+	.container {
 		max-width: 1280px;
 	}
 }
