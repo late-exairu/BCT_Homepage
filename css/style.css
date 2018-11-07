@@ -184,11 +184,19 @@ ul.list-blue {
     width: auto; }
 
 .section-4 {
-  padding-top: 84px;
-  padding-bottom: 70px; }
+  padding-top: 40px;
+  padding-bottom: 50px; }
+  .section-4 div.row.mb-md-5 {
+    margin-bottom: 1rem !important; }
+  .section-4 h2.mb-3 {
+    margin-bottom: 0; }
+  .section-4 .col-xl-8 p {
+    font-size: 18px;
+    margin-bottom: 0; }
 
 .owl-header {
-  font-size: 12px; }
+  font-size: 12px;
+  margin-bottom: 0 !important; }
   .owl-header .owl-dots .owl-dot {
     padding-right: 5px;
     padding-left: 5px;
@@ -223,13 +231,17 @@ ul.list-blue {
       content: "App's"; }
 
 .owl-body {
-  position: relative; }
+  position: relative;
+  width: 83%;
+  margin: 0 auto; }
   .owl-body .owl-4 {
     position: absolute;
     left: 0;
     right: 0;
-    top: 2.7%;
-    padding: 0 11.3%; }
+    top: 2%;
+    padding: 0 18%; }
+  .owl-body > img {
+    max-width: 83%; }
 
 .section-5 {
   padding-top: 120px;
