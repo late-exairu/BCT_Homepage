@@ -319,7 +319,7 @@ ul.list-blue {
   padding: 0 88px; }
 
 .page-footer {
-  padding: 42px 0;
+  padding: 28px 0;
   background-color: #ebebeb;
   color: #474747 !important; }
 
@@ -380,6 +380,14 @@ ul.list-blue {
   #youtubeModal.open {
     opacity: 1;
     visibility: visible; }
+
+.outro {
+  font-size: 10px; }
+
+.copyright {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0px; }
 
 .new-terminal {
   padding: 30px 15px;
@@ -899,7 +907,7 @@ ul.list-blue {
     font-size: 20px; }
   .page-footer {
     font-size: 20px;
-    padding: 42px 0; } }
+    padding: 28px 0; } }
 
 @media (min-width: 1200px) {
   .col-xl-20 {
