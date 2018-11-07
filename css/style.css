@@ -837,6 +837,8 @@ ul.list-blue {
       color: #888; }
   .pay-form label {
     padding: 0 15px; }
+  .pay-form.hidden {
+    display: none; }
 
 @media (min-width: 768px) {
   h1, .h1 {

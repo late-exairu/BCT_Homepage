@@ -122,15 +122,9 @@ $(document).ready(function () {
 	$('.cc-date').mask('00 / 00');
 	$('.cc-cvc').mask('0000');
 
-	function showPayUSD(){
-		document.getElementById('pay-usd').style.display ='block';
-		document.getElementById('pay-bct').style.display ='none';
-	};
-
-	function showPayBCT(){
-		document.getElementById('pay-usd').style.display ='none';
-		document.getElementById('pay-bct').style.display ='block';
-	};
+	$('.payment-method input[type=radio]').change(function () {
+		$('.pay-form').toggleClass('hidden');
+	});
 
 });
 
