@@ -62,6 +62,8 @@ h1, .h1 {
   box-shadow: 0 1px 3px #D5D5D5; }
   .navbar-light .nav-item {
     margin-left: 4px; }
+  .navbar-light > div.container > ul.navbar-nav .nav-item:not(:first-child) {
+    display: none; }
   .navbar-light .button {
     margin: 7px .5rem; }
   .navbar-light .navbar-nav .nav-link {

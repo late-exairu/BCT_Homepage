@@ -54,6 +54,9 @@ h1, .h1 {
   .nav-item {
     margin-left: 4px;
   }
+  > div.container > ul.navbar-nav .nav-item:not(:first-child){
+    display: none;
+  }
   .button {
     margin: 7px .5rem;
   }
