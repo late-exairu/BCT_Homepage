@@ -568,15 +568,18 @@ ul.list-blue {
     .checkout-form__multi-line {
       flex-direction: column; }
       .checkout-form__multi-line .checkout-form__line {
-        margin: 15px 0 0; }
-        .checkout-form__multi-line .checkout-form__line.zipcode {
-          width: 30%;
+        margin: 15px 0 0;
+        width: 100%; }
+        .checkout-form__multi-line .checkout-form__line.zipcode, .checkout-form__multi-line .checkout-form__line.city {
+          width: 100%;
           flex: none; } }
   @media only screen and (max-width: 560px) {
-    .checkout-form__cols {
-      flex-direction: column; }
-    .checkout-form__col {
-      margin: 28px 0 0; } }
+    .checkout-form {
+      padding: 0; }
+      .checkout-form__cols {
+        flex-direction: column; }
+      .checkout-form__col {
+        margin: 28px 0 0; } }
 
 .basic-select.single {
   width: 100%;
@@ -638,6 +641,13 @@ ul.list-blue {
         bottom: 5px;
         height: 2px;
         background: #2C2C2C; }
+  @media only screen and (max-width: 680px) {
+    .order-nav {
+      flex-wrap: wrap;
+      margin: 25px auto; }
+      .order-nav .item {
+        padding: 5px 15px 5px 15px;
+        margin: 0 0; } }
 
 .inputGroup {
   background-color: #fff;
@@ -843,6 +853,19 @@ ul.list-blue {
   .pay-form.hidden {
     display: none; }
 
+.guarantee {
+  margin: 50px auto 50px;
+  line-height: 1.28; }
+  .guarantee section {
+    margin: 24px 0; }
+  .guarantee h6 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 12px 0; }
+  .guarantee p {
+    font-size: 12px;
+    margin: 0 0; }
+
 @media (min-width: 768px) {
   h1, .h1 {
     font-size: 75px;
@@ -868,6 +891,7 @@ ul.list-blue {
   .button-lg {
     font-size: 20px; }
   .page-footer {
+    font-size: 20px;
     padding: 42px 0; } }
 
 @media (min-width: 1200px) {

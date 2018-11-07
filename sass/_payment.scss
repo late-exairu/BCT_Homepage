@@ -275,8 +275,11 @@
 
 			.checkout-form__line{
 				margin: 15px 0 0;
-				&.zipcode {
-					width: 30%;
+				width: 100%;
+
+				&.zipcode,
+				&.city {
+					width: 100%;
 					flex: none;
 				}
 			}
@@ -284,7 +287,7 @@
 	}
 
 	@media only screen and (max-width : 560px) {
-		
+		padding: 0;
 
 		&__cols{
 			flex-direction: column;
@@ -379,6 +382,17 @@
 				height: 2px;
 				background: #2C2C2C;
 			}
+		}
+	}
+
+
+	@media only screen and (max-width : 680px) {
+		flex-wrap: wrap;
+		margin: 25px auto;
+
+		.item{
+			padding: 5px 15px 5px 15px;
+			margin: 0 0;
 		}
 	}
 }
@@ -663,5 +677,25 @@
 	}
 	&.hidden{
 		display: none;
+	}
+}
+
+.guarantee{
+	margin: 50px auto 50px;
+	line-height: 1.28;
+
+	section{
+		margin: 24px 0;
+	}
+
+	h6{
+		font-size: 16px;
+		font-weight: 700;
+		margin: 12px 0;
+	}
+
+	p{
+		font-size: 12px;
+		margin: 0 0;
 	}
 }
