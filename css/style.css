@@ -5,16 +5,19 @@
   src: url("../fonts/sf-pro-text-regular-webfont.woff2") format("woff2"), url("../fonts/sf-pro-text-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'SF Pro Text';
   src: url("../fonts/sf-pro-text-semibold-webfont.woff2") format("woff2"), url("../fonts/sf-pro-text-semibold-webfont.woff") format("woff");
   font-weight: 600;
   font-style: normal; }
+
 @font-face {
   font-family: 'MyriadPro';
   src: url("../fonts/MyriadPro-Light.otf");
   font-weight: 300;
   font-style: normal; }
+
 * {
   outline: none !important; }
 
@@ -161,6 +164,7 @@ ul.list-blue {
       transform: rotate(180deg); }
     .owl-theme .owl-nav [class*="owl-"]:not(.disabled):hover {
       opacity: 0.65; }
+
 .owl-theme .owl-dots {
   position: relative; }
   .owl-theme .owl-dots .owl-dot span {
@@ -743,28 +747,36 @@ ul.list-blue {
   .col-lg-20 {
     flex: 0 0 20%;
     max-width: 20%; } }
+
 @media (min-width: 1350px) {
   .container {
     max-width: 1280px; } }
+
 .cart h1 {
   font-size: 65px;
   color: black; }
+
 .cart h3 {
   font-size: 35px; }
+
 .cart .text-small {
   font-size: 10px;
   color: black; }
+
 .cart .gray-row {
   font-family: 'SF Pro Text';
   font-size: 23px;
   font-weight: bold;
   color: #4B4B4B; }
+
 .cart .normal-row {
   font-size: 20px;
   color: black; }
+
 .cart .selectize-input {
   border: 0;
   box-shadow: none; }
+
 .cart .selectize-control.single .selectize-input:after {
   border: 0;
   background: url("../img/svg/arrow-more.svg");
@@ -773,8 +785,7 @@ ul.list-blue {
   height: 14px;
   transform: rotate(90deg);
   right: 0px; }
+
 .cart .selectize-input {
   padding-right: 15px;
   font-size: 20px; }
-
-/*# sourceMappingURL=style.css.map */
