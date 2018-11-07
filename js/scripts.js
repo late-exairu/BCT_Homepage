@@ -1,7 +1,26 @@
 $(document).ready(function () {
 
   $(".owl-brands").owlCarousel({
-    items: 9,
+    responsive: {
+      0: {
+        items: 3,
+      },
+      576: {
+        items: 4,
+      },
+      768: {
+        items: 5,
+      },
+      992: {
+        items: 6,
+      },
+      1200: {
+        items: 7,
+      },
+      1350: {
+        items: 9,
+      },
+    },
     autoplay: true,
     loop: true,
     dots: false,
@@ -12,9 +31,21 @@ $(document).ready(function () {
   });
 
   $(".owl-3").owlCarousel({
-    items: 4,
+    responsive: {
+      0: {
+        items: 1,
+      }, 
+      768: {
+        items: 2,
+      },
+      1200: {
+        items: 3,
+      },
+      1350: {
+        items: 4,
+      },
+    },
     margin: 10,
-    loop: true,
     dots: false,
     nav: true,
     autoHeight: true,
@@ -31,8 +62,21 @@ $(document).ready(function () {
   });
 
   $(".owl-5").owlCarousel({
-    items: 3,
-    margin: 80,
+    responsive: {
+      0: {
+        items: 1,
+      }, 
+      768: {
+        items: 2,
+      },
+      992: {
+        items: 3,
+      },
+      1200: {
+        margin: 80,
+      },
+    },
+    margin: 10,
     loop: true,
     dots: false,
     nav: true,
