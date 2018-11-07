@@ -149,7 +149,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('watch', ['sass', 'css', 'browser-sync'], function() {
 	gulp.watch('img/sprite.svg');
-	gulp.watch('**/*.scss', ['sass']);
+	gulp.watch('sass/*.scss', ['sass']);
 	gulp.watch('css/style.css', ['css']);
 	gulp.watch('img/svg/*.svg', ['sprite']);
 	gulp.watch('js/*.js', browserSync.reload);
