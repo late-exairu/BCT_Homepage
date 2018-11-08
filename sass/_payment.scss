@@ -477,20 +477,20 @@
 	display: flex;
 	margin: 10px 15px;
 	position: relative;
-	width: 160px;
-	height: 76px;
+	width: 356px;
+	height: 126px;
 	background: #fff;
-	border-radius: 7px;
 	overflow: hidden;
-	align-items: center;
+
+	img{
+		filter: grayscale(100%);
+		opacity: 0.75;
+		transition: all 0.2s;
+	}
 
 	label {
-		padding: 0 10px 0 50px;
+		padding: 10px;
 		width: 100%;
-		display: flex;
-		text-align: left;
-		flex-direction: column;
-		justify-content: center;
 		color: #3C454C;
 		cursor: pointer;
 		position: relative;
@@ -501,8 +501,13 @@
 		line-height: 1.2;
 		margin: 0;
 		height: 100%;
+		border: 1px solid #D6D6D6;
+		border-radius: 6px;
+		background: #fff;
+		transition: all 0.2s;
 
 		&:before {
+			display: none;
 			width: 10px;
 			height: 10px;
 			border-radius: 50%;
@@ -518,6 +523,7 @@
 		}
 
 		&:after {
+			display: none;
 			width: 32px;
 			height: 32px;
 			content: '';
@@ -538,7 +544,14 @@
 	}
 
 	input:checked ~ label {
-		color: #fff;
+		border-color: #0080CA;
+
+
+
+		img{
+			filter: grayscale(0);
+			opacity: 1;
+		}
 
 		&:before {
 			transform: translate(-50%, -50%) scale3d(56, 56, 1);
@@ -548,6 +561,14 @@
 		&:after {
 			background-color: #54E0C7;
 			border-color: #54E0C7;
+		}
+
+		.top{
+			border-color: #0080CA;
+		}
+
+		.desc{
+			color: #222;
 		}
 	}
 
@@ -562,6 +583,29 @@
 		transform: translateY(-50%);
 		cursor: pointer;
 		visibility: hidden;
+	}
+
+
+	.top{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 70px;
+		margin: -10px 0 0 0;
+		border-bottom: 1px solid #D6D6D6;
+		transition: all 0.2s;
+	}
+
+	.desc{
+		font-size: 20px;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		font-weight: 500;
+		height: 50px;
+		display: flex;
+		color: #D6D6D6;
+		transition: all 0.2s;
 	}
 }
 
@@ -961,6 +1005,11 @@
 	}
 }
 
+.pay-form-wrap{
+	display: flex;
+	justify-content: center;
+}
+
 .pay-form{
 	width: 100%;
 	max-width: 360px;
@@ -968,6 +1017,9 @@
 	background: #efefef;
 	border-radius: 5px;
 	padding: 15px;
+	margin: 10px 15px;
+	opacity: 1;
+	transition: all 0.2s;
 
 	.multi-line{
 		display: flex;
@@ -989,7 +1041,7 @@
 
 	.line{
 		width: 100%;
-		margin: 15px 0 0;
+		margin: 20px 0 0;
 
 		&:first-child{
 			margin: 0;
@@ -997,7 +1049,7 @@
 	}
 
 	.input{
-		height: 48px;
+		height: 50px;
 		width: 100%;
 		background: #fff;
 		border: 1px solid #ccc;
@@ -1016,8 +1068,10 @@
 	label{
 		padding: 0 15px;
 	}
+
 	&.hidden{
-		display: none;
+		visibility: hidden;
+		opacity: 0;
 	}
 }
 

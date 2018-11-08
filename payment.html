@@ -85,42 +85,44 @@
 			<div class="inputGroup">
 				<input id="radio1" name="radio" type="radio" checked/>
 				<label for="radio1">
-					<p class="title">Pay with:</p>
-					<p class="abbr">BCT</p>
+					<div class="top"><img src="img/cards.png" widht="325" height="47"></div>
+					<p class="desc">Pay $37,250 with credit card</p>
 				</label>
 			</div>
 			<div class="inputGroup">
 				<input id="radio2" name="radio" type="radio"/>
 				<label for="radio2">
-					<p class="title">Pay with:</p>
-					<p class="abbr">USD</p>
+					<div class="top"><img src="img/bc-logo.svg" widht="329" height="57"></div>
+					<p class="desc">Pay 372,500 BCT Coins</p>
 				</label>
 			</div>
 		</div>
 
-		<form class="pay-form" id="pay-bct">
-			<div class="line">
-				<label>BCT wallet address</label>
-				<input class="input" type="text" name="">
-			</div>
-		</form>
-
-		<form class="pay-form hidden" id="pay-usd">
-			<div class="line">
-				<label>Card Information</label>
-				<input class="input cc-number" type="text" name="" placeholder="Card Number">
-			</div>
-
-			<div class="multi-line">
+		<div class="pay-form-wrap">
+			<form class="pay-form" id="pay-bct">
 				<div class="line">
-					<input class="input cc-date" type="text" name="" placeholder="MM / YY">
+					<label>BCT wallet address</label>
+					<input class="input" type="text" name="">
 				</div>
-
+			</form>
+			
+			<form class="pay-form hidden" id="pay-usd">
 				<div class="line">
-					<input class="input cc-cvc" type="text" name="" placeholder="CVC">
+					<label>Card Information</label>
+					<input class="input cc-number" type="text" name="" placeholder="Card Number">
 				</div>
-			</div>
-		</form>
+			
+				<div class="multi-line">
+					<div class="line">
+						<input class="input cc-date" type="text" name="" placeholder="MM / YY">
+					</div>
+			
+					<div class="line">
+						<input class="input cc-cvc" type="text" name="" placeholder="CVC">
+					</div>
+				</div>
+			</form>
+		</div>
 
 		<div class="payment-info clearfix">
 			<div class="line bigger">
