@@ -46,9 +46,9 @@ $(document).ready(function () {
 			},
 		},
 		margin: 10,
+		autoHeight: true,
 		dots: false,
 		nav: true,
-		autoHeight: true,
 		navText: ["", ""],
 	});
 
@@ -77,7 +77,7 @@ $(document).ready(function () {
 			},
 		},
 		margin: 10,
-		loop: false,
+		autoHeight: true,
 		dots: false,
 		nav: true,
 		navText: ["", ""],
