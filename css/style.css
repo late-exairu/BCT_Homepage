@@ -315,7 +315,7 @@ ul.list-blue {
   .owl-2 .slide .container {
     position: relative;
     z-index: 2;
-    min-height: 250px; }
+    min-height: 270px; }
 .owl-2 .owl-dots {
   position: absolute;
   bottom: 50px;
