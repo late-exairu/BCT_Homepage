@@ -417,6 +417,16 @@ ul.list-blue {
     .owl-stage-outer {
       min-height: 191px;
     }
+    a p{
+      text-align: left;
+      font-size: 15px;
+      color:#878787;
+      font-weight: normal;
+    }
+    a img{
+      border: 1px solid #3D3D3D;
+      padding: 10px;
+    }
   }
 
   .owl-theme .owl-nav [class*="owl-"] {
