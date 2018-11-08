@@ -939,13 +939,11 @@ ul.list-blue {
 @media (min-width: 1350px) {
   .container {
     max-width: 1310px; } }
-<<<<<<< HEAD
+
 @media (max-width: 1349px) {
   .li {
     padding: 10px 15px; } }
-=======
 
->>>>>>> 4086da5d19f73f635e7770b2edd482bd27747f41
 @media (max-width: 1199px) {
   .px {
     padding: 0 50px; }
@@ -953,23 +951,13 @@ ul.list-blue {
     padding-bottom: 430px; } }
 
 @media (max-width: 991px) {
-<<<<<<< HEAD
   .owl-header .owl-dots .owl-dot {
     flex: 0 0 50%;
     max-width: 50%; }
-
-  .owl-2 .slide {
-    padding-bottom: 310px; } }
-@media (max-width: 767px) {
-=======
   .owl-2 .slide {
     padding-bottom: 310px; } }
 
 @media (max-width: 767px) {
-  .owl-header .owl-dots .owl-dot {
-    flex: 0 0 50%;
-    max-width: 50%; }
->>>>>>> 4086da5d19f73f635e7770b2edd482bd27747f41
   .section-3, .section-5, .section-7, .section-8 {
     padding-top: 4rem;
     padding-bottom: 3rem; }
@@ -995,14 +983,8 @@ ul.list-blue {
   .owl-2 .slide {
     padding-bottom: 60%; }
   .px {
-<<<<<<< HEAD
     padding: 0 40px; } }
-=======
-    padding: 0 40px; }
-  .li {
-    padding: 10px 15px; } }
 
->>>>>>> 4086da5d19f73f635e7770b2edd482bd27747f41
 .cart h1 {
   font-size: 65px;
   color: black; }
