@@ -280,7 +280,7 @@ ul.list-blue {
     position: absolute;
     left: 0;
     right: 0;
-    top: 2%;
+    top: 2.5%;
     padding: 0 18%;
   }
   & > img {
@@ -288,6 +288,9 @@ ul.list-blue {
   }
 }
 
+.section-2 > img {
+  max-height: 260px;
+}
 .section-5 {
   padding-top: 80px;
   padding-bottom: 60px;
@@ -348,8 +351,8 @@ ul.list-blue {
 }
 
 .section-8 {
-  padding-top: 80px;
-  padding-bottom: 64px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .section-9 {
