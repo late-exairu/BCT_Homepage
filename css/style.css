@@ -253,14 +253,12 @@ ul.list-blue {
   .video-modal div {
     transition: 0.2s;
     color: rgba(255, 255, 255, 0.25); }
-  .video-modal:hover {
-    color: #fff; }
-    .video-modal:hover .img-video {
-      border-color: #0080CA; }
-      .video-modal:hover .img-video:after {
-        background-image: url(../img/play-2.svg); }
-    .video-modal:hover div {
-      color: #0080CA; }
+  .video-modal:hover .img-video {
+    border-color: #0080CA; }
+    .video-modal:hover .img-video:after {
+      background-image: url(../img/play-2.svg); }
+  .video-modal:hover div {
+    color: inherit; }
 
 .section-6 {
   padding-top: 110px;
