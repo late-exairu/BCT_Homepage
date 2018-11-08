@@ -403,7 +403,8 @@ ul.list-blue {
   margin: 0px; }
 
 .reel {
-  overflow: visible !important; }
+  overflow: visible !important;
+  height: auto !important; }
 
 .terminal-switch-wrap {
   top: 63px;
