@@ -229,6 +229,7 @@ ul.list-blue {
 .section-5 {
   padding-top: 80px;
   padding-bottom: 60px;
+  color: #0080CA;
   background-color: #000; }
 
 .video-modal {
@@ -255,11 +256,11 @@ ul.list-blue {
   .video-modal:hover {
     color: #fff; }
     .video-modal:hover .img-video {
-      border-color: #fff; }
+      border-color: #0080CA; }
       .video-modal:hover .img-video:after {
         background-image: url(../img/play-2.svg); }
     .video-modal:hover div {
-      color: #fff; }
+      color: #0080CA; }
 
 .section-6 {
   padding-top: 110px;
