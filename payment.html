@@ -99,27 +99,33 @@
 		</div>
 
 		<div class="pay-form-wrap">
-			<form class="pay-form" id="pay-bct">
+			<form class="pay-form" id="pay-usd">
 				<div class="line">
-					<label>BCT wallet address</label>
-					<input class="input" type="text" name="">
-				</div>
-			</form>
-			
-			<form class="pay-form hidden" id="pay-usd">
-				<div class="line">
-					<label>Card Information</label>
-					<input class="input cc-number" type="text" name="" placeholder="Card Number">
+					<input class="input cc-number" type="text" name="" placeholder="Cardholder’s Name">
 				</div>
 			
 				<div class="multi-line">
 					<div class="line">
-						<input class="input cc-date" type="text" name="" placeholder="MM / YY">
+						<input class="input cc-date" type="text" name="" placeholder="Walid Thru">
 					</div>
 			
 					<div class="line">
-						<input class="input cc-cvc" type="text" name="" placeholder="CVC">
+						<input class="input cc-cvc" type="text" name="" placeholder="CVV/CVC/CID*">
 					</div>
+				</div>
+				
+				<div class="line">
+					<input class="input cc-number" type="text" name="" placeholder="Card Number">
+				</div>
+			</form>
+
+			<form class="pay-form hidden" id="pay-bct">
+				<div class="line">
+					<input class="input cc-number" type="text" name="" placeholder="Holder email">
+				</div>
+				
+				<div class="line">
+					<input class="input cc-number" type="text" name="" placeholder="Wallet address">
 				</div>
 			</form>
 		</div>

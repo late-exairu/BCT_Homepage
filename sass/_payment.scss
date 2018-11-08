@@ -879,7 +879,7 @@
 	font-family: 'SF Pro Text';
 	display: flex;
 	justify-content: center;
-	margin: 32px 0 22px;
+	margin: 32px 0 20px;
 
 	.item{
 		position: relative;
@@ -1014,9 +1014,7 @@
 	width: 100%;
 	max-width: 360px;
 	margin: 50px auto;
-	background: #efefef;
 	border-radius: 5px;
-	padding: 15px;
 	margin: 10px 15px;
 	opacity: 1;
 	transition: all 0.2s;
@@ -1024,10 +1022,10 @@
 	.multi-line{
 		display: flex;
 		width: 100%;
-		margin: 15px 0 0;
+		margin: 20px 0 0;
 
 		.line{
-			margin: 0 0 0 15px;
+			margin: 0 0 0 10px;
 
 			&:first-child{
 				margin: 0 0 0 0;
@@ -1052,16 +1050,18 @@
 		height: 50px;
 		width: 100%;
 		background: #fff;
-		border: 1px solid #ccc;
+		border: 1px solid #D6D6D6;
 		border-radius: 4px;
 		padding: 0 15px;
+		font-size: 17px;
+		font-weight: 700;
 
 		&:focus{
 			border-color: #0171B8;
 		}
 
 		&::placeholder{
-			color: #888;
+			color: #D6D6D6;
 		}
 	}
 
