@@ -78,92 +78,100 @@
 			<li class="item current">Payment</li>
 		</ul>
 
-		<h2>Payment Method</h2>
-
-		<div class="payment-method">
-
-			<div class="inputGroup">
-				<input id="radio1" name="radio" type="radio" checked/>
-				<label for="radio1">
-					<div class="top"><img src="img/cards.png" widht="325" height="47"></div>
-					<p class="desc">Pay $37,250 with credit card</p>
-				</label>
+		<div class="pay-info">
+			<div class="left">
+				<h2>Payment Method</h2>
+		
+				<div class="payment-method">
+					<div class="inputGroup">
+						<input id="radio1" name="radio" type="radio" checked/>
+						<label for="radio1">
+							<div class="top"><img src="img/cards.png" widht="325" height="47"></div>
+							<p class="desc">Pay $37,250 with credit card</p>
+						</label>
+					</div>
+					<div class="inputGroup">
+						<input id="radio2" name="radio" type="radio"/>
+						<label for="radio2">
+							<div class="top"><img src="img/bc-logo.svg" widht="329" height="57"></div>
+							<p class="desc">Pay 372,500 BCT Coins</p>
+						</label>
+					</div>
+				</div>
+		
+				<div class="pay-form-wrap">
+					<form class="pay-form" id="pay-usd">
+						<div class="line">
+							<input class="input user" type="text" name="" placeholder="Cardholder’s Name">
+						</div>
+					
+						<div class="multi-line">
+							<div class="line">
+								<input class="input date" type="text" name="" placeholder="Walid Thru">
+							</div>
+					
+							<div class="line">
+								<input class="input cvv cc-cvc" type="text" name="" placeholder="CVV/CVC/CID*">
+							</div>
+						</div>
+						
+						<div class="line">
+							<input class="input card cc-number" type="text" name="" placeholder="Card Number">
+						</div>
+		
+						<button class="button button-lg w-100" type="submit">Confirm</button>
+		
+						<p class="tip">If payment is made by credit card, the Monthly Service Fee shall be charged on monthly basis for the duration of the Period.</p>
+		
+						<p class="tip">*CVV/CVC/CID is the card security code, unique three digits number on the back of your card separate form this number</p>
+		
+						<div class="policies">
+							<a href="#">Satisfaction Guarantee</a>
+							<a href="#">Subscription Cancellation Policy</a>
+						</div>
+					</form>
+		
+					<form class="pay-form hidden" id="pay-bct">
+						<div class="line">
+							<input class="input mail cc-number" type="text" name="" placeholder="Holder email">
+						</div>
+		
+						<div class="line">
+							<input class="input wallet cc-number" type="text" name="" placeholder="Wallet address">
+						</div>
+		
+						<div class="line">
+							<label class="d-flex">
+								<input class="checkbox" type="checkbox">
+								<div class="text-center privacy"> I agree to the
+									<a href="#"> Contribution Agreement, Distribution Terms, Terms of Use </a>
+									&
+									<a href="#"> Privacy Policy </a></span>
+								</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<img src="img/qr-code.png" alt="">
+							</div>
+							<div class="col">
+								<div class="border-top border-bottom mb-2 receiving-wrap">
+									<div class="receiving">Receiving address:</div>
+									<div class="address">0x23453485739</div>
+									<div class="address">4857394857345</div>
+								</div>
+								<a class="button button-lg no-mg float-right" href="completed.html">Confirm</a>
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
-			<div class="inputGroup">
-				<input id="radio2" name="radio" type="radio"/>
-				<label for="radio2">
-					<div class="top"><img src="img/bc-logo.svg" widht="329" height="57"></div>
-					<p class="desc">Pay 372,500 BCT Coins</p>
-				</label>
+
+			<div class="right">
+				<img src="img/mon.png">
 			</div>
 		</div>
 
-		<div class="pay-form-wrap">
-			<form class="pay-form" id="pay-usd">
-				<div class="line">
-					<input class="input user" type="text" name="" placeholder="Cardholder’s Name">
-				</div>
-			
-				<div class="multi-line">
-					<div class="line">
-						<input class="input date" type="text" name="" placeholder="Walid Thru">
-					</div>
-			
-					<div class="line">
-						<input class="input cvv cc-cvc" type="text" name="" placeholder="CVV/CVC/CID*">
-					</div>
-				</div>
-				
-				<div class="line">
-					<input class="input card cc-number" type="text" name="" placeholder="Card Number">
-				</div>
-
-				<button class="button button-lg w-100" type="submit">Confirm</button>
-
-				<p class="tip">If payment is made by credit card, the Monthly Service Fee shall be charged on monthly basis for the duration of the Period.</p>
-
-				<p class="tip">*CVV/CVC/CID is the card security code, unique three digits number on the back of your card separate form this number</p>
-
-				<div class="policies">
-					<a href="#">Satisfaction Guarantee</a>
-					<a href="#">Subscription Cancellation Policy</a>
-				</div>
-			</form>
-
-			<form class="pay-form hidden" id="pay-bct">
-				<div class="line">
-					<input class="input cc-number" type="text" name="" placeholder="Holder email">
-				</div>
-
-				<div class="line">
-					<input class="input cc-number" type="text" name="" placeholder="Wallet address">
-				</div>
-				<div class="line">
-					<label class="d-flex">
-						<input type="checkbox">
-						<div class="text-center privacy"> I agree to the
-							<a href="#"> Contribution Agreement, Distribution Terms, Terms of Use </a>
-							&
-							<a href="#"> Privacy Policy </a></span>
-						</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<img src="img/qr-code.png" alt="">
-					</div>
-					<div class="col">
-						<div class="border-top border-bottom mb-2">
-								<div class="receiving">Receiving address:</div>
-								<div class="address">0x23453485739</div>
-								<div class="address">4857394857345</div>
-						</div>
-						<a class="button button-lg float-right" href="completed.html">Confirm</a>
-					</div>
-				</div>
-			</form>
-		</div>
-
-		<div class="payment-info clearfix">
+		<!-- <div class="payment-info clearfix">
 			<div class="line bigger">
 				<div>Price Details</div>
 			</div>
@@ -179,11 +187,6 @@
 				<div>Subtotal:</div>
 				<div>$37,250</div>
 			</div>
-			
-			<!-- <div class="line">
-				<div>Shipping</div>
-				<div>FREE (USA)</div>
-			</div> -->
 			
 			<div class="line">
 				<div>Total:</div>
@@ -215,7 +218,7 @@
 				<p>If you are not 100% satisfied with the Blockchain Terminal, you may return it within 30 days of purchase for a refund—no questions asked. After 30 days, we will consider return requests that are defective due to hardware or software issues.</p>
 				<p>We will reimburse the original purchase price to you according to your original method of payment.</p>
 			</section>
-		</div>
+		</div> -->
 	</div>
 
 	<footer class="page-footer text-center text-white mt-auto">
