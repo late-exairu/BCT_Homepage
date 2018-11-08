@@ -362,15 +362,15 @@ ul.list-blue {
 
 .owl-2 {
   .slide {
-    padding-top: 80px;
-    padding-bottom: 554px;
+    padding-top: 280px;
+    padding-bottom: 354px;
     background-size: cover;
     //background-attachment: fixed;
     &.slide-1 {
       background-image: url(../img/bg-1.jpeg);
     }
     &.slide-2 { 
-      background: url(../img/bg-2.jpg);
+      background-image: url(../img/bg-2.jpg);
     }
     &.slide-3 {
       background-image: url(../img/bg-3.jpg);
@@ -397,11 +397,12 @@ ul.list-blue {
     .container{
       position: relative;
       z-index: 2;
+      min-height: 250px;
     }
   }
   .owl-dots {
     position: absolute;
-    bottom: 60px;
+    bottom: 20px;
     left: 0;
     right: 0;
   }

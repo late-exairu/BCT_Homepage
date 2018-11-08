@@ -287,13 +287,13 @@ ul.list-blue {
     z-index: 9; }
 
 .owl-2 .slide {
-  padding-top: 80px;
-  padding-bottom: 554px;
+  padding-top: 280px;
+  padding-bottom: 354px;
   background-size: cover; }
   .owl-2 .slide.slide-1 {
     background-image: url(../img/bg-1.jpeg); }
   .owl-2 .slide.slide-2 {
-    background: url(../img/bg-2.jpg); }
+    background-image: url(../img/bg-2.jpg); }
   .owl-2 .slide.slide-3 {
     background-image: url(../img/bg-3.jpg); }
   .owl-2 .slide.slide-4 {
@@ -313,11 +313,12 @@ ul.list-blue {
     z-index: 1; }
   .owl-2 .slide .container {
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    min-height: 250px; }
 
 .owl-2 .owl-dots {
   position: absolute;
-  bottom: 60px;
+  bottom: 20px;
   left: 0;
   right: 0; }
 

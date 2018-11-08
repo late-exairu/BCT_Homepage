@@ -28,6 +28,7 @@ $(document).ready(function () {
 
 	$(".owl-2").owlCarousel({
 		items: 1,
+		startPosition: 2
 	});
 
 	$(".owl-3").owlCarousel({
