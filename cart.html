@@ -72,86 +72,92 @@
     </nav>
 
 
-    <main class="container cart mb-5">
-        <ul class="order-nav">
-            <li class="item done">Buy Terminal</li>
-            <li class="item done">Delivery</li>
-            <li class="item current">Cart</li>
-            <li class="item">Payment</li>
-        </ul>
-        <h1 class="mb-5">What is in your cart?</h1>
-        <div class="row">
-            <div class="col-8">
-                <div class="border-bottom py-2 gray-row">
-                    <div class="row">
-                        <div class="col-7">Blockchain Terminal: </div>
-                        <div class="col text-right">
-                            <select>
-                                <option selected>Qty: 1</option>
-                                <option>Qty: 2</option>
-                                <option>Qty: 3</option>
-                                <option>Qty: 4</option>
-                                <option>Qty: 5</option>
-                                <option>Qty: 6</option>
-                                <option>Qty: 7</option>
-                                <option>Qty: 8</option>
-                                <option>Qty: 9</option>
-                                <option>Qty: 10</option>
-                            </select>
-                        </div>
-                        <div class="col-2 text-right">$1,250</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-7">Monthly Service Fee:</div>
-                        <div class="col text-right">
-                            <select>
-                                <option selected>Qty: 3 Years</option>
-                                <option>Qty: 4 Years</option>
-                                <option>Qty: 5 Years</option>
-                            </select>
-                        </div>
-                        <div class="col-2 text-right">$36,000</div>
-                    </div>
-                </div>
-                <!-- <div class="border-bottom py-2">
-                    <h3>Add BCT tokens to the order</h3>
-                    <div class="row gray-row">
-                        <div class="col-7">BCT Tokens:
-                            <div class="text-small">All apps, trading fees, custodian fees are payable in BCT. A
-                                minimum of 10,000 BCT/month is charged to financial institutions. Minimums for
-                                individuals will vary according to trading volume, app usage and contribution to the
-                                ecosystem.
-                            </div>
-                        </div>
-                        <div class="col text-right">
-                            <select>
-                                <option selected>Qty: 3 Years</option>
-                                <option>Qty: 4 Years</option>
-                                <option>Qty: 5 Years</option>
-                            </select>
-                        </div>
-                        <div class="col-2 text-right">$1,000</div>
-                    </div>
-                </div> -->
-                <div class="border-bottom py-2">
-                    <!-- <div class="row normal-row">
-                        <div class="col-7">Subtotal</div>
-                        <div class="col text-right">$37,250</div>
-                    </div>
-                    <div class="row normal-row">
-                        <div class="col-7">Shipping</div>
-                        <div class="col text-right">FREE (USA)</div>
-                    </div> -->
-                    <div class="row gray-row">
-                        <div class="col-7">Total</div>
-                        <div class="col text-right">$37,250</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <img src="img/front.png" alt="Front View">
-                <a class="button button-lg w-100 text-center mt-4" href="payment.html">Checkout</a>
-            </div>
+    <main class="container max-flex">
+        <div class="w-100 mt-auto mb-auto">
+        	<ul class="order-nav">
+        	    <li class="item done">Buy Terminal</li>
+        	    <li class="item done">Delivery</li>
+        	    <li class="item current">Cart</li>
+        	    <li class="item">Payment</li>
+        	</ul>
+			
+			<div class="new-cart">
+				<div class="new-cart__left">
+					<form class="cart-form" action="checkout.html">
+						<p class="cart-form__title">What is in your cart?</p>
+			
+						<div class="cart-form__item">
+							<div class="cart-form__desc">
+								Blockchain Terminal:
+								<p class="cart-form__tip">Including 32” HD monitor, wireless mouse and keyboard, private key device and Thin Client Hub</p>
+							</div>
+							<div class="cart-form__qty">
+								<select>
+	                                <option selected>Qty: 1</option>
+	                                <option>Qty: 2</option>
+	                                <option>Qty: 3</option>
+	                                <option>Qty: 4</option>
+	                                <option>Qty: 5</option>
+	                                <option>Qty: 6</option>
+	                                <option>Qty: 7</option>
+	                                <option>Qty: 8</option>
+	                                <option>Qty: 9</option>
+	                                <option>Qty: 10</option>
+	                            </select>
+	                        </div>
+							<div class="cart-form__price">$1,250 <span>(12,500 BCT)</span></div>
+						</div>
+			
+						<div class="cart-form__item">
+							<div class="cart-form__desc">
+								Monthly Service fee:
+								<p class="cart-form__tip">For the first month. Same card will be charge on monthly basis</p>
+							</div>
+							<div class="cart-form__qty">
+								<select>
+	                                <option selected>Qty: 3 Years</option>
+	                                <option>Qty: 4 Years</option>
+	                                <option>Qty: 5 Years</option>
+	                            </select>
+	                        </div>
+							<div class="cart-form__price">$36,000 <span>(360,000 BCT)</span></div>
+						</div>
+
+						<div class="cart-form__separator"></div>
+			
+						<div class="cart-form__item">
+							<div class="cart-form__desc">
+								Subtotal
+							</div>
+							<div class="cart-form__price">$37,250 <span>(372,500 BCT)</span></div>
+						</div>
+			
+						<div class="cart-form__item">
+							<div class="cart-form__desc">
+								Shipping
+							</div>
+							<div class="cart-form__price">FREE <span>(USA)</span></div>
+						</div>
+
+						<div class="cart-form__separator"></div>
+			
+						<div class="cart-form__item total">
+							<div class="cart-form__desc">
+								Total
+							</div>
+							<div class="cart-form__price">$37,250</div>
+						</div>
+
+						<a class="cart-form__submit button button-lg" href="checkout.html">Checkout</a>
+					</form>
+				</div>
+
+				<div class="new-cart__right">
+					<img src="img/main.png" width="597" height="588">
+				</div>
+			</div>
+
+        	
         </div>
     </main>
 
