@@ -86,7 +86,7 @@ $(document).ready(function () {
 
 	$('.scroll-id').mPageScroll2id({
 		scrollSpeed: 900,
-		offset: 53,
+		offset: 64,
 	});
 
 
