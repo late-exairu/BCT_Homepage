@@ -1178,11 +1178,16 @@ ul.list-blue {
       border-color: #0171B8; }
     .pay-form .input::placeholder {
       color: #D6D6D6; }
-  .pay-form label {
-    padding: 0 15px; }
   .pay-form.hidden {
     visibility: hidden;
     opacity: 0; }
+  .pay-form .privacy {
+    font-size: 15px;
+    margin-bottom: 10px; }
+  .pay-form .receiving {
+    font-size: 20px; }
+  .pay-form .address {
+    font-size: 22px; }
 
 .guarantee {
   margin: 50px auto 50px;

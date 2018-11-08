@@ -1065,13 +1065,19 @@
 		}
 	}
 
-	label{
-		padding: 0 15px;
-	}
-
 	&.hidden{
 		visibility: hidden;
 		opacity: 0;
+	}
+	.privacy{
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+	.receiving{
+		font-size: 20px;
+	}
+	.address{
+		font-size: 22px;
 	}
 }
 
