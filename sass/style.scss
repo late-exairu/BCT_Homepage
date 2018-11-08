@@ -384,6 +384,17 @@ ul.list-blue {
 .section-10 {
   padding-top: 105px;
   padding-bottom: 72px;
+
+  .owl-carousel {
+    height: 191px;
+    .owl-stage-outer {
+      min-height: 191px;
+    }
+  }
+
+  .owl-theme .owl-nav [class*="owl-"] {
+    top: 40%;
+  }
 }
 
 .px {
