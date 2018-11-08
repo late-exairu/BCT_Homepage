@@ -348,7 +348,7 @@ ul.list-blue {
 .section-9 {
   background-size: cover;
   background-attachment: fixed;
-  background-image: url(../img/bg-3.jpg);
+  //background-image: url(../img/bg-3.jpg);
   position: relative;
   .owl-img-wrap {
     position: absolute;
@@ -365,9 +365,24 @@ ul.list-blue {
     padding-top: 80px;
     padding-bottom: 554px;
     background-size: cover;
-    background-attachment: fixed;
+    //background-attachment: fixed;
     &.slide-1 {
-      background-image: url(../img/bg-2.jpg);
+      background-image: url(../img/bg-1.jpeg);
+    }
+    &.slide-2 { 
+      background: url(../img/bg-2.jpg);
+    }
+    &.slide-3 {
+      background-image: url(../img/bg-3.jpg);
+    }
+    &.slide-4 {
+      background-image: url(../img/bg-4.jpeg);
+    }
+    &.slide-5 {
+      background-image: url(../img/bg-5.jpeg);
+    }
+    &.slide-6 {
+      background-image: url(../img/bg-6.jpeg);
     }
   }
   .owl-dots {
