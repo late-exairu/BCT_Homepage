@@ -178,23 +178,24 @@ ul.list-blue {
   padding-bottom: 50px; }
 
 .owl-header {
-  font-size: 12px;
   margin-bottom: 0 !important; }
   .owl-header .owl-dots .owl-dot {
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
     flex: 0 0 25%;
     max-width: 25%;
-    margin-bottom: 8px; }
+    margin-bottom: 12px; }
     .owl-header .owl-dots .owl-dot:before {
       display: block;
-      padding: 8px;
+      padding: 5px 1px;
       border: 1px solid #222222;
       transition: 0.2s;
-      cursor: pointer; }
+      cursor: pointer;
+      height: 100%; }
     .owl-header .owl-dots .owl-dot:hover:before, .owl-header .owl-dots .owl-dot.active:before {
       color: #fff;
-      background-color: #222222;
+      border-color: #0080CA;
+      background-color: #0080CA;
       font-weight: 600; }
     .owl-header .owl-dots .owl-dot:nth-child(1):before {
       content: "Global Wallet"; }
@@ -221,11 +222,8 @@ ul.list-blue {
     position: absolute;
     left: 0;
     right: 0;
-    top: 2.7%;
-    padding: 0 11.3%; }
-
-.section-2 > img {
-  max-height: 260px; }
+    top: 2.8%;
+    padding: 0 11.5%; }
 
 .section-5 {
   padding-top: 80px;
@@ -945,6 +943,9 @@ ul.list-blue {
 @media (min-width: 1350px) {
   .container {
     max-width: 1310px; } }
+@media (max-width: 1349px) {
+  .li {
+    padding: 10px 15px; } }
 @media (max-width: 1199px) {
   .px {
     padding: 0 50px; }
@@ -952,13 +953,13 @@ ul.list-blue {
   .owl-2 .slide {
     padding-bottom: 430px; } }
 @media (max-width: 991px) {
-  .owl-2 .slide {
-    padding-bottom: 310px; } }
-@media (max-width: 767px) {
   .owl-header .owl-dots .owl-dot {
     flex: 0 0 50%;
     max-width: 50%; }
 
+  .owl-2 .slide {
+    padding-bottom: 310px; } }
+@media (max-width: 767px) {
   .section-3, .section-5, .section-7, .section-8 {
     padding-top: 4rem;
     padding-bottom: 3rem; }
@@ -991,10 +992,7 @@ ul.list-blue {
     padding-bottom: 60%; }
 
   .px {
-    padding: 0 40px; }
-
-  .li {
-    padding: 10px 15px; } }
+    padding: 0 40px; } }
 .cart h1 {
   font-size: 65px;
   color: black; }

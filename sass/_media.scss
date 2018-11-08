@@ -58,6 +58,18 @@
 
 }
 
+
+
+
+
+@media (max-width: 1349px) {
+
+	.li {
+	  padding: 10px 15px;
+	}
+
+}
+
 @media (max-width: 1199px) {
 
 	.px {
@@ -74,6 +86,13 @@
 
 @media (max-width: 991px) {
 
+	.owl-header {
+	  .owl-dots .owl-dot {
+	    flex: 0 0 50%;
+	    max-width: 50%;
+	  }
+	}
+
 	.owl-2 {
 		.slide {
 	    padding-bottom: 310px;
@@ -83,13 +102,6 @@
 }
 
 @media (max-width: 767px) {
-
-	.owl-header {
-	  .owl-dots .owl-dot {
-	    flex: 0 0 50%;
-	    max-width: 50%;
-	  }
-	}
 
 	.section-3, .section-5, .section-7, .section-8 {
 		padding-top: 4rem;
@@ -147,10 +159,6 @@
 
 	.px {
     	padding: 0 40px;
-	}
-
-	.li {
-	  padding: 10px 15px;
 	}
 
 }
