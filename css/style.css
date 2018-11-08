@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 * {
   outline: none !important; }
 
@@ -278,7 +278,6 @@ ul.list-blue {
 .section-9 {
   background-size: cover;
   background-attachment: fixed;
-  background-image: url(../img/bg-3.jpg);
   position: relative; }
   .section-9 .owl-img-wrap {
     position: absolute;
@@ -291,10 +290,19 @@ ul.list-blue {
 .owl-2 .slide {
   padding-top: 80px;
   padding-bottom: 554px;
-  background-size: cover;
-  background-attachment: fixed; }
+  background-size: cover; }
   .owl-2 .slide.slide-1 {
-    background-image: url(../img/bg-2.jpg); }
+    background-image: url(../img/bg-1.jpeg); }
+  .owl-2 .slide.slide-2 {
+    background: url(../img/bg-2.jpg); }
+  .owl-2 .slide.slide-3 {
+    background-image: url(../img/bg-3.jpg); }
+  .owl-2 .slide.slide-4 {
+    background-image: url(../img/bg-4.jpeg); }
+  .owl-2 .slide.slide-5 {
+    background-image: url(../img/bg-5.jpeg); }
+  .owl-2 .slide.slide-6 {
+    background-image: url(../img/bg-6.jpeg); }
 
 .owl-2 .owl-dots {
   position: absolute;
