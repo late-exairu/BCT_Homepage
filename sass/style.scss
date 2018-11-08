@@ -287,6 +287,7 @@ ul.list-blue {
 .section-5 {
   padding-top: 80px;
   padding-bottom: 60px;
+  color: #0080CA;
   background-color: #000;
 }
 
@@ -317,13 +318,13 @@ ul.list-blue {
   &:hover {
     color: #fff;
     .img-video {
-      border-color: #fff;
+      border-color: #0080CA;
       &:after {
         background-image: url(../img/play-2.svg);
       }
     }
     div {
-      color: #fff;
+      color: #0080CA;
     }
   }
 }
