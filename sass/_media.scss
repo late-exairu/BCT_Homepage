@@ -21,13 +21,13 @@
 	  letter-spacing: -1px;
 	  line-height: 1.35;
 	}
+	.fz-24 {
+	  font-size: 24px;
+	  line-height: 1.3;
+	}
 	.fz-20 {
 	  font-size: 20px;
 	  line-height: 1.3;
-	}
-	.fz-20-2 {
-	  font-size: 20px;
-	  letter-spacing: -1px;
 	}
 
 	.button-lg {
@@ -76,12 +76,6 @@
     	padding: 0 50px;
 	}
 
-	.owl-2 {
-		.slide {
-	    padding-bottom: 430px;
-		}
-	}
-
 }
 
 @media (max-width: 991px) {
@@ -91,12 +85,6 @@
 	    flex: 0 0 50%;
 	    max-width: 50%;
 	  }
-	}
-
-	.owl-2 {
-		.slide {
-	    padding-bottom: 310px;
-		}
 	}
 
 }
@@ -111,12 +99,6 @@
 	.section-4, .section-6, .section-10 {
 		padding-top: 4rem;
 		padding-bottom: 4rem;
-	}
-
-	.section-9 {
-	  .owl-img-wrap {
-	    bottom: 75px;
-	  }
 	}
 
 }
@@ -152,9 +134,16 @@
  	}
 
  	.owl-2 {
-		.slide {
-	    padding-bottom: 60%;
-		}
+	  .slide {
+	  	padding-top: 50px;
+    	padding-bottom: 50px;
+	    .container {
+	      min-height: 340px;
+	    }
+	  }
+	  .owl-dots {
+	    bottom: 30px;
+	  }
 	}
 
 	.px {
