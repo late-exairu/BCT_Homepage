@@ -622,7 +622,8 @@
 }
 
 .pay-form{
-	width: 360px;
+	width: 100%;
+	max-width: 360px;
 	margin: 50px auto;
 	background: #efefef;
 	border-radius: 5px;
