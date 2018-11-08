@@ -151,8 +151,8 @@ gulp.task('watch', ['sass', 'css', 'browser-sync'], function() {
 	gulp.watch('img/sprite.svg');
 	gulp.watch('sass/*.scss', ['sass']);
 	gulp.watch('css/style.css', ['css']);
-	gulp.watch('css/style.css', browserSync.reload);
 	gulp.watch('img/svg/*.svg', ['sprite']);
+	gulp.watch('css/style.css', browserSync.reload);
 	gulp.watch('js/*.js', browserSync.reload);
 	gulp.watch('*.html', browserSync.reload);
 });

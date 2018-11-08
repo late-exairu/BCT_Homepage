@@ -71,89 +71,93 @@
 		</div>
 	</nav>
 
-	<div class="container">
-		<ul class="order-nav">
-			<li class="item done">Buy Terminal</li>
-			<li class="item current">Delivery</li>
-			<li class="item">Cart</li>
-			<li class="item">Payment</li>
-		</ul>
-
-		<form class="checkout-form" action="cart.html">
-			<h2 class="checkout-form__title">Where should we send your order?</h2>
-
-			<div class="checkout-form__cols">
-				<div class="checkout-form__col">
-					<h3 class="checkout-form__col-title">Enter your name and address:</h3>
-
-					<div class="checkout-form__line">
-						<input type="text" class="checkout-form__input" placeholder="First Name">
-					</div>
-
-					<div class="checkout-form__line">
-						<input type="text" class="checkout-form__input" placeholder="Last Name">
-					</div>
-
-					<div class="checkout-form__line">
-						<input type="text" class="checkout-form__input" placeholder="Street Address">
-					</div>
-
-					<div class="checkout-form__line">
-						<input type="text" class="checkout-form__input" placeholder="Apt, Suite, Building (Optional)">
-					</div>
-
-					<div class="checkout-form__multi-line">
-						<div class="checkout-form__line zipcode">
-							<label class="checkout-form__label">Zip Code</label>
-							<input type="text" class="checkout-form__input --with-label" placeholder="Apt, Suite, Building (Optional)" value="04106">
+	<div class="container max-flex">
+		<div class="w-100 mt-auto mb-auto">
+			<ul class="order-nav">
+				<li class="item done">Buy Terminal</li>
+				<li class="item current">Delivery</li>
+				<li class="item">Cart</li>
+				<li class="item">Payment</li>
+			</ul>
+			
+			<form class="delivery-form" action="cart.html">
+				<h2 class="delivery-form__title">Where should we send your order?</h2>
+			
+				<div class="delivery-form__cols">
+					<div class="delivery-form__col">
+						<h3 class="delivery-form__col-title">Enter your name and address:</h3>
+			
+						<div class="delivery-form__line">
+							<input type="text" class="delivery-form__input" placeholder="First Name">
 						</div>
-
-						<div class="checkout-form__line city">
-							<label class="checkout-form__label">City, State</label>
-
-							<select class="basic-select city">
-								<option>aaa</option>
-								<option>bbb</option>
-								<option>ccc</option>
-								<option>ddd</option>
-								<option>eee</option>
+			
+						<div class="delivery-form__line">
+							<input type="text" class="delivery-form__input" placeholder="Last Name">
+						</div>
+			
+						<div class="delivery-form__multi-line">
+							<div class="delivery-form__line">
+								<input type="text" class="delivery-form__input" placeholder="Street Address">
+							</div>
+			
+							<div class="delivery-form__line">
+								<input type="text" class="delivery-form__input" placeholder="Apt, Suite, Building">
+							</div>
+						</div>
+			
+						<div class="delivery-form__multi-line">
+							<div class="delivery-form__line zipcode">
+								<label class="delivery-form__label">Zip Code</label>
+								<input type="text" class="delivery-form__input --with-label" placeholder="Apt, Suite, Building (Optional)" value="04106">
+							</div>
+			
+							<div class="delivery-form__line city">
+								<label class="delivery-form__label">City, State</label>
+			
+								<select class="basic-select city">
+									<option>aaa</option>
+									<option>bbb</option>
+									<option>ccc</option>
+									<option>ddd</option>
+									<option>eee</option>
+								</select>
+							</div>
+						</div>
+			
+						<div class="delivery-form__line">
+							<label class="delivery-form__label">Country</label>
+			
+							<select class="basic-select country">
+									<option>aaa</option>
+									<option>bbb</option>
+									<option>ccc</option>
+									<option>ddd</option>
+									<option>eee</option>
 							</select>
 						</div>
 					</div>
-
-					<div class="checkout-form__line">
-						<label class="checkout-form__label">Country</label>
-
-						<select class="basic-select country">
-								<option>aaa</option>
-								<option>bbb</option>
-								<option>ccc</option>
-								<option>ddd</option>
-								<option>eee</option>
-						</select>
+			
+					<div class="delivery-form__col">
+						<h3 class="delivery-form__col-title">What’s your contact information?</h3>
+			
+						<div class="delivery-form__line">
+							<input type="email" class="delivery-form__input" placeholder="Email Address">
+						</div>
+			
+						<div class="delivery-form__line">
+							<input type="phone" class="delivery-form__input" placeholder="Phone Number">
+						</div>
+			
+						<div class="delivery-form__tips">
+							<p class="delivery-form__tip">We'll email you a receipt and send order updates to your mobile phone via SMS</p>
+							<p class="delivery-form__tip">The phone number you enter can't be changed after you place your order, so please make sure it's correct.</p>
+						</div>
+						
+						<a class="button button-lg" href="cart.html">Continue to Checkout</a>
 					</div>
 				</div>
-
-				<div class="checkout-form__col">
-					<h3 class="checkout-form__col-title">What’s your contact information?</h3>
-
-					<div class="checkout-form__line">
-						<input type="email" class="checkout-form__input" placeholder="Email Address">
-					</div>
-
-					<div class="checkout-form__line">
-						<input type="phone" class="checkout-form__input" placeholder="Phone Number">
-					</div>
-
-					<div class="checkout-form__tips">
-						<p class="checkout-form__tip">We'll email you a receipt and send order updates to your mobile phone via SMS</p>
-						<p class="checkout-form__tip">The phone number you enter can't be changed after you place your order, so please make sure it's correct.</p>
-					</div>
-					
-					<a class="button button-lg" href="cart.html">Continue to Checkout</a>
-				</div>
-			</div>
-		</form>
+			</form>
+		</div>
 
 	</div>
 
