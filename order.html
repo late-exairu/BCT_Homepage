@@ -70,46 +70,49 @@
 		</div>
 	</nav>
 
-	<div class="container">
-		<ul class="order-nav">
-			<li class="item current">Buy Terminal</li>
-			<li class="item">Delivery</li>
-			<li class="item">Cart</li>
-			<li class="item">Payment</li>
-		</ul>
+	<div class="container max-flex">
 
-		<div class="new-terminal">
+		<div class="w-100 mt-auto mb-auto">
+			<ul class="order-nav">
+				<li class="item current">Buy Terminal</li>
+				<li class="item">Delivery</li>
+				<li class="item">Cart</li>
+				<li class="item">Payment</li>
+			</ul>
+			
+			<div class="new-terminal">
+			
+				<div class="new-terminal__left">
+					<form class="terminal-form" action="checkout.html">
+						<p class="terminal-form__title">Your Blockchain Terminal</p>
+			
+						<div class="terminal-form__qty-line">
+							<div class="terminal-form__qty">Blockchain Terminal Price:</div>
+							<div class="terminal-form__price">$1,250 <span>(12,500 BCT)</span></div>
+						</div>
+			
+						<div class="terminal-form__qty-line">
+							<div class="terminal-form__qty">Monthly Service fee:</div>
+							<div class="terminal-form__price">$1,000 <span>(10,000 BCT)</span></div>
+						</div>
+			
+						<div class="terminal-form__multi-line">
+							<div class="terminal-form__line">
+								<input class="terminal-form__input" type="text" name="" placeholder="Enter Your Promo Code here:">
+								<button class="terminal-form__apply" type="submit">Apply</button>
+							</div>
 
-			<div class="new-terminal__left">
-				<img src="img/main.png" width="597" height="588">
+							<div class="terminal-form__line submit">
+								<a class="terminal-form__submit button button-lg" href="checkout.html">BUY NOW</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			
+				<div class="new-terminal__right">
+					<img src="img/cart_1.png" width="597" height="588">
+				</div>
 			</div>
-
-			<div class="new-terminal__right">
-
-				<form class="terminal-form" action="checkout.html">
-					<p class="terminal-form__title">Your Blockchain Terminal</p>
-
-					<div class="terminal-form__qty-line">
-						<div class="terminal-form__qty">Blockchain Terminal Price:</div>
-						<div class="terminal-form__price">$1,250 (or 12,500 BCT)</div>
-					</div>
-
-					<div class="terminal-form__qty-line">
-						<div class="terminal-form__qty">Monthly Service fee:</div>
-						<div class="terminal-form__price">$1,000 (or 10,000 BCT)</div>
-					</div>
-
-					<div class="terminal-form__line">
-						<input class="terminal-form__input" type="text" name="" placeholder="Enter Your Promo Code here:">
-						<button class="terminal-form__apply" type="submit">Apply</button>
-					</div>
-
-					<div class="terminal-form__separator"></div>
-
-					<a class="button button-lg" href="checkout.html">BUY NOW</a>
-				</form>
-			</div>
-
 		</div>
 	</div>
 
