@@ -84,7 +84,7 @@ $(document).ready(function () {
 		navText: ["", ""],
 	});
 
-	$('#aside-nav a, .scroll-id').mPageScroll2id({
+	$('.scroll-id').mPageScroll2id({
 		scrollSpeed: 900,
 		offset: 53,
 	});

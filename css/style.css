@@ -61,8 +61,12 @@ h1, .h1, h2, .h2 {
   .navbar-light .button {
     margin: 10px 0; }
   .navbar-light .navbar-nav .nav-link {
+    font-size: 14px;
+    font-weight: 500;
     color: inherit !important;
     transition: 0.2s; }
+    .navbar-light .navbar-nav .nav-link.mPS2id-highlight-first {
+      color: #0080CA !important; }
     .navbar-light .navbar-nav .nav-link:hover {
       opacity: 0.65; }
   .navbar-light .navbar-collapse .nav-item {
@@ -98,8 +102,6 @@ h1, .h1, h2, .h2 {
 .section-1 {
   flex-grow: 1;
   min-height: calc(100vh - 53px); }
-  .section-1 .img-bunner {
-    transform: rotateY(180deg); }
 
 ul.list-blue {
   padding-left: 0;
@@ -338,14 +340,12 @@ ul.list-blue {
     height: 191px; }
     .section-10 .owl-carousel .owl-stage-outer {
       min-height: 191px; }
-    .section-10 .owl-carousel a p {
-      text-align: left;
+    .section-10 .owl-carousel a {
       font-size: 15px;
-      color: #878787;
-      font-weight: normal; }
-    .section-10 .owl-carousel a img {
-      border: 1px solid #3D3D3D;
-      padding: 10px; }
+      color: #878787; }
+      .section-10 .owl-carousel a img {
+        border: 1px solid;
+        padding: 10px; }
   .section-10 .owl-theme .owl-nav [class*="owl-"] {
     top: 40%; }
 
@@ -356,30 +356,6 @@ ul.list-blue {
   padding: 28px 0;
   background-color: #ebebeb;
   color: #474747 !important; }
-
-#aside-nav {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
-  position: fixed;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 999; }
-  #aside-nav li {
-    padding: 7px; }
-    #aside-nav li a {
-      display: block;
-      width: 8px;
-      height: 8px;
-      border-radius: 4px;
-      background-color: #C7C7C7;
-      transition: 0.2s; }
-      #aside-nav li a:hover {
-        background-color: #222222; }
-      #aside-nav li a.mPS2id-highlight-first {
-        background-color: #222222;
-        height: 30px; }
 
 #overlay {
   position: fixed;
