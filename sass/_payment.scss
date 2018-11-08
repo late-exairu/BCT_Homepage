@@ -1015,7 +1015,7 @@
 	max-width: 360px;
 	margin: 50px auto;
 	border-radius: 5px;
-	margin: 10px 15px;
+	margin: 10px 15px 30px;
 	opacity: 1;
 	transition: all 0.2s;
 
@@ -1063,6 +1063,30 @@
 		&::placeholder{
 			color: #D6D6D6;
 		}
+
+		&.user{
+			background: url(../img/form-user.svg) calc(100% - 10px) center no-repeat;
+		}
+
+		&.date{
+			background: url(../img/form-date.svg) calc(100% - 10px) center no-repeat;
+		}
+
+		&.cvv{
+			background: url(../img/form-lock.svg) calc(100% - 10px) center no-repeat;
+		}
+
+		&.card{
+			background: url(../img/form-card.svg) calc(100% - 10px) center no-repeat;
+		}
+	}
+
+	.tip{
+		font-size: 13px;
+		font-weight: 300;
+		color: #9C9C9C;
+		margin: 16px 0 0;
+		line-height: 1.36;
 	}
 
 	&.hidden{
@@ -1078,6 +1102,18 @@
 	}
 	.address{
 		font-size: 22px;
+	}
+
+	.button{
+		margin: 20px 0 0;
+	}
+
+	.policies{
+		margin: 16px 0 0;
+		display: flex;
+		justify-content: space-between;
+		font-size: 13px;
+
 	}
 }
 
