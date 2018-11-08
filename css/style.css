@@ -1,20 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Roboto:300");
-@font-face {
-  font-family: 'SF Pro Text';
-  src: url("../fonts/sf-pro-text-regular-webfont.woff2") format("woff2"), url("../fonts/sf-pro-text-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'SF Pro Text';
-  src: url("../fonts/sf-pro-text-semibold-webfont.woff2") format("woff2"), url("../fonts/sf-pro-text-semibold-webfont.woff") format("woff");
-  font-weight: 600;
-  font-style: normal; }
-@font-face {
-  font-family: 'MyriadPro';
-  src: url("../fonts/MyriadPro-Light.otf");
-  font-weight: 300;
-  font-style: normal; }
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 * {
   outline: none !important; }
 
@@ -30,39 +15,47 @@ img {
   height: auto; }
 
 body {
-  font-family: "SF Pro Text", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   color: #222222;
   min-height: 100vh; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: "MyriadPro", sans-serif;
-  font-weight: 300;
-  line-height: 1; }
+  font-weight: inherit;
+  line-height: 1.1; }
 
-h1, .h1 {
+h1, .h1, h2, .h2 {
   color: #0080CA; }
 
 .fz-30 {
   font-size: 20px;
   line-height: 1.3; }
 
-.fz-20 {
-  font-family: "Roboto", sans-serif; }
-
 .fz-0 {
   font-size: 0; }
+
+.font-weight-medium {
+  font-weight: 500; }
 
 .text-inherit {
   color: inherit; }
 
+.row-1 {
+  margin-left: -10px;
+  margin-right: -10px; }
+  .row-1 [class^="col"] {
+    padding-left: 10px;
+    padding-right: 10px; }
+
 .navbar-light {
-  box-shadow: 0 1px 3px #D5D5D5; }
+  border-bottom: 1px solid #D6D6D6;
+  box-shadow: 0 0 17px #EDEDED; }
   .navbar-light .nav-item {
     margin-left: 4px; }
   .navbar-light > div.container > ul.navbar-nav .nav-item:not(:first-child) {
     display: none; }
   .navbar-light .button {
-    margin: 7px 0; }
+    margin: 10px 0; }
   .navbar-light .navbar-nav .nav-link {
     color: inherit !important;
     transition: 0.2s; }
@@ -72,14 +65,18 @@ h1, .h1 {
     margin-left: 17px;
     margin-right: 17px; }
 
+.navbar-brand img {
+  width: 157px; }
+
 .button {
   display: inline-block;
   font-size: 12px;
+  font-weight: bold;
   background: linear-gradient(#42a1ec, #0070c9);
   border: 1px solid #07c;
   border-radius: 4px;
   color: #fff !important;
-  padding: 1px 8px 2px;
+  padding: 3px 28px 4px;
   text-align: center;
   cursor: pointer; }
   .button:hover {
@@ -91,34 +88,28 @@ h1, .h1 {
 
 .button-lg {
   font-size: 1rem;
-  font-weight: 600;
   border-radius: 6px;
   padding: 7px 53px 9px; }
 
 .section-1 {
   flex-grow: 1;
   min-height: calc(100vh - 53px); }
-  .section-1 .button {
-    margin-left: 22px; }
 
 ul.list-blue {
   padding-left: 0;
   list-style: none; }
   ul.list-blue li {
+    padding-left: 18px;
     position: relative; }
     ul.list-blue li:before {
       content: "•";
       position: absolute;
       left: 0;
       color: #00A1FF; }
-  ul.list-blue.fz-30 li {
-    padding-left: 22px; }
-  ul.list-blue.fz-20 li {
-    padding-left: 12px; }
 
 .owl-brands {
   padding: 4px 0;
-  background: linear-gradient(#EDEDED, transparent 25%); }
+  background: linear-gradient(#EDEDED, transparent 17px); }
   .owl-brands .owl-item img {
     width: auto; }
 
@@ -170,6 +161,12 @@ ul.list-blue {
     left: 0;
     width: 100%;
     height: 100%; }
+
+.li {
+  line-height: 1.3;
+  border: 1px solid;
+  padding: 11px 34px;
+  height: 100%; }
 
 .section-3 {
   padding-top: 90px;
@@ -919,7 +916,7 @@ ul.list-blue {
     letter-spacing: -1.9px; }
 
   h3, .h3 {
-    font-size: 55px;
+    font-size: 50px;
     letter-spacing: -1.9px; }
 
   h5, .h5 {
@@ -950,10 +947,7 @@ ul.list-blue {
     max-width: 20%; } }
 @media (min-width: 1350px) {
   .container {
-    max-width: 1280px; }
-
-  .section-1 .img-bunner {
-    max-width: calc(100% + 60px); } }
+    max-width: 1310px; } }
 @media (max-width: 1199px) {
   .px {
     padding: 0 50px; }
@@ -979,6 +973,9 @@ ul.list-blue {
   .section-9 .owl-img-wrap {
     bottom: 75px; } }
 @media (max-width: 575px) {
+  .navbar-brand img {
+    width: 100px; }
+
   .button-lg {
     width: 100%; }
 
@@ -989,9 +986,6 @@ ul.list-blue {
   .video-wrap {
     padding: 15px 0; }
 
-  .section-1 .button {
-    margin-left: 0; }
-
   .owl-theme .owl-nav [class*="owl-"] {
     width: 30px;
     height: 30px; }
@@ -1000,7 +994,10 @@ ul.list-blue {
     padding-bottom: 60%; }
 
   .px {
-    padding: 0 40px; } }
+    padding: 0 40px; }
+
+  .li {
+    padding: 10px 15px; } }
 .cart h1 {
   font-size: 65px;
   color: black; }
