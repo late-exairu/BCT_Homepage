@@ -49,6 +49,10 @@ h1, .h1, h2, .h2 {
   color: inherit;
 }
 
+.text-blue {
+  color: #0080CA;
+}
+
 .row-1 {
   margin-left: -10px;
   margin-right: -10px;
@@ -115,6 +119,9 @@ h1, .h1, h2, .h2 {
 .section-1 {
   flex-grow: 1;
   min-height: calc(100vh - 53px);
+  .img-bunner {
+    transform: rotateY(180deg);
+  }
 }
 
 ul.list-blue {
@@ -343,6 +350,12 @@ ul.list-blue {
 .section-8 {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.card-border {
+  border: 1px solid;
+  padding: 1rem 1rem 9px;
+  height: 100%;
 }
 
 .section-9 {
