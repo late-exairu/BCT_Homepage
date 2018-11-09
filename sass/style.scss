@@ -521,6 +521,28 @@ ul.list-blue {
   top:calc(100%) !important;
 }
 
+.promo{
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 1.36;
+
+	@media only screen and (max-width : 992px) {
+		font-size: 16px;
+	}
+
+	@media only screen and (max-width : 768px) {
+		display: none;
+	}
+}
+
+.article{
+	margin: 50px 0;
+
+	h1,h2,h3,h4,h5,h6{
+		font-weight: 500;
+		margin: 1em 0 0.5em;
+	}
+}
 
 @import "payment";
 
