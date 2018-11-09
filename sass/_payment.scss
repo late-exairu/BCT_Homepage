@@ -196,23 +196,28 @@ hr {
 		}
 	}
 	.input {
-		padding-right: 45px;
 		&.user {
+			padding-right: 45px;
 			background: url(../img/form-user.svg) calc(100% - 10px) center no-repeat;
 		}
 		&.date {
+			padding-right: 45px;
 			background: url(../img/form-date.svg) calc(100% - 10px) center no-repeat;
 		}
 		&.cvv {
+			padding-right: 45px;
 			background: url(../img/form-lock.svg) calc(100% - 10px) center no-repeat;
 		}
 		&.card {
+			padding-right: 45px;
 			background: url(../img/form-card.svg) calc(100% - 10px) center no-repeat;
 		}
 		&.mail {
+			padding-right: 45px;
 			background: url(../img/form-mail.svg) calc(100% - 10px) center no-repeat;
 		}
 		&.wallet {
+			padding-right: 45px;
 			background: url(../img/form-wallet.svg) calc(100% - 10px) center no-repeat;
 		}
 	}
