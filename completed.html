@@ -4,7 +4,7 @@
 <head>
 	<title>BCT</title>
 	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="keywords" content=""/>
 	<meta name="description" content=""/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/owl-carousel-2/owl.carousel.min.css"/>
 	<link rel="stylesheet" href="libs/owl-carousel-2/owl.theme.default.min.css"/>
+  <link rel="stylesheet" href="css/selectize.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 </head>
 
@@ -31,139 +32,117 @@
 				<img src="img/logo.svg" alt="" width="102">
 			</a>
 
-		  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="order-nav">
+					<li class="item done">Terminal</li>
+					<li class="item done">Cart</li>
+					<li class="item done">Payment</li>
+					<li class="item current">Delivery</li>
+				</ul>
+			</div>
 
-		  <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav mx-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#!">Overview</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#!">Specification</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#!">Review</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#!">Support</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#!">Store</a>
-		      </li>
-		    </ul>
-		  </div> -->
-
-		  <ul class="navbar-nav align-items-center fz-0">
-				<li class="nav-item">
-					<a class="button" href="terminal.html">BUY NOW</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="cart.html"><img src="img/c.svg" alt="" width="14"></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#!"><img src="img/serch.svg" alt="" width="15"></a>
-				</li>
-			</ul>
+		  <ul class="navbar-nav align-items-center flex-row navbar-right d-none d-md-flex">
+	      <li class="nav-item">
+	        <a class="nav-link px-2" href="#!" data-toggle="tooltip" data-placement="bottom" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed">Satisfaction guarantee</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link px-2" href="#!">Subscription Cancellation Policy</a>
+	      </li>
+	    </ul>
 
 		</div>
 	</nav>
 
-	<div class="container">
-		<ul class="order-nav">
-			<li class="item done">Buy Terminal</li>
-			<li class="item done">Delivery</li>
-			<li class="item done">Cart</li>
-			<li class="item done">Payment</li>
-		</ul>
+	<div class="container max-flex">
+		<div class="w-100 my-auto">
 
-		<h2>Your order has been submitted successfully.</h2>
+			<h2>Your order has been submitted successfully.</h2>
+			<div class="order-summary">
+				<div class="payment-info">
+					<div class="line bigger">
+						<div>Order Details:</div>
+					</div>
 
-		<div class="order-summary">
-			<div class="payment-info">
-				<div class="line bigger">
-					<div>Order Details:</div>
+					<div class="separator"></div>
+
+					<img class="qr-code float-right" src="img/qr-code.png" width="162" height="162">
+
+					<div class="line">
+						<div>Order ID</div>
+						<div>019284575616191</div>
+					</div>
+					
+					<div class="line">
+						<div>Payment Method</div>
+						<div>BCT</div>
+					</div>
+					
+					<div class="line">
+						<div>Oder Price</div>
+						<div>$918.99</div>
+					</div>
+					
+					<div class="line">
+						<div>Total Order Price</div>
+						<div>$0.14 BCT</div>
+					</div>
+
+					<div class="separator"></div>
+					
+					<div class="line bigger">
+						<div>Due Amount</div>
+						<div>$0.14 BCT</div>
+					</div>
+
+					<div class="separator"></div>
+					
+					<div class="line bigger">
+						<div>Payment Address</div>
+						<div>E2UY5FuUFeAQf6uDtcdQsTZXqfc9bPZVH</div>
+					</div>
 				</div>
 
-				<div class="separator"></div>
+				<div class="payment-info">
+					<div class="line bigger">
+						<div>Shipping address:</div>
+					</div>
 
-				<img class="qr-code float-right" src="img/qr-code.png" width="162" height="162">
+					<div class="separator"></div>
 
-				<div class="line">
-					<div>Order ID</div>
-					<div>019284575616191</div>
-				</div>
-				
-				<div class="line">
-					<div>Payment Method</div>
-					<div>BCT</div>
-				</div>
-				
-				<div class="line">
-					<div>Oder Price</div>
-					<div>$918.99</div>
-				</div>
-				
-				<div class="line">
-					<div>Total Order Price</div>
-					<div>$0.14 BCT</div>
-				</div>
+					<div class="line">
+						<div>Name</div>
+						<div>First Last Name</div>
+					</div>
+					
+					<div class="line">
+						<div>Telephone</div>
+						<div>2222222222222</div>
+					</div>
+					
+					<div class="line">
+						<div>Address</div>
+						<div>South Portland, ME</div>
+					</div>
+					
+					<div class="line">
+						<div>City</div>
+						<div>South Portland</div>
+					</div>
+					
+					<div class="line">
+						<div>Zip</div>
+						<div>04106</div>
+					</div>
 
-				<div class="separator"></div>
-				
-				<div class="line bigger">
-					<div>Due Amount</div>
-					<div>$0.14 BCT</div>
-				</div>
-
-				<div class="separator"></div>
-				
-				<div class="line bigger">
-					<div>Payment Address</div>
-					<div>E2UY5FuUFeAQf6uDtcdQsTZXqfc9bPZVH</div>
+					<div class="separator"></div>
+					
+					<div class="line bigger">
+						<div>Email</div>
+						<div>my.email@my.domain.com</div>
+					</div>
 				</div>
 			</div>
 
-			<div class="payment-info">
-				<div class="line bigger">
-					<div>Shipping address:</div>
-				</div>
-
-				<div class="separator"></div>
-
-				<div class="line">
-					<div>Name</div>
-					<div>First Last Name</div>
-				</div>
-				
-				<div class="line">
-					<div>Telephone</div>
-					<div>2222222222222</div>
-				</div>
-				
-				<div class="line">
-					<div>Address</div>
-					<div>South Portland, ME</div>
-				</div>
-				
-				<div class="line">
-					<div>City</div>
-					<div>South Portland</div>
-				</div>
-				
-				<div class="line">
-					<div>Zip</div>
-					<div>04106</div>
-				</div>
-
-				<div class="separator"></div>
-				
-				<div class="line bigger">
-					<div>Email</div>
-					<div>my.email@my.domain.com</div>
-				</div>
-			</div>
 		</div>
 	</div>
 
@@ -184,18 +163,13 @@
 			</div>
 		</div>
 	</footer>
-
-  <div class="modal fade" id="videoModal">
-	  <div class="modal-dialog modal-dialog-centered modal-lg">
-	    
-	  </div>
-	</div>
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<script src="https://unpkg.com/page-scroll-to-id@1.5.9/jquery.malihu.PageScroll2id.js"></script>
 	<script src="libs/owl-carousel-2/owl.carousel.min.js"></script>
+  <script src="libs/selectize.min.js"></script>
 	<script src="js/scripts.js"></script>
 
 </body>

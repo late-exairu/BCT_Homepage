@@ -65,11 +65,9 @@ h1, .h1, h2, .h2 {
 .navbar-light {
   border-bottom: 1px solid #D6D6D6;
   box-shadow: 0 0 17px #EDEDED;
+  min-height: 64px;
   .nav-item {
     margin-left: 4px;
-  }
-  > div.container > ul.navbar-nav .nav-item:not(:first-child){
-    display: none;
   }
   .button {
     margin: 10px 0;
@@ -89,6 +87,9 @@ h1, .h1, h2, .h2 {
   .navbar-collapse .nav-item {
     margin-left: 17px;
     margin-right: 17px;
+  }
+  .navbar-right .nav-link {
+    color: #0080CA !important;
   }
 }
 .navbar-brand img {
@@ -118,7 +119,8 @@ h1, .h1, h2, .h2 {
 .button-lg {
   font-size: 1rem;
   border-radius: 6px;
-  padding: 7px 53px 9px;
+  padding: 8px 20px 10px;
+  min-width: 196px;
 }
 
 .section-1 {

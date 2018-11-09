@@ -88,6 +88,8 @@ $(document).ready(function () {
 		offset: 64,
 	});
 
+	$('[data-toggle="tooltip"]').tooltip();
+
 
 
 

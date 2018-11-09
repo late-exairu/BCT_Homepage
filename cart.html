@@ -2,194 +2,165 @@
 <html lang="en">
 
 <head>
-    <title>What is in your cart?</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>What is in your cart?</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="libs/owl-carousel-2/owl.carousel.min.css" />
-    <link rel="stylesheet" href="libs/owl-carousel-2/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="css/selectize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/owl-carousel-2/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="libs/owl-carousel-2/owl.theme.default.min.css"/>
+  <link rel="stylesheet" href="css/selectize.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 
 <body class="d-flex flex-column">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-        <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+		<div class="container">
 
-            <a class="navbar-brand fz-0" href="index.html">
-                <img src="img/logo.svg" alt="" width="102">
-            </a>
+			<a class="navbar-brand fz-0" href="index.html">
+				<img src="img/logo.svg" alt="" width="102">
+			</a>
 
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#!">Overview</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#!">Specification</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#!">Review</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#!">Support</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#!">Store</a>
-                    </li>
-                </ul>
-            </div> -->
-
-            <ul class="navbar-nav align-items-center fz-0">
-				<li class="nav-item">
-					<a class="button" href="terminal.html">BUY NOW</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="cart.html"><img src="img/c.svg" alt="" width="14"></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#!"><img src="img/serch.svg" alt="" width="15"></a>
-				</li>
-			</ul>
-
-        </div>
-    </nav>
-
-
-    <main class="container max-flex">
-        <div class="w-100 mt-auto mb-auto">
-        	<ul class="order-nav">
-        	    <li class="item done">Buy Terminal</li>
-        	    <li class="item current">Cart</li>
-        	    <li class="item">Payment</li>
-        	    <li class="item">Delivery</li>
-        	</ul>
-			
-			<div class="new-cart">
-				<div class="new-cart__left">
-					<form class="cart-form" action="payment.html">
-						<p class="cart-form__title">What is in your cart?</p>
-			
-						<div class="cart-form__item">
-							<div class="cart-form__desc">
-								Blockchain Terminal:
-								<p class="cart-form__tip">Including 32” HD monitor, wireless mouse and keyboard, private key device and Thin Client Hub</p>
-							</div>
-							<div class="cart-form__qty">
-								<select>
-	                                <option selected>Qty: 1</option>
-	                                <option>Qty: 2</option>
-	                                <option>Qty: 3</option>
-	                                <option>Qty: 4</option>
-	                                <option>Qty: 5</option>
-	                                <option>Qty: 6</option>
-	                                <option>Qty: 7</option>
-	                                <option>Qty: 8</option>
-	                                <option>Qty: 9</option>
-	                                <option>Qty: 10</option>
-	                            </select>
-	                        </div>
-							<div class="cart-form__price">$1,250 <span>or</span> 12,500 BCT</div>
-						</div>
-			
-						<div class="cart-form__item">
-							<div class="cart-form__desc">
-								Monthly Service fee:
-								<p class="cart-form__tip">For the first month. Same card will be charge on monthly basis</p>
-							</div>
-							<div class="cart-form__qty">
-								<select>
-	                                <option selected>Qty: 3 Years</option>
-	                                <option>Qty: 4 Years</option>
-	                                <option>Qty: 5 Years</option>
-	                            </select>
-	                        </div>
-							<div class="cart-form__price">$36,000 <span>or</span> 360,000 BCT</div>
-						</div>
-
-						<div class="cart-form__separator"></div>
-			
-						<div class="cart-form__item">
-							<div class="cart-form__desc">
-								Initial Payment:
-								<p class="cart-form__tip">Terminal + 1 month service fee</p>
-							</div>
-							<div class="cart-form__price">$2,250 <span>or</span> 22,500 BCT</div>
-						</div>
-			
-						<div class="cart-form__item">
-							<div class="cart-form__desc">
-								Remaining Monthly Service Fees:
-								<p class="cart-form__tip">Charged monthly</p>
-							</div>
-							<div class="cart-form__price">$35,000 <span>or</span> 350,000 BCT</div>
-						</div>
-
-						<div class="cart-form__separator"></div>
-			
-						<div class="cart-form__item total">
-							<div class="cart-form__desc">
-								Total
-							</div>
-							<div class="cart-form__price">$37,250 <span>or</span> 372,500 BCT</div>
-						</div>
-
-						<div class="cart-form__separator"></div>
-
-						<a class="cart-form__submit button button-lg" href="payment.html">Next</a>
-					</form>
-				</div>
-
-				<div class="new-cart__right">
-					<img src="img/payment.png" width="597" height="588">
-				</div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="order-nav">
+					<li class="item done">Terminal</li>
+					<li class="item current">Cart</li>
+					<li class="item">Payment</li>
+					<li class="item">Delivery</li>
+				</ul>
 			</div>
 
-        	
-        </div>
-    </main>
+		  <ul class="navbar-nav align-items-center flex-row navbar-right d-none d-md-flex">
+	      <li class="nav-item">
+	        <a class="nav-link px-2" href="#!" data-toggle="tooltip" data-placement="bottom" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed">Satisfaction guarantee</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link px-2" href="#!">Subscription Cancellation Policy</a>
+	      </li>
+	    </ul>
 
-    <footer class="page-footer text-center text-white mt-auto">
-        <div class="container">
-            <div class="row align-items-start">
-                <div class="col-lg-auto fz-0">
-                    <img src="img/logo.svg" alt="" width="102">
-                </div>
-                <div class="col-lg py-4 py-lg-0">
+		</div>
+	</nav>
+
+  <div class="container max-flex">
+	  <div class="w-100 my-auto">
+
+	    <div class="row align-items-center justify-content-center py-4">
+        <div class="col-md-8 col-lg-4 pl-lg-4 py-3">
+          <img src="img/payment-2.png" alt="">
+				</div>
+	      <div class="col-lg order-lg-first pr-xl-0 py-3">
+	        <form class="cart-form" action="payment.html">
+	          <h3 class="text-blue pb-1 mb-3">What is in your cart?</h3>
+	          <div class="fz-30">
+		          <div class="row justify-content-between mb-1">
+		            <div class="col-sm">
+		              Blockchain Terminal:
+		              <div class="tip">Including 32” HD monitor, wireless mouse and keyboard, private key device and Thin Client Hub</div>
+		            </div>
+		            <div class="col-auto font-weight-medium select-wrap">
+		              <select>
+		                <option selected>Qty: 1</option>
+		                <option>Qty: 2</option>
+		                <option>Qty: 3</option>
+		                <option>Qty: 4</option>
+		                <option>Qty: 5</option>
+		                <option>Qty: 6</option>
+		                <option>Qty: 7</option>
+		                <option>Qty: 8</option>
+		                <option>Qty: 9</option>
+		                <option>Qty: 10</option>
+		              </select>
+		            </div>
+		            <div class="col-auto font-weight-medium">$1,250</div>
+		          </div>
+		          <div class="row justify-content-between mb-1">
+		            <div class="col-sm">
+		              Monthly Service fee:
+		              <div class="tip">For the first month. Same card will be charge on monthly basis</div>
+		            </div>
+		            <div class="col-auto font-weight-medium select-wrap">
+		              <select>
+		                <option selected>Qty: 36</option>
+		                <option>Qty: 48</option>
+		                <option>Qty: 60</option>
+		              </select>
+		            </div>
+		            <div class="col-auto font-weight-medium">$36,000</div>
+		          </div>
+		          <hr>
+		          <div class="row justify-content-end mb-1">
+		            <div class="col-sm">
+		              Initial Payment:
+		              <div class="tip">Terminal + 1 month service fee</div>
+		            </div>
+		            <div class="col-auto font-weight-medium">$2,250</div>
+		          </div>
+		          <div class="row justify-content-end mb-1">
+		            <div class="col-sm">
+		              Remaining Monthly Service Fees:
+		              <div class="tip">Charged monthly</div>
+		            </div>
+		            <div class="col-auto font-weight-medium">$35,000</div>
+		          </div>
+	          	<hr>
+	            <div class="row text-blue font-weight-medium">
+	              <div class="col">Total</div>
+	              <div class="col-auto">$37,250</div>
+            	</div>
+            	<hr>
+            </div>
+            <div class="row align-items-center mt-3 pt-1">
+            	<div class="col">
+            		
+            	</div>
+            	<div class="col-auto">
+            		<a class="button button-lg" href="payment.html">Next</a>
+            	</div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+	</div>
+
+	<footer class="page-footer text-center text-white mt-auto">
+		<div class="container">
+			<div class="row align-items-start">
+				<!-- <div class="col-lg-auto fz-0">
+					<img src="img/logo.svg" alt="" width="102">
+				</div> -->
+				<div class="col-lg py-4 py-lg-0">
 					<p class="outro">BCT Inc is the developer of Blockchain Terminal, an institutional-grade cryptocurrency platform and app store that unites traditional investment with the emerging cryptocurrency industry. Blockchain Terminal users will purchase applications and crypto-trading tools developed by third-party blockchain developers using BCT tokens. BCT has a non-profit mandate and is a wholly owned Cayman subsidiary of the BCT Foundation, a non-profit Cayman Island foundation.</p>
 
-					<p class="copyright">© 2018 BCT Inc - All rights reserved | <a href="#!" class="text-inherit">Privacy Policy</a> | <a href="#!" class="text-inherit">News</a></p>
+					<p class="copyright">© 2018 BCT Inc - All rights reserved</p>
 				</div>
-                <div class="col-lg-auto">
-                    <a class="button button-lg" href="order.html">BUY NOW</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+				<!-- <div class="col-lg-auto">
+					<a class="button button-lg" href="terminal.html">BUY NOW</a>
+				</div> -->
+			</div>
+		</div>
+	</footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/page-scroll-to-id@1.5.9/jquery.malihu.PageScroll2id.js"></script>
-    <script src="libs/owl-carousel-2/owl.carousel.min.js"></script>
-    <script src="libs/selectize.min.js"></script>
-    <script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/page-scroll-to-id@1.5.9/jquery.malihu.PageScroll2id.js"></script>
+  <script src="libs/owl-carousel-2/owl.carousel.min.js"></script>
+  <script src="libs/selectize.min.js"></script>
+  <script src="js/scripts.js"></script>
 
 </body>
 
