@@ -214,14 +214,16 @@ hr {
     width: 668px;
 	}
 }
-.rtl {
-	direction: rtl;
-}
-.img-slim {
-  transform: rotateY(180deg);
-  max-width: initial;
-  width: 800px;
-  margin-right: -350px;
+@media (min-width: 1200px) {
+	.rtl {
+		direction: rtl;
+	}
+	.img-slim {
+	  transform: rotateY(180deg);
+	  max-width: initial;
+	  width: 800px;
+	  margin-right: -350px;
+	}
 }
 
 .basic-select.single {
@@ -232,10 +234,16 @@ hr {
 		box-shadow: none;
 		padding: 24px 30px 6px 15px;
 		font-weight: 700;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 		> input {
 			line-height: 15px !important;
 		}
 	}
+}
+
+form .button {
+	font-size: 20px;
 }
 
 .switch {
