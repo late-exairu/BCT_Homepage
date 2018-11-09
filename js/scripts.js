@@ -28,9 +28,10 @@ $(document).ready(function () {
 
 	$(".owl-2").owlCarousel({
 		items: 1,
-		startPosition: 2,
+		startPosition: 0,
 		nav: true,
 		navText: ["", ""],
+		autoplay:true
 	});
 
 	$(".owl-3").owlCarousel({
