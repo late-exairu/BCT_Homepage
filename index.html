@@ -120,7 +120,8 @@
 				<div class="row justify-content-center">
 					<div class="col-lg-10">
 						<div class="video-container">
-							<iframe src="https://www.youtube.com/embed/s9xOaCD4ZKs?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<!-- <iframe src="https://www.youtube.com/embed/s9xOaCD4ZKs?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+							<div id="bigPlayer"></div>
 						</div>
 					</div>
 				</div>
@@ -669,13 +670,35 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<script src="https://unpkg.com/page-scroll-to-id@1.5.9/jquery.malihu.PageScroll2id.js"></script>
+	<script src="https://www.youtube.com/player_api"></script>
 	<script src="libs/owl-carousel-2/owl.carousel.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 	<script src="libs/selectize.min.js"></script>
 	<script src="libs/jquery.reel.js"></script>
 	<script src="libs/mask/jquery.mask.min.js"></script>
-	<script src="https://www.youtube.com/player_api"></script>
 	<script src="js/scripts.js"></script>
+
+	<script>
+		function onYouTubeIframeAPIReady() {
+			function onBigPlayerStateChange(event) {
+				if (event.data === 0) {
+					refreshBigVideo();
+				}
+			}
+			function refreshBigVideo() {
+				document.querySelector('#section-2 .video-container').innerHTML = '<div id="bigPlayer"></div>';
+				var bigPlayer = new YT.Player('bigPlayer', {
+					height: '780',
+					width: '1280',
+					videoId: 's9xOaCD4ZKs',
+					events: {
+					'onStateChange': onBigPlayerStateChange
+				}
+				});
+			}
+			refreshBigVideo();
+		}
+</script>
 
 </body>
 

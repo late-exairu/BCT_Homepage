@@ -111,34 +111,27 @@ $(document).ready(function () {
 
 	$('.video-modal').click(function (e) {
 		var videoId = $(this).attr('data-id');
-		//var videoDescription = $(this).attr('data-description');
-		//var $iframe = '<div class="video-container"><iframe src="https://www.youtube.com/embed/' + videoId + '?rel=0" frameborder="0" allowfullscreen></iframe></div>';
-		//$('#youtubeModal').html($iframe + videoDescription);
-		//$('#youtubeModal').html($iframe);
-
-			var player = new YT.Player('player', {
-				height: '780',
-				width: '1280',
-				videoId: videoId,
-				events: {
-					'onReady': onPlayerReady,
-					'onStateChange': onPlayerStateChange
-				}
-			});
-
-		    // autoplay video
-		    function onPlayerReady(event) {
-		    	event.target.playVideo();
-		    }
-
-		    // when video ends
-		    function onPlayerStateChange(event) {
-		    	if (event.data === 0) {
-					$('#overlay').trigger('click');
-		    	}
+		var player = new YT.Player('player', {
+			height: '780',
+			width: '1280',
+			videoId: videoId,
+			events: {
+				'onReady': onPlayerReady,
+				'onStateChange': onPlayerStateChange
 			}
+		});
+
+		function onPlayerReady(event) {
+			event.target.playVideo();
+		}
+
+		function onPlayerStateChange(event) {
+			if (event.data === 0) {
+				$('#overlay').trigger('click');
+			}
+		}
 			
-			$('#overlay,#youtubeModal').addClass('open');
+		$('#overlay,#youtubeModal').addClass('open');
 	});
 	
 	$('#overlay').click(function () {
