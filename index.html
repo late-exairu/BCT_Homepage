@@ -680,23 +680,20 @@
 
 	<script>
 		function onYouTubeIframeAPIReady() {
+			var bigPlayer;
 			function onBigPlayerStateChange(event) {
 				if (event.data === 0) {
-					refreshBigVideo();
+					bigPlayer.stopVideo();
 				}
 			}
-			function refreshBigVideo() {
-				document.querySelector('#section-2 .video-container').innerHTML = '<div id="bigPlayer"></div>';
-				var bigPlayer = new YT.Player('bigPlayer', {
-					height: '780',
-					width: '1280',
-					videoId: 's9xOaCD4ZKs',
-					events: {
-					'onStateChange': onBigPlayerStateChange
+			bigPlayer = new YT.Player('bigPlayer', {
+				height: '780',
+				width: '1280',
+				videoId: 's9xOaCD4ZKs',
+				events: {
+				'onStateChange': onBigPlayerStateChange
 				}
-				});
-			}
-			refreshBigVideo();
+			});
 		}
 </script>
 
