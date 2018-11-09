@@ -377,6 +377,9 @@ ul.list-blue {
   text-align: center;
   color: white;
   visibility: hidden; }
+  #youtubeModal iframe {
+    max-width: 100%;
+    max-height: 80vh; }
   #youtubeModal .video-container {
     margin-bottom: 10px; }
   #youtubeModal.open {

@@ -474,6 +474,11 @@ ul.list-blue {
   color: white;
   visibility: hidden;
 
+  iframe{
+    max-width: 100%;
+    max-height: 80vh;
+  }
+
   .video-container {
     margin-bottom: 10px;
   }
