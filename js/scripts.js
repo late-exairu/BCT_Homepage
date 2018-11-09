@@ -39,10 +39,12 @@ $(document).ready(function () {
 	});
 
 	$(window).on("scroll", function (e) {
-		if(window.pageYOffset + 500 > $('.section-9').offset().top){
-			if (!owl2AutoPlayed){
-				owl2.trigger('play.owl.autoplay', [3500]);
-				owl2AutoPlayed = true;
+		if ($('.section-9').length){
+			if (window.pageYOffset + 500 > $('.section-9').offset().top) {
+				if (!owl2AutoPlayed) {
+					owl2.trigger('play.owl.autoplay', [3500]);
+					owl2AutoPlayed = true;
+				}
 			}
 		}
 	});
