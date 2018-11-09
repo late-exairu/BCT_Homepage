@@ -114,6 +114,9 @@ $(document).ready(function () {
 	$('#checkbox-toggle').change(function () {
 		$('.card-form').toggleClass('active');
 	});
+	$('#checkbox-form').change(function () {
+		$('.form-checked').toggleClass('hidden');
+	});
 
 
 	var select_html = '';
@@ -133,7 +136,7 @@ $(document).ready(function () {
 	$('.cc-cvc').mask('0000');
 
 	$('.payment-method input[type=radio]').change(function () {
-		$('.pay-form').toggleClass('d-none');
+		$('.pay-form').toggleClass('hidden');
 	});
 
 	$('.requestTerminal').click(function (e) {
