@@ -94,6 +94,9 @@ hr {
 
 .inputGroup {
 	margin-bottom: 2rem;
+	.col-auto {
+    max-width: 33.6%;
+	}
 	img {
 		filter: grayscale(100%);
 		opacity: 0.5;
@@ -113,7 +116,10 @@ hr {
 	}
 	h3 {
 		color: #D6D6D6;
-		line-height: .95;
+		// line-height: .95;
+		line-height: .7;
+    font-size: 50px;
+    letter-spacing: -1.9px;
 		transition: all 0.2s;
 	}
 	.desc {
@@ -135,7 +141,6 @@ hr {
 			color: inherit;
 		}
 		h3 {
-			line-height: .95;
 			color: inherit;
 		}
 	}
@@ -179,6 +184,17 @@ hr {
 .pay-form {
 	opacity: 1;
 	transition: all 0.2s;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	&.hidden {
+		opacity: 0;
+	}
+	@media (max-width: 767px) {
+		&.hidden {
+			display: none;
+		}
+	}
 	.input {
 		padding-right: 45px;
 		&.user {
@@ -295,6 +311,55 @@ form .button {
 		}
 	}
 }	
+
+.checkbox-group {
+	color: #9C9C9C;
+	margin-bottom: 1rem;
+	.checkbox-label {
+		display: inline-flex;
+		cursor: pointer;
+		position: relative;
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 21px;
+			height: 21px;
+			border: 1px solid #D6D6D6;
+			border-radius: 3px;
+			margin-right: 15px;
+			transition: .2s;
+		}
+		&:after {
+			content: '';
+			width: 8px;
+	    height: 16px;
+	    position: absolute;
+	    top: 7px;
+	    left: 8px;
+	    border: 2px solid #0080CA;
+	    border-top: 0;
+	    border-left: 0;
+	    transform: translateY(-50%) rotate(45deg);
+			transition: .2s;
+	    opacity: 0;
+		}
+	}
+	&:hover .checkbox-label:before {
+		opacity: 0.8;
+	}
+	input {
+		display: none;
+		&:checked ~ .checkbox-label:after {
+			opacity: 1;
+		}
+	}
+}
+
+.form-checked {
+	&.hidden {
+		display: none;
+	}
+}
 
 .card-form {
 	.bct-toggle {

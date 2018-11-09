@@ -560,6 +560,8 @@ hr {
 
 .inputGroup {
   margin-bottom: 2rem; }
+  .inputGroup .col-auto {
+    max-width: 33.6%; }
   .inputGroup img {
     filter: grayscale(100%);
     opacity: 0.5;
@@ -576,7 +578,9 @@ hr {
     display: none; }
   .inputGroup h3 {
     color: #D6D6D6;
-    line-height: .95;
+    line-height: .7;
+    font-size: 50px;
+    letter-spacing: -1.9px;
     transition: all 0.2s; }
   .inputGroup .desc {
     border-top: 1px solid #D6D6D6;
@@ -594,7 +598,6 @@ hr {
       border-color: #0080CA;
       color: inherit; }
     .inputGroup input:checked ~ label h3, .inputGroup label:hover h3 {
-      line-height: .95;
       color: inherit; }
 
 .input {
@@ -629,7 +632,15 @@ hr {
 
 .pay-form {
   opacity: 1;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .pay-form.hidden {
+    opacity: 0; }
+  @media (max-width: 767px) {
+    .pay-form.hidden {
+      display: none; } }
   .pay-form .input {
     padding-right: 45px; }
     .pay-form .input.user {
@@ -715,6 +726,45 @@ form .button {
       color: inherit; }
     .switch label input[type=checkbox]:checked ~ .usd {
       color: #0080CA; }
+
+.checkbox-group {
+  color: #9C9C9C;
+  margin-bottom: 1rem; }
+  .checkbox-group .checkbox-label {
+    display: inline-flex;
+    cursor: pointer;
+    position: relative; }
+    .checkbox-group .checkbox-label:before {
+      content: '';
+      display: inline-block;
+      width: 21px;
+      height: 21px;
+      border: 1px solid #D6D6D6;
+      border-radius: 3px;
+      margin-right: 15px;
+      transition: .2s; }
+    .checkbox-group .checkbox-label:after {
+      content: '';
+      width: 8px;
+      height: 16px;
+      position: absolute;
+      top: 7px;
+      left: 8px;
+      border: 2px solid #0080CA;
+      border-top: 0;
+      border-left: 0;
+      transform: translateY(-50%) rotate(45deg);
+      transition: .2s;
+      opacity: 0; }
+  .checkbox-group:hover .checkbox-label:before {
+    opacity: 0.8; }
+  .checkbox-group input {
+    display: none; }
+    .checkbox-group input:checked ~ .checkbox-label:after {
+      opacity: 1; }
+
+.form-checked.hidden {
+  display: none; }
 
 .card-form .bct-toggle {
   display: none; }
