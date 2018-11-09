@@ -436,7 +436,47 @@ ul.list-blue {
   margin: 50px 0; }
   .article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
     font-weight: 500;
-    margin: 1em 0 0.5em; }
+    margin: 0.5em 0 0.25em;
+    letter-spacing: initial; }
+  .article h2 {
+    font-size: 28px; }
+  .article h3 {
+    font-size: 22px; }
+  .article hr {
+    margin: 1em 0; }
+  .article img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; }
+  .article .cb-logo {
+    display: block;
+    margin: 40px 0 20px; }
+  .article .author {
+    display: flex;
+    align-items: center;
+    margin: 12px 0; }
+    .article .author img {
+      width: 42px;
+      height: 42px;
+      margin: 0 10px 0 0; }
+    .article .author p {
+      margin: 0; }
+      .article .author p b {
+        font-weight: 700; }
+
+.article-author {
+  border: 2px solid #9C9C9C;
+  padding: 20px;
+  display: flex;
+  margin: 0 0 30px; }
+  .article-author .pic {
+    width: 100px;
+    height: 100px;
+    margin: 0 20px 0 0; }
+  .article-author .name {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 12px; }
 
 hr {
   border-color: #ccc;
