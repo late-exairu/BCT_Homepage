@@ -27,7 +27,7 @@
 	<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
 		<div class="container">
 
-			<a class="navbar-brand fz-0" href="#!">
+			<a class="navbar-brand fz-0" href="index.html">
 				<img src="img/logo.svg" alt="" width="102">
 			</a>
 
@@ -56,26 +56,26 @@
 		  </div> -->
 
 		  <ul class="navbar-nav align-items-center fz-0">
-	      <li class="nav-item">
-	        <a class="button" href="order.html">BUY NOW</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="cart.html"><img src="img/c.svg" alt="" width="14"></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#!"><img src="img/serch.svg" alt="" width="15"></a>
-	      </li>
-	    </ul>
+				<li class="nav-item">
+					<a class="button" href="terminal.html">BUY NOW</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="cart.html"><img src="img/c.svg" alt="" width="14"></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#!"><img src="img/serch.svg" alt="" width="15"></a>
+				</li>
+			</ul>
 
 		</div>
 	</nav>
 
 	<div class="container">
 		<ul class="order-nav">
-			<li class="item done">Buy Terminal</li>
-			<li class="item done">Delivery</li>
-			<li class="item done">Cart</li>
-			<li class="item current">Payment</li>
+        	    <li class="item done">Buy Terminal</li>
+        	    <li class="item done">Cart</li>
+        	    <li class="item current">Payment</li>
+        	    <li class="item">Delivery</li>
 		</ul>
 
 		<div class="pay-info">
@@ -87,19 +87,19 @@
 						<input id="radio1" name="radio" type="radio" checked/>
 						<label for="radio1">
 							<div class="top"><img src="img/cards.png" widht="325" height="47"></div>
-							<p class="desc">Pay $37,250 with credit card</p>
+							<p class="desc">Pay $37,250</p>
 						</label>
 					</div>
 					<div class="inputGroup">
 						<input id="radio2" name="radio" type="radio"/>
 						<label for="radio2">
 							<div class="top"><img src="img/bc-logo.svg" widht="329" height="57"></div>
-							<p class="desc">Pay 372,500 BCT Coins</p>
+							<p class="desc">Pay 372,500 BCT</p>
 						</label>
 					</div>
 				</div>
 		
-				<div class="pay-form-wrap">
+				<div class="pay-form-wrap" action="delivery.html">
 					<form class="pay-form" id="pay-usd">
 						<div class="line">
 							<input class="input user" type="text" name="" placeholder="Cardholder’s Name">
@@ -119,49 +119,25 @@
 							<input class="input card cc-number" type="text" name="" placeholder="Card Number">
 						</div>
 		
-						<button class="button button-lg w-100" type="submit">Confirm</button>
+						<p class="tip">By clicking CONFIRM I agree with the <a href="#">License Agreement</a></p>
 		
-						<p class="tip">If payment is made by credit card, the Monthly Service Fee shall be charged on monthly basis for the duration of the Period.</p>
-		
-						<p class="tip">*CVV/CVC/CID is the card security code, unique three digits number on the back of your card separate form this number</p>
-		
-						<div class="policies">
-							<a href="#">Satisfaction Guarantee</a>
-							<a href="#">Subscription Cancellation Policy</a>
-						</div>
+						<a class="button button-lg w-100" href="delivery.html">Confirm</a>
 					</form>
 		
 					<form class="pay-form hidden" id="pay-bct">
 						<div class="line">
+							<input class="input wallet cc-number" type="text" name="" placeholder="Wallet address">
+						</div>
+
+						<div class="line">
 							<input class="input mail cc-number" type="text" name="" placeholder="Holder email">
 						</div>
 		
-						<div class="line">
-							<input class="input wallet cc-number" type="text" name="" placeholder="Wallet address">
-						</div>
+						<p class="tip">By clicking CONFIRM I agree to transfer BCT tokens to complete this purchase and I agree with the <a href="#">License Agreement</a></p>
 		
-						<div class="line">
-							<label class="d-flex">
-								<input class="checkbox" type="checkbox">
-								<div class="text-center privacy"> I agree to the
-									<a href="#"> Contribution Agreement, Distribution Terms, Terms of Use </a>
-									&
-									<a href="#"> Privacy Policy </a></span>
-								</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<img src="img/qr-code.png" alt="">
-							</div>
-							<div class="col">
-								<div class="border-top border-bottom mb-2 receiving-wrap">
-									<div class="receiving">Receiving address:</div>
-									<div class="address">0x23453485739</div>
-									<div class="address">4857394857345</div>
-								</div>
-								<a class="button button-lg no-mg float-right" href="completed.html">Confirm</a>
-							</div>
-						</div>
+						<p class="tip">We will email you with further instructions</p>
+						
+						<a class="button button-lg w-100" href="delivery.html">Confirm</a>
 					</form>
 				</div>
 			</div>
@@ -224,17 +200,17 @@
 	<footer class="page-footer text-center text-white mt-auto">
 		<div class="container">
 			<div class="row align-items-start">
-				<div class="col-lg-auto fz-0">
+				<!-- <div class="col-lg-auto fz-0">
 					<img src="img/logo.svg" alt="" width="102">
-				</div>
+				</div> -->
 				<div class="col-lg py-4 py-lg-0">
 					<p class="outro">BCT Inc is the developer of Blockchain Terminal, an institutional-grade cryptocurrency platform and app store that unites traditional investment with the emerging cryptocurrency industry. Blockchain Terminal users will purchase applications and crypto-trading tools developed by third-party blockchain developers using BCT tokens. BCT has a non-profit mandate and is a wholly owned Cayman subsidiary of the BCT Foundation, a non-profit Cayman Island foundation.</p>
 
-					<p class="copyright">© 2018 BCT Inc - All rights reserved | <a href="#!" class="text-inherit">Privacy Policy</a> | <a href="#!" class="text-inherit">News</a></p>
+					<p class="copyright">© 2018 BCT Inc - All rights reserved</p>
 				</div>
-				<div class="col-lg-auto">
-					<a class="button button-lg" href="order.html">BUY NOW</a>
-				</div>
+				<!-- <div class="col-lg-auto">
+					<a class="button button-lg" href="terminal.html">BUY NOW</a>
+				</div> -->
 			</div>
 		</div>
 	</footer>

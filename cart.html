@@ -28,7 +28,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div class="container">
 
-            <a class="navbar-brand fz-0" href="#!">
+            <a class="navbar-brand fz-0" href="index.html">
                 <img src="img/logo.svg" alt="" width="102">
             </a>
 
@@ -57,16 +57,16 @@
             </div> -->
 
             <ul class="navbar-nav align-items-center fz-0">
-                <li class="nav-item">
-                    <a class="button" href="order.html">BUY NOW</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cart.html"><img src="img/c.svg" alt="" width="14"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#!"><img src="img/serch.svg" alt="" width="15"></a>
-                </li>
-            </ul>
+				<li class="nav-item">
+					<a class="button" href="terminal.html">BUY NOW</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="cart.html"><img src="img/c.svg" alt="" width="14"></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#!"><img src="img/serch.svg" alt="" width="15"></a>
+				</li>
+			</ul>
 
         </div>
     </nav>
@@ -76,14 +76,14 @@
         <div class="w-100 mt-auto mb-auto">
         	<ul class="order-nav">
         	    <li class="item done">Buy Terminal</li>
-        	    <li class="item done">Delivery</li>
         	    <li class="item current">Cart</li>
         	    <li class="item">Payment</li>
+        	    <li class="item">Delivery</li>
         	</ul>
 			
 			<div class="new-cart">
 				<div class="new-cart__left">
-					<form class="cart-form" action="checkout.html">
+					<form class="cart-form" action="payment.html">
 						<p class="cart-form__title">What is in your cart?</p>
 			
 						<div class="cart-form__item">
@@ -105,7 +105,7 @@
 	                                <option>Qty: 10</option>
 	                            </select>
 	                        </div>
-							<div class="cart-form__price">$1,250 <span>(12,500 BCT)</span></div>
+							<div class="cart-form__price">$1,250 <span>or</span> 12,500 BCT</div>
 						</div>
 			
 						<div class="cart-form__item">
@@ -120,23 +120,25 @@
 	                                <option>Qty: 5 Years</option>
 	                            </select>
 	                        </div>
-							<div class="cart-form__price">$36,000 <span>(360,000 BCT)</span></div>
+							<div class="cart-form__price">$36,000 <span>or</span> 360,000 BCT</div>
 						</div>
 
 						<div class="cart-form__separator"></div>
 			
 						<div class="cart-form__item">
 							<div class="cart-form__desc">
-								Subtotal
+								Initial Payment:
+								<p class="cart-form__tip">Terminal + 1 month service fee</p>
 							</div>
-							<div class="cart-form__price">$37,250 <span>(372,500 BCT)</span></div>
+							<div class="cart-form__price">$2,250 <span>or</span> 22,500 BCT</div>
 						</div>
 			
 						<div class="cart-form__item">
 							<div class="cart-form__desc">
-								Shipping
+								Remaining Monthly Service Fees:
+								<p class="cart-form__tip">Charged monthly</p>
 							</div>
-							<div class="cart-form__price">FREE <span>(USA)</span></div>
+							<div class="cart-form__price">$35,000 <span>or</span> 350,000 BCT</div>
 						</div>
 
 						<div class="cart-form__separator"></div>
@@ -145,15 +147,17 @@
 							<div class="cart-form__desc">
 								Total
 							</div>
-							<div class="cart-form__price">$37,250</div>
+							<div class="cart-form__price">$37,250 <span>or</span> 372,500 BCT</div>
 						</div>
 
-						<a class="cart-form__submit button button-lg" href="payment.html">Checkout</a>
+						<div class="cart-form__separator"></div>
+
+						<a class="cart-form__submit button button-lg" href="payment.html">Next</a>
 					</form>
 				</div>
 
 				<div class="new-cart__right">
-					<img src="img/main.png" width="597" height="588">
+					<img src="img/payment.png" width="597" height="588">
 				</div>
 			</div>
 

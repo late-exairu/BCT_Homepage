@@ -301,16 +301,17 @@
 
 	&__tips{
 		margin: 20px 0 0;
-		border-top: 1px solid #d5d5d5;
-		border-bottom: 1px solid #d5d5d5;
+		padding: 1px 0 0;
+		/*border-top: 1px solid #d5d5d5;
+		border-bottom: 1px solid #d5d5d5;*/
 	}
 
 	&__tip{
 		font-size: 15px;
-		color: #333;
+		color: #D6D6D6;
 		line-height: 1.28;
-		margin: 2px 0px 0;
-		padding: 10px 0;
+		margin: 12px 0px 0;
+		padding: 0 0;
 		font-weight: 700;
 
 		&:first-child{
@@ -808,7 +809,7 @@
 
 	.button{
 		height: 50px;
-		margin: 10px 0 0 auto;
+		margin: 20px 0 0 auto;
 		width: 200px;
 		text-align: center;
 		display: flex;
@@ -850,7 +851,7 @@
 		&__item{
 			font-size: 20px;
 			flex-direction: column;
-			margin: 0 0 10px;
+			margin: 0 0 30px;
 		}
 
 		&__qty{
@@ -1137,8 +1138,8 @@
 	}
 
 	.tip{
-		font-size: 13px;
-		font-weight: 300;
+		font-size: 14px;
+		font-weight: 400;
 		color: #9C9C9C;
 		margin: 16px 0 0;
 		line-height: 1.36;
