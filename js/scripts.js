@@ -117,6 +117,7 @@ $(document).ready(function () {
 			height: '780',
 			width: '1280',
 			videoId: videoId,
+			playerVars: {rel: 0},
 			events: {
 				'onReady': onPlayerReady,
 				'onStateChange': onPlayerStateChange
