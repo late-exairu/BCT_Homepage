@@ -415,6 +415,9 @@ ul.list-blue {
   background-color: transparent !important;
   top: calc(100%) !important; }
 
+.tooltip-inner {
+  font-size: 10px !important; }
+
 .promo {
   font-size: 17px;
   font-weight: 500;
