@@ -628,8 +628,10 @@ hr {
   border-radius: 4px;
   border-color: #d5d5d5;
   box-shadow: none;
-  padding: 23px 30px 6px 15px;
+  padding: 24px 30px 6px 15px;
   font-weight: 700; }
+  .basic-select.single .selectize-input > input {
+    line-height: 15px !important; }
 
 .switch label {
   margin: 0;
