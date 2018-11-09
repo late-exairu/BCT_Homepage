@@ -183,12 +183,14 @@ hr {
 
 .pay-form {
 	opacity: 1;
+	visibility: visible;
 	transition: all 0.2s;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	&.hidden {
 		opacity: 0;
+		visibility: hidden;
 	}
 	@media (max-width: 767px) {
 		&.hidden {
