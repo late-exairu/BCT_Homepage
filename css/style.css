@@ -643,29 +643,35 @@ hr {
 
 .pay-form {
   opacity: 1;
+  visibility: visible;
   transition: all 0.2s;
   height: 100%;
   display: flex;
   flex-direction: column; }
   .pay-form.hidden {
-    opacity: 0; }
+    opacity: 0;
+    visibility: hidden; }
   @media (max-width: 767px) {
     .pay-form.hidden {
       display: none; } }
-  .pay-form .input {
-    padding-right: 45px; }
-    .pay-form .input.user {
-      background: url(../img/form-user.svg) calc(100% - 10px) center no-repeat; }
-    .pay-form .input.date {
-      background: url(../img/form-date.svg) calc(100% - 10px) center no-repeat; }
-    .pay-form .input.cvv {
-      background: url(../img/form-lock.svg) calc(100% - 10px) center no-repeat; }
-    .pay-form .input.card {
-      background: url(../img/form-card.svg) calc(100% - 10px) center no-repeat; }
-    .pay-form .input.mail {
-      background: url(../img/form-mail.svg) calc(100% - 10px) center no-repeat; }
-    .pay-form .input.wallet {
-      background: url(../img/form-wallet.svg) calc(100% - 10px) center no-repeat; }
+  .pay-form .input.user {
+    padding-right: 45px;
+    background: url(../img/form-user.svg) calc(100% - 10px) center no-repeat; }
+  .pay-form .input.date {
+    padding-right: 45px;
+    background: url(../img/form-date.svg) calc(100% - 10px) center no-repeat; }
+  .pay-form .input.cvv {
+    padding-right: 45px;
+    background: url(../img/form-lock.svg) calc(100% - 10px) center no-repeat; }
+  .pay-form .input.card {
+    padding-right: 45px;
+    background: url(../img/form-card.svg) calc(100% - 10px) center no-repeat; }
+  .pay-form .input.mail {
+    padding-right: 45px;
+    background: url(../img/form-mail.svg) calc(100% - 10px) center no-repeat; }
+  .pay-form .input.wallet {
+    padding-right: 45px;
+    background: url(../img/form-wallet.svg) calc(100% - 10px) center no-repeat; }
   .pay-form .tip {
     font-size: 14px;
     color: #9C9C9C;
