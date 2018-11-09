@@ -145,7 +145,6 @@ ul.list-blue {
       transform: translateY(-50%) rotate(180deg); }
     .owl-theme .owl-nav [class*="owl-"]:not(.disabled):hover {
       opacity: 0.65; }
-
 .owl-theme .owl-dots {
   position: relative; }
   .owl-theme .owl-dots .owl-dot span {
@@ -319,7 +318,6 @@ ul.list-blue {
     position: relative;
     z-index: 2;
     min-height: 270px; }
-
 .owl-2 .owl-dots {
   position: absolute;
   bottom: 10px;
@@ -337,7 +335,6 @@ ul.list-blue {
     padding: 10px; }
   .owl-3 a p {
     color: #878787; }
-
 .owl-3 .owl-nav [class*="owl-"] {
   top: 40%; }
 
@@ -439,7 +436,47 @@ ul.list-blue {
   margin: 50px 0; }
   .article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
     font-weight: 500;
-    margin: 1em 0 0.5em; }
+    margin: 0.5em 0 0.25em;
+    letter-spacing: initial; }
+  .article h2 {
+    font-size: 28px; }
+  .article h3 {
+    font-size: 22px; }
+  .article hr {
+    margin: 1em 0; }
+  .article img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; }
+  .article .cb-logo {
+    display: block;
+    margin: 40px 0 20px; }
+  .article .author {
+    display: flex;
+    align-items: center;
+    margin: 12px 0; }
+    .article .author img {
+      width: 42px;
+      height: 42px;
+      margin: 0 10px 0 0; }
+    .article .author p {
+      margin: 0; }
+      .article .author p b {
+        font-weight: 700; }
+
+.article-author {
+  border: 2px solid #9C9C9C;
+  padding: 20px;
+  display: flex;
+  margin: 0 0 30px; }
+  .article-author .pic {
+    width: 100px;
+    height: 100px;
+    margin: 0 20px 0 0; }
+  .article-author .name {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 12px; }
 
 hr {
   border-color: #ccc;
@@ -447,7 +484,8 @@ hr {
 
 .max-flex {
   display: flex;
-  flex: 1 1; }
+  flex: 1 1;
+  overflow: hidden; }
 
 .form-group {
   margin-bottom: 20px; }
@@ -616,22 +654,74 @@ hr {
   .img-pay-form {
     max-width: initial;
     width: 668px; } }
+@media (min-width: 1200px) {
+  .rtl {
+    direction: rtl; }
 
-.rtl {
-  direction: rtl; }
-
-.img-slim {
-  transform: rotateY(180deg);
-  max-width: initial;
-  width: 400px; }
-
+  .img-slim {
+    transform: rotateY(180deg);
+    max-width: initial;
+    width: 800px;
+    margin-right: -350px; } }
 .basic-select.single .selectize-input {
   font-size: 1rem;
   border-radius: 4px;
   border-color: #d5d5d5;
   box-shadow: none;
-  padding: 23px 30px 6px 15px;
-  font-weight: 700; }
+  padding: 24px 30px 6px 15px;
+  font-weight: 700;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+  .basic-select.single .selectize-input > input {
+    line-height: 15px !important; }
+
+form .button {
+  font-size: 20px; }
+
+.switch label {
+  margin: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center; }
+  .switch label .lever {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 15px;
+    transition: background .3s ease;
+    margin: 0 10px; }
+    .switch label .lever:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #0080CA;
+      border-radius: 21px;
+      left: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: .2s; }
+  .switch label input[type=checkbox] {
+    display: none; }
+    .switch label input[type=checkbox] ~ .bct {
+      color: #0080CA;
+      order: -1; }
+    .switch label input[type=checkbox]:checked + .lever:after {
+      left: 33px; }
+    .switch label input[type=checkbox]:checked ~ .bct {
+      color: inherit; }
+    .switch label input[type=checkbox]:checked ~ .usd {
+      color: #0080CA; }
+
+.card-form .bct-toggle {
+  display: none; }
+.card-form.active .bct-toggle {
+  display: block; }
+.card-form.active .usd-toggle {
+  display: none; }
 
 .order-summary {
   margin: 40px 0 30px;
@@ -669,76 +759,84 @@ hr {
   .px {
     padding-left: 50px !important;
     padding-right: 50px !important; } }
-
 @media (min-width: 768px) {
   .page-footer {
     font-size: 20px;
     padding: 28px 0; } }
-
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 75px;
     letter-spacing: -1.9px; }
+
   h2, .h2 {
     font-size: 65px;
     letter-spacing: -1.9px; }
+
   h3, .h3 {
     font-size: 50px;
     letter-spacing: -1.9px; }
+
   h4, .h4 {
     font-size: 30px; }
+
   h5, .h5 {
     font-size: 26px; }
+
   .fz-30 {
     font-size: 30px;
     letter-spacing: -1px;
     line-height: 1.35; }
+
   .fz-24 {
     font-size: 24px;
     line-height: 1.3; }
+
   .fz-20 {
     font-size: 20px;
     line-height: 1.3; }
+
   .button-lg {
     font-size: 20px; }
+
   .px {
     padding-left: 88px !important;
     padding-right: 88px !important; } }
-
 @media (min-width: 1350px) {
   .container {
     max-width: 1310px; } }
-
 @media (max-width: 1349px) {
   .li {
     padding: 10px 15px; } }
-
 @media (max-width: 991px) {
   .owl-header .owl-dots .owl-dot {
     flex: 0 0 50%;
     max-width: 50%; } }
-
 @media (max-width: 767px) {
   .section-3, .section-5, .section-7, .section-8 {
     padding-top: 4rem;
     padding-bottom: 3rem; }
+
   .section-4, .section-6, .section-10 {
     padding-top: 4rem;
     padding-bottom: 4rem; } }
-
 @media (max-width: 575px) {
   .navbar-brand img {
     width: 100px; }
+
   .button-lg {
     width: 100%; }
+
   .owl-header .owl-dots .owl-dot {
     flex: 0 0 100%;
     max-width: 100%; }
+
   .video-wrap {
     padding: 15px 0; }
+
   .owl-theme .owl-nav [class*="owl-"] {
     width: 30px;
     height: 30px; }
+
   .owl-2 .slide {
     padding-top: 50px;
     padding-bottom: 50px; }
@@ -746,35 +844,29 @@ hr {
       min-height: 340px; }
   .owl-2 .owl-dots {
     bottom: 30px; }
+
   .px {
     padding-left: 40px;
     padding-right: 40px; } }
-
 .cart h1 {
   font-size: 65px;
   color: black; }
-
 .cart h3 {
   font-size: 35px; }
-
 .cart .text-small {
   font-size: 10px;
   color: black; }
-
 .cart .gray-row {
   font-family: 'SF Pro Text';
   font-size: 23px;
   font-weight: bold;
   color: #4B4B4B; }
-
 .cart .normal-row {
   font-size: 20px;
   color: black; }
-
 .cart .selectize-input {
   border: 0;
   box-shadow: none; }
-
 .cart .selectize-control.single .selectize-input:after {
   border: 0;
   background: url("../img/svg/arrow-more.svg");
@@ -783,7 +875,8 @@ hr {
   height: 14px;
   transform: rotate(90deg);
   right: 0px; }
-
 .cart .selectize-input {
   padding-right: 15px;
   font-size: 20px; }
+
+/*# sourceMappingURL=style.css.map */

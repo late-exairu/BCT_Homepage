@@ -554,7 +554,74 @@ ul.list-blue {
 
 	h1,h2,h3,h4,h5,h6{
 		font-weight: 500;
-		margin: 1em 0 0.5em;
+		margin: 0.5em 0 0.25em;
+		letter-spacing: initial;
+	}
+
+	h2{
+		font-size: 28px;
+	}
+
+	h3{
+		font-size: 22px;
+	}
+
+	hr{
+		margin: 1em 0;
+	}
+
+	img{
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+
+	.cb-logo{
+		display: block;
+		margin: 40px 0 20px;
+	}
+
+	.author{
+		display: flex;
+		align-items: center;
+		margin: 12px 0;
+
+		img{
+			width: 42px;
+			height: 42px;
+			margin: 0 10px 0 0;
+		}
+
+		p{
+			margin: 0;
+
+			b{
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.article-author{
+	border: 2px solid #9C9C9C;
+	padding: 20px;
+	display: flex;
+	margin: 0 0 30px;
+
+	.pic{
+		width: 100px;
+		height: 100px;
+		margin: 0 20px 0 0;
+	}
+
+	.name{
+		font-size: 22px;
+		font-weight: 700;
+		margin: 0 0 12px;
+	}
+
+	.desc{
+
 	}
 }
 

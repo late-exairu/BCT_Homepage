@@ -6,6 +6,7 @@ hr {
 .max-flex {
 	display: flex;
 	flex: 1 1;
+	overflow: hidden;
 }
 
 .form-group {
@@ -213,13 +214,16 @@ hr {
     width: 668px;
 	}
 }
-.rtl {
-	direction: rtl;
-}
-.img-slim {
-  transform: rotateY(180deg);
-  max-width: initial;
-  width: 400px;
+@media (min-width: 1200px) {
+	.rtl {
+		direction: rtl;
+	}
+	.img-slim {
+	  transform: rotateY(180deg);
+	  max-width: initial;
+	  width: 800px;
+	  margin-right: -350px;
+	}
 }
 
 .basic-select.single {
@@ -228,10 +232,83 @@ hr {
 		border-radius: 4px;
 		border-color: #d5d5d5;
 		box-shadow: none;
-		padding: 23px 30px 6px 15px;
+		padding: 24px 30px 6px 15px;
 		font-weight: 700;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+		> input {
+			line-height: 15px !important;
+		}
 	}
 }
+
+form .button {
+	font-size: 20px;
+}
+
+.switch {
+	label {
+    margin: 0;
+		cursor: pointer;
+		display: inline-flex;
+		align-items: center;
+		.lever {
+    	display: inline-block;
+	    position: relative;
+	    width: 60px;
+	    height: 30px;
+	    border: 1px solid;
+	    border-radius: 15px;
+	    transition: background .3s ease;
+	    margin: 0 10px;
+			&:after {
+		    content: '';
+    		display: inline-block;
+		    position: absolute;
+		    width: 20px;
+		    height: 20px;
+		    background-color: #0080CA;
+		    border-radius: 21px;
+		    left: 5px;
+		    top: 50%;
+		    transform: translateY(-50%);
+		    transition: .2s;
+			}
+		}
+		input[type=checkbox] {
+			display: none;
+			~ .bct {
+				color: #0080CA;
+				order: -1;
+			}
+			&:checked {
+				+ .lever:after {
+	  			left: 33px;
+				}
+				~ .bct {
+					color: inherit;
+				}
+				~ .usd {
+					color: #0080CA;
+				}
+			}
+		}
+	}
+}	
+
+.card-form {
+	.bct-toggle {
+		display: none;
+	}
+	&.active {
+		.bct-toggle {
+			display: block;
+		}
+		.usd-toggle {
+			display: none;
+		}
+	}
+}					
 
 .order-summary{
 	margin: 40px 0 30px;

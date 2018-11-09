@@ -61,23 +61,24 @@
 		</div>
 	</nav>
 
-  <div class="container max-flex">
-	  <div class="w-100 my-auto py-4">
+	<section class="max-flex py-4">
+	  <div class="container my-auto">
 
 	    <div class="row align-items-center justify-content-center">
         <div class="col-md-8 col-lg-4 pl-lg-4 py-3">
           <img src="img/payment-2.png" alt="">
 				</div>
 	      <div class="col-lg order-lg-first pr-xl-0 py-3">
-	        <form action="payment.html">
+	        <form action="payment.html" class="card-form">
 	          <h3 class="text-blue pb-1 mb-3">What is in your cart?</h3>
 	          <div class="fz-30">
 		          <div class="row justify-content-between mb-1">
 		            <div class="col-sm">
 		              Blockchain Terminal:
-		              <div class="tip">Including 32” HD monitor, wireless mouse and keyboard, private key device and Thin Client Hub</div>
+		              <div class="tip bct-toggle">1.25% of the number of BCT tokens in your wallet on Nov 1, 2018</div>
+		              <div class="tip usd-toggle">Including 32” HD monitor, wireless mouse and keyboard, private key device and Thin Client Hub</div>
 		            </div>
-		            <div class="col-auto font-weight-medium select-wrap">
+		            <div class="col-auto font-weight-medium select-wrap usd-toggle">
 		              <select>
 		                <option selected>Qty: 1</option>
 		                <option>Qty: 2</option>
@@ -91,21 +92,24 @@
 		                <option>Qty: 10</option>
 		              </select>
 		            </div>
-		            <div class="col-auto font-weight-medium">$1,250</div>
+		            <div class="col-auto font-weight-medium bct-toggle ml-auto">1.25% of your BCT</div>
+		            <div class="col-auto font-weight-medium usd-toggle">$1,250</div>
 		          </div>
 		          <div class="row justify-content-between mb-1">
 		            <div class="col-sm">
 		              Monthly Service fee:
-		              <div class="tip">For the first month. Same card will be charge on monthly basis</div>
+		              <div class="tip bct-toggle">1% of the number of BCT tokens in your wallet on Nov 1, 2018</div>
+		              <div class="tip usd-toggle">For the first month. Same card will be charge on monthly basis</div>
 		            </div>
-		            <div class="col-auto font-weight-medium select-wrap">
+		            <div class="col-auto font-weight-medium select-wrap usd-toggle">
 		              <select>
 		                <option selected>Qty: 36</option>
 		                <option>Qty: 48</option>
 		                <option>Qty: 60</option>
 		              </select>
 		            </div>
-		            <div class="col-auto font-weight-medium">$36,000</div>
+		            <div class="col-auto font-weight-medium bct-toggle ml-auto">1% of your BCT</div>
+		            <div class="col-auto font-weight-medium usd-toggle">$36,000</div>
 		          </div>
 		          <hr>
 		          <div class="row justify-content-end mb-1">
@@ -113,27 +117,36 @@
 		              Initial Payment:
 		              <div class="tip">Terminal + 1 month service fee</div>
 		            </div>
-		            <div class="col-auto font-weight-medium">$2,250</div>
+		            <div class="col-auto font-weight-medium bct-toggle ml-auto">2.25% of your BCT</div>
+		            <div class="col-auto font-weight-medium usd-toggle">$2,250</div>
 		          </div>
-		          <div class="row justify-content-end mb-1">
+		          <div class="row usd-toggle justify-content-end mb-1">
 		            <div class="col-sm">
 		              Remaining Monthly Service Fees:
 		              <div class="tip">Charged monthly</div>
 		            </div>
 		            <div class="col-auto font-weight-medium">$35,000</div>
 		          </div>
-	          	<hr>
-	            <div class="row text-blue font-weight-medium">
+	          	<hr class="usd-toggle">
+	            <div class="row usd-toggle text-blue font-weight-medium">
 	              <div class="col">Total</div>
 	              <div class="col-auto">$37,250</div>
             	</div>
+	            <div class="bct-toggle font-weight-medium mt-4 pt-4">A fixed number of BCT will be deducted from your account monthly until your balance is insufficiant to cover the monthly service fee.</div>
             	<hr>
             </div>
-            <div class="row align-items-center mt-3 pt-1">
-            	<div class="col">
-            		
+            <div class="row align-items-center justify-content-center mt-3 pt-3">
+            	<div class="col-auto col-sm mb-3 fz-30 font-weight-medium">
+            		<div class="switch">
+          				<label>
+                    <input id="checkbox-toggle" type="checkbox" checked>
+                    <span class="lever"></span>
+                    <span class="bct">BCT</span>
+                    <span class="usd">USD</span>
+                  </label>
+                </div>
             	</div>
-            	<div class="col-auto">
+            	<div class="col-sm-auto mb-3">
             		<a class="button button-lg" href="payment.html">Next</a>
             	</div>
             </div>
@@ -141,8 +154,8 @@
         </div>
       </div>
 
-    </div>
-	</div>
+		</div>
+	</section>
 
 	<footer class="page-footer text-center text-white mt-auto">
 		<div class="container">
