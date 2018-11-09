@@ -522,12 +522,21 @@ ul.list-blue {
 }
 
 .promo{
-	font-size: 22px;
+	font-size: 17px;
 	font-weight: 500;
 	line-height: 1.36;
+	text-transform: uppercase;
+	font-weight: 300;
+
+	br{
+		display: none;
+	}
 
 	@media only screen and (max-width : 992px) {
 		font-size: 16px;
+		br{
+			display: block;
+		}
 	}
 
 	@media only screen and (max-width : 768px) {
