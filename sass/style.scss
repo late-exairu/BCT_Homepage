@@ -431,10 +431,6 @@ ul.list-blue {
   }
 }
 
-.px {
-  padding: 0 88px;
-}
-
 .page-footer {
   padding: 28px 0;
   background-color: #ebebeb;
@@ -496,6 +492,7 @@ ul.list-blue {
 }
 
 .reel {
+  width: 100% !important;
   overflow: visible !important;
   height: auto !important;
 }
@@ -512,7 +509,6 @@ ul.list-blue {
   height: 18px;
   bottom: 0px;
   margin: auto;
- // padding-top: 10px;
 }
 
 .reel-indicator {

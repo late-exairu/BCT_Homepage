@@ -47,7 +47,6 @@ $(document).ready(function () {
 			},
 		},
 		margin: 10,
-		autoHeight: true,
 		dots: false,
 		nav: true,
 		navText: ["", ""],

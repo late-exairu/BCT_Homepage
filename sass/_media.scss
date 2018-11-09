@@ -1,4 +1,22 @@
+@media (min-width: 576px) {
+
+	.px {
+  	padding-left: 50px !important;
+  	padding-right: 50px !important;
+	}
+
+}
+
 @media (min-width: 768px) {
+
+	.page-footer {
+		font-size: 20px;
+		padding: 28px 0;
+	}
+
+}
+
+@media (min-width: 1200px) {
 
 	h1, .h1 {
 	  font-size: 75px;
@@ -34,18 +52,9 @@
 	  font-size: 20px;
 	}
 
-	.page-footer {
-		font-size: 20px;
-		padding: 28px 0;
-	}
-
-}
-
-@media (min-width: 1200px) {
-
-	.col-xl-20 {
-		flex: 0 0 20%;
-		max-width: 20%;
+	.px {
+	  padding-left: 88px !important;
+	  padding-right: 88px !important;
 	}
 
 }
@@ -72,9 +81,7 @@
 
 @media (max-width: 1199px) {
 
-	.px {
-    	padding: 0 50px;
-	}
+	
 
 }
 
@@ -147,7 +154,8 @@
 	}
 
 	.px {
-    	padding: 0 40px;
+    	padding-left: 40px;
+    	padding-right: 40px;
 	}
 
 }
