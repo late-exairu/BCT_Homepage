@@ -122,10 +122,10 @@ $(document).ready(function () {
 
 	$('.cc-number').mask('0000 0000 0000 0000');
 	$('.cc-date').mask('00 / 00');
-	$('.cc-cvc').mask('0000');
+	$('.cc-cvc').mask('000');
 
 	$('.payment-method input[type=radio]').change(function () {
-		$('.pay-form').toggleClass('hidden');
+		$('.pay-form').toggleClass('d-none');
 	});
 
 });

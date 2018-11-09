@@ -54,86 +54,88 @@
 	</nav>
 
 	<div class="container max-flex">
-		<div class="w-100 mt-auto mb-auto">
-			
-			<form class="delivery-form" action="cart.html">
-				<h2 class="delivery-form__title">Where should we send your order?</h2>
-			
-				<div class="delivery-form__cols">
-					<div class="delivery-form__col">
-						<h3 class="delivery-form__col-title">Enter your name and address:</h3>
-			
-						<div class="delivery-form__line">
-							<input type="text" class="delivery-form__input" placeholder="First Name">
-						</div>
-			
-						<div class="delivery-form__line">
-							<input type="text" class="delivery-form__input" placeholder="Last Name">
-						</div>
-			
-						<div class="delivery-form__multi-line">
-							<div class="delivery-form__line">
-								<input type="text" class="delivery-form__input" placeholder="Street Address">
-							</div>
-			
-							<div class="delivery-form__line">
-								<input type="text" class="delivery-form__input" placeholder="Apt, Suite, Building">
-							</div>
-						</div>
-			
-						<div class="delivery-form__multi-line">
-							<div class="delivery-form__line zipcode">
-								<label class="delivery-form__label">Zip Code</label>
-								<input type="text" class="delivery-form__input --with-label" placeholder="Apt, Suite, Building (Optional)" value="04106">
-							</div>
-			
-							<div class="delivery-form__line city">
-								<label class="delivery-form__label">City, State</label>
-			
-								<select class="basic-select city">
-									<option>aaa</option>
-									<option>bbb</option>
-									<option>ccc</option>
-									<option>ddd</option>
-									<option>eee</option>
-								</select>
-							</div>
-						</div>
-			
-						<div class="delivery-form__line">
-							<label class="delivery-form__label">Country</label>
-			
-							<select class="basic-select country">
-									<option>aaa</option>
-									<option>bbb</option>
-									<option>ccc</option>
-									<option>ddd</option>
-									<option>eee</option>
-							</select>
-						</div>
-					</div>
-			
-					<div class="delivery-form__col">
-						<h3 class="delivery-form__col-title">What’s your contact information?</h3>
-			
-						<div class="delivery-form__line">
-							<input type="email" class="delivery-form__input" placeholder="Email Address">
-						</div>
-			
-						<div class="delivery-form__line">
-							<input type="phone" class="delivery-form__input" placeholder="Phone Number">
-						</div>
-			
-						<div class="delivery-form__tips">
-							<p class="delivery-form__tip">We'll email you a receipt and send order updates to you mobile</p>
-							<p class="delivery-form__tip">The phone number you enter can't be changed after you place your order, so please make sure it's correct.</p>
-							<p class="delivery-form__tip">We will contact you to arrange payment for shipping<br/> (US continental shipping cost around 80USD).</p>
-						</div>
-						
-						<a class="button button-lg" href="cart.html">Next</a>
-					</div>
+		<div class="w-100 my-auto py-4">
+
+			<div class="row align-items-center justify-content-center">
+				<div class="col-md-8 col-lg-3 py-3 rtl">
+          <img src="img/slim.png" alt="" class="img-slim">
 				</div>
-			</form>
+				<div class="col-lg order-lg-first py-3">
+					<h3 class="text-blue pb-1 mb-3">Where should we send your order?</h3>
+
+					<form class="delivery-form" action="completed.html">
+						<div class="row">
+							<div class="col-sm-6">
+								<h4 class="mb-3">Enter your name and address:</h4>
+								<div class="form-group">
+									<input type="text" class="input" placeholder="First Name">
+								</div>
+								<div class="form-group">
+									<input type="text" class="input" placeholder="Last Name">
+								</div>
+								<div class="row row-1">
+									<div class="col-7">
+										<div class="form-group">
+											<input type="text" class="input" placeholder="Street Address">
+										</div>
+									</div>
+									<div class="col">
+										<div class="form-group">
+											<input type="text" class="input" placeholder="Apt, Suite, Building">
+										</div>
+									</div>
+								</div>
+								<div class="row row-1">
+									<div class="col">
+										<div class="has-label">
+											<label class="label">Zip Code</label>
+											<input type="text" class="input" placeholder="Apt, Suite, Building (Optional)" value="04106">
+										</div>
+									</div>
+									<div class="col-7">
+										<div class="form-group has-label">
+											<label class="label">City, State</label>
+											<select class="basic-select">
+												<option>South Portland ,ME</option>
+												<option>bbb</option>
+												<option>ccc</option>
+												<option>ddd</option>
+												<option>eee</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="form-group has-label">
+									<label class="label">Country</label>
+									<select class="basic-select">
+											<option>United States</option>
+											<option>bbb</option>
+											<option>ccc</option>
+											<option>ddd</option>
+											<option>eee</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<h4 class="mb-3">What’s your contact information?</h4>
+								<div class="form-group">
+									<input type="email" class="input" placeholder="Email Address">
+								</div>
+								<div class="form-group">
+									<input type="phone" class="input" placeholder="Phone Number">
+								</div>
+								<div class="tips">
+									<p class="tip">We'll email you a receipt and send order updates to you mobile</p>
+									<p class="tip">The phone number you enter can't be changed after you place your order, so please make sure it's correct.</p>
+									<p class="tip">We will contact you to arrange payment for shipping (US continental shipping cost around 80USD).</p>
+								</div>
+								<a class="button button-lg btn-block" href="completed.html">Next</a>
+							</div>
+						</div>
+					</form>
+
+				</div>
+			</div>
 
 		</div>
 	</div>

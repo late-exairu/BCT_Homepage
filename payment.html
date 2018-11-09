@@ -54,125 +54,88 @@
 	</nav>
 
 	<div class="container max-flex">
-		<div class="w-100 my-auto">
+		<div class="w-100 my-auto py-4">
+					
+			<h3 class="text-blue pb-1 mb-3">Payment Method</h3>
+			<div class="row justify-content-center">
 
-			<div class="pay-info">
-				<div class="left">
-					<h2>Payment Method</h2>
+				<div class="col-md-8 col-lg-5 py-3">
+					<img src="img/cart_1.png" alt="" class="img-pay-form">
+				</div>
+
+				<div class="col-lg-7 order-lg-first text-center py-3">
 			
-					<div class="payment-method">
-						<div class="inputGroup">
+					<div class="row payment-method fz-20">
+						<div class="col-sm-6 inputGroup">
 							<input id="radio1" name="radio" type="radio" checked/>
 							<label for="radio1">
-								<div class="top"><img src="img/cards.png" widht="325" height="47"></div>
-								<p class="desc">Pay $37,250</p>
+								<div><img src="img/cards.png" alt=""></div>
+								<div class="desc">Pay $2,250</div>
 							</label>
 						</div>
-						<div class="inputGroup">
+						<div class="col-sm-6 inputGroup text-left">
 							<input id="radio2" name="radio" type="radio"/>
 							<label for="radio2">
-								<div class="top"><img src="img/bc-logo.svg" widht="329" height="57"></div>
-								<p class="desc">Pay 372,500 BCT</p>
+								<span class="form-row">
+									<span class="col-auto">
+										<img src="img/BCT.svg" alt="" width="94">
+									</span>
+									<span class="col">
+										<h3>Tokens</h3>
+										<div class="desc">Pay 22,500 BCT</div>
+									</span>
+								</span>
 							</label>
 						</div>
 					</div>
 			
-					<div class="pay-form-wrap" action="delivery.html">
-						<form class="pay-form" id="pay-usd">
-							<div class="line">
-								<input class="input user" type="text" name="" placeholder="Cardholder’s Name">
-							</div>
-						
-							<div class="multi-line">
-								<div class="line">
-									<input class="input date" type="text" name="" placeholder="Walid Thru">
-								</div>
-						
-								<div class="line">
-									<input class="input cvv cc-cvc" type="text" name="" placeholder="CVV/CVC/CID*">
-								</div>
-							</div>
-							
-							<div class="line">
-								<input class="input card cc-number" type="text" name="" placeholder="Card Number">
-							</div>
-			
-							<p class="tip">By clicking CONFIRM I agree with the <a href="#">License Agreement</a></p>
-			
-							<a class="button button-lg w-100" href="delivery.html">Confirm</a>
-						</form>
-			
-						<form class="pay-form hidden" id="pay-bct">
-							<div class="line">
-								<input class="input wallet cc-number" type="text" name="" placeholder="Wallet address">
-							</div>
+					<div class="row">
 
-							<div class="line">
-								<input class="input mail cc-number" type="text" name="" placeholder="Holder email">
-							</div>
+						<div class="col-sm-6">
+							<form class="pay-form" action="delivery.html" id="pay-usd">
+								<div class="form-group">
+									<input class="input user" type="text" name="" placeholder="Cardholder’s Name">
+								</div>
+								<div class="form-row">
+									<div class="col-6">
+										<div class="form-group">
+											<input class="input date" type="text" name="" placeholder="Walid Thru">
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="form-group">
+											<input class="input cvv cc-cvc" type="text" name="" placeholder="CVV/CVC">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<input class="input card cc-number" type="text" name="" placeholder="Card Number">
+								</div>
+								<p class="tip mt-3 pb-3">By clicking CONFIRM I agree with the <a href="#!" class="font-weight-medium">License Agreement</a></p>
+								<a class="button button-lg btn-block" href="delivery.html">Confirm</a>
+							</form>
+						</div>
 			
-							<p class="tip">By clicking CONFIRM I agree to transfer BCT tokens to complete this purchase and I agree with the <a href="#">License Agreement</a></p>
-			
-							<p class="tip">We will email you with further instructions</p>
-							
-							<a class="button button-lg w-100" href="delivery.html">Confirm</a>
-						</form>
+						<div class="col-sm-6">
+							<form class="pay-form d-none" action="delivery.html" id="pay-bct">
+								<div class="form-group">
+									<input class="input wallet cc-number" type="text" name="" placeholder="Your Wallet containing BCT tokens">
+								</div>
+								<div class="form-group">
+									<input class="input mail cc-number" type="email" name="" placeholder="Your Email">
+								</div>
+								<p class="tip mt-3">By clicking CONFIRM I agree to transfer BCT tokens to complete this purchase and I agree with the <a href="#!" class="font-weight-medium">License Agreement</a></p>
+								<p class="tip pb-3">We will email you with further instructions</p>
+								<a class="button button-lg btn-block" href="delivery.html">Confirm</a>
+							</form>
+						</div>
+
 					</div>
+
 				</div>
 
-				<div class="right">
-					<img src="img/mon.png">
-				</div>
 			</div>
-
-			<!-- <div class="payment-info clearfix">
-				<div class="line bigger">
-					<div>Price Details</div>
-				</div>
-
-				<div class="separator"></div>
-
-				<div class="line">
-					<div>Order ID:</div>
-					<div>019284575616191</div>
-				</div>
-				
-				<div class="line">
-					<div>Subtotal:</div>
-					<div>$37,250</div>
-				</div>
-				
-				<div class="line">
-					<div>Total:</div>
-					<div>$37,250</div>
-				</div>
-
-				<div class="separator"></div>
-				
-				<div class="line">
-					<div>Due Amount:</div>
-					<div>372,500 BCT</div>
-				</div>
-
-				<a class="button button-lg float-right" href="completed.html">Submit</a>
-			</div>
-
-			<div class="guarantee">
-				<section>
-					<h6>OUR GUARANTEE</h6>
-					<p>The Blockchain Terminal is supported by a money-back guarantee so that you can have peace of mind. We’ve got to earn our customer’s confidence and demonstrate why buying one of our Terminals is a wise choice. To do this, we’re making it a risk-free choice.</p>
-					<p>We place the customer at the center of everything we do and we stand behind our products and service. It’s our way of helping you feel confident utilizing our product.</p>
-					<p>For details, please refer to our Return Policy.<br/></p>
-					<p><br/>Yours,<br/>Josh Dettman</p>
-				</section>
-				
-				<section>
-					<h6>Return Policy</h6>
-					<p>We stand behind all our products and are confident that they will perform as designed. </p>
-					<p>If you are not 100% satisfied with the Blockchain Terminal, you may return it within 30 days of purchase for a refund—no questions asked. After 30 days, we will consider return requests that are defective due to hardware or software issues.</p>
-					<p>We will reimburse the original purchase price to you according to your original method of payment.</p>
-				</section>
-			</div> -->
+			
 		</div>
 	</div>
 
