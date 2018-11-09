@@ -523,7 +523,15 @@ ul.list-blue {
 }
 
 .tooltip-inner {
-  font-size: 10px !important;
+  font-size: 12px !important;
+}
+
+.article .requestTerminalForm{
+  max-width: 410px;
+  h2{
+    color: black;
+    font-weight: 100;
+  }
 }
 
 .promo{

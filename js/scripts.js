@@ -139,5 +139,10 @@ $(document).ready(function () {
 		$('.pay-form').toggleClass('hidden');
 	});
 
+	$('.requestTerminal').click(function (e) {
+		e.preventDefault();
+		$('.requestTerminalForm').removeClass('d-none');
+	});
+
 });
 

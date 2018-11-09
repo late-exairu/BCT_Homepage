@@ -35,7 +35,6 @@
     </div>
   </nav>
 
-
   <main class="max-flex py-4">
   	<div class="container my-auto">
   		<div class="row justify-content-center">
@@ -106,8 +105,16 @@
 
 						<p class="small"><i>Disclaimer : The author is invested in ETH, which is mentioned in this article. Neither the author nor CryptoBrieng has asked for, or received, any consideration of any kind for this independent assessment.</i></p>
 
-						<a class="button button-lg mt-2" href="terminal.html">Request A Blockchain Terminal</a>
+						<a class="button button-lg mt-2 requestTerminal" href="terminal.html">Request A Blockchain Terminal</a>
 
+						<form action="" class="requestTerminalForm d-none">
+							<h2 class="mb-3">What's your contact information?</h2>
+							<input type="text" placeholder="First Name" class="input mb-3">
+							<input type="text" placeholder="Last Name" class="input mb-3">
+							<input type="email" placeholder="Email Address" class="input mb-3">
+							<input type="text" placeholder="Phone Number" class="input mb-3">
+							<input type="button" value="Submit" class="button button-lg btn-block">
+						</form>
 					</article>
 					<div class="article-author flex-wrap">
 						<div class="col-md-auto pl-md-0 text-center mb-3 mb-md-0">
@@ -147,6 +154,7 @@
   <script src="https://unpkg.com/page-scroll-to-id@1.5.9/jquery.malihu.PageScroll2id.js"></script>
   <script src="libs/owl-carousel-2/owl.carousel.min.js"></script>
   <script src="libs/selectize.min.js"></script>
+  <script src="libs/mask/jquery.mask.min.js"></script>
   <script src="js/scripts.js"></script>
 
 </body>
