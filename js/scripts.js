@@ -26,12 +26,26 @@ $(document).ready(function () {
 		dots: false,
 	});
 
-	$(".owl-2").owlCarousel({
+	var owl2 = $(".owl-2");
+	var owl2AutoPlayed = false;
+	owl2.owlCarousel({
 		items: 1,
 		startPosition: 0,
 		nav: true,
 		navText: ["", ""],
-		autoplay:true
+		//autoplay:true,
+		loop:true,
+		autoplayTimeout: 3500,
+	});
+
+	$(window).on("scroll", function (e) {
+		if(window.pageYOffset + 500 > $('.section-9').offset().top){
+			if (!owl2AutoPlayed){
+				console.log('started');
+				owl2.trigger('play.owl.autoplay', [3500]);
+				owl2AutoPlayed = true;
+			}
+		}
 	});
 
 	$(".owl-3").owlCarousel({
