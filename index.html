@@ -53,7 +53,7 @@
 		    </ul>
 		  </div> -->
 
-		  <div class="promo">Buy any Cryptocurrency at<br/> the Guaranteed Lowest Price</div>
+		  <div class="promo d-none d-md-block">Buy any Cryptocurrency at <br class="d-lg-none"> the Guaranteed Lowest Price</div>
 
 		  <!-- <ul class="navbar-nav align-items-center flex-row fz-0">
 			<li class="nav-item">
@@ -74,7 +74,7 @@
 		<div class="container pb-xl-3">
 			<a class="row d-inline-flex align-items-center text-inherit mx-0 terminal-switch-wrap" href="article.html">
 				<div class="col-auto pl-0 pr-2">
-					<img src="img/mini-double.png" width="45">
+					<img src="img/mini-double.png" alt="" width="45">
 				</div>
 				<div class="col-auto px-0">
 					Crypto Funds <br> Click Here <br> For 2-Screen <br> Terminal 
@@ -424,27 +424,31 @@
 					<p>The BCT Thin Client Hub is a fully-functional, Linux- based PC. The BCT Hub contains the Terminal software and is compatible with specific third-party applications that operate in the BCT ecosystem.</p>
 				</div>
 			</div>
-			<video class="w-50" loop autoplay playsinline muted poster="https://thumbs.gfycat.com/AshamedUniformGopher-poster.jpg">
-				<source src="https://giant.gfycat.com/AshamedUniformGopher.webm" type="video/webm">
-				<source src="https://giant.gfycat.com/AshamedUniformGopher.mp4" type="video/mp4">
-			</video>
+			<div class="row justify-content-center">
+				<div class="col-lg-9 col-xl-6">
+					<video class="w-100" loop autoplay playsinline muted poster="https://thumbs.gfycat.com/AshamedUniformGopher-poster.jpg">
+						<source src="https://giant.gfycat.com/AshamedUniformGopher.webm" type="video/webm">
+						<source src="https://giant.gfycat.com/AshamedUniformGopher.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
 			<div class="row justify-content-center mt-3 py-3">
 				<div class="col-xl-9">
 					<div class="row justify-content-center">
 						<div class="col-md-6 col-lg-4 pb-3">
-							<div class="card-border">
+							<div class="card-border h-100">
 								<p class="text-uppercase font-weight-medium text-blue">Transparent Audit Trail</p>
 								<p>BCT time-stamps all transactions onto the immutable, distributed ledger. Notes and documentation are also recorded in a secure and tamper-proof environment.</p>
 							</div>
 						</div>
 						<div class="col-md-6 col-lg-4 pb-3">
-							<div class="card-border">
+							<div class="card-border h-100">
 								<p class="text-uppercase font-weight-medium text-blue">Business Rule Logic</p>
 								<p>Alerts are propagated through the pre-trade and post-trade compliance rules specified in the order management and execution management systems.</p>
 							</div>
 						</div>
 						<div class="col-md-6 col-lg-4 pb-3">
-							<div class="card-border">
+							<div class="card-border h-100">
 								<p class="text-uppercase font-weight-medium text-blue">Compliance Monitoring</p>
 								<p>Real-time transaction monitoring enables immediate remote ad hoc audits of transactional data, should compliance issues arise.</p>
 							</div>
@@ -660,11 +664,16 @@
 			</div>
 		</div>
 	</footer>
-	
-	<div id="youtubeModal">
-		<div id="player"></div>
+
+	<div class="modal fade" id="youtubeModal">
+	  <div class="modal-dialog modal-dialog-centered modal-lg">
+	  	<div class="modal-content">
+		    <div class="video-container">
+					<div id="player"></div>
+				</div>
+			</div>
+	  </div>
 	</div>
-	<div id="overlay"></div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -692,11 +701,11 @@
 				videoId: 's9xOaCD4ZKs',
 				playerVars: {rel: 0},
 				events: {
-				'onStateChange': onBigPlayerStateChange
+					'onStateChange': onBigPlayerStateChange
 				}
 			});
 		}
-</script>
+	</script>
 
 </body>
 

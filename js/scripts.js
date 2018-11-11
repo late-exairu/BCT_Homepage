@@ -33,11 +33,9 @@ $(document).ready(function () {
 		startPosition: 0,
 		nav: true,
 		navText: ["", ""],
-		//autoplay:true,
-		loop:true,
+		loop: true,
 		autoplayTimeout: 3500,
 	});
-
 	$(window).on("scroll", function (e) {
 		if ($('.section-9').length){
 			if (window.pageYOffset + 500 > $('.section-9').offset().top) {
@@ -109,8 +107,6 @@ $(document).ready(function () {
 	$('[data-toggle="tooltip"]').tooltip();
 
 
-
-
 	$('.video-modal').click(function (e) {
 		var videoId = $(this).attr('data-id');
 		var player = new YT.Player('player', {
@@ -123,26 +119,21 @@ $(document).ready(function () {
 				'onStateChange': onPlayerStateChange
 			}
 		});
-
 		function onPlayerReady(event) {
 			event.target.playVideo();
 		}
-
 		function onPlayerStateChange(event) {
 			if (event.data === 0) {
-				$('#overlay').trigger('click');
+				$('#youtubeModal').modal('hide')
 			}
 		}
-			
-		$('#overlay,#youtubeModal').addClass('open');
+		$('#youtubeModal').modal('show')
 	});
+	$('#youtubeModal').on('hide.bs.modal', function () {
+		$('#youtubeModal .video-container').html('<div id="player"></div>');
+	})
 	
-	$('#overlay').click(function () {
-		$(this).removeClass('open');
-		$('#youtubeModal').removeClass('open');
-		$('#youtubeModal').html('<div id="player"></div>');
-	});
-	
+
 	$('#checkbox-toggle').change(function () {
 		$('.card-form').toggleClass('active');
 	});
@@ -169,11 +160,6 @@ $(document).ready(function () {
 
 	$('.payment-method input[type=radio]').change(function () {
 		$('.pay-form').toggleClass('hidden');
-	});
-
-	$('.requestTerminal').click(function (e) {
-		e.preventDefault();
-		$('.requestTerminalForm').removeClass('d-none');
 	});
 
 });
