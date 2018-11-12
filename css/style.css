@@ -623,16 +623,22 @@ form .button {
     transition: all 0.2s;
     padding-top: 10px;
     margin-top: 10px; }
-  .inputGroup a {
-    max-width: 74px;
+  .inputGroup .owl-6 {
+    padding: 0 15px; }
+  .inputGroup .a {
+    min-width: 74px;
     font-size: 8px;
     text-align: left;
     border: 1px solid #D6D6D6;
     border-radius: 6px;
-    width: 100%;
     padding: 10px 4px; }
-    .inputGroup a img {
-      width: 25px; }
+    .inputGroup .a img {
+      width: 25px !important; }
+  .inputGroup .owl-theme .owl-nav [class*="owl-"] {
+    width: 16px;
+    height: 20px;
+    background-color: transparent !important;
+    background-position: center right !important; }
   .inputGroup input:checked ~ label, .inputGroup label:hover {
     border-color: #0080CA; }
     .inputGroup input:checked ~ label img, .inputGroup label:hover img {

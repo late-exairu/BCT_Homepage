@@ -141,17 +141,25 @@ form .button {
 		padding-top: 10px;
 		margin-top: 10px;
 	}
-	a {
-    max-width: 74px;
+	.owl-6 {
+		padding: 0 15px;
+	}
+	.a {
+    min-width: 74px;
     font-size: 8px;
     text-align: left;
     border: 1px solid #D6D6D6;
     border-radius: 6px;
-    width: 100%;
     padding: 10px 4px;
     img {
-    	width: 25px;
+    	width: 25px !important;
     }
+	}
+	.owl-theme .owl-nav [class*="owl-"] {
+		width: 16px;
+		height: 20px;
+		background-color: transparent !important;
+    background-position: center right !important;
 	}
 	input:checked ~ label, label:hover {
 		border-color: #0080CA;
