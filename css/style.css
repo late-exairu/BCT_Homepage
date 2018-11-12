@@ -285,6 +285,21 @@ ul.list-blue {
       background-image: url(../img/play.svg);
       background-size: cover;
       transition: 0.2s; }
+    .video-modal .img-video:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: #000; }
+  .video-modal .title {
+    position: absolute;
+    bottom: 65%;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    line-height: 1.28; }
   .video-modal div {
     transition: 0.2s;
     color: rgba(255, 255, 255, 0.25); }
