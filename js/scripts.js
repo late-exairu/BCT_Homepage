@@ -194,5 +194,13 @@ $(document).ready(function () {
 		});
 	});
 
+	$('.tab-a').click(function () {
+		$('.tab-a').removeClass('active');
+		$(this).addClass('active');
+		$('.pills').removeClass('active');
+		var href = $(this).attr('href');
+		$(href).addClass('active');
+	});
+
 });
 
