@@ -108,7 +108,7 @@ $(document).ready(function () {
 		if ($('.section-9').length) {
 			if (window.pageYOffset + 500 > $('.section-9').offset().top) {
 				if (!owl2AutoPlayed) {
-					owl2.trigger('play.owl.autoplay', [5000]);
+					owl2.trigger('to.owl.carousel', [0,0]);
 					owl2AutoPlayed = true;
 				}
 			}
@@ -117,7 +117,7 @@ $(document).ready(function () {
 		if ($('.section-4').length) {
 			if (window.pageYOffset + 400 > $('.section-4').offset().top) {
 				if (!owl4Viewed) {
-					owl4.trigger('to.owl.carousel', 0);
+					owl4.trigger('to.owl.carousel', [0,0]);
 					owl4Viewed = true;
 				}
 			}
