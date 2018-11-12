@@ -87,10 +87,16 @@ $(document).ready(function () {
 		},
 		margin: 10,
 		autoHeight: true,
-		dots: false,
+		dots: true,
 		nav: true,
 		navText: ["", ""],
+		onChanged: function (event) {
+			$(".owl-5 .owl-dots").css('display', 'none');
+			$(event.target).find('.owl-dots').css('display','block');
+		}
 	});
+
+	$(".owl-5 .owl-dots").css('display','none');
 
 	$(window).on("scroll", function (e) {
 		if ($('.section-9').length) {
