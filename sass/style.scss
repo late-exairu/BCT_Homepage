@@ -478,6 +478,13 @@ ul.list-blue {
     right: 0;
   }
 }
+
+.owl-5 .owl-dots{
+  position: relative;
+  top: 10px;
+  opacity: 0;
+  transition: .3s ease;
+}
   
 .section-10 {
   padding-top: 105px;
