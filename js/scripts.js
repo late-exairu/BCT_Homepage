@@ -34,7 +34,8 @@ $(document).ready(function () {
 		nav: true,
 		navText: ["", ""],
 		loop: true,
-		autoplayTimeout: 3500,
+		autoplayTimeout: 5000,
+		smartSpeed: 1000
 	});
 
 	$(".owl-3").owlCarousel({
@@ -95,7 +96,7 @@ $(document).ready(function () {
 		if ($('.section-9').length) {
 			if (window.pageYOffset + 500 > $('.section-9').offset().top) {
 				if (!owl2AutoPlayed) {
-					owl2.trigger('play.owl.autoplay', [3500]);
+					owl2.trigger('play.owl.autoplay', [5000]);
 					owl2AutoPlayed = true;
 				}
 			}
