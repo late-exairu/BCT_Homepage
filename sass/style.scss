@@ -111,8 +111,9 @@ h1, .h1, h2, .h2 {
   width: 157px;
 }
 .promo {
-  line-height: 1.36;
+  line-height: 1.16;
   text-transform: uppercase;
+  padding: 0 0 1px;
 }
 
 .button {
@@ -477,6 +478,13 @@ ul.list-blue {
     left: 0;
     right: 0;
   }
+}
+
+.owl-5 .owl-dots{
+  position: relative;
+  top: 10px;
+  opacity: 0;
+  transition: .3s ease;
 }
   
 .section-10 {

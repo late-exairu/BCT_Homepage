@@ -99,12 +99,10 @@ $(document).ready(function () {
 		nav: true,
 		navText: ["", ""],
 		onChanged: function (event) {
-			$(".owl-5 .owl-dots").css('display', 'none');
-			$(event.target).find('.owl-dots').css('display', 'block');
+			$(".owl-5 .owl-dots").css('opacity', '0');
+			$(event.target).find('.owl-dots').css('opacity', '1');
 		}
 	});
-
-	$(".owl-5 .owl-dots").css('display', 'none');
 
 	$(window).on("scroll", function (e) {
 		if ($('.section-9').length) {
