@@ -35,10 +35,10 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="order-nav">
 					<li class="item done">Order</li>
-					<li class="item current">Shipping</li>
-					<li class="item">BCT</li>
-					<li class="item">Payment</li>
-					<li class="item">Receipt</li>
+					<li class="item done">Delivery</li>
+					<li class="item done">Payment</li>
+					<li class="item current">Receipt</li>
+				</ul>
 				</ul>
 			</div>
 
@@ -64,88 +64,36 @@
 
 	<section class="max-flex py-4">
 		<div class="container my-auto">
-
-			<div class="row align-items-center justify-content-center">
-				<div class="col-lg-6 col-xl-3 py-3 rtl-xl">
-          <img src="img/slim.png" alt="" class="img-slim">
+			
+			<div class="row payment-info fz-20">
+				<div class="col-lg-7 py-3">
+					<img src="img/bct-monitor.png" alt="">
 				</div>
-				<div class="col-xl order-xl-first py-3">
-					<h3 class="text-blue">Terminal delivery address</h3>
-
-					<form class="delivery-form" action="1_BCT.html">
-						<div class="row">
-							<div class="col-lg-6 d-flex flex-column py-3">
-								<h4 class="mb-3">Enter your name and address:</h4>
-								<div class="form-group">
-									<input type="text" class="input" placeholder="First Name">
-								</div>
-								<div class="form-group">
-									<input type="text" class="input" placeholder="Last Name">
-								</div>
-								<div class="row row-1">
-									<div class="col-7">
-										<div class="form-group">
-											<input type="text" class="input" placeholder="Street Address">
-										</div>
-									</div>
-									<div class="col">
-										<div class="form-group">
-											<input type="text" class="input" placeholder="Apt, Suite, Building">
-										</div>
-									</div>
-								</div>
-								<div class="row row-1">
-									<div class="col">
-										<div class="has-label">
-											<label class="label">Zip Code</label>
-											<input type="text" class="input" placeholder="Apt, Suite, Building (Optional)" value="04106">
-										</div>
-									</div>
-									<div class="col-7">
-										<div class="form-group has-label">
-											<label class="label">City, State</label>
-											<select class="basic-select">
-												<option>South Portland, ME</option>
-												<option>bbb</option>
-												<option>ccc</option>
-												<option>ddd</option>
-												<option>eee</option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="has-label">
-									<label class="label">Country</label>
-									<select class="basic-select">
-											<option>United States</option>
-											<option>bbb</option>
-											<option>ccc</option>
-											<option>ddd</option>
-											<option>eee</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-lg-6 d-flex flex-column py-3">
-								<h4 class="mb-3">What’s your contact information?</h4>
-								<div class="form-group">
-									<input type="email" class="input" placeholder="Email Address">
-								</div>
-								<div class="form-group">
-									<input type="phone" class="input" placeholder="Phone Number">
-								</div>
-								<div class="tips">
-									<p class="tip">We'll email you a receipt and send order updates to you mobile</p>
-									<p class="tip">The phone number you enter can't be changed after you place your order, so please make sure it's correct.</p>
-								</div>
-								<div class="form-row justify-content-between font-weight-medium fz-20 mb-3">
-									<div class="col-auto">Shipping to your location</div>
-									<div class="col-auto">$80</div>
-								</div>
-								<a class="button button-lg btn-block mt-auto" href="1_BCT.html">Next</a>
-							</div>
-						</div>
-					</form>
-
+				<div class="col-lg-5 order-lg-first py-3">
+					<h3 class="text-blue pb-1 mb-3">Your order has been submitted successfully</h3>
+					<div class="fz-30">Order Details:</div>
+					<hr class="separator">
+					<div class="form-row justify-content-between">
+						<div class="col-auto">Order ID</div>
+						<div class="col-auto">019284575616191</div>
+					</div>
+					<div class="form-row justify-content-between">
+						<div class="col-auto">Payment Method</div>
+						<div class="col-auto">BTC</div>
+					</div>
+					<div class="form-row justify-content-between">
+						<div class="col-auto">Total</div>
+						<div class="col-auto">$599.99</div>
+					</div>
+					<div class="form-row justify-content-between">
+						<div class="col-auto">Pay in BTC</div>
+						<div class="col-auto">0.97 BTC</div>
+					</div>
+					<div class="form-row justify-content-between">
+						<div class="col-auto">Payment address:</div>
+						<div class="col-auto">0x012321313732676324576343</div>
+					</div>
+					<hr class="separator">
 				</div>
 			</div>
 
