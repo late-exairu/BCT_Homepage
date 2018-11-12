@@ -29,9 +29,12 @@ $(document).ready(function () {
 	var owl2 = $(".owl-2");
 	var owl2AutoPlayed = false;
 	owl2.owlCarousel({
+		responsive: {
+			992: {
+				nav: true,
+			},
+		},
 		items: 1,
-		startPosition: 0,
-		nav: true,
 		navText: ["", ""],
 		loop: true,
 		autoplayTimeout: 5000,

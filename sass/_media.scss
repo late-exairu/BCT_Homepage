@@ -97,6 +97,23 @@
 	  }
 	}
 
+	.owl-4 {
+	  .owl-nav {
+	    [class*="owl-"] {
+	      &.owl-prev {
+	        left: -10px;
+	      }
+	      &.owl-next {
+	        right: -10px;
+	      }
+	    }
+	  }
+  }
+
+	.section-7 {
+		background-size: inherit;
+	}
+
 }
 
 @media (max-width: 767px) {
