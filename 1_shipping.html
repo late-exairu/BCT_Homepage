@@ -34,10 +34,11 @@
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="order-nav">
-					<li class="item done">Terminal</li>
-					<li class="item done">Cart</li>
-					<li class="item done">Payment</li>
-					<li class="item current">Delivery</li>
+					<li class="item done">Order</li>
+					<li class="item current">Shipping</li>
+					<li class="item">BCT</li>
+					<li class="item">Payment</li>
+					<li class="item">Receipt</li>
 				</ul>
 			</div>
 
@@ -69,11 +70,11 @@
           <img src="img/slim.png" alt="" class="img-slim">
 				</div>
 				<div class="col-xl order-xl-first py-3">
-					<h3 class="text-blue pb-1 mb-3">Where should we send your order?</h3>
+					<h3 class="text-blue">Where should we send your order?</h3>
 
-					<form class="delivery-form" action="completed.html">
+					<form class="delivery-form" action="1_BCT.html">
 						<div class="row">
-							<div class="col-lg-6">
+							<div class="col-lg-6 d-flex flex-column py-3">
 								<h4 class="mb-3">Enter your name and address:</h4>
 								<div class="form-group">
 									<input type="text" class="input" placeholder="First Name">
@@ -113,7 +114,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="form-group has-label">
+								<div class="has-label">
 									<label class="label">Country</label>
 									<select class="basic-select">
 											<option>United States</option>
@@ -124,7 +125,7 @@
 									</select>
 								</div>
 							</div>
-							<div class="col-lg-6">
+							<div class="col-lg-6 d-flex flex-column py-3">
 								<h4 class="mb-3">What’s your contact information?</h4>
 								<div class="form-group">
 									<input type="email" class="input" placeholder="Email Address">
@@ -135,9 +136,12 @@
 								<div class="tips">
 									<p class="tip">We'll email you a receipt and send order updates to you mobile</p>
 									<p class="tip">The phone number you enter can't be changed after you place your order, so please make sure it's correct.</p>
-									<p class="tip">We will contact you to arrange payment for shipping (US continental shipping cost approximately 80USD).</p>
 								</div>
-								<a class="button button-lg btn-block" href="completed.html">Next</a>
+								<div class="form-row justify-content-between font-weight-medium fz-20 mb-3">
+									<div class="col-auto">Shipping to your location</div>
+									<div class="col-auto">$80</div>
+								</div>
+								<a class="button button-lg btn-block mt-auto" href="1_BCT.html">Next</a>
 							</div>
 						</div>
 					</form>

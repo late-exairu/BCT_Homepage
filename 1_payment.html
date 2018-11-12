@@ -4,7 +4,7 @@
 <head>
 	<title>BCT</title>
 	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="keywords" content=""/>
 	<meta name="description" content=""/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/owl-carousel-2/owl.carousel.min.css"/>
 	<link rel="stylesheet" href="libs/owl-carousel-2/owl.theme.default.min.css"/>
-  <link rel="stylesheet" href="css/selectize.css"/>
+	<link rel="stylesheet" href="css/selectize.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 </head>
 
@@ -34,10 +34,11 @@
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="order-nav">
-					<li class="item done">Terminal</li>
-					<li class="item done">Cart</li>
-					<li class="item done">Payment</li>
-					<li class="item current">Delivery</li>
+					<li class="item done">Order</li>
+					<li class="item done">Shipping</li>
+					<li class="item done">BCT</li>
+					<li class="item current">Payment</li>
+					<li class="item">Receipt</li>
 				</ul>
 			</div>
 
@@ -63,88 +64,98 @@
 
 	<section class="max-flex py-4">
 		<div class="container my-auto">
+						
+			<h3 class="text-blue pt-3">Payment Method</h3>
+			<div class="row justify-content-center align-items-center">
 
-			<div class="row align-items-center justify-content-center">
-				<div class="col-lg-6 col-xl-3 py-3 rtl-xl">
-          <img src="img/slim.png" alt="" class="img-slim">
+				<div class="col-md-8 col-lg-5 py-3">
+					<img src="img/cart_1.png" alt="" class="img-pay-form">
 				</div>
-				<div class="col-xl order-xl-first py-3">
-					<h3 class="text-blue pb-1 mb-3">Where should we send your order?</h3>
 
-					<form class="delivery-form" action="completed.html">
-						<div class="row">
-							<div class="col-lg-6">
-								<h4 class="mb-3">Enter your name and address:</h4>
-								<div class="form-group">
-									<input type="text" class="input" placeholder="First Name">
-								</div>
-								<div class="form-group">
-									<input type="text" class="input" placeholder="Last Name">
-								</div>
-								<div class="row row-1">
-									<div class="col-7">
-										<div class="form-group">
-											<input type="text" class="input" placeholder="Street Address">
-										</div>
-									</div>
-									<div class="col">
-										<div class="form-group">
-											<input type="text" class="input" placeholder="Apt, Suite, Building">
-										</div>
-									</div>
-								</div>
-								<div class="row row-1">
-									<div class="col">
-										<div class="has-label">
-											<label class="label">Zip Code</label>
-											<input type="text" class="input" placeholder="Apt, Suite, Building (Optional)" value="04106">
-										</div>
-									</div>
-									<div class="col-7">
-										<div class="form-group has-label">
-											<label class="label">City, State</label>
-											<select class="basic-select">
-												<option>South Portland, ME</option>
-												<option>bbb</option>
-												<option>ccc</option>
-												<option>ddd</option>
-												<option>eee</option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="form-group has-label">
-									<label class="label">Country</label>
-									<select class="basic-select">
-											<option>United States</option>
-											<option>bbb</option>
-											<option>ccc</option>
-											<option>ddd</option>
-											<option>eee</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<h4 class="mb-3">What’s your contact information?</h4>
-								<div class="form-group">
-									<input type="email" class="input" placeholder="Email Address">
-								</div>
-								<div class="form-group">
-									<input type="phone" class="input" placeholder="Phone Number">
-								</div>
-								<div class="tips">
-									<p class="tip">We'll email you a receipt and send order updates to you mobile</p>
-									<p class="tip">The phone number you enter can't be changed after you place your order, so please make sure it's correct.</p>
-									<p class="tip">We will contact you to arrange payment for shipping (US continental shipping cost approximately 80USD).</p>
-								</div>
-								<a class="button button-lg btn-block" href="completed.html">Next</a>
-							</div>
+				<div class="col-lg-7 order-lg-first text-center py-3">
+			
+					<div class="row payment-method fz-20">
+						<div class="col-md-6 inputGroup">
+							<input id="radio1" name="radio" type="radio" checked/>
+							<label for="radio1">
+								<div><img src="img/cards.png" alt=""></div>
+								<div class="desc">$1080</div>
+							</label>
 						</div>
-					</form>
+						<div class="col-md-6 inputGroup text-left">
+							<input id="radio2" name="radio" type="radio"/>
+							<label for="radio2">
+								<span class="form-row align-items-center">
+									<span class="col-auto">
+										<img src="img/BCT.svg" alt="" width="94">
+									</span>
+									<span class="col">
+										<h3>Tokens</h3>
+										<div class="desc">Pay 2.25% of your BCT</div>
+									</span>
+								</span>
+							</label>
+						</div>
+					</div>
+			
+					<div class="row">
+
+						<div class="col-md-6">
+							<form class="pay-form" action="1_receipt.html" id="pay-usd">
+								<div class="form-group">
+									<input class="input user" type="text" name="" placeholder="Cardholder’s Name">
+								</div>
+								<div class="form-row">
+									<div class="col-6">
+										<div class="form-group">
+											<input class="input date" type="text" name="" placeholder="Valid Thru">
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="form-group">
+											<input class="input cvv cc-cvc" type="text" name="" placeholder="CVV/CVC">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<input class="input card cc-number" type="text" name="" placeholder="Card Number">
+								</div>
+								<a class="button button-lg btn-block mt-auto" href="1_receipt.html">Confirm</a>
+							</form>
+						</div>
+			
+						<div class="col-md-6">
+							<form class="pay-form hidden" action="1_receipt.html" id="pay-bct">
+								<label class="checkbox-group text-left">
+                  <input type="checkbox" id="checkbox-form" checked>
+                  <span class="checkbox-label">I am not a syndicate member</span>
+                </label>
+                <div class="form-checked">
+									<div class="form-group">
+										<input class="input wallet cc-number" type="text" name="" placeholder="Your Wallet containing BCT tokens">
+									</div>
+									<div class="form-group">
+										<input class="input mail cc-number" type="email" name="" placeholder="Your Email">
+									</div>
+								</div>
+                <div class="form-checked hidden">
+									<div class="form-group">
+										<input class="input" type="text" name="" placeholder="Name of founding member of your syndicate">
+									</div>
+									<div class="form-group">
+										<input class="input" type="email" name="" placeholder="Email of founding member of your syndicate">
+									</div>
+								</div>
+								<a class="button button-lg btn-block mt-auto" href="1_receipt.html">Confirm</a>
+							</form>
+						</div>
+
+					</div>
 
 				</div>
-			</div>
 
+			</div>
+				
 		</div>
 	</section>
 
@@ -173,6 +184,7 @@
 	<script src="libs/owl-carousel-2/owl.carousel.min.js"></script>
   <script src="libs/selectize.min.js"></script>
 	<script src="libs/mask/jquery.mask.min.js"></script>
+  <script src="libs/selectize.min.js"></script>
 	<script src="js/scripts.js"></script>
 
 </body>
