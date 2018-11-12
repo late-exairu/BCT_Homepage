@@ -112,6 +112,9 @@ h1, .h1, h2, .h2 {
   padding: 8px 20px 10px;
   min-width: 196px; }
 
+.reel {
+  height: auto !important; }
+
 .section-1 {
   flex-grow: 1;
   min-height: calc(100vh - 64px); }
