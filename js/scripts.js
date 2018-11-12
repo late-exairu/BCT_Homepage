@@ -185,5 +185,14 @@ $(document).ready(function () {
 		$('.pay-form').toggleClass('hidden');
 	});
 
+	$('#select-bct').change(function () {
+		var number = $(this).val();
+		$('.select-option > div').removeClass('d-block').addClass('d-none');
+		$('.select-option > div').each(function(n, el){
+			if (n == number)
+				$(el).removeClass('d-none').addClass('d-block');
+		});
+	});
+
 });
 

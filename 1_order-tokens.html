@@ -68,18 +68,32 @@
 			<div class="row align-items-center justify-content-center">
 				<div class="col-md-8 col-lg py-3">
 					<div class="row justify-content-center">
-						<div class="col-8">
+						<div class="col-10">
 							<img src="img/BCT.svg" alt="">
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 col-xl-5 order-lg-first py-3">
+				<div class="col-lg-6 order-lg-first py-3">
 					<form action="1_shipping.html">
 						<h3 class="text-blue pb-1 mb-3">Buy BCT tokens</h3>
 						<div class="form-row align-items-end justify-content-between fz-30 mb-2 mb-sm-0">
-							<div class="col-auto">BCT tokens</div>
-							<div class="col-auto font-weight-medium">10,000 BCT</div>
-							<div class="col-auto font-weight-medium">$1,000</div>
+							<div class="col-sm-auto pb-2 pb-md-0">BCT tokens</div>
+							<div class="col-auto font-weight-medium select-wrap">
+	              <select id="select-bct">
+	                <option value="0">1,000 BCT</option>
+	                <option value="1" selected>10,000 BCT</option>
+	                <option value="2">100,000 BCT</option>
+	                <option value="3">1,000,000 BCT</option>
+	                <option value="4">10,000,000 BCT</option>
+	              </select>
+	            </div>
+							<div class="col-auto font-weight-medium select-option">
+								<div class="d-none">$100.00</div>
+								<div class="d-block">$1,000</div>
+								<div class="d-none">$10,000</div>
+								<div class="d-none">$100,000</div>
+								<div class="d-none">$1,000,000</div>
+							</div>
 						</div>
 						<div class="mt-3 pt-3">
 							<a class="button button-lg btn-block" href="1_shipping.html">Next</a>
