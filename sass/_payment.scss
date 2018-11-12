@@ -40,6 +40,12 @@ form .button {
   border-left: 0 !important;
   transform: translateY(-50%) rotate(45deg) !important;
 }
+.selectize-dropdown {
+	font-size: .7em; 
+	.option {
+		padding: 8px;
+	}
+}
 
 .order-nav {
 	font-size: 14px;
@@ -98,7 +104,6 @@ form .button {
 .tips {
 	font-weight: 500;
 	.tip {
-		color: #D6D6D6;
 		line-height: 1.28;
 		margin-bottom: 15px;
 	}
@@ -244,9 +249,40 @@ form .button {
 	  border: 1px solid #D6D6D6;
 	  border-radius: 6px;
 	  transition: all 0.2s;
+	  position: relative;
+	  overflow: hidden;
+		&:before, &:after {
+			content: '';
+			transition: all 0.2s;
+			opacity: 0;
+		}
+		&:before {
+			border: 6px solid transparent;
+			border-bottom-color: #0080CA;
+			border-right-color: #0080CA;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+		&:after {
+			width: 3px;
+			height: 6px;
+			border: 1px solid #fff;
+			border-top: 0;
+			border-left: 0;
+			transform: rotate(42deg);
+			position: absolute;
+			right: 2px;
+			bottom: 2px;
+		}
 	}
 	input {
 		display: none;
+	}
+	input:checked ~ .label-card {
+		&:before, &:after {
+			opacity: 1;
+		}
 	}
 	input:checked ~ .label-card, .label-card:hover {
 		border-color: #0080CA;
