@@ -343,7 +343,7 @@ ul.list-blue {
 
 .owl-2 .slide {
   padding-top: 200px;
-  padding-bottom: 160px;
+  padding-bottom: 130px;
   background-size: cover;
   background-position: center; }
   .owl-2 .slide.slide-1 {
@@ -370,12 +370,16 @@ ul.list-blue {
   .owl-2 .slide .container {
     position: relative;
     z-index: 2;
-    min-height: 270px; }
+    min-height: 300px; }
 .owl-2 .owl-dots {
   position: absolute;
   bottom: 10px;
   left: 0;
   right: 0; }
+.owl-2 .owl-nav [class*="owl-"].owl-prev {
+  left: 10px; }
+.owl-2 .owl-nav [class*="owl-"].owl-next {
+  right: 10px; }
 
 .owl-5 .owl-dots {
   position: relative;
@@ -482,7 +486,15 @@ ul.list-blue {
 @media (max-width: 991px) {
   .owl-header .owl-dots .owl-dot {
     flex: 0 0 50%;
-    max-width: 50%; } }
+    max-width: 50%; }
+
+  .owl-4 .owl-nav [class*="owl-"].owl-prev {
+    left: -10px; }
+  .owl-4 .owl-nav [class*="owl-"].owl-next {
+    right: -10px; }
+
+  .section-7 {
+    background-size: inherit; } }
 @media (max-width: 767px) {
   .section-3, .section-5, .section-7, .section-8 {
     padding-top: 4rem;

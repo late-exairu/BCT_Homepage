@@ -435,7 +435,7 @@ ul.list-blue {
 .owl-2 {
   .slide {
     padding-top: 200px;
-    padding-bottom: 160px;
+    padding-bottom: 130px;
     background-size: cover;
     background-position: center;
     &.slide-1 {
@@ -469,7 +469,7 @@ ul.list-blue {
     .container {
       position: relative;
       z-index: 2;
-      min-height: 270px;
+      min-height: 300px;
     }
   }
   .owl-dots {
@@ -477,6 +477,16 @@ ul.list-blue {
     bottom: 10px;
     left: 0;
     right: 0;
+  }
+  .owl-nav {
+    [class*="owl-"] {
+      &.owl-prev {
+        left: 10px;
+      }
+      &.owl-next {
+        right: 10px;
+      }
+    }
   }
 }
 
