@@ -87,7 +87,7 @@ h1, .h1, h2, .h2 {
 .promo {
   line-height: 1.16;
   text-transform: uppercase;
-  padding: 0 0 1px; }
+  padding: 3px 0 0; }
 
 .button {
   display: inline-block;
