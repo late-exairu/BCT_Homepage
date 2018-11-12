@@ -4,7 +4,7 @@
 <head>
 	<title>BCT</title>
 	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="keywords" content=""/>
 	<meta name="description" content=""/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,9 +34,8 @@
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="order-nav">
-					<li class="item done">Order</li>
-					<li class="item current">Shipping</li>
-					<li class="item">BCT</li>
+					<li class="item current">Order</li>
+					<li class="item">Delivery</li>
 					<li class="item">Payment</li>
 					<li class="item">Receipt</li>
 				</ul>
@@ -45,7 +44,7 @@
 		  <ul class="navbar-nav align-items-center flex-row navbar-right d-none d-md-flex">
 	      <li class="nav-item">
 			<a class="nav-link px-2" href="#!" data-toggle="tooltip" data-html="true" data-placement="bottom" title='Blockchain Terminal presents the cryptocurrency industry with many “firsts”, of which we are extremely proud.<br><br>
-			I want you to enjoy your terminal and have peace of mind. So, I have backed the product with a 30-day, money-back guarantee.<br><br>
+			I want you to enjoy your terminal and have peace of mind. So, I have backed the product with a 30-day, money-back guarantee.<br> 
 			If for any reason you are not satisfied, please get in touch: josh@bct.io<br><br>
 			Thank you,<br><br>
 			Josh Dettman<br>
@@ -64,88 +63,36 @@
 
 	<section class="max-flex py-4">
 		<div class="container my-auto">
-
+				
 			<div class="row align-items-center justify-content-center">
-				<div class="col-lg-6 col-xl-3 py-3 rtl-xl">
-          <img src="img/slim.png" alt="" class="img-slim">
+				<div class="col-md-8 col-lg py-3">
+					<img src="img/bct-monitor.png" alt="">
 				</div>
-				<div class="col-xl order-xl-first py-3">
-					<h3 class="text-blue">Terminal delivery address</h3>
-
-					<form class="delivery-form" action="1_BCT.html">
-						<div class="row">
-							<div class="col-lg-6 d-flex flex-column py-3">
-								<h4 class="mb-3">Enter your name and address:</h4>
-								<div class="form-group">
-									<input type="text" class="input" placeholder="First Name">
-								</div>
-								<div class="form-group">
-									<input type="text" class="input" placeholder="Last Name">
-								</div>
-								<div class="row row-1">
-									<div class="col-7">
-										<div class="form-group">
-											<input type="text" class="input" placeholder="Street Address">
-										</div>
-									</div>
-									<div class="col">
-										<div class="form-group">
-											<input type="text" class="input" placeholder="Apt, Suite, Building">
-										</div>
-									</div>
-								</div>
-								<div class="row row-1">
-									<div class="col">
-										<div class="has-label">
-											<label class="label">Zip Code</label>
-											<input type="text" class="input" placeholder="Apt, Suite, Building (Optional)" value="04106">
-										</div>
-									</div>
-									<div class="col-7">
-										<div class="form-group has-label">
-											<label class="label">City, State</label>
-											<select class="basic-select">
-												<option>South Portland, ME</option>
-												<option>bbb</option>
-												<option>ccc</option>
-												<option>ddd</option>
-												<option>eee</option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="has-label">
-									<label class="label">Country</label>
-									<select class="basic-select">
-											<option>United States</option>
-											<option>bbb</option>
-											<option>ccc</option>
-											<option>ddd</option>
-											<option>eee</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-lg-6 d-flex flex-column py-3">
-								<h4 class="mb-3">What’s your contact information?</h4>
-								<div class="form-group">
-									<input type="email" class="input" placeholder="Email Address">
-								</div>
-								<div class="form-group">
-									<input type="phone" class="input" placeholder="Phone Number">
-								</div>
-								<div class="tips">
-									<p class="tip">We'll email you a receipt and send order updates to you mobile</p>
-									<p class="tip">The phone number you enter can't be changed after you place your order, so please make sure it's correct.</p>
-								</div>
-								<div class="form-row justify-content-between font-weight-medium fz-20 mb-3">
-									<div class="col-auto">Shipping to your location</div>
-									<div class="col-auto">$80</div>
-								</div>
-								<a class="button button-lg btn-block mt-auto" href="1_BCT.html">Next</a>
+				<div class="col-lg-6 col-xl-5 order-lg-first py-3">
+					<form action="#!">
+						<h3 class="text-blue">Buy BCT tokens</h3>
+						<div class="form-row align-items-end justify-content-between fz-30 mb-2 mb-sm-0">
+							<div class="col-auto select-wrap">
+	              <select id="select-bct">
+	                <option value="0">1,000 BCT</option>
+	                <option value="1" selected>10,000 BCT</option>
+	                <option value="2">100,000 BCT</option>
+	                <option value="3">1,000,000 BCT</option>
+	                <option value="4">10,000,000 BCT</option>
+	              </select>
+	            </div>
+							<div class="col-auto font-weight-medium select-option">
+								<div class="d-none">$100.00</div>
+								<div class="d-block">$1,000</div>
+								<div class="d-none">$10,000</div>
+								<div class="d-none">$100,000</div>
+								<div class="d-none">$1,000,000</div>
 							</div>
 						</div>
+						<div class="mt-3 pt-3">
+							<a class="button button-lg btn-block" href="2_delivery.html">Next</a>
+						</div>
 					</form>
-
 				</div>
 			</div>
 
