@@ -80,6 +80,13 @@ form .button {
 	text-align: left;
 	font-size: 14px;
 	line-height: 1.3;
+	background: #ebebeb;
+	color: black;
+}
+
+.tooltip .arrow:before {
+	border-bottom-color: #c3c3c3 !important;
+	border-top-color: #c3c3c3 !important;
 }
 
 .tip {
