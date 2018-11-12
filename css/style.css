@@ -511,7 +511,7 @@ form .button {
   margin-bottom: 20px; }
 
 .selectize-input {
-  display: block; }
+  display: block !important; }
 
 .select-wrap .selectize-input {
   border: none;
