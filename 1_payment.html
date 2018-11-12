@@ -78,7 +78,7 @@
 						<div class="col-md-6 inputGroup mb-3">
 							<input id="radio1" name="radio" type="radio" checked/>
 							<label for="radio1">
-								<span class="form-row">
+								<span class="form-row px-3">
 									<span class="col">
 										<img src="img/cards-visa.png" alt="">
 									</span>
@@ -94,9 +94,8 @@
 						<div class="col-md-6 inputGroup mb-3 font-weight-medium fz-0">
 							<input id="radio2" name="radio" type="radio"/>
 							<label for="radio2">
-								<div class="owl-6 owl-carousel owl-theme">
-								<!-- <ul class="nav"> -->
-									<div class="active a form-row d-inline-flex align-items-center mx-0" href="#pills-1" data-toggle="pill">
+								<div class="owl-6 owl-carousel owl-theme px-3">
+									<div class="active tab-a form-row d-inline-flex align-items-center mx-0" href="#pills-1" data-toggle="pill">
 										<div class="col-auto pl-0 pr-1">
 											<img src="img/coin-btc.svg" alt="">
 										</div>
@@ -105,7 +104,7 @@
 											<div class="fz-10 font-weight-bold">BTC</div> 
 										</div>
 									</div>
-									<div class="a form-row d-inline-flex align-items-center mx-0" href="#pills-2" data-toggle="pill">
+									<div class="tab-a form-row d-inline-flex align-items-center mx-0" href="#pills-2" data-toggle="pill">
 										<div class="col-auto pl-0 pr-1">
 											<img src="img/coin-eth.svg" alt="">
 										</div>
@@ -114,7 +113,7 @@
 											<div class="fz-10 font-weight-bold">ETH</div> 
 										</div>
 									</div>
-									<div class="a form-row d-inline-flex align-items-center mx-0" href="#pills-2" data-toggle="pill">
+									<div class="tab-a form-row d-inline-flex align-items-center mx-0" href="#pills-3" data-toggle="pill">
 										<div class="col-auto pl-0 pr-1">
 											<img src="img/coin-ltc.svg" alt="">
 										</div>
@@ -123,7 +122,7 @@
 											<div class="fz-10 font-weight-bold">LTC</div> 
 										</div>
 									</div>
-									<div class="a form-row d-inline-flex align-items-center mx-0" href="#pills-2" data-toggle="pill">
+									<div class="tab-a form-row d-inline-flex align-items-center mx-0" href="#pills-4" data-toggle="pill">
 										<div class="col-auto pl-0 pr-1">
 											<img src="img/coin-xrp.svg" alt="">
 										</div>
@@ -132,7 +131,7 @@
 											<div class="fz-10 font-weight-bold">XRP</div> 
 										</div>
 									</div>
-									<div class="a form-row d-inline-flex align-items-center mx-0" href="#pills-2" data-toggle="pill">
+									<div class="tab-a form-row d-inline-flex align-items-center mx-0" href="#pills-5" data-toggle="pill">
 										<div class="col-auto pl-0 pr-1">
 											<img src="img/coin-usd.svg" alt="">
 										</div>
@@ -149,19 +148,7 @@
 					<div class="row fz-20">
 
 						<div class="col-md-6">
-							<form class="pay-form" action="1_receipt.html" id="pay-usd">
-								<div class="form-row align-items-end">
-									<div class="col">Blockchain Terminal:</div>
-									<div class="col-auto font-weight-medium">$999.99</div>
-								</div>
-								<div class="form-row align-items-end">
-									<div class="col">Discount:</div>
-									<div class="col-auto font-weight-medium">-$800.99</div>
-								</div>
-								<div class="form-row align-items-end">
-									<div class="col">Shipping:</div>
-									<div class="col-auto font-weight-medium">$80.00</div>
-								</div>
+							<form class="pay-form" action="1_receipt.html">
 								<div class="form-row align-items-end">
 									<div class="col">BCT Tokens:</div>
 									<div class="col-auto font-weight-medium">$599.99</div>
@@ -195,19 +182,7 @@
 						</div>
 			
 						<div class="col-md-6">
-							<form class="pay-form hidden" action="1_receipt.html" id="pay-bct">
-								<div class="form-row align-items-end">
-									<div class="col">Blockchain Terminal:</div>
-									<div class="col-auto font-weight-medium">$999.99</div>
-								</div>
-								<div class="form-row align-items-end">
-									<div class="col">Discount:</div>
-									<div class="col-auto font-weight-medium">-$800.99</div>
-								</div>
-								<div class="form-row align-items-end">
-									<div class="col">Shipping:</div>
-									<div class="col-auto font-weight-medium">$80.00</div>
-								</div>
+							<form class="pay-form hidden" action="1_receipt.html">
 								<div class="form-row align-items-end">
 									<div class="col">BCT Tokens:</div>
 									<div class="col-auto font-weight-medium">$599.99</div>
@@ -218,31 +193,65 @@
 									<div class="col-auto">$679.99</div>
 								</div>
 
-								<div class="tab-content">
-									<div class="tab-pane fade show active" id="pills-1">
-										<div class="form-row align-items-end text-blue font-weight-medium mb-2 pb-1">
-											<div class="col">Due Amount</div>
-											<div class="col-auto">0.11 BTC</div>
-										</div>
-										<div class="row justify-content-center mx-0 mb-3">
-											<div class="col-5 px-0">
-												<img src="img/qr-code.png" alt="">
-											</div>
-										</div>
-										<p class="tip text-center">Receiving address: <br> <span class="font-weight-medium text-blue">0x0123213137326763245763434756</span></p>
+								<div class="pills active" id="pills-1">
+									<div class="form-row align-items-end text-blue font-weight-medium mb-2 pb-1">
+										<div class="col">Pay in BTC</div>
+										<div class="col-auto">0.97 BTC</div>
 									</div>
-									<div class="tab-pane fade" id="pills-2">
-										<div class="form-row align-items-end text-blue font-weight-medium mb-2 pb-1">
-											<div class="col">Due Amount</div>
-											<div class="col-auto">0.11 ETH</div>
+									<div class="row justify-content-center mx-0 mb-3">
+										<div class="col-5 px-0">
+											<img src="img/qr-code.png" alt="">
 										</div>
-										<div class="row justify-content-center mx-0 mb-3">
-											<div class="col-5 px-0">
-												<img src="img/qr-code.png" alt="">
-											</div>
-										</div>
-										<p class="tip text-center">Receiving address: <br> <span class="font-weight-medium text-blue">0xsdfsdfsdfsdf</span></p>
 									</div>
+									<p class="tip text-center">Receiving address: <br> <span class="font-weight-medium text-blue">0x0123213137326763245763434756</span></p>
+								</div>
+								<div class="pills" id="pills-2">
+									<div class="form-row align-items-end text-blue font-weight-medium mb-2 pb-1">
+										<div class="col">Pay in ETH</div>
+										<div class="col-auto">0.92 ETH</div>
+									</div>
+									<div class="row justify-content-center mx-0 mb-3">
+										<div class="col-5 px-0">
+											<img src="img/qr-code.png" alt="">
+										</div>
+									</div>
+									<p class="tip text-center">Receiving address: <br> <span class="font-weight-medium text-blue">dfgdfgdfg</span></p>
+								</div>
+								<div class="pills" id="pills-3">
+									<div class="form-row align-items-end text-blue font-weight-medium mb-2 pb-1">
+										<div class="col">Pay in LTC</div>
+										<div class="col-auto">0.46 LTC</div>
+									</div>
+									<div class="row justify-content-center mx-0 mb-3">
+										<div class="col-5 px-0">
+											<img src="img/qr-code.png" alt="">
+										</div>
+									</div>
+									<p class="tip text-center">Receiving address: <br> <span class="font-weight-medium text-blue">dfgsdfgdfgsdfg</span></p>
+								</div>
+								<div class="pills" id="pills-4">
+									<div class="form-row align-items-end text-blue font-weight-medium mb-2 pb-1">
+										<div class="col">Pay in XRP</div>
+										<div class="col-auto">0.76 XRP</div>
+									</div>
+									<div class="row justify-content-center mx-0 mb-3">
+										<div class="col-5 px-0">
+											<img src="img/qr-code.png" alt="">
+										</div>
+									</div>
+									<p class="tip text-center">Receiving address: <br> <span class="font-weight-medium text-blue">234234234234d</span></p>
+								</div>
+								<div class="pills" id="pills-5">
+									<div class="form-row align-items-end text-blue font-weight-medium mb-2 pb-1">
+										<div class="col">Pay in USD</div>
+										<div class="col-auto">0.40 USD</div>
+									</div>
+									<div class="row justify-content-center mx-0 mb-3">
+										<div class="col-5 px-0">
+											<img src="img/qr-code.png" alt="">
+										</div>
+									</div>
+									<p class="tip text-center">Receiving address: <br> <span class="font-weight-medium text-blue">3df34rf34s</span></p>
 								</div>
 
 								<a class="button button-lg btn-block mt-auto" href="1_receipt.html">Confirm</a>
