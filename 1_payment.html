@@ -72,36 +72,82 @@
 					<img src="img/cart_1.png" alt="" class="img-pay-form">
 				</div>
 
-				<div class="col-lg-7 order-lg-first text-center py-3">
+				<div class="col-lg-7 order-lg-first py-3">
 			
-					<div class="row payment-method fz-20">
-						<div class="col-md-6 inputGroup">
+					<div class="row payment-method fz-20 text-center">
+						<div class="col-md-6 inputGroup mb-3">
 							<input id="radio1" name="radio" type="radio" checked/>
 							<label for="radio1">
-								<div><img src="img/cards.png" alt=""></div>
-								<div class="desc">$1080</div>
-							</label>
-						</div>
-						<div class="col-md-6 inputGroup text-left">
-							<input id="radio2" name="radio" type="radio"/>
-							<label for="radio2">
-								<span class="form-row align-items-center">
-									<span class="col-auto">
-										<img src="img/BCT.svg" alt="" width="94">
+								<span class="form-row">
+									<span class="col">
+										<img src="img/cards-visa.png" alt="">
 									</span>
 									<span class="col">
-										<h3>Tokens</h3>
-										<div class="desc">Pay 2.25% of your BCT</div>
+										<img src="img/cards-master.png" alt="">
+									</span>
+									<span class="col">
+										<img src="img/cards-amex.png" alt="">
 									</span>
 								</span>
 							</label>
 						</div>
+						<div class="col-md-6 inputGroup mb-3 font-weight-medium fz-0">
+							<input id="radio2" name="radio" type="radio"/>
+							<label for="radio2">
+								<ul class="owl-6 owl-carousel owl-theme nav">
+								<!-- <ul class="nav"> -->
+									<li>
+										<a class="active form-row align-items-center mx-0" href="#pills-1" data-toggle="pill">
+											<div class="col-auto pl-0 pr-1">
+												<img src="img/coin-btc.svg" alt="">
+											</div>
+											<div class="col px-0">
+												<div>Bitcoin</div>
+												<div class="fz-10 font-weight-bold">BTC</div> 
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="form-row align-items-center mx-0" href="#pills-2" data-toggle="pill">
+											<div class="col-auto pl-0 pr-1">
+												<img src="img/coin-eth.svg" alt="">
+											</div>
+											<div class="col px-0">
+												<div>Ethereum</div>
+												<div class="fz-10 font-weight-bold">ETH</div> 
+											</div>
+										</a>
+									</li>
+								</ul>
+							</label>
+						</div>
 					</div>
 			
-					<div class="row">
+					<div class="row fz-20">
 
 						<div class="col-md-6">
 							<form class="pay-form" action="1_receipt.html" id="pay-usd">
+								<div class="form-row align-items-end">
+									<div class="col">Blockchain Terminal:</div>
+									<div class="col-auto font-weight-medium">$999.99</div>
+								</div>
+								<div class="form-row align-items-end">
+									<div class="col">Discount:</div>
+									<div class="col-auto font-weight-medium">-$800.99</div>
+								</div>
+								<div class="form-row align-items-end">
+									<div class="col">Shipping:</div>
+									<div class="col-auto font-weight-medium">$80.00</div>
+								</div>
+								<div class="form-row align-items-end">
+									<div class="col">BCT Tokens:</div>
+									<div class="col-auto font-weight-medium">$599.99</div>
+								</div>
+								<hr>
+								<div class="form-row align-items-end text-blue font-weight-medium mb-2 pb-1">
+									<div class="col">Total</div>
+									<div class="col-auto">$679.99</div>
+								</div>
 								<div class="form-group">
 									<input class="input user" type="text" name="" placeholder="Cardholder’s Name">
 								</div>
@@ -117,35 +163,65 @@
 										</div>
 									</div>
 								</div>
-								<div class="form-group">
+								<div class="form-group mb-3">
 									<input class="input card cc-number" type="text" name="" placeholder="Card Number">
 								</div>
+								<p class="tip text-center">By clicking CONFIRM I agree with the <a href="BC_Terminal_License_Agreement_18.11.08_2400.pdf" class="font-weight-medium"  target="_blank" rel="noopener noreferrer">License Agreement</a></p>
 								<a class="button button-lg btn-block mt-auto" href="1_receipt.html">Confirm</a>
 							</form>
 						</div>
 			
 						<div class="col-md-6">
 							<form class="pay-form hidden" action="1_receipt.html" id="pay-bct">
-								<label class="checkbox-group text-left">
-                  <input type="checkbox" id="checkbox-form" checked>
-                  <span class="checkbox-label">I am not a syndicate member</span>
-                </label>
-                <div class="form-checked">
-									<div class="form-group">
-										<input class="input wallet cc-number" type="text" name="" placeholder="Your Wallet containing BCT tokens">
+								<div class="form-row align-items-end">
+									<div class="col">Blockchain Terminal:</div>
+									<div class="col-auto font-weight-medium">$999.99</div>
+								</div>
+								<div class="form-row align-items-end">
+									<div class="col">Discount:</div>
+									<div class="col-auto font-weight-medium">-$800.99</div>
+								</div>
+								<div class="form-row align-items-end">
+									<div class="col">Shipping:</div>
+									<div class="col-auto font-weight-medium">$80.00</div>
+								</div>
+								<div class="form-row align-items-end">
+									<div class="col">BCT Tokens:</div>
+									<div class="col-auto font-weight-medium">$599.99</div>
+								</div>
+								<hr>
+								<div class="form-row align-items-end text-blue font-weight-medium">
+									<div class="col">Total</div>
+									<div class="col-auto">$679.99</div>
+								</div>
+
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="pills-1">
+										<div class="form-row align-items-end text-blue font-weight-medium mb-2 pb-1">
+											<div class="col">Due Amount</div>
+											<div class="col-auto">0.11 BTC</div>
+										</div>
+										<div class="row justify-content-center mx-0 mb-3">
+											<div class="col-5 px-0">
+												<img src="img/qr-code.png" alt="">
+											</div>
+										</div>
+										<p class="tip text-center">Receiving address: <br> <span class="font-weight-medium text-blue">0x0123213137326763245763434756</span></p>
 									</div>
-									<div class="form-group">
-										<input class="input mail cc-number" type="email" name="" placeholder="Your Email">
+									<div class="tab-pane fade" id="pills-2">
+										<div class="form-row align-items-end text-blue font-weight-medium mb-2 pb-1">
+											<div class="col">Due Amount</div>
+											<div class="col-auto">0.11 ETH</div>
+										</div>
+										<div class="row justify-content-center mx-0 mb-3">
+											<div class="col-5 px-0">
+												<img src="img/qr-code.png" alt="">
+											</div>
+										</div>
+										<p class="tip text-center">Receiving address: <br> <span class="font-weight-medium text-blue">0xsdfsdfsdfsdf</span></p>
 									</div>
 								</div>
-                <div class="form-checked hidden">
-									<div class="form-group">
-										<input class="input" type="text" name="" placeholder="Name of founding member of your syndicate">
-									</div>
-									<div class="form-group">
-										<input class="input" type="email" name="" placeholder="Email of founding member of your syndicate">
-									</div>
-								</div>
+
 								<a class="button button-lg btn-block mt-auto" href="1_receipt.html">Confirm</a>
 							</form>
 						</div>

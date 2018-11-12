@@ -113,6 +113,14 @@ $(document).ready(function () {
 		}
 	});
 
+	$(".owl-6").owlCarousel({
+		items: 3,
+		margin: 10,
+		dots: false,
+		nav: true,
+		navText: ["", ""],
+	});
+
 
 	$('.scroll-id').mPageScroll2id({
 		scrollSpeed: 900,
