@@ -128,7 +128,23 @@ $(document).ready(function () {
 	});
 
 	$(".owl-6").owlCarousel({
-		items: 3,
+		responsive: {
+			0: {
+				items: 3,
+			},
+			576: {
+				items: 4,
+			},
+			768: {
+				items: 5,
+			},
+			992: {
+				items: 4,
+			},
+			1200: {
+				items: 5,
+			},
+		},
 		margin: 10,
 		dots: false,
 		nav: true,

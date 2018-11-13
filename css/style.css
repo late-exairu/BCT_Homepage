@@ -457,7 +457,6 @@ ul.list-blue {
     padding-right: 50px !important; } }
 @media (min-width: 768px) {
   .page-footer {
-    font-size: 20px;
     padding: 28px 0; } }
 @media (min-width: 992px) {
   .section-3 {
@@ -740,7 +739,8 @@ form .button {
     .inputGroup .tab-a:before, .inputGroup .tab-a:after {
       content: '';
       transition: all 0.2s;
-      opacity: 0; }
+      opacity: 0;
+      z-index: 3; }
     .inputGroup .tab-a:before {
       border: 6px solid transparent;
       border-bottom-color: #D6D6D6;
@@ -758,7 +758,7 @@ form .button {
       position: absolute;
       right: 2px;
       bottom: 2px; }
-    .inputGroup .tab-a img {
+    .inputGroup .tab-a .col-auto img {
       width: 25px !important; }
     .inputGroup .tab-a.active:before, .inputGroup .tab-a.active:after {
       opacity: 1; }
@@ -870,11 +870,7 @@ form .button {
   display: flex;
   flex-direction: column; }
   .pay-form.hidden {
-    opacity: 0;
-    visibility: hidden; }
-  @media (max-width: 767px) {
-    .pay-form.hidden {
-      display: none; } }
+    display: none; }
   .pay-form .input.user {
     padding-right: 45px;
     background: url(../img/form-user.svg) calc(100% - 10px) center no-repeat; }

@@ -171,6 +171,7 @@ form .button {
   		content: '';
 			transition: all 0.2s;
 			opacity: 0;
+			z-index: 3;
 		}
 		&:before {
 			border: 6px solid transparent;
@@ -191,9 +192,11 @@ form .button {
 			right: 2px;
 			bottom: 2px;
   	}
-    img {
-    	width: 25px !important;
-    }
+  	.col-auto {
+  		img {
+	    	width: 25px !important;
+	    }
+  	}
     &.active {
     	&:before, &:after {
 				opacity: 1;
@@ -338,14 +341,15 @@ form .button {
 	display: flex;
 	flex-direction: column;
 	&.hidden {
-		opacity: 0;
-		visibility: hidden;
+		// opacity: 0;
+		// visibility: hidden;
+		display: none;
 	}
-	@media (max-width: 767px) {
-		&.hidden {
-			display: none;
-		}
-	}
+	// @media (max-width: 767px) {
+	// 	&.hidden {
+	// 		display: none;
+	// 	}
+	// }
 	.input {
 		&.user {
 			padding-right: 45px;
