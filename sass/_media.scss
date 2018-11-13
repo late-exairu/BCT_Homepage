@@ -147,6 +147,10 @@
 
 @media (max-width: 767px) {
 
+	.promo {
+	  font-size: 14px;
+	}
+
 	.owl-header {
 	  .owl-dots {
 	  	margin-left: -5px;
@@ -174,8 +178,22 @@
 
 @media (max-width: 575px) {
 	
-	.navbar-brand img {
-	  width: 100px;
+	.navbar-brand {
+		width: 30px;
+		overflow: hidden;
+		direction: rtl;
+		img {
+		  max-width: inherit;
+		}
+	}
+	.terminal-switch-wrap {
+		font-size: 0;
+		img {
+			width: 30px;
+		}
+	}
+	.promo {
+		font-size: 12px;
 	}
 
 	.button-lg {
