@@ -131,21 +131,22 @@ $(document).ready(function () {
 		responsive: {
 			0: {
 				items: 3,
+				margin: 5,
 			},
 			576: {
 				items: 4,
+				margin: 10,
 			},
-			768: {
-				items: 5,
-			},
-			992: {
-				items: 4,
-			},
-			1200: {
-				items: 5,
-			},
+			// 768: {
+			// 	items: 5,
+			// },
+			// 992: {
+			// 	items: 4,
+			// },
+			// 1200: {
+			// 	items: 5,
+			// },
 		},
-		margin: 10,
 		dots: false,
 		nav: true,
 		navText: ["", ""],

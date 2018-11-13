@@ -13,10 +13,6 @@ form .button {
 	overflow: hidden;
 }
 
-.form-group {
-	margin-bottom: 20px;
-}
-
 .selectize-input {
 	display: block !important;
 }
@@ -334,12 +330,19 @@ form .button {
 	&::placeholder {
 		color: #D6D6D6;
 	}
+	@media (max-width: 575px) {
+		font-size: 14px;
+		padding: 11px 15px;
+	}
 }
 .has-label {
 	position: relative;
 	.input {
 		padding-top: 21px;
 		padding-bottom: 3px;
+		@media (max-width: 575px) {
+	    padding-bottom: 1px;
+		}
 	}
 	.selectize-control.single .selectize-input:after {
 	  right: 10px !important;
@@ -364,15 +367,8 @@ form .button {
 	display: flex;
 	flex-direction: column;
 	&.hidden {
-		// opacity: 0;
-		// visibility: hidden;
 		display: none;
 	}
-	// @media (max-width: 767px) {
-	// 	&.hidden {
-	// 		display: none;
-	// 	}
-	// }
 	.input {
 		&.user {
 			padding-right: 45px;
@@ -435,6 +431,11 @@ form .button {
 		font-weight: 700;
     white-space: nowrap;
     text-overflow: ellipsis;
+		@media (max-width: 575px) {
+			font-size: 14px;
+	    padding-top: 21px;
+	    padding-bottom: 4px;
+		}
 		> input {
 			line-height: 15px !important;
 		}
