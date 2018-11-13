@@ -58,6 +58,25 @@ h1, .h1, h2, .h2 {
     padding-left: 10px;
     padding-right: 10px; }
 
+.navbar__back {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transform: opacity .25s; }
+
+.navbar__back-icon {
+  display: block;
+  width: 20px;
+  fill: #0080ca; }
+
+.navbar__back-text {
+  text-transform: uppercase;
+  color: #0080ca;
+  font-weight: 600;
+  margin-left: 10px;
+  line-height: 24px;
+  margin-top: 3px; }
+
 .navbar-light {
   border-bottom: 1px solid #D6D6D6;
   box-shadow: 0 0 17px #EDEDED;
@@ -87,7 +106,7 @@ h1, .h1, h2, .h2 {
 .promo {
   line-height: 1.16;
   text-transform: uppercase;
-  padding: 3px 0 0; }
+  margin-right: auto; }
 
 .button {
   display: inline-block;
@@ -112,6 +131,9 @@ h1, .h1, h2, .h2 {
   border-radius: 6px;
   padding: 8px 20px 10px;
   min-width: 196px; }
+
+.button-auto {
+  min-width: auto; }
 
 .reel {
   height: auto !important; }
