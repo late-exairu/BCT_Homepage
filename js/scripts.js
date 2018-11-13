@@ -40,8 +40,8 @@ $(document).ready(function () {
 		autoplayTimeout: 5000,
 		smartSpeed: 1000,
 		onChanged: function (event) {
-			//$(event.target).trigger('stop.owl.autoplay');
-			//$(event.target).trigger('play.owl.autoplay');
+			$(event.target).trigger('stop.owl.autoplay');
+			$(event.target).trigger('play.owl.autoplay');
 		}
 	});
 
@@ -111,8 +111,8 @@ $(document).ready(function () {
 		if ($('.section-9').length) {
 			if (window.pageYOffset + 500 > $('.section-9').offset().top) {
 				if (!owl2AutoPlayed) {
-					//owl2.trigger('to.owl.carousel', [0,0]);
-					//owl2AutoPlayed = true;
+					owl2.trigger('to.owl.carousel', [0,0]);
+					owl2AutoPlayed = true;
 				}
 			}
 		}
