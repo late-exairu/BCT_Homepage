@@ -343,8 +343,8 @@ ul.list-blue {
   padding: 1rem 1rem 9px; }
 
 .owl-2 .slide {
-  padding-top: 200px;
-  padding-bottom: 130px;
+  padding-top: 165px;
+  padding-bottom: 165px;
   background-size: cover;
   background-position: center; }
   .owl-2 .slide.slide-1 {
@@ -371,7 +371,10 @@ ul.list-blue {
   .owl-2 .slide .container {
     position: relative;
     z-index: 2;
-    min-height: 300px; }
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
 .owl-2 .owl-dots {
   position: absolute;
