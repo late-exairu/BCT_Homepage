@@ -621,6 +621,9 @@ ul.list-blue {
   .px {
     padding-left: 40px;
     padding-right: 40px; } }
+@media (max-width: 399px) {
+  .br {
+    display: none; } }
 hr {
   border-color: #ccc;
   margin: 10px 0; }
