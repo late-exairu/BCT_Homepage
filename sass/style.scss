@@ -153,12 +153,25 @@ h1, .h1, h2, .h2 {
   text-align: center;
   cursor: pointer;
   &:hover {
-	background: linear-gradient(#51a9ee, #147bcd);
-	border-color: #1482d0;
+  	background: linear-gradient(#51a9ee, #147bcd);
+  	border-color: #1482d0;
   }
   &:active {
-	background: linear-gradient(#3d94d9, #0067b9);
-	border-color: #006dbc;
+  	background: linear-gradient(#3d94d9, #0067b9);
+  	border-color: #006dbc;
+  }
+}
+.button-gray {
+  color: inherit !important;
+  background: linear-gradient(#f7f8fa, #e7e9ec);
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  &:hover {
+    background: linear-gradient(#e7eaf0, #d9dce1);
+    border-color: #a2a6ac #979aa1 #82858a;
+  }
+  &:active {
+    background: linear-gradient(#dcdfe3, #dcdfe3);
+    border-color: #adb1b8 #a2a6ac #a2a6ac;
   }
 }
 .button-lg {

@@ -124,6 +124,17 @@ h1, .h1, h2, .h2 {
     background: linear-gradient(#3d94d9, #0067b9);
     border-color: #006dbc; }
 
+.button-gray {
+  color: inherit !important;
+  background: linear-gradient(#f7f8fa, #e7e9ec);
+  border-color: #adb1b8 #a2a6ac #8d9096; }
+  .button-gray:hover {
+    background: linear-gradient(#e7eaf0, #d9dce1);
+    border-color: #a2a6ac #979aa1 #82858a; }
+  .button-gray:active {
+    background: linear-gradient(#dcdfe3, #dcdfe3);
+    border-color: #adb1b8 #a2a6ac #a2a6ac; }
+
 .button-lg {
   font-size: 1rem;
   border-radius: 6px;
