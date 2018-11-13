@@ -9,7 +9,7 @@ a {
   transition: 0.2s;
   text-decoration: none !important;
   &:hover {
-    color: #00A1FF;
+	color: #00A1FF;
   }
 }
 
@@ -65,8 +65,8 @@ h1, .h1, h2, .h2 {
   margin-left: -10px;
   margin-right: -10px;
   [class^="col"] {
-    padding-left: 10px;
-    padding-right: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
   }
 }
 
@@ -77,34 +77,59 @@ h1, .h1, h2, .h2 {
 //   }
 // }
 
+.navbar{
+
+	&__back {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		transform: opacity .25s;
+	}
+
+	&__back-icon {
+		display: block;
+		width: 20px;
+		fill: #0080ca;
+	}
+
+	&__back-text {
+		text-transform: uppercase;
+		color: #0080ca;
+		font-weight: 600;
+		margin-left: 10px;
+		line-height: 24px;
+		margin-top: 3px;
+	}
+}
+
 .navbar-light {
   border-bottom: 1px solid #D6D6D6;
   box-shadow: 0 0 17px #EDEDED;
   min-height: 64px;
   .nav-item {
-    margin-left: 4px;
+	margin-left: 4px;
   }
   .button {
-    margin: 10px 0;
+	margin: 10px 0;
   }
   .navbar-nav .nav-link {
-    font-size: 14px;
-    font-weight: 500;
-    color: inherit !important;
-    transition: 0.2s;
-    &.mPS2id-highlight-first { 
-      color: #0080CA !important;
-    }
-    &:hover {
-      opacity: 0.65;
-    }
+	font-size: 14px;
+	font-weight: 500;
+	color: inherit !important;
+	transition: 0.2s;
+	&.mPS2id-highlight-first { 
+	  color: #0080CA !important;
+	}
+	&:hover {
+	  opacity: 0.65;
+	}
   }
   .navbar-collapse .nav-item {
-    margin-left: 17px;
-    margin-right: 17px;
+	margin-left: 17px;
+	margin-right: 17px;
   }
   .navbar-right .nav-link {
-    color: #0080CA !important;
+	color: #0080CA !important;
   }
 }
 .navbar-brand img {
@@ -113,7 +138,7 @@ h1, .h1, h2, .h2 {
 .promo {
   line-height: 1.16;
   text-transform: uppercase;
-  padding: 3px 0 0;
+  margin-right: auto;
 }
 
 .button {
@@ -128,12 +153,12 @@ h1, .h1, h2, .h2 {
   text-align: center;
   cursor: pointer;
   &:hover {
-    background: linear-gradient(#51a9ee, #147bcd);
-    border-color: #1482d0;
+	background: linear-gradient(#51a9ee, #147bcd);
+	border-color: #1482d0;
   }
   &:active {
-    background: linear-gradient(#3d94d9, #0067b9);
-    border-color: #006dbc;
+	background: linear-gradient(#3d94d9, #0067b9);
+	border-color: #006dbc;
   }
 }
 .button-lg {
@@ -141,6 +166,9 @@ h1, .h1, h2, .h2 {
   border-radius: 6px;
   padding: 8px 20px 10px;
   min-width: 196px;
+}
+.button-auto {
+  min-width: auto;
 }
 
 .reel{
@@ -162,14 +190,14 @@ ul.list-blue {
   padding-left: 0;
   list-style: none;
   li {
-    padding-left: 18px;
-    position: relative;
-    &:before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: #00A1FF;
-    }
+	padding-left: 18px;
+	position: relative;
+	&:before {
+	  content: "•";
+	  position: absolute;
+	  left: 0;
+	  color: #00A1FF;
+	}
   }
 }
 
@@ -177,53 +205,53 @@ ul.list-blue {
   padding: 4px 0;
   background: linear-gradient(#EDEDED, transparent 17px);
   .owl-item img {
-    width: auto;
+	width: auto;
   }
 }
 
 .owl-theme {
   .owl-nav {
-    margin-top: 0;
-    [class*="owl-"] {
-      position: absolute;
-      padding: 0;
-      margin: 0;
-      width: 42px;
-      height: 42px;
-      transform: translateY(-50%);
-      border-radius: 50%;
-      top: 50%;
-      transition: 0.2s;
-      background-color: rgba(213, 213, 213, 0.25) !important;
-      background-image: url(../img/arrow.png) !important;
-      background-size: cover !important;
-      &.owl-prev {
-        left: 0;
-      }
-      &.owl-next {
-        right: 0;
-        transform: translateY(-50%) rotate(180deg);
-      }
-      &:not(.disabled):hover {
-        opacity: 0.65;
-      }
-    }
+	margin-top: 0;
+	[class*="owl-"] {
+	  position: absolute;
+	  padding: 0;
+	  margin: 0;
+	  width: 42px;
+	  height: 42px;
+	  transform: translateY(-50%);
+	  border-radius: 50%;
+	  top: 50%;
+	  transition: 0.2s;
+	  background-color: rgba(213, 213, 213, 0.25) !important;
+	  background-image: url(../img/arrow.png) !important;
+	  background-size: cover !important;
+	  &.owl-prev {
+		left: 0;
+	  }
+	  &.owl-next {
+		right: 0;
+		transform: translateY(-50%) rotate(180deg);
+	  }
+	  &:not(.disabled):hover {
+		opacity: 0.65;
+	  }
+	}
   }
   .owl-dots {
-    position: relative;
-    .owl-dot {
-      span {
-        width: 8px;
-        height: 8px;
-        margin: 5px;
-        background-color: transparent;
-        border: 1px solid #878787;
-        transition: 0.2s;
-      }
-      &.active span, &:hover span {
-        background-color: #878787;
-      }
-    }
+	position: relative;
+	.owl-dot {
+	  span {
+		width: 8px;
+		height: 8px;
+		margin: 5px;
+		background-color: transparent;
+		border: 1px solid #878787;
+		transition: 0.2s;
+	  }
+	  &.active span, &:hover span {
+		background-color: #878787;
+	  }
+	}
   }
 }
 
@@ -237,11 +265,11 @@ ul.list-blue {
   padding-bottom: 56.25%;
   overflow: hidden;
   iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
   }
 }
 
@@ -266,53 +294,53 @@ ul.list-blue {
 .owl-header {
   margin-bottom: 0 !important;
   .owl-dots .owl-dot {
-    padding-right: 10px;
-    padding-left: 10px;
-    flex: 0 0 25%;
-    max-width: 25%;
-    margin-bottom: 12px;
-    background: 0;
-    border: 0;
-    &:before {
-      display: block;
-      padding: 5px 1px;
-      border: 1px solid #222222;
-      transition: 0.2s;
-      cursor: pointer;
-      height: 100%;
-    }
-    &:hover, &.active {
-      &:before {
-        color: #fff;
-        border-color: #0080CA;
-        background-color: #0080CA;
-        font-weight: 600;
-      }
-    }
-    &:nth-child(1):before {
-      content: "Global Wallet";
-    }
-    &:nth-child(2):before {
-      content: "Global OrderBook";
-    }
-    &:nth-child(3):before {
-      content: "Global Portfolio";
-    }
-    &:nth-child(4):before {
-      content: "Global Order History";
-    }
-    &:nth-child(5):before {
-      content: "Global Liquidity";
-    }
-    &:nth-child(6):before {
-      content: "Basic Mode";
-    }
-    &:nth-child(7):before {
-      content: "Advanced Mode";
-    }
-    &:nth-child(8):before {
-      content: "App's";
-    }
+	padding-right: 10px;
+	padding-left: 10px;
+	flex: 0 0 25%;
+	max-width: 25%;
+	margin-bottom: 12px;
+	background: 0;
+	border: 0;
+	&:before {
+	  display: block;
+	  padding: 5px 1px;
+	  border: 1px solid #222222;
+	  transition: 0.2s;
+	  cursor: pointer;
+	  height: 100%;
+	}
+	&:hover, &.active {
+	  &:before {
+		color: #fff;
+		border-color: #0080CA;
+		background-color: #0080CA;
+		font-weight: 600;
+	  }
+	}
+	&:nth-child(1):before {
+	  content: "Global Wallet";
+	}
+	&:nth-child(2):before {
+	  content: "Global OrderBook";
+	}
+	&:nth-child(3):before {
+	  content: "Global Portfolio";
+	}
+	&:nth-child(4):before {
+	  content: "Global Order History";
+	}
+	&:nth-child(5):before {
+	  content: "Global Liquidity";
+	}
+	&:nth-child(6):before {
+	  content: "Basic Mode";
+	}
+	&:nth-child(7):before {
+	  content: "Advanced Mode";
+	}
+	&:nth-child(8):before {
+	  content: "App's";
+	}
   }
 }
 
@@ -321,11 +349,11 @@ ul.list-blue {
   margin: 0 auto;
   position: relative;
   .owl-4 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 2.8%;
-    padding: 0 11.5%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 2.8%;
+	padding: 0 11.5%;
   }
 }
 
@@ -339,56 +367,56 @@ ul.list-blue {
 .video-modal {
   cursor: pointer;
   .img-video {
-    transition: 0.2s;
-    padding: 1px 1.5rem;
-    border: 1px solid #3D3D3D;
-    position: relative;
-    &:after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 42.06px;
-      height: 29.76px;
-      transform: translate(-50%, -50%);
-      background-image: url(../img/play.svg);
-      background-size: cover;
-      transition: 0.2s;
-    }
+	transition: 0.2s;
+	padding: 1px 1.5rem;
+	border: 1px solid #3D3D3D;
+	position: relative;
+	&:after {
+	  content: "";
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  width: 42.06px;
+	  height: 29.76px;
+	  transform: translate(-50%, -50%);
+	  background-image: url(../img/play.svg);
+	  background-size: cover;
+	  transition: 0.2s;
+	}
 
-    &:before{
-    	content: '';
-    	position: absolute;
-    	left: 0;
-    	top: 0;
-    	right: 0;
-    	bottom: 0;
-    	background: #000;
-    }
+	&:before{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background: #000;
+	}
   }
 
   .title{
-  	position: absolute;
-  	bottom: 65%;
-  	left: 10px;
-  	right: 10px;
-  	text-align: center;
-  	line-height: 1.28;
+	position: absolute;
+	bottom: 65%;
+	left: 10px;
+	right: 10px;
+	text-align: center;
+	line-height: 1.28;
   }
   div {
-    transition: 0.2s;
-    color: rgba(255, 255, 255, 0.25);
+	transition: 0.2s;
+	color: rgba(255, 255, 255, 0.25);
   }
   &:hover {
-    .img-video {
-      border-color: #0080CA;
-      &:after {
-        background-image: url(../img/play-2.svg);
-      }
-    }
-    div {
-      color: inherit;
-    }
+	.img-video {
+	  border-color: #0080CA;
+	  &:after {
+		background-image: url(../img/play-2.svg);
+	  }
+	}
+	div {
+	  color: inherit;
+	}
   }
 }
 
@@ -476,20 +504,20 @@ ul.list-blue {
     }
   }
   .owl-dots {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
   }
   .owl-nav {
-    [class*="owl-"] {
-      &.owl-prev {
-        left: 10px;
-      }
-      &.owl-next {
-        right: 10px;
-      }
-    }
+	[class*="owl-"] {
+	  &.owl-prev {
+		left: 10px;
+	  }
+	  &.owl-next {
+		right: 10px;
+	  }
+	}
   }
 }
 
@@ -507,19 +535,19 @@ ul.list-blue {
 
 .owl-3 {
   a {
-    font-size: 15px;
-    img {
-      border: 1px solid #222222;
-      padding: 10px;
-    }
-    p {
-      color: #878787;
-    }
+	font-size: 15px;
+	img {
+	  border: 1px solid #222222;
+	  padding: 10px;
+	}
+	p {
+	  color: #878787;
+	}
   }
   .owl-nav {
-    [class*="owl-"] {
-      top: 40%;
-    }
+	[class*="owl-"] {
+	  top: 40%;
+	}
   }
 }
 
@@ -541,9 +569,9 @@ ul.list-blue {
 
 #youtubeModal {
   .modal-content {
-    background-color: #000;
-    border: 0;
-    border-radius: 0;
+	background-color: #000;
+	border: 0;
+	border-radius: 0;
   }
 }
 
