@@ -382,7 +382,7 @@ ul.list-blue {
   cursor: pointer;
   .img-video {
 	transition: 0.2s;
-	padding: 1.5rem;
+	padding: 1.7rem 2.5rem;
 	border: 1px solid #3D3D3D;
 	position: relative;
 	&:after {
@@ -411,10 +411,10 @@ ul.list-blue {
 
   .title{
 	position: absolute;
-	top: 5px;
+	bottom: 5px;
 	left: 10px;
 	right: 10px;
-	text-align: center;
+	text-align: left;
 	line-height: 1.28;
   }
   div {
