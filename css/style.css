@@ -199,6 +199,8 @@ ul.list-blue {
       transform: translateY(-50%) rotate(180deg); }
     .owl-theme .owl-nav [class*="owl-"]:not(.disabled):hover {
       opacity: 0.65; }
+  .owl-theme .owl-nav .disabled {
+    display: none; }
 
 .owl-theme .owl-dots {
   position: relative; }
