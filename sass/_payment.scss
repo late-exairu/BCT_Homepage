@@ -448,12 +448,13 @@ form .button {
 		border-radius: 4px;
 		border-color: #d5d5d5;
 		box-shadow: none;
-		padding: 6px 30px 6px 15px;
+		padding: 2px 30px 1px 15px;
 		font-weight: 700;
 		white-space: nowrap;
 		text-overflow: ellipsis;
-		background: transparent;
+		background: linear-gradient(to bottom, #f3f3f3 0%,#dcdcdc 100%);
 		border-color: 1px solid #0080CA;
+
 
 		@media (max-width: 575px) {
 			font-size: 14px;
