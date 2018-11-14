@@ -87,6 +87,7 @@ form .button {
 	border: 1px solid #c3c3c3;
 	padding: 1rem .5rem .25rem;
 	position: relative;
+	max-width: 255px;
 	&:before {
 		content: '×';
     position: absolute;
