@@ -375,7 +375,10 @@ ul.list-blue {
   padding-top: 80px;
   padding-bottom: 60px;
   color: #0080CA;
-  background-color: #000;
+	background-color: #000;
+	.fz-20{
+		color: rgba(255, 255, 255, 0.25);
+	}
 }
 
 .video-modal {

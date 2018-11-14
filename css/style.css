@@ -297,6 +297,8 @@ ul.list-blue {
   padding-bottom: 60px;
   color: #0080CA;
   background-color: #000; }
+  .section-5 .fz-20 {
+    color: rgba(255, 255, 255, 0.25); }
 
 .video-modal {
   cursor: pointer; }
