@@ -988,6 +988,9 @@ form .button {
   .basic-select.single .selectize-input > input {
     line-height: 15px !important; }
 
+.basic-select.single .selectize-dropdown-content {
+  font-size: 14px; }
+
 .token-select.single .selectize-input {
   font-size: 1.0rem;
   border-radius: 4px;
@@ -1006,6 +1009,9 @@ form .button {
       padding-bottom: 4px; } }
   .token-select.single .selectize-input > input {
     line-height: 15px !important; }
+
+.token-select.single .selectize-dropdown-content {
+  font-size: 14px; }
 
 .switch label {
   margin: 0;
