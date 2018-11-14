@@ -302,7 +302,7 @@ ul.list-blue {
   cursor: pointer; }
   .video-modal .img-video {
     transition: 0.2s;
-    padding: 1px 1.5rem;
+    padding: 1.5rem;
     border: 1px solid #3D3D3D;
     position: relative; }
     .video-modal .img-video:after {
@@ -316,17 +316,9 @@ ul.list-blue {
       background-image: url(../img/play.svg);
       background-size: cover;
       transition: 0.2s; }
-    .video-modal .img-video:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      background: #000; }
   .video-modal .title {
     position: absolute;
-    bottom: 65%;
+    top: 5px;
     left: 10px;
     right: 10px;
     text-align: center;
