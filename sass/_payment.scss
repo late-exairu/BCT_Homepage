@@ -274,7 +274,7 @@ form .button {
 	  border-radius: 6px;
 	  transition: all 0.2s;
 	  position: relative;
-	  overflow: hidden;
+	  /*overflow: hidden;*/
 		height: 100%;
 		&:before, &:after {
 			content: '';
@@ -436,6 +436,31 @@ form .button {
 	    padding-top: 21px;
 	    padding-bottom: 4px;
 		}
+		> input {
+			line-height: 15px !important;
+		}
+	}
+}
+
+.token-select.single{
+	.selectize-input {
+		font-size: 1.2rem;
+		border-radius: 4px;
+		border-color: #d5d5d5;
+		box-shadow: none;
+		padding: 6px 30px 6px 15px;
+		font-weight: 700;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		background: transparent;
+		border: none;
+
+		@media (max-width: 575px) {
+			font-size: 14px;
+			padding-top: 21px;
+			padding-bottom: 4px;
+		}
+
 		> input {
 			line-height: 15px !important;
 		}
