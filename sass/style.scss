@@ -123,6 +123,7 @@ h1, .h1, h2, .h2 {
   .navbar-collapse .nav-item {
 	margin-left: 17px;
 	margin-right: 17px;
+	pointer-events: none;
   }
   .navbar-right .nav-link {
 	color: #0080CA !important;

@@ -92,7 +92,8 @@ h1, .h1, h2, .h2 {
       opacity: 0.65; }
   .navbar-light .navbar-collapse .nav-item {
     margin-left: 17px;
-    margin-right: 17px; }
+    margin-right: 17px;
+    pointer-events: none; }
   .navbar-light .navbar-right .nav-link {
     color: #0080CA !important; }
 
