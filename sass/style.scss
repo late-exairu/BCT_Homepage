@@ -482,21 +482,27 @@ ul.list-blue {
     background-position: center;
     &.slide-1 {
       background-image: url(../img/bg-1.jpg);
+	  .container { max-width: 1040px; }
     }
     &.slide-2 { 
       background-image: url(../img/bg-2.jpg);
+	  .container { max-width: 840px; }
     }
     &.slide-3 {
       background-image: url(../img/bg-3.jpg);
+	  .container { max-width: 1130px; }
     }
     &.slide-4 {
       background-image: url(../img/bg-4.jpg);
+	  .container { max-width: 840px; }
     }
     &.slide-5 {
       background-image: url(../img/bg-5.jpg);
+	  .container { max-width: 740px; }
     }
     &.slide-6 {
       background-image: url(../img/bg-6.jpg);
+	  .container { max-width: 1100px; }
     }
     &:after {
       content: '';
@@ -515,6 +521,10 @@ ul.list-blue {
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      p{
+      	padding: 0 10px;
+      }
     }
   }
   .owl-dots {

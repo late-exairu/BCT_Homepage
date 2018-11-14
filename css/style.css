@@ -375,16 +375,28 @@ ul.list-blue {
   background-position: center; }
   .owl-2 .slide.slide-1 {
     background-image: url(../img/bg-1.jpg); }
+    .owl-2 .slide.slide-1 .container {
+      max-width: 1040px; }
   .owl-2 .slide.slide-2 {
     background-image: url(../img/bg-2.jpg); }
+    .owl-2 .slide.slide-2 .container {
+      max-width: 840px; }
   .owl-2 .slide.slide-3 {
     background-image: url(../img/bg-3.jpg); }
+    .owl-2 .slide.slide-3 .container {
+      max-width: 1130px; }
   .owl-2 .slide.slide-4 {
     background-image: url(../img/bg-4.jpg); }
+    .owl-2 .slide.slide-4 .container {
+      max-width: 840px; }
   .owl-2 .slide.slide-5 {
     background-image: url(../img/bg-5.jpg); }
+    .owl-2 .slide.slide-5 .container {
+      max-width: 740px; }
   .owl-2 .slide.slide-6 {
     background-image: url(../img/bg-6.jpg); }
+    .owl-2 .slide.slide-6 .container {
+      max-width: 1100px; }
   .owl-2 .slide:after {
     content: '';
     position: absolute;
@@ -401,6 +413,8 @@ ul.list-blue {
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    .owl-2 .slide .container p {
+      padding: 0 10px; }
 
 .owl-2 .owl-dots {
   position: absolute;
