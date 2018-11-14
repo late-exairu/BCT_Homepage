@@ -430,7 +430,8 @@ ul.list-blue {
     border: 1px solid #222222;
     padding: 10px; }
   .owl-3 a p {
-    color: #878787; }
+    color: #878787;
+    padding-left: 10px; }
 
 .owl-3 .owl-nav [class*="owl-"] {
   top: 40%; }
