@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+	const numberWithCommas = (x) => {
+		return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	}
+
 	$(".owl-brands").owlCarousel({
 		responsive: {
 			0: {
@@ -235,6 +239,52 @@ $(document).ready(function () {
 		$('.pills').removeClass('active');
 		var href = $(this).attr('href');
 		$(href).addClass('active');
+	});
+
+	var labelCardBonusArr = [
+		7000,
+		10500,
+		14000,
+		20000,
+		24000,
+		28000,
+		32000,
+		36000,
+		40000,
+		67500,
+		90000,
+		135000,
+		180000,
+		250000,
+		300000,
+		350000,
+		400000,
+		450000,
+		500000,
+		750000,
+		900000,
+		1050000,
+		1200000,
+		1750000,
+		2100000,
+		2800000,
+		4000000,
+		4800000,
+		5600000,
+		7200000,
+		8100000,
+		10000000,
+	];
+
+	$('.label-card select').change(function (e) {
+		var value = $(this).val()
+		var index = $(this.nextElementSibling).find('.selectize-dropdown div[data-value="' + value + '"]').index();
+
+		var bonusValue = labelCardBonusArr[index];
+		var USDValue = value.split(' ')[0].replace(/,/g, '') / 10;
+
+		$(this).closest('.label-card').find(' > .text-blue').html('+'+ numberWithCommas(bonusValue) +' Bonus Coins');
+		$(this).closest('.label-card').find(' > .fz-24').html('$' + numberWithCommas(USDValue));
 	});
 
 });
