@@ -51,6 +51,8 @@ form .button {
 	list-style: none;
 	line-height: 1.3;
 	color: #D6D6D6;
+	flex-wrap: wrap;
+	
 	.item {
 		position: relative;
 		padding: 0 3px;
