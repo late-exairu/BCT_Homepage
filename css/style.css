@@ -500,9 +500,16 @@ ul.list-blue {
   opacity: 0;
   transition: .3s ease; }
 
+.section-9 .owl-carousel.owl-drag .owl-item {
+  height: 800px; }
+  .section-9 .owl-carousel.owl-drag .owl-item .slide {
+    height: 100%; }
+
 .section-10 {
-  padding-top: 105px;
-  padding-bottom: 72px; }
+  padding-top: 100px;
+  padding-bottom: 140px; }
+  .section-10 div.desc, .section-10 h2 {
+    margin-bottom: 45px; }
 
 .owl-3 a {
   font-size: 15px; }

@@ -654,10 +654,22 @@ ul.list-blue {
   opacity: 0;
   transition: .3s ease;
 }
-  
+
+.section-9 {
+	.owl-carousel.owl-drag .owl-item {
+		height: 800px;
+		.slide {
+			height: 100%;
+		}
+	}
+}
+
 .section-10 {
-  padding-top: 105px;
-  padding-bottom: 72px;
+  padding-top: 100px;
+	padding-bottom: 140px;
+	div.desc, h2 {
+		margin-bottom: 45px;
+	}
 }
 
 .owl-3 {
