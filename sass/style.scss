@@ -190,8 +190,24 @@ h1, .h1, h2, .h2 {
 }
 
 .section-1 {
-  flex-grow: 1;
-  min-height: calc(100vh - 64px);
+	flex-grow: 1;
+
+	.container{
+		margin: 98px auto 64px;
+	}
+
+	.img{
+		max-width: 580px;
+		width: 100%;
+	}
+
+	@media (max-width: 992px) {
+
+		.container{
+			margin: 0 auto;
+		}
+	}
+
 }
 
 .terminal-switch-wrap {
