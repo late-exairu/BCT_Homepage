@@ -354,11 +354,15 @@ ul.list-blue {
 
 .section-4 {  
   padding-top: 40px;
-  padding-bottom: 50px;
+  padding-bottom: 96px;
 }
 
 .owl-header {
   margin-bottom: 0 !important;
+  .owl-dots{
+	margin-bottom: 4px;
+  }
+
   .owl-dots .owl-dot {
 	padding-right: 10px;
 	padding-left: 10px;
@@ -369,7 +373,7 @@ ul.list-blue {
 	border: 0;
 	&:before {
 	  display: block;
-	  padding: 5px 1px;
+	  padding: 5px 1px 4px;
 	  border: 1px solid #222222;
 	  transition: 0.2s;
 	  cursor: pointer;
