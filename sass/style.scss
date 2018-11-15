@@ -509,12 +509,14 @@ ul.list-blue {
 		.coin-img {
 			display: flex;
 			justify-content: flex-end;
+			padding-right: 55px;
 			img.coin-Y {
 				width: 500px;
 			}
 		}
 		p {
-			width: 500px;
+			width: 550px;
+			font-size: 18px;
 		}
 	}
 }
@@ -537,10 +539,18 @@ ul.list-blue {
 			h3 {
 				margin: 0 !important;
 			}
+			a.apply {
+				display: inline;
+				position: absolute;
+				right: 20px;
+				top: 14px;
+				font-size: 14px;
+				font-weight: 400;
+			}
 		}
 	}
 	.terminal {
-		padding: 100px 10px 150px;
+		padding: 100px 20px 150px;
 	}
 }
 
