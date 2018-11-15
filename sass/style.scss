@@ -529,8 +529,17 @@ ul.list-blue {
 }
 
 .section-8 {
-  padding-top: 50px;
-	padding-bottom: 50px;
+	padding: 100px 0 150px;
+	height: 1365px;
+	h2 {
+		margin-bottom: 45px;
+	}
+	.desc {
+		margin-bottom: 45px;
+	}
+	.options {
+		margin-top: 45px;
+	}
 	.col-xl-9 {
 		.card-border {
 			p:last-child {

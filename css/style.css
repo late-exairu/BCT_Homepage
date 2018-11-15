@@ -402,8 +402,14 @@ ul.list-blue {
     letter-spacing: 1px; }
 
 .section-8 {
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  padding: 100px 0 150px;
+  height: 1365px; }
+  .section-8 h2 {
+    margin-bottom: 45px; }
+  .section-8 .desc {
+    margin-bottom: 45px; }
+  .section-8 .options {
+    margin-top: 45px; }
   .section-8 .col-xl-9 .card-border p:last-child {
     letter-spacing: -1px;
     word-spacing: -1px; }
