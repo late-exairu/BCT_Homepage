@@ -742,8 +742,8 @@ form .button {
   .inputGroup .col-img {
     max-width: 33.6%; }
   .inputGroup .label-wrap {
-    padding: 10px;
-    border: 1px solid #0080CA;
+    padding: 0 0;
+    /*border: 1px solid #0080CA;*/
     border-radius: 6px; }
   .inputGroup label {
     padding: 10px;
@@ -782,7 +782,7 @@ form .button {
     padding-top: 10px;
     margin-top: 10px; }
   .inputGroup .tab-a {
-    min-width: 74px;
+    width: 74px;
     font-size: 8px;
     line-height: 1;
     text-align: left;

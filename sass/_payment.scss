@@ -52,7 +52,7 @@ form .button {
 	line-height: 1.3;
 	color: #D6D6D6;
 	flex-wrap: wrap;
-	
+
 	.item {
 		position: relative;
 		padding: 0 3px;
@@ -131,9 +131,9 @@ form .button {
     max-width: 33.6%;
 	}
 	.label-wrap {
-		padding: 10px;
-    border: 1px solid #0080CA;
-    border-radius: 6px;
+		padding: 0 0;
+    	/*border: 1px solid #0080CA;*/
+    	border-radius: 6px;
 	}
 	label {
 		padding: 10px;
@@ -178,7 +178,7 @@ form .button {
 		margin-top: 10px;
 	}
 	.tab-a {
-    min-width: 74px;
+    width: 74px;
     font-size: 8px;
     line-height: 1;
     text-align: left;
