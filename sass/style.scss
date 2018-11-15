@@ -338,9 +338,18 @@ ul.list-blue {
 }
 
 .section-3 {
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding-top: 43px;
+  padding-bottom: 108px;
   background: #CCD0D3;
+
+  .container{
+	max-width: 1140px;
+  }
+
+  img{
+  	height: auto;
+  	margin: 0 0 18px;
+  }
 }
 
 .section-4 {  
