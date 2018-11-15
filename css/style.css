@@ -151,8 +151,15 @@ h1, .h1, h2, .h2 {
   height: auto !important; }
 
 .section-1 {
-  flex-grow: 1;
-  min-height: calc(100vh - 64px); }
+  flex-grow: 1; }
+  .section-1 .container {
+    margin: 98px auto 64px; }
+  .section-1 .img {
+    max-width: 580px;
+    width: 100%; }
+  @media (max-width: 992px) {
+    .section-1 .container {
+      margin: 0 auto; } }
 
 .terminal-switch-wrap {
   line-height: 1;
@@ -388,9 +395,11 @@ ul.list-blue {
     .section-11 .row .coin-img {
       display: flex;
       justify-content: flex-end;
-      padding-right: 55px; }
+      padding-right: 60px;
+      width: 700px; }
       .section-11 .row .coin-img img.coin-Y {
-        width: 500px; }
+        width: auto;
+        height: auto; }
     .section-11 .row p {
       width: 550px;
       font-size: 18px; }
