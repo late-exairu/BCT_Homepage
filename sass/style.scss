@@ -599,26 +599,31 @@ ul.list-blue {
 	height: 370px;
 	background-color: black;
 	color: white;
-	.container {
+	.row {
 		height: 100%;
-		.row {
-			height: 100%;
-			.coin-img {
-				display: flex;
-				justify-content: flex-end;
-				padding-right: 60px;
-				width: 700px;
-				img.coin-Y {
-					width: auto;
-					height: auto;
-				}
-			}
-			p {
-				width: 550px;
-				font-size: 18px;
+		.coin-img {
+			max-width: 700px;
+			height: auto;
+
+			img.coin-Y {
+				display: block;
+				width: 100%;
+				height: auto;
 			}
 		}
+		p {
+			width: 550px;
+			font-size: 18px;
+			margin: 0;
+		}
+	}
 
+	@media (max-width: 992px) {
+		.row{
+			p {
+				width: auto;
+			}
+		}
 	}
 }
 
