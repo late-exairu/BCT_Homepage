@@ -599,22 +599,26 @@ ul.list-blue {
 	height: 370px;
 	background-color: black;
 	color: white;
-	.row {
+	.container {
 		height: 100%;
-		.coin-img {
-			display: flex;
-			justify-content: flex-end;
-			padding-right: 60px;
-			width: 700px;
-			img.coin-Y {
-				width: auto;
-				height: auto;
+		.row {
+			height: 100%;
+			.coin-img {
+				display: flex;
+				justify-content: flex-end;
+				padding-right: 60px;
+				width: 700px;
+				img.coin-Y {
+					width: auto;
+					height: auto;
+				}
+			}
+			p {
+				width: 550px;
+				font-size: 18px;
 			}
 		}
-		p {
-			width: 550px;
-			font-size: 18px;
-		}
+
 	}
 }
 

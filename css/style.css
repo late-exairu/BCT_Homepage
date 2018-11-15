@@ -445,19 +445,21 @@ ul.list-blue {
   height: 370px;
   background-color: black;
   color: white; }
-  .section-11 .row {
+  .section-11 .container {
     height: 100%; }
-    .section-11 .row .coin-img {
-      display: flex;
-      justify-content: flex-end;
-      padding-right: 60px;
-      width: 700px; }
-      .section-11 .row .coin-img img.coin-Y {
-        width: auto;
-        height: auto; }
-    .section-11 .row p {
-      width: 550px;
-      font-size: 18px; }
+    .section-11 .container .row {
+      height: 100%; }
+      .section-11 .container .row .coin-img {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 60px;
+        width: 700px; }
+        .section-11 .container .row .coin-img img.coin-Y {
+          width: auto;
+          height: auto; }
+      .section-11 .container .row p {
+        width: 550px;
+        font-size: 18px; }
 
 .section-12 .row {
   width: 100%; }
