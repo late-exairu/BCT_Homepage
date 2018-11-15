@@ -782,13 +782,16 @@ form .button {
     padding-top: 10px;
     margin-top: 10px; }
   .inputGroup .tab-a {
-    width: 74px;
-    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 23%;
+    height: auto;
     line-height: 1;
-    text-align: left;
     border: 1px solid #D6D6D6;
     border-radius: 6px;
-    padding: 10px 4px;
+    padding: 0px 4px;
     transition: all 0.2s;
     position: relative;
     overflow: hidden;
@@ -815,8 +818,13 @@ form .button {
       position: absolute;
       right: 2px;
       bottom: 2px; }
+    .inputGroup .tab-a .abbr {
+      font-size: 24px;
+      line-height: 1; }
+    .inputGroup .tab-a .title {
+      font-size: 14px; }
     .inputGroup .tab-a .col-auto img {
-      width: 25px !important; }
+      width: 100% !important; }
     .inputGroup .tab-a.active:before, .inputGroup .tab-a.active:after {
       opacity: 1; }
   .inputGroup .owl-theme .owl-nav [class*="owl-"] {
