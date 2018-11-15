@@ -460,7 +460,7 @@ ul.list-blue {
   top: 40%; }
 
 .page-footer {
-  padding: 28px 0;
+  padding: 16px 0;
   background-color: #ebebeb;
   color: #474747 !important; }
 
@@ -504,7 +504,7 @@ ul.list-blue {
 
 @media (min-width: 768px) {
   .page-footer {
-    padding: 28px 0; } }
+    padding: 16px 0; } }
 
 @media (min-width: 992px) {
   .section-3 {
