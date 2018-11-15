@@ -239,6 +239,13 @@ $(document).ready(function () {
 		$('.pills').removeClass('active');
 		var href = $(this).attr('href');
 		$(href).addClass('active');
+
+		var text = $(href + " p.tip span").length > 0 ? $(href + " p.tip span")[0].innerText : ' ';
+		$('body').append('<input id="clipboard">');
+		$("input#clipboard").val(text).select();
+		document.execCommand('copy');
+
+		$("input#clipboard").remove();
 	});
 
 	var labelCardBonusArr = [
