@@ -146,6 +146,7 @@
 						<div class="video-container">
 							<!-- <iframe src="https://www.youtube.com/embed/s9xOaCD4ZKs?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 							<div id="bigPlayer"></div>
+							<div id="videoOverlay"></div>
 						</div>
 					</div>
 				</div>
@@ -173,18 +174,18 @@
 
 	<section id="section-3" class="section-3 text-center fz-20">
 		<div class="container">
-			<h2 class="mb-5">What’s in the Box</h2>
+			<h2 class="mt-5 mb-4">What’s in the Box</h2>
 			<div class="row justify-content-center">
 				<div class="col-sm-4 col-md-4 pb-4">
-					<img src="img/terminal-side.png" alt="" width="266">
+					<img src="img/1.png" alt="" width="290">
 					<p>32-Inch HD Terminal</p>
 				</div>
 				<div class="col-sm-4 col-md-4 pb-4">
-					<img src="img/2.png" alt="" width="266">
+					<img src="img/2.png" alt="" width="290">
 					<p>Wireless Mouse and Keyboard</p>
 				</div>
 				<div class="col-sm-4 col-md-4 pb-4">
-					<img src="img/3.png" alt="" width="266">
+					<img src="img/3.png" alt="" width="290">
 					<p>Private Key Device</p>
 				</div>
 			</div>
@@ -834,6 +835,7 @@
 			function onBigPlayerStateChange(event) {
 				if (event.data === 0) {
 					bigPlayer.stopVideo();
+					$('#videoOverlay').removeClass('hidden');
 				}
 			}
 			bigPlayer = new YT.Player('bigPlayer', {
@@ -844,6 +846,11 @@
 				events: {
 				'onStateChange': onBigPlayerStateChange
 				}
+			});
+
+			$('#videoOverlay').click(function () {
+				$('#videoOverlay').addClass('hidden');
+				bigPlayer.playVideo();
 			});
 		}
 </script>
