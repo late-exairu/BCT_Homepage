@@ -467,7 +467,16 @@ ul.list-blue {
   padding-top: 160px;
   padding-bottom: 200px;
   background: url(../img/bg.jpg) center top;
-  background-size: cover;
+	background-size: cover;
+	
+	.col-lg {
+		p {
+			text-align-last: justify;
+			text-align: justify;
+			word-spacing: -1px;
+			letter-spacing: 1px;
+		}
+	}
 }
 
 .section-8 {

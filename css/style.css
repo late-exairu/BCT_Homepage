@@ -363,6 +363,11 @@ ul.list-blue {
   padding-bottom: 200px;
   background: url(../img/bg.jpg) center top;
   background-size: cover; }
+  .section-7 .col-lg p {
+    text-align-last: justify;
+    text-align: justify;
+    word-spacing: -1px;
+    letter-spacing: 1px; }
 
 .section-8 {
   padding-top: 50px;
