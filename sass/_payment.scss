@@ -17,24 +17,24 @@ form .button {
 	display: block !important;
 }
 .select-wrap .selectize-input {
-  border: none;
-  box-shadow: none;
- 	padding: 0 30px 0 0;
- 	font-size: inherit;
- 	line-height: inherit;
- 	> input {
- 		display: none !important;
- 	}
+	border: none;
+	box-shadow: none;
+	padding: 0 30px 0 0;
+	font-size: inherit;
+	line-height: inherit;
+	> input {
+		display: none !important;
+	}
 }
 .selectize-control.single .selectize-input:after {
 	width: 6px !important;
-  height: 6px !important;
-  right: 6px !important;
-  border: 2px solid !important;
-  margin-top: -2px !important;
-  border-top: 0 !important;
-  border-left: 0 !important;
-  transform: translateY(-50%) rotate(45deg) !important;
+	height: 6px !important;
+	right: 6px !important;
+	border: 2px solid !important;
+	margin-top: -2px !important;
+	border-top: 0 !important;
+	border-left: 0 !important;
+	transform: translateY(-50%) rotate(45deg) !important;
 }
 .selectize-dropdown {
 	font-size: .7em; 
@@ -92,12 +92,12 @@ form .button {
 	max-width: 255px;
 	&:before {
 		content: '×';
-    position: absolute;
-    top: 6px;
-    right: 3px;
-    font-size: 20px;
-    line-height: .2;
-    cursor: pointer;
+	position: absolute;
+	top: 6px;
+	right: 3px;
+	font-size: 20px;
+	line-height: .2;
+	cursor: pointer;
 	}
 }
 
@@ -115,7 +115,7 @@ form .button {
 	color: #9C9C9C;
 	font-size: 15px;
 	margin-bottom: 4px;
-  letter-spacing: initial;
+	letter-spacing: initial;
 }
 .tips {
 	font-weight: 500;
@@ -128,21 +128,21 @@ form .button {
 .inputGroup {
 	margin-bottom: 2rem;
 	.col-img {
-    max-width: 33.6%;
+	max-width: 33.6%;
 	}
 	.label-wrap {
 		padding: 0 0;
-    	/*border: 1px solid #0080CA;*/
-    	border-radius: 6px;
+		/*border: 1px solid #0080CA;*/
+		border-radius: 6px;
 	}
 	label {
 		padding: 10px;
-    width: 100%;
-    cursor: pointer;
-    margin: 0;
-    border: 1px solid #D6D6D6;
-    border-radius: 6px;
-    transition: all 0.2s;
+	width: 100%;
+	cursor: pointer;
+	margin: 0;
+	border: 1px solid #D6D6D6;
+	border-radius: 6px;
+	transition: all 0.2s;
 		position: relative;
 		img {
 			filter: grayscale(100%);
@@ -165,8 +165,8 @@ form .button {
 	h3 {
 		color: #D6D6D6;
 		line-height: .7;
-    font-size: 50px;
-    letter-spacing: -1.9px;
+		font-size: 50px;
+		letter-spacing: -1.9px;
 		transition: all 0.2s;
 	}
 	.desc {
@@ -178,32 +178,36 @@ form .button {
 		margin-top: 10px;
 	}
 	.tab-a {
-    width: 74px;
-    font-size: 8px;
-    line-height: 1;
-    text-align: left;
-    border: 1px solid #D6D6D6;
-    border-radius: 6px;
-    padding: 10px 4px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 23%;
+		height: auto;
+		line-height: 1;
+		border: 1px solid #D6D6D6;
+		border-radius: 6px;
+		padding: 0px 4px;
 		transition: all 0.2s;
 		position: relative;
 		overflow: hidden;
 		cursor: pointer;
+
 		&:before, &:after {
-  		content: '';
+			content: '';
 			transition: all 0.2s;
 			opacity: 0;
 			z-index: 3;
 		}
 		&:before {
 			border: 6px solid transparent;
-  		border-bottom-color: #D6D6D6;
-  		border-right-color: #D6D6D6;
-  		position: absolute;
-  		right: 0;
-  		bottom: 0;
+			border-bottom-color: #D6D6D6;
+			border-right-color: #D6D6D6;
+			position: absolute;
+			right: 0;
+			bottom: 0;
 		}
-  	&:after {
+		&:after {
 			width: 3px;
 			height: 6px;
 			border: 1px solid #fff;
@@ -213,29 +217,39 @@ form .button {
 			position: absolute;
 			right: 2px;
 			bottom: 2px;
-  	}
-  	.col-auto {
-  		img {
-	    	width: 25px !important;
-	    }
-  	}
-    &.active {
-    	&:before, &:after {
+		}
+		.abbr{
+			font-size: 24px;
+			line-height: 1;
+		}
+		.title{
+			font-size: 14px;
+		}
+		.col-auto {
+			img {
+				width: 100% !important;
+			}
+		}
+
+		&.active {
+			&:before, &:after {
 				opacity: 1;
 			}
-    }
+		}
 	}
 	.owl-theme .owl-nav [class*="owl-"] {
-    width: 19px;
-    height: 30px;
+		width: 19px;
+		height: 30px;
 		background-color: transparent !important;
-    background-position: center right !important;
+		background-position: center right !important;
 	}
+
 	input:checked ~ label {
 		&:after {
 			display: none;
 		}
 	}
+
 	input:checked ~ label, label:hover, .label-wrap {
 		border-color: #0080CA;
 		img {
@@ -250,16 +264,16 @@ form .button {
 			color: inherit;
 		}
 		.tab-a {
-	    &:hover, &.active {
-	    	border-color: #0080CA;
-	    	background-color: #E9F2F9;
-	    }
-	    &.active {
-	    	&:before {
-	    		border-bottom-color: #0080CA;
-	    		border-right-color: #0080CA;
-	    	}
-	    }
+			&:hover, &.active {
+				border-color: #0080CA;
+				background-color: #E9F2F9;
+			}
+			&.active {
+				&:before {
+					border-bottom-color: #0080CA;
+					border-right-color: #0080CA;
+				}
+			}
 		}
 	}
 }
@@ -270,14 +284,14 @@ form .button {
 	height: 100%;
 	.label-card {
 		padding: 1rem 6px;
-	  width: 100%;
-	  cursor: pointer;
-	  margin: 0;
-	  border: 1px solid #D6D6D6;
-	  border-radius: 6px;
-	  transition: all 0.2s;
-	  position: relative;
-	  /*overflow: hidden;*/
+		width: 100%;
+		cursor: pointer;
+		margin: 0;
+		border: 1px solid #D6D6D6;
+		border-radius: 6px;
+		transition: all 0.2s;
+		position: relative;
+		/*overflow: hidden;*/
 		height: 100%;
 		&:before, &:after {
 			content: '';
@@ -344,11 +358,11 @@ form .button {
 		padding-top: 21px;
 		padding-bottom: 3px;
 		@media (max-width: 575px) {
-	    padding-bottom: 1px;
+		padding-bottom: 1px;
 		}
 	}
 	.selectize-control.single .selectize-input:after {
-	  right: 10px !important;
+		right: 10px !important;
 	}
 }
 .label {
@@ -407,8 +421,8 @@ form .button {
 
 @media (min-width: 1600px) {
 	.img-pay-form {
-    max-width: initial;
-    width: 668px;
+	max-width: initial;
+	width: 668px;
 	}
 }
 
@@ -417,10 +431,10 @@ form .button {
 		direction: rtl;
 	}
 	.img-slim {
-	  transform: rotateY(180deg);
-	  max-width: initial;
-	  width: 800px;
-	  margin-right: -350px;
+		transform: rotateY(180deg);
+		max-width: initial;
+		width: 800px;
+		margin-right: -350px;
 	}
 }
 
@@ -432,12 +446,12 @@ form .button {
 		box-shadow: none;
 		padding: 24px 30px 6px 15px;
 		font-weight: 700;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 		@media (max-width: 575px) {
 			font-size: 14px;
-	    padding-top: 21px;
-	    padding-bottom: 4px;
+		padding-top: 21px;
+		padding-bottom: 4px;
 		}
 		> input {
 			line-height: 15px !important;
@@ -481,31 +495,31 @@ form .button {
 
 .switch {
 	label {
-    margin: 0;
+	margin: 0;
 		cursor: pointer;
 		display: inline-flex;
 		align-items: center;
 		.lever {
-    	display: inline-block;
-	    position: relative;
-	    width: 60px;
-	    height: 30px;
-	    border: 1px solid;
-	    border-radius: 15px;
-	    transition: background .3s ease;
-	    margin: 0 10px;
+		display: inline-block;
+		position: relative;
+		width: 60px;
+		height: 30px;
+		border: 1px solid;
+		border-radius: 15px;
+		transition: background .3s ease;
+		margin: 0 10px;
 			&:after {
-		    content: '';
-    		display: inline-block;
-		    position: absolute;
-		    width: 20px;
-		    height: 20px;
-		    background-color: #0080CA;
-		    border-radius: 21px;
-		    left: 5px;
-		    top: 50%;
-		    transform: translateY(-50%);
-		    transition: .2s;
+			content: '';
+			display: inline-block;
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background-color: #0080CA;
+			border-radius: 21px;
+			left: 5px;
+			top: 50%;
+			transform: translateY(-50%);
+			transition: .2s;
 			}
 		}
 		input[type=checkbox] {
@@ -516,7 +530,7 @@ form .button {
 			}
 			&:checked {
 				+ .lever:after {
-	  			left: 33px;
+				left: 33px;
 				}
 				~ .bct {
 					color: inherit;
@@ -549,16 +563,16 @@ form .button {
 		&:after {
 			content: '';
 			width: 8px;
-	    height: 16px;
-	    position: absolute;
-	    top: 7px;
-	    left: 8px;
-	    border: 2px solid #0080CA;
-	    border-top: 0;
-	    border-left: 0;
-	    transform: translateY(-50%) rotate(45deg);
+		height: 16px;
+		position: absolute;
+		top: 7px;
+		left: 8px;
+		border: 2px solid #0080CA;
+		border-top: 0;
+		border-left: 0;
+		transform: translateY(-50%) rotate(45deg);
 			transition: .2s;
-	    opacity: 0;
+		opacity: 0;
 		}
 	}
 	&:hover .checkbox-label:before {
