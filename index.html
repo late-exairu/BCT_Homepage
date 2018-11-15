@@ -145,6 +145,7 @@
 						<div class="video-container">
 							<!-- <iframe src="https://www.youtube.com/embed/s9xOaCD4ZKs?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 							<div id="bigPlayer"></div>
+							<div id="videoOverlay"></div>
 						</div>
 					</div>
 				</div>
@@ -790,6 +791,7 @@
 			function onBigPlayerStateChange(event) {
 				if (event.data === 0) {
 					bigPlayer.stopVideo();
+					$('#videoOverlay').removeClass('hidden');
 				}
 			}
 			bigPlayer = new YT.Player('bigPlayer', {
@@ -800,6 +802,11 @@
 				events: {
 				'onStateChange': onBigPlayerStateChange
 				}
+			});
+
+			$('#videoOverlay').click(function () {
+				$('#videoOverlay').addClass('hidden');
+				bigPlayer.playVideo();
 			});
 		}
 </script>
