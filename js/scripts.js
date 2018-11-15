@@ -290,7 +290,7 @@ $(document).ready(function () {
 		var bonusValue = labelCardBonusArr[index];
 		var USDValue = value.split(' ')[0].replace(/,/g, '') / 10;
 
-		$(this).closest('.label-card').find(' > .text-blue').html('+'+ numberWithCommas(bonusValue) +' Bonus Coins');
+		$(this).closest('.label-card').find(' > .text-blue').html('+'+ numberWithCommas(bonusValue) +' Bonus BCT');
 		$(this).closest('.label-card').find(' > .fz-24').html('$' + numberWithCommas(USDValue));
 	});
 
