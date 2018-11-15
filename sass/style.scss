@@ -494,7 +494,6 @@ ul.list-blue {
 }
 
 .section-6 {
-	height: 700px;
   padding-top: 100px;
 	padding-bottom: 150px;
 
@@ -550,7 +549,7 @@ ul.list-blue {
 }
 
 .section-7 {
-	height: 700px;
+	max-height: 700px;
   padding-top: 200px;
   padding-bottom: 228px;
   background: url(../img/bg.jpg) center top;
@@ -573,7 +572,7 @@ ul.list-blue {
 
 .section-8 {
 	padding: 100px 0 150px;
-	height: 1365px;
+	max-height: 1365px;
 	h2 {
 		margin-bottom: 45px;
 	}
@@ -602,7 +601,7 @@ ul.list-blue {
 }
 
 .section-11 {
-	height: 370px;
+	padding: 64px 0;
 	background-color: black;
 	color: white;
 	.row {
