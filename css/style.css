@@ -262,8 +262,13 @@ ul.list-blue {
   padding: 11px 34px;
   height: 100%; }
 
-.section-2 .video-wrap {
-  padding: 121px 0; }
+.section-2 {
+  display: flex;
+  flex-direction: column; }
+  .section-2 .video-wrap {
+    padding: 121px 0; }
+    .section-2 .video-wrap .kartynka {
+      align-self: center; }
 
 .section-3 {
   padding-top: 43px;
@@ -378,8 +383,9 @@ ul.list-blue {
   padding-top: 100px;
   padding-bottom: 150px; }
   .section-6 .rotator-wrapper {
-    width: 80%;
-    height: 100%; }
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; }
   .section-6 .row > div:first-child {
     justify-content: flex-end;
     display: flex; }
