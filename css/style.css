@@ -768,7 +768,7 @@ ul.list-blue {
   .inputGroup .tab-a {
     width: 120px !important; }
     .inputGroup .tab-a .abbr {
-      font-size: 22px !important; } }
+      font-size: 18px !important; } }
 
 @media (min-width: 992px) {
   .section-3 {
@@ -776,7 +776,7 @@ ul.list-blue {
   .inputGroup .tab-a {
     width: 70px !important; }
     .inputGroup .tab-a .abbr {
-      font-size: 18px !important; } }
+      font-size: 15px !important; } }
 
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -822,7 +822,7 @@ ul.list-blue {
   .inputGroup .tab-a {
     width: 100px !important; }
     .inputGroup .tab-a .abbr {
-      font-size: 22px !important; } }
+      font-size: 18px !important; } }
 
 @media (min-width: 1350px) {
   .container {
@@ -1127,7 +1127,7 @@ form .button {
     right: 2px;
     bottom: 2px; }
   .inputGroup .tab-a .abbr {
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1; }
   .inputGroup .tab-a .title {
     font-size: 14px; }
