@@ -476,8 +476,7 @@ ul.list-blue {
     justify-content: flex-end;
     display: flex; }
     .section-6 .row > div:first-child .informs-wrapper {
-      width: 620px;
-      margin-left: 10%; }
+      max-width: 100%; }
       .section-6 .row > div:first-child .informs-wrapper .d-none {
         display: block !important; }
         .section-6 .row > div:first-child .informs-wrapper .d-none h2 {
