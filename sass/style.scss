@@ -209,7 +209,6 @@ h1, .h1, h2, .h2 {
 	}
 
 }
-
 .terminal-switch-wrap {
   line-height: 1;
   font-size: 11px;
@@ -517,8 +516,7 @@ ul.list-blue {
 		display: flex;
 		
 		.informs-wrapper {
-			width: 620px;
-			margin-left: 10%;
+			max-width: 100%;
 			.d-none {
 				display: block !important;
 				h2 {
