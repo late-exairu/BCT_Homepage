@@ -661,6 +661,9 @@ ul.list-blue {
 		.terminal {
 			padding: 40px !important;
 		}
+		a.apply {
+			top: 11px !important;
+		}
 	}
 	.row {
     padding: 100px 0px 150px;
@@ -675,6 +678,9 @@ ul.list-blue {
 			}
 			h3 {
 				margin: 0 !important;
+			}
+			input {
+				padding-right: 60px;
 			}
 			a.apply {
 				display: inline;

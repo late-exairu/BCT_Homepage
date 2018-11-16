@@ -488,7 +488,9 @@ ul.list-blue {
   .section-12 .row {
     padding: 50px 0px 60px !important; }
   .section-12 .terminal {
-    padding: 40px !important; } }
+    padding: 40px !important; }
+  .section-12 a.apply {
+    top: 11px !important; } }
 
 .section-12 .row {
   padding: 100px 0px 150px; }
@@ -501,6 +503,8 @@ ul.list-blue {
     margin: 30px 0 0 0 !important; }
   .section-12 .form form h3 {
     margin: 0 !important; }
+  .section-12 .form form input {
+    padding-right: 60px; }
   .section-12 .form form a.apply {
     display: inline;
     position: absolute;
