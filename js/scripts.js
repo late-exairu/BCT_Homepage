@@ -225,12 +225,9 @@ $(document).ready(function () {
 	});
 
 	$('#select-bct').change(function () {
-		var number = $(this).val();
-		$('.select-option > div').removeClass('d-block').addClass('d-none');
-		$('.select-option > div').each(function (n, el) {
-			if (n == number)
-				$(el).removeClass('d-none').addClass('d-block');
-		});
+		var value = $(this).val();
+		var USDValue = value.split(' ')[0].replace(/,/g, '') / 10;
+		$(this).closest('form').find('.select-option .d-block').html('$' + numberWithCommas(USDValue));
 	});
 
 	$('.tab-a').click(function () {
