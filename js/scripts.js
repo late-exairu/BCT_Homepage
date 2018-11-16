@@ -291,4 +291,16 @@ $(document).ready(function () {
 		$(this).closest('.label-card').find(' > .price').html('$' + numberWithCommas(USDValue));
 	});
 
+	$('.label-group').click(function (e) {
+		e.preventDefault();
+		if ($(this).hasClass('checked')) {
+			$(this).removeClass('checked');
+			$(this).find('input[type=radio]').prop('checked',false);
+		}
+		else{
+			$('.label-group').removeClass('checked');
+			$(this).addClass('checked');
+			$(this).find('input[type=radio]').prop('checked', true);
+		}
+	});
 });
