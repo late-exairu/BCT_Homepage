@@ -102,41 +102,45 @@
 			<div class="row justify-content-center align-items-center">
 
 				<div class="col-lg-6 py-3 rtl-xl d-none d-lg-block offset-lg-1">
-					<img src="img/slim.png" alt="" class="img-slim">
+					<img src="img/monitor-18.png" alt="" class="img-slim">
 				</div>
 
 				<div class="col-lg-5 order-lg-first py-3 fz-20">
-					<h3 class="text-blue pb-1 mb-3">Payment Method</h3>
+					<h3 class="text-blue mb-2">Payment Method</h3>
 			
-					<div class="inputGroup text-center mb-3 font-weight-medium">
+					<div class="inputGroup text-center py-3 font-weight-medium">
 						<div class="label-wrap">
 							<div class="d-flex justify-content-between">
-								<div class="tab-a" href="#pills-0" data-toggle="pill">
-									<img class="my-auto" src="img/visa.svg" alt="" width="71">
-								</div>
 
-								<div class="tab-a form-row mx-0" href="#pills-2" data-toggle="pill">
-									<div class="col-auto my-2">
-										<img src="img/coin-eth.svg" alt="">
-									</div>
-									<div class="abbr mb-1">ETH</div> 
-									<div class="title mb-2">Ethereum</div>
-								</div>
-
-								<div class="active tab-a form-row mx-0" href="#pills-1" data-toggle="pill">
+								<div class="tab-a form-row mx-0" href="#pills-0" data-toggle="pill">
 									<div class="col-auto my-2">
 										<img src="img/coin-btc.svg" alt="">
 									</div>
 									<div class="abbr mb-1">BTC</div> 
-									<div class="title mb-2">Bitcoin</div>
+									<!-- <div class="title mb-2">Bitcoin</div> -->
 								</div>
 
-								<div class="tab-a form-row mx-0" href="#pills-3" data-toggle="pill">
+								<div class="tab-a form-row mx-0" href="#pills-1" data-toggle="pill">
+									<div class="col-auto my-2">
+										<img src="img/coin-eth.svg" alt="">
+									</div>
+									<div class="abbr mb-1">ETH</div> 
+									<!-- <div class="title mb-2">Ethereum</div> -->
+								</div>
+
+								<div class="tab-a form-row mx-0" href="#pills-2" data-toggle="pill">
 									<div class="col-auto my-2">
 										<img src="img/coin-ltc.svg" alt="">
 									</div>
 									<div class="abbr mb-1">LTC</div> 
-									<div class="title mb-2">Litecoin</div>
+									<!-- <div class="title mb-2">Litecoin</div> -->
+								</div>
+								<div class="active tab-a" href="#pills-3" data-toggle="pill">
+									<div class="col-auto my-2">
+										<img src="img/credit.png" style="width: 32px !important; height: 32px;" alt="">
+									</div>
+									<div class="abbr mb-1">CARD</div> 
+									<!-- <div class="title mb-2">Litecoin</div> -->
 								</div>
 								<!-- <div class="tab-a form-row d-inline-flex align-items-center mx-0" href="#pills-4" data-toggle="pill">
 									<div class="col-auto pl-0 pr-1">
@@ -170,25 +174,59 @@
 					</div>
 
 					<form class="pay-form" action="#!">
-						<div class="form-row align-items-end">
+						<div class="form-row align-items-end py-3">
 							<div class="col">Blockchain Terminal</div>
 							<div class="col-auto font-weight-medium">$999.99</div>
 						</div>
-						<div class="form-row align-items-end">
+						<div class="form-row align-items-end pb-3 mt-2">
 							<div class="col">Discount</div>
 							<div class="col-auto font-weight-medium">-$999.99</div>
 						</div>
-						<div class="form-row align-items-end">
+						<div class="form-row align-items-end mt-2">
 							<div class="col">7,500 BCT</div>
 							<div class="col-auto font-weight-medium">$599.99</div>
 						</div>
 						<hr>
-						<div class="form-row align-items-end text-blue font-weight-medium">
+						<div class="form-row align-items-end text-blue font-weight-medium pb-3">
 							<div class="col">Total</div>
 							<div class="col-auto">$679.99</div>
 						</div>
 
 						<div class="pills" id="pills-0">
+							<div class="form-row align-items-end text-blue font-weight-medium mt-2 pb-2">
+								<div class="col">Pay in Bitcoin</div>
+								<div class="col-auto">0.11 BTC</div>
+							</div>
+							<div class="text-center mt-3">
+								<img src="img/qr-code.png" alt="" width="140">
+							</div>
+							<p class="tip text-center pb-3">Payment address <br> <span class="font-weight-medium text-blue">0x0123213137326763245763434756</span></p>
+							<a class="button button-lg btn-block" href="1_receipt-coin.html">Confirm</a>
+						</div>
+						<div class="pills" id="pills-1">
+							<div class="form-row align-items-end text-blue font-weight-medium mt-2 pb-2">
+								<div class="col">Pay in Ethereum</div>
+								<div class="col-auto">0.92 ETH</div>
+							</div>
+							<div class="text-center mt-3">
+								<img src="img/qr-code.png" alt="" width="140">
+							</div>
+							<p class="tip text-center pb-3">Payment address <br> <span class="font-weight-medium text-blue">dfgdfgdfg</span></p>
+							<a class="button button-lg btn-block" href="1_receipt-coin.html">Confirm</a>
+						</div>
+						<div class="pills" id="pills-2">
+							<div class="form-row align-items-end text-blue font-weight-medium mt-2 pb-2">
+								<div class="col">Pay in Litecoin</div>
+								<div class="col-auto">0.46 LTC</div>
+							</div>
+							<div class="text-center mt-3">
+								<img src="img/qr-code.png" alt="" width="140">
+							</div>
+							<p class="tip text-center pb-3">Payment address <br> <span class="font-weight-medium text-blue">dfgsdfgdfgsdfg</span></p>
+							<a class="button button-lg btn-block" href="1_receipt-coin.html">Confirm</a>
+						</div>
+
+						<div class="pills active" id="pills-3">
 							<div class="form-group pt-2 mt-1">
 								<input class="input user" type="text" name="" placeholder="Cardholder’s Name">
 							</div>
@@ -204,43 +242,10 @@
 									</div>
 								</div>
 							</div>
-							<div class="form-group">
+							<div class="form-group pb-1">
 								<input class="input card cc-number" type="text" name="" placeholder="Card Number">
 							</div>
-							<a class="button button-lg btn-block mt-4" href="1_receipt-card.html">Confirm</a>
-						</div>
-						<div class="pills active" id="pills-1">
-							<div class="form-row align-items-end text-blue font-weight-medium mb-2 pb-1">
-								<div class="col">Pay in Bitcoin</div>
-								<div class="col-auto">0.11 BTC</div>
-							</div>
-							<div class="text-center mb-3">
-								<img src="img/qr-code.png" alt="" width="140">
-							</div>
-							<p class="tip text-center">Payment address <br> <span class="font-weight-medium text-blue">0x0123213137326763245763434756</span></p>
-							<a class="button button-lg btn-block" href="1_receipt-coin.html">Confirm</a>
-						</div>
-						<div class="pills" id="pills-2">
-							<div class="form-row align-items-end text-blue font-weight-medium mb-2 pb-1">
-								<div class="col">Pay in Ethereum</div>
-								<div class="col-auto">0.92 ETH</div>
-							</div>
-							<div class="text-center mb-3">
-								<img src="img/qr-code.png" alt="" width="140">
-							</div>
-							<p class="tip text-center">Payment address <br> <span class="font-weight-medium text-blue">dfgdfgdfg</span></p>
-							<a class="button button-lg btn-block" href="1_receipt-coin.html">Confirm</a>
-						</div>
-						<div class="pills" id="pills-3">
-							<div class="form-row align-items-end text-blue font-weight-medium mb-2 pb-1">
-								<div class="col">Pay in Litecoin</div>
-								<div class="col-auto">0.46 LTC</div>
-							</div>
-							<div class="text-center mb-3">
-								<img src="img/qr-code.png" alt="" width="140">
-							</div>
-							<p class="tip text-center">Payment address <br> <span class="font-weight-medium text-blue">dfgsdfgdfgsdfg</span></p>
-							<a class="button button-lg btn-block" href="1_receipt-coin.html">Confirm</a>
+							<a class="button button-lg btn-block mt-2" href="1_receipt-card.html">Confirm</a>
 						</div>
 						<!-- <div class="pills" id="pills-4">
 							<div class="form-row align-items-end text-blue font-weight-medium mb-2 pb-1">

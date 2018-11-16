@@ -126,7 +126,6 @@ form .button {
 }
 
 .inputGroup {
-	margin-bottom: 2rem;
 	.col-img {
 	max-width: 33.6%;
 	}
@@ -200,7 +199,7 @@ form .button {
 			z-index: 3;
 		}
 		&:before {
-			border: 6px solid transparent;
+			border: 9px solid transparent;
 			border-bottom-color: #D6D6D6;
 			border-right-color: #D6D6D6;
 			position: absolute;
@@ -443,8 +442,13 @@ form .button {
 	.img-slim {
 		transform: rotateY(180deg);
 		max-width: initial;
-		width: 800px;
 		margin-right: -350px;
+	}
+}
+
+@media (max-width: 767px) {
+	.img-slim {
+		width: 700px !important;
 	}
 }
 

@@ -760,11 +760,19 @@ ul.list-blue {
 
 @media (min-width: 768px) {
   .page-footer {
-    padding: 16px 0; } }
+    padding: 16px 0; }
+  .inputGroup .tab-a {
+    width: 120px !important; }
+    .inputGroup .tab-a .abbr {
+      font-size: 22px !important; } }
 
 @media (min-width: 992px) {
   .section-3 {
-    background: radial-gradient(circle closest-corner at 50% 100%, transparent 50%, #CCD0D3); } }
+    background: radial-gradient(circle closest-corner at 50% 100%, transparent 50%, #CCD0D3); }
+  .inputGroup .tab-a {
+    width: 70px !important; }
+    .inputGroup .tab-a .abbr {
+      font-size: 18px !important; } }
 
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -806,7 +814,11 @@ ul.list-blue {
     .owl-body > img {
       max-width: 800px; }
     .owl-body .owl-4 {
-      padding: 0 22.3%; } }
+      padding: 0 22.3%; }
+  .inputGroup .tab-a {
+    width: 100px !important; }
+    .inputGroup .tab-a .abbr {
+      font-size: 22px !important; } }
 
 @media (min-width: 1350px) {
   .container {
@@ -1025,119 +1037,126 @@ form .button {
     line-height: 1.28;
     margin-bottom: 15px; }
 
-.inputGroup {
-  margin-bottom: 2rem; }
-  .inputGroup .col-img {
-    max-width: 33.6%; }
-  .inputGroup .label-wrap {
-    padding: 0 0;
-    /*border: 1px solid #0080CA;*/
-    border-radius: 6px; }
-  .inputGroup label {
-    padding: 10px;
-    width: 100%;
-    cursor: pointer;
-    margin: 0;
-    border: 1px solid #D6D6D6;
-    border-radius: 6px;
-    transition: all 0.2s;
-    position: relative; }
-    .inputGroup label img {
-      filter: grayscale(100%);
-      opacity: 0.5;
-      transition: all 0.2s; }
-    .inputGroup label:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: 3; }
-  .inputGroup input {
-    display: none; }
-  .inputGroup h3 {
-    color: #D6D6D6;
-    line-height: .7;
-    font-size: 50px;
-    letter-spacing: -1.9px;
+.inputGroup .col-img {
+  max-width: 33.6%; }
+
+.inputGroup .label-wrap {
+  padding: 0 0;
+  /*border: 1px solid #0080CA;*/
+  border-radius: 6px; }
+
+.inputGroup label {
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  margin: 0;
+  border: 1px solid #D6D6D6;
+  border-radius: 6px;
+  transition: all 0.2s;
+  position: relative; }
+  .inputGroup label img {
+    filter: grayscale(100%);
+    opacity: 0.5;
     transition: all 0.2s; }
-  .inputGroup .desc {
-    border-top: 1px solid #D6D6D6;
-    font-weight: 500;
-    color: #D6D6D6;
+  .inputGroup label:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3; }
+
+.inputGroup input {
+  display: none; }
+
+.inputGroup h3 {
+  color: #D6D6D6;
+  line-height: .7;
+  font-size: 50px;
+  letter-spacing: -1.9px;
+  transition: all 0.2s; }
+
+.inputGroup .desc {
+  border-top: 1px solid #D6D6D6;
+  font-weight: 500;
+  color: #D6D6D6;
+  transition: all 0.2s;
+  padding-top: 10px;
+  margin-top: 10px; }
+
+.inputGroup .tab-a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 23%;
+  height: auto;
+  line-height: 1;
+  border: 1px solid #D6D6D6;
+  border-radius: 6px;
+  padding: 0px 4px;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+  .inputGroup .tab-a:before, .inputGroup .tab-a:after {
+    content: '';
     transition: all 0.2s;
-    padding-top: 10px;
-    margin-top: 10px; }
-  .inputGroup .tab-a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 23%;
-    height: auto;
-    line-height: 1;
-    border: 1px solid #D6D6D6;
-    border-radius: 6px;
-    padding: 0px 4px;
-    transition: all 0.2s;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer; }
-    .inputGroup .tab-a:before, .inputGroup .tab-a:after {
-      content: '';
-      transition: all 0.2s;
-      opacity: 0;
-      z-index: 3; }
-    .inputGroup .tab-a:before {
-      border: 6px solid transparent;
-      border-bottom-color: #D6D6D6;
-      border-right-color: #D6D6D6;
-      position: absolute;
-      right: 0;
-      bottom: 0; }
-    .inputGroup .tab-a:after {
-      width: 3px;
-      height: 6px;
-      border: 1px solid #fff;
-      border-top: 0;
-      border-left: 0;
-      transform: rotate(42deg);
-      position: absolute;
-      right: 2px;
-      bottom: 2px; }
-    .inputGroup .tab-a .abbr {
-      font-size: 24px;
-      line-height: 1; }
-    .inputGroup .tab-a .title {
-      font-size: 14px; }
-    .inputGroup .tab-a .col-auto img {
-      width: 100% !important; }
-    .inputGroup .tab-a.active:before, .inputGroup .tab-a.active:after {
-      opacity: 1; }
-  .inputGroup .owl-theme .owl-nav [class*="owl-"] {
-    width: 19px;
-    height: 30px;
-    background-color: transparent !important;
-    background-position: center right !important; }
-  .inputGroup input:checked ~ label:after {
-    display: none; }
-  .inputGroup input:checked ~ label, .inputGroup label:hover, .inputGroup .label-wrap {
-    border-color: #0080CA; }
-    .inputGroup input:checked ~ label img, .inputGroup label:hover img, .inputGroup .label-wrap img {
-      filter: grayscale(0);
-      opacity: 1; }
-    .inputGroup input:checked ~ label .desc, .inputGroup label:hover .desc, .inputGroup .label-wrap .desc {
-      border-color: #0080CA;
-      color: inherit; }
-    .inputGroup input:checked ~ label h3, .inputGroup label:hover h3, .inputGroup .label-wrap h3 {
-      color: inherit; }
-    .inputGroup input:checked ~ label .tab-a:hover, .inputGroup input:checked ~ label .tab-a.active, .inputGroup label:hover .tab-a:hover, .inputGroup label:hover .tab-a.active, .inputGroup .label-wrap .tab-a:hover, .inputGroup .label-wrap .tab-a.active {
-      border-color: #0080CA;
-      background-color: #E9F2F9; }
-    .inputGroup input:checked ~ label .tab-a.active:before, .inputGroup label:hover .tab-a.active:before, .inputGroup .label-wrap .tab-a.active:before {
-      border-bottom-color: #0080CA;
-      border-right-color: #0080CA; }
+    opacity: 0;
+    z-index: 3; }
+  .inputGroup .tab-a:before {
+    border: 9px solid transparent;
+    border-bottom-color: #D6D6D6;
+    border-right-color: #D6D6D6;
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+  .inputGroup .tab-a:after {
+    width: 3px;
+    height: 6px;
+    border: 1px solid #fff;
+    border-top: 0;
+    border-left: 0;
+    transform: rotate(42deg);
+    position: absolute;
+    right: 2px;
+    bottom: 2px; }
+  .inputGroup .tab-a .abbr {
+    font-size: 24px;
+    line-height: 1; }
+  .inputGroup .tab-a .title {
+    font-size: 14px; }
+  .inputGroup .tab-a .col-auto img {
+    width: 100% !important; }
+  .inputGroup .tab-a.active:before, .inputGroup .tab-a.active:after {
+    opacity: 1; }
+
+.inputGroup .owl-theme .owl-nav [class*="owl-"] {
+  width: 19px;
+  height: 30px;
+  background-color: transparent !important;
+  background-position: center right !important; }
+
+.inputGroup input:checked ~ label:after {
+  display: none; }
+
+.inputGroup input:checked ~ label, .inputGroup label:hover, .inputGroup .label-wrap {
+  border-color: #0080CA; }
+  .inputGroup input:checked ~ label img, .inputGroup label:hover img, .inputGroup .label-wrap img {
+    filter: grayscale(0);
+    opacity: 1; }
+  .inputGroup input:checked ~ label .desc, .inputGroup label:hover .desc, .inputGroup .label-wrap .desc {
+    border-color: #0080CA;
+    color: inherit; }
+  .inputGroup input:checked ~ label h3, .inputGroup label:hover h3, .inputGroup .label-wrap h3 {
+    color: inherit; }
+  .inputGroup input:checked ~ label .tab-a:hover, .inputGroup input:checked ~ label .tab-a.active, .inputGroup label:hover .tab-a:hover, .inputGroup label:hover .tab-a.active, .inputGroup .label-wrap .tab-a:hover, .inputGroup .label-wrap .tab-a.active {
+    border-color: #0080CA;
+    background-color: #E9F2F9; }
+  .inputGroup input:checked ~ label .tab-a.active:before, .inputGroup label:hover .tab-a.active:before, .inputGroup .label-wrap .tab-a.active:before {
+    border-bottom-color: #0080CA;
+    border-right-color: #0080CA; }
 
 .label-group {
   display: block;
@@ -1272,8 +1291,11 @@ form .button {
   .img-slim {
     transform: rotateY(180deg);
     max-width: initial;
-    width: 800px;
     margin-right: -350px; } }
+
+@media (max-width: 767px) {
+  .img-slim {
+    width: 700px !important; } }
 
 .basic-select.single .selectize-input {
   font-size: 1rem;
