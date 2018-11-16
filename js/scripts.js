@@ -311,4 +311,11 @@ $(document).ready(function () {
 			$(this).find('input[type=radio]').prop('checked', true);
 		}
 	});
+
+	$('#section-5 .owl-5').hover(function () {
+		$(this.previousElementSibling).addClass('hover');
+	},
+	function () {
+		$(this.previousElementSibling).removeClass('hover');
+	});
 });

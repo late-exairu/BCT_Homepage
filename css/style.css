@@ -440,6 +440,8 @@ ul.list-blue {
   background-color: #000; }
   .section-5 .fz-20 {
     color: rgba(255, 255, 255, 0.25); }
+    .section-5 .fz-20.hover {
+      color: #0080CA; }
 
 .video-modal {
   cursor: pointer; }
