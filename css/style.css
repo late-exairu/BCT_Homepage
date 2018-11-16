@@ -440,6 +440,9 @@ ul.list-blue {
     margin-bottom: 45px; }
   .section-8 .options {
     margin-top: 45px; }
+  .section-8 .video-wrapper {
+    flex: 0 0 86.3333%;
+    max-width: 86.3333%; }
   .section-8 .col-xl-9 .card-border p:last-child {
     letter-spacing: -1px;
     word-spacing: -1px; }
@@ -496,7 +499,7 @@ ul.list-blue {
 
 .card-border {
   border: 1px solid;
-  padding: 1rem 1rem 9px; }
+  padding: 1rem 1rem 0; }
 
 .owl-2 .slide {
   padding-top: 165px;
