@@ -815,6 +815,11 @@ ul.list-blue {
   .li {
     padding: 10px 15px; } }
 
+@media (max-width: 1199px) {
+  .navbar-expand-xl > .container, .navbar-expand-xl > .container-fluid {
+    padding-right: 15px !important;
+    padding-left: 15px !important; } }
+
 @media (max-width: 991px) {
   .owl-4 .owl-nav [class*="owl-"].owl-prev {
     left: -10px; }
