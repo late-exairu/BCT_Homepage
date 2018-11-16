@@ -497,11 +497,11 @@ form .button {
 	.selectize-input {
 		border-radius: 4px;
 		box-shadow: none;
-		padding: 1px 30px 0 15px;
+		padding: 4px 30px 4px 15px;
 		font-weight: 700;
 		white-space: nowrap;
 		text-overflow: ellipsis;
-		background: linear-gradient(to bottom, #f3f3f3 0%,#dcdcdc 100%);
+		//background: linear-gradient(to bottom, #f3f3f3 0%,#dcdcdc 100%);
 		border: 1px solid #bebebe;
 
 		> input {
