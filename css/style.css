@@ -770,7 +770,7 @@ ul.list-blue {
     font-size: 14px !important;
     padding: 11px 18px; }
   .video-wrap {
-    padding: 15px 0; }
+    padding: 15px 0 !important; }
   .owl-theme .owl-nav [class*="owl-"] {
     width: 30px;
     height: 30px; }
