@@ -1403,6 +1403,10 @@ form .button {
   .payment-info .separator {
     border-top: 2px solid #d5d5d5;
     margin: 13px 0; }
+  .payment-info .qr-code {
+    padding-top: 12px; }
+  .payment-info .shipping-address .form-row {
+    margin-bottom: 7px; }
 
 .apply-group {
   position: relative; }
