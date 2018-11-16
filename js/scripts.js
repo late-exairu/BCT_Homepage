@@ -65,7 +65,7 @@ $(document).ready(function () {
 			},
 		},
 		margin: 10,
-		dots: false,
+		dots: true,
 		nav: true,
 		navText: ["", ""],
 	});
