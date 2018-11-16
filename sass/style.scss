@@ -137,7 +137,7 @@ h1, .h1, h2, .h2 {
   border-bottom: 1px solid #D6D6D6;
   box-shadow: 0 0 17px #EDEDED;
   min-height: 60px;
-  padding: 10px 15px;
+  padding: 10px 0;
 
   .nav-item {
 	margin-left: 4px;
@@ -507,7 +507,7 @@ ul.list-blue {
 	.fz-20{
 		color: rgba(255, 255, 255, 0.25);
 		&.hover{
-	 	 	color: #0080CA;
+	 	 	color: #fff;
 		}
 	}
 }

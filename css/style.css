@@ -163,7 +163,7 @@ h1, .h1, h2, .h2 {
   border-bottom: 1px solid #D6D6D6;
   box-shadow: 0 0 17px #EDEDED;
   min-height: 60px;
-  padding: 10px 15px; }
+  padding: 10px 0; }
   .navbar-light .nav-item {
     margin-left: 4px; }
   .navbar-light .button {
@@ -446,7 +446,7 @@ ul.list-blue {
   .section-5 .fz-20 {
     color: rgba(255, 255, 255, 0.25); }
     .section-5 .fz-20.hover {
-      color: #0080CA; }
+      color: #fff; }
 
 .video-modal {
   cursor: pointer; }
@@ -814,7 +814,13 @@ ul.list-blue {
   .owl-body .owl-4 {
     padding: 0 26%; }
   .section-6 h3, .section-6 .h3 {
-    font-size: 48px; } }
+    font-size: 48px; }
+  .owl-2 .owl-nav [class*="owl-"].owl-prev {
+    left: 50%;
+    margin-left: -640px; }
+  .owl-2 .owl-nav [class*="owl-"].owl-next {
+    right: 50%;
+    margin-right: -640px; } }
 
 @media (min-width: 1500px) {
   .fancybox-navigation .fancybox-button--arrow_left {
@@ -845,7 +851,7 @@ ul.list-blue {
 
 @media (max-width: 767px) {
   .promo {
-    font-size: 14px; }
+    font-size: 12px; }
   .owl-header .owl-dots {
     margin-left: -5px;
     margin-right: -5px; }
