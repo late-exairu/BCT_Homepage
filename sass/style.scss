@@ -442,7 +442,16 @@ ul.list-blue {
 	  cursor: pointer;
 	  height: 100%;
 	}
-	&:hover, &.active {
+
+	&:hover {
+	  &:before {
+		color: #fff;
+		border-color: #222222;
+		background-color: #222222;
+		font-weight: 600;
+	  }
+	}
+	&.active {
 	  &:before {
 		color: #fff;
 		border-color: #0080CA;

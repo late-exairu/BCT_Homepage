@@ -400,7 +400,12 @@ ul.list-blue {
       transition: 0.2s;
       cursor: pointer;
       height: 100%; }
-    .owl-header .owl-dots .owl-dot:hover:before, .owl-header .owl-dots .owl-dot.active:before {
+    .owl-header .owl-dots .owl-dot:hover:before {
+      color: #fff;
+      border-color: #222222;
+      background-color: #222222;
+      font-weight: 600; }
+    .owl-header .owl-dots .owl-dot.active:before {
       color: #fff;
       border-color: #0080CA;
       background-color: #0080CA;
@@ -810,6 +815,14 @@ ul.list-blue {
     padding: 0 26%; }
   .section-6 h3, .section-6 .h3 {
     font-size: 48px; } }
+
+@media (min-width: 1500px) {
+  .fancybox-navigation .fancybox-button--arrow_left {
+    left: 50%;
+    margin-left: -750px; }
+  .fancybox-navigation .fancybox-button--arrow_right {
+    right: 50%;
+    margin-right: -750px; } }
 
 @media (max-width: 1349px) {
   .li {
