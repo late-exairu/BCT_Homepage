@@ -115,7 +115,7 @@ $(document).ready(function () {
 		if ($('.section-9').length) {
 			if (window.pageYOffset + 500 > $('.section-9').offset().top) {
 				if (!owl2AutoPlayed) {
-					owl2.trigger('to.owl.carousel', [0,0]);
+					owl2.trigger('to.owl.carousel', [0, 0]);
 					owl2AutoPlayed = true;
 				}
 			}
@@ -124,7 +124,7 @@ $(document).ready(function () {
 		if ($('.section-4').length) {
 			if (window.pageYOffset + 400 > $('.section-4').offset().top) {
 				if (!owl4Viewed) {
-					owl4.trigger('to.owl.carousel', [0,0]);
+					owl4.trigger('to.owl.carousel', [0, 0]);
 					owl4Viewed = true;
 				}
 			}
@@ -287,17 +287,25 @@ $(document).ready(function () {
 		var bonusValue = labelCardBonusArr[index];
 		var USDValue = value.split(' ')[0].replace(/,/g, '') / 10;
 
-		$(this).closest('.label-card').find(' > .text-blue').html('+'+ numberWithCommas(bonusValue) +' Bonus BCT');
+		$(this).closest('.label-card').find(' > .text-blue').html('+' + numberWithCommas(bonusValue) + ' Bonus BCT');
 		$(this).closest('.label-card').find(' > .price').html('$' + numberWithCommas(USDValue));
 	});
+
+	$('.label-card').hover(function (){
+			$(this).addClass('hover');
+		},
+		function () {
+			$(this).removeClass('hover');
+		}
+	);
 
 	$('.label-group').click(function (e) {
 		e.preventDefault();
 		if ($(this).hasClass('checked')) {
 			$(this).removeClass('checked');
-			$(this).find('input[type=radio]').prop('checked',false);
-		}
-		else{
+			$(this).find('.label-card').removeClass('hover');
+			$(this).find('input[type=radio]').prop('checked', false);
+		} else {
 			$('.label-group').removeClass('checked');
 			$(this).addClass('checked');
 			$(this).find('input[type=radio]').prop('checked', true);
