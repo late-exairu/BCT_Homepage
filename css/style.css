@@ -599,7 +599,6 @@ ul.list-blue {
   padding: 100px 0px 150px; }
 
 .section-12 .form {
-  padding: 0;
   width: 520px;
   display: flex; }
   .section-12 .form form > div {
@@ -616,11 +615,6 @@ ul.list-blue {
     top: 14px;
     font-size: 14px;
     font-weight: 400; }
-  @media (min-width: 992px) {
-    .section-12 .form {
-      padding-right: 80px;
-      flex: 0 0 45.666667%;
-      max-width: 45.666667%; } }
 
 .section-12 .terminal {
   padding: 20px; }
@@ -859,7 +853,9 @@ ul.list-blue {
     padding-bottom: 3rem; }
   .section-4, .section-6, .section-10 {
     padding-top: 4rem;
-    padding-bottom: 4rem; } }
+    padding-bottom: 4rem; }
+  .section-12 .justify-content-start, .section-6 .justify-content-start {
+    justify-content: center !important; } }
 
 @media (max-width: 575px) {
   h1, .h1 {
