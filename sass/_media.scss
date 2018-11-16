@@ -114,6 +114,16 @@
 		}
 	}
 
+	.owl-2 .owl-nav [class*="owl-"].owl-prev {
+		left: 50%;
+		margin-left: -640px;
+	}
+
+	.owl-2 .owl-nav [class*="owl-"].owl-next {
+		right: 50%;
+		margin-right: -640px;
+	}
+
 }
 
 @media (min-width: 1500px) {

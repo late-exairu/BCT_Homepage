@@ -814,7 +814,13 @@ ul.list-blue {
   .owl-body .owl-4 {
     padding: 0 26%; }
   .section-6 h3, .section-6 .h3 {
-    font-size: 48px; } }
+    font-size: 48px; }
+  .owl-2 .owl-nav [class*="owl-"].owl-prev {
+    left: 50%;
+    margin-left: -640px; }
+  .owl-2 .owl-nav [class*="owl-"].owl-next {
+    right: 50%;
+    margin-right: -640px; } }
 
 @media (min-width: 1500px) {
   .fancybox-navigation .fancybox-button--arrow_left {
