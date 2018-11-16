@@ -441,13 +441,19 @@ form .button {
 	}
 	.img-slim {
 		transform: rotateY(180deg);
-		max-width: initial;
+		max-width: initial;		
+		width: 800px;
+		margin-right: -350px;
+	}
+	.payment-img-slim {
+		transform: rotateY(180deg);
+		max-width: initial;		
 		margin-right: -350px;
 	}
 }
 
 @media (max-width: 767px) {
-	.img-slim {
+	.payment-img-slim {
 		width: 700px !important;
 	}
 }
