@@ -342,9 +342,9 @@ ul.list-blue {
 	flex-direction: column;
 	.video-wrap {
 		padding: 121px 0;
-		.kartynka {
-			align-self: center;
-		}
+	}
+	.kartynka {
+		align-self: center;
 	}
 }
 .section-3 {
@@ -593,10 +593,15 @@ ul.list-blue {
 	.options {
 		margin-top: 45px;
 	}
-
 	.video-wrapper {
 		flex: 0 0 86.3333%;
 		max-width: 86.3333%;
+
+
+		@media (max-width: 768px) {
+			margin-left: 0 !important;
+			padding-left: 0 !important;
+		}
 	}
 	.col-xl-9 {
 		.card-border {
@@ -649,17 +654,22 @@ ul.list-blue {
 }
 
 .section-12 {
+	@media (max-width: 768px) {
+		.row {
+			padding: 50px 0px 60px !important;
+		}
+		.terminal {
+			padding: 40px !important;
+		}
+	}
 	.row {
-		width: 100%;
+    padding: 100px 0px 150px;
 	}
 	.form {
 		padding: 0;
     width: 520px;
 		display: flex;
-		justify-content: flex-end;
-    margin-top: 190px;
 		form {
-			padding-right: 90px;
 			& > div {
 				margin: 30px 0 0 0 !important;
 			}
@@ -675,9 +685,15 @@ ul.list-blue {
 				font-weight: 400;
 			}
 		}
+
+		@media (min-width: 992px) {
+			padding-right: 80px;
+			flex: 0 0 45.666667%;
+			max-width: 45.666667%;
+		}
 	}
 	.terminal {
-		padding: 100px 20px 150px;
+		padding: 20px;
 	}
 }
 
@@ -769,6 +785,10 @@ ul.list-blue {
 		height: 800px;
 		.slide {
 			height: 100%;
+		}
+
+		@media (max-width: 768px) {
+			height: 400px;
 		}
 	}
 }

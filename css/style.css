@@ -267,8 +267,8 @@ ul.list-blue {
   flex-direction: column; }
   .section-2 .video-wrap {
     padding: 121px 0; }
-    .section-2 .video-wrap .kartynka {
-      align-self: center; }
+  .section-2 .kartynka {
+    align-self: center; }
 
 .section-3 {
   padding-top: 43px;
@@ -452,6 +452,10 @@ ul.list-blue {
   .section-8 .video-wrapper {
     flex: 0 0 86.3333%;
     max-width: 86.3333%; }
+    @media (max-width: 768px) {
+      .section-8 .video-wrapper {
+        margin-left: 0 !important;
+        padding-left: 0 !important; } }
   .section-8 .col-xl-9 .card-border p:last-child {
     letter-spacing: -1px;
     word-spacing: -1px; }
@@ -480,31 +484,38 @@ ul.list-blue {
     .section-11 .row p {
       width: auto; } }
 
+@media (max-width: 768px) {
+  .section-12 .row {
+    padding: 50px 0px 60px !important; }
+  .section-12 .terminal {
+    padding: 40px !important; } }
+
 .section-12 .row {
-  width: 100%; }
+  padding: 100px 0px 150px; }
 
 .section-12 .form {
   padding: 0;
   width: 520px;
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 190px; }
-  .section-12 .form form {
-    padding-right: 90px; }
-    .section-12 .form form > div {
-      margin: 30px 0 0 0 !important; }
-    .section-12 .form form h3 {
-      margin: 0 !important; }
-    .section-12 .form form a.apply {
-      display: inline;
-      position: absolute;
-      right: 20px;
-      top: 14px;
-      font-size: 14px;
-      font-weight: 400; }
+  display: flex; }
+  .section-12 .form form > div {
+    margin: 30px 0 0 0 !important; }
+  .section-12 .form form h3 {
+    margin: 0 !important; }
+  .section-12 .form form a.apply {
+    display: inline;
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    font-size: 14px;
+    font-weight: 400; }
+  @media (min-width: 992px) {
+    .section-12 .form {
+      padding-right: 80px;
+      flex: 0 0 45.666667%;
+      max-width: 45.666667%; } }
 
 .section-12 .terminal {
-  padding: 100px 20px 150px; }
+  padding: 20px; }
 
 .card-border {
   border: 1px solid;
@@ -580,6 +591,9 @@ ul.list-blue {
   height: 800px; }
   .section-9 .owl-carousel.owl-drag .owl-item .slide {
     height: 100%; }
+  @media (max-width: 768px) {
+    .section-9 .owl-carousel.owl-drag .owl-item {
+      height: 400px; } }
 
 .section-10 {
   padding-top: 100px;
