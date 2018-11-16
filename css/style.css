@@ -502,7 +502,8 @@ ul.list-blue {
   .section-12 .form form > div {
     margin: 30px 0 0 0 !important; }
   .section-12 .form form h3 {
-    margin: 0 !important; }
+    margin: 0 !important;
+    white-space: nowrap; }
   .section-12 .form form input {
     padding-right: 60px; }
   .section-12 .form form a.apply {
