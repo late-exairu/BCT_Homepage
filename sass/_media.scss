@@ -200,6 +200,12 @@
 		padding-bottom: 4rem;
 	}
 
+	.section-12, .section-6 {
+		.justify-content-start {
+			justify-content: center !important;
+		}
+	}
+
 }
 
 @media (max-width: 575px) {

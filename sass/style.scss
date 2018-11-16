@@ -733,7 +733,6 @@ ul.list-blue {
     padding: 100px 0px 150px;
 	}
 	.form {
-		padding: 0;
     width: 520px;
 		display: flex;
 		form {
@@ -755,12 +754,6 @@ ul.list-blue {
 				font-size: 14px;
 				font-weight: 400;
 			}
-		}
-
-		@media (min-width: 992px) {
-			padding-right: 80px;
-			flex: 0 0 45.666667%;
-			max-width: 45.666667%;
 		}
 	}
 	.terminal {
