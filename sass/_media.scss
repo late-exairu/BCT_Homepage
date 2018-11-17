@@ -196,7 +196,37 @@
 	.section-7 {
 		background-size: inherit;
 	}
+	.navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+	}
 
+	.order-nav .item.done {
+		padding-left: 12px !important;
+		&:after {
+			content: '';
+			top: 40% !important;
+			width: 10px !important;
+			height: 10px !important;
+			background: url(../img/check.svg) 0 0 no-repeat !important;
+			background-size: contain !important;
+		}
+	}
+	.order-nav .item {
+    position: relative;
+		font-size: 12px;
+    padding: 0 !important;
+		max-width: 15.2% !important;
+		margin-right: 3% !important;
+		margin-left: 3% !important;
+
+		&:first-child {
+			margin-left: 0 !important;
+		}
+		&:last-child {
+			margin-right: 0 !important;
+		}
+	}
 }
 
 @media (max-width: 767px) {
