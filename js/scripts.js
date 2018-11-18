@@ -163,7 +163,10 @@ $(document).ready(function () {
 	});
 
 	$('[data-toggle="tooltip"]').tooltip();
-
+	
+	$('.modal .close').click(function (e) {
+		$('.modal').modal('hide')
+	});
 
 	$('.video-modal').click(function (e) {
 		var videoId = $(this).attr('data-id');

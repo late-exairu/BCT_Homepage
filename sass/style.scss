@@ -923,6 +923,23 @@ ul.list-blue {
 .modal-content {
 	max-height: 70vh;
 	overflow-y: scroll;
+	
+	/* The Close Button */
+	.close {
+		color: #aaaaaa;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
 }
 
 .article {
