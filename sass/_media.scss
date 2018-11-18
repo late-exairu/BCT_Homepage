@@ -231,6 +231,14 @@
 			margin-right: 0 !important;
 		}
 	}
+
+	.label-group {
+		height: 240px !important;
+		img {
+			width: 100% !important;
+			margin: 0 !important;
+		}
+	}
 }
 
 @media (max-width: 767px) {
@@ -363,10 +371,11 @@
 	}
 
 	.label-group {
-		height: 300px !important;
-		// img {
-		// 	width: 300px !important;
-		// }
+		height: 260px !important;
+		img {
+			width: 80% !important;
+			margin: 0 !important;
+		}
 	}
 }
 

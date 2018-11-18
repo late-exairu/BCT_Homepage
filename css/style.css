@@ -926,7 +926,12 @@ ul.list-blue {
     .order-nav .item:first-child {
       margin-left: 0 !important; }
     .order-nav .item:last-child {
-      margin-right: 0 !important; } }
+      margin-right: 0 !important; }
+  .label-group {
+    height: 240px !important; }
+    .label-group img {
+      width: 100% !important;
+      margin: 0 !important; } }
 
 @media (max-width: 767px) {
   .promo {
@@ -998,7 +1003,10 @@ ul.list-blue {
     padding-left: 40px;
     padding-right: 40px; }
   .label-group {
-    height: 300px !important; } }
+    height: 260px !important; }
+    .label-group img {
+      width: 80% !important;
+      margin: 0 !important; } }
 
 @media (max-width: 399px) {
   .br {
