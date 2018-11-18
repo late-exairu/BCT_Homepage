@@ -451,31 +451,8 @@ form .button {
 
 @media (min-width: 1600px) {
 	.img-pay-form {
-	max-width: initial;
-	width: 668px;
-	}
-}
-
-@media (min-width: 1200px) {
-	.rtl-xl {
-		direction: rtl;
-	}
-	.img-slim {
-		transform: rotateY(180deg);
-		max-width: initial;		
-		width: 800px;
-		margin-right: -350px;
-	}
-	.payment-img-slim {
-		transform: rotateY(180deg);
-		max-width: initial;		
-		margin-right: -350px;
-	}
-}
-
-@media (max-width: 767px) {
-	.payment-img-slim {
-		width: 700px !important;
+		max-width: initial;
+		width: 668px;
 	}
 }
 

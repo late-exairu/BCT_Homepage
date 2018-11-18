@@ -805,7 +805,12 @@ ul.list-blue {
   .inputGroup .tab-a {
     width: 120px !important; }
     .inputGroup .tab-a .abbr {
-      font-size: 18px !important; } }
+      font-size: 18px !important; }
+  .payment-img-slim {
+    max-width: 150% !important;
+    margin-right: -300px !important; }
+  .offset-lg-1 {
+    margin-left: -6% !important; } }
 
 @media (min-width: 992px) {
   .section-3 {
@@ -862,7 +867,17 @@ ul.list-blue {
   .inputGroup .tab-a {
     width: 100px !important; }
     .inputGroup .tab-a .abbr {
-      font-size: 18px !important; } }
+      font-size: 18px !important; }
+  .rtl-xl {
+    direction: rtl; }
+  .img-slim {
+    transform: rotateY(180deg);
+    max-width: initial;
+    width: 800px;
+    margin-right: -350px; }
+  .payment-img-slim {
+    max-width: initial !important;
+    margin-right: -350px !important; } }
 
 @media (min-width: 1350px) {
   .container {
@@ -876,15 +891,16 @@ ul.list-blue {
     margin-left: -640px; }
   .owl-2 .owl-nav [class*="owl-"].owl-next {
     right: 50%;
-    margin-right: -640px; } }
+    margin-right: -640px; }
+  .offset-lg-1 {
+    margin-left: 8.333333% !important; } }
 
 @media (min-width: 1500px) {
   .fancybox-navigation .fancybox-button--arrow_left {
     left: 50%;
     margin-left: -750px; }
   .fancybox-navigation .fancybox-button--arrow_right {
-    right: 50%;
-    margin-right: -750px; } }
+    right: 50%; } }
 
 @media (max-width: 1349px) {
   .li {
@@ -951,7 +967,9 @@ ul.list-blue {
     padding-top: 4rem;
     padding-bottom: 4rem; }
   .section-12 .justify-content-start, .section-6 .justify-content-start {
-    justify-content: center !important; } }
+    justify-content: center !important; }
+  .payment-img-slim {
+    width: 700px !important; } }
 
 @media (max-width: 575px) {
   h1, .h1 {
@@ -1384,23 +1402,6 @@ form .button {
   .img-pay-form {
     max-width: initial;
     width: 668px; } }
-
-@media (min-width: 1200px) {
-  .rtl-xl {
-    direction: rtl; }
-  .img-slim {
-    transform: rotateY(180deg);
-    max-width: initial;
-    width: 800px;
-    margin-right: -350px; }
-  .payment-img-slim {
-    transform: rotateY(180deg);
-    max-width: initial;
-    margin-right: -350px; } }
-
-@media (max-width: 767px) {
-  .payment-img-slim {
-    width: 700px !important; } }
 
 .basic-select.single .selectize-input {
   font-size: 1rem;
