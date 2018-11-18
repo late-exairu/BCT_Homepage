@@ -966,6 +966,8 @@ ul.list-blue {
   .owl-theme .owl-nav [class*="owl-"] {
     width: 30px;
     height: 30px; }
+  .owl-theme .owl-dots .owl-dot span {
+    margin: 2px !important; }
   .owl-header .owl-dots .owl-dot {
     flex: 0 0 50%;
     max-width: 50%; }
