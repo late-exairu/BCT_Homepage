@@ -308,6 +308,8 @@ $(document).ready(function () {
 			$(".single-notice .package").html($(this).find('.label-card .fz-20')[0].childNodes[0].data + "BCT");
 		}
 
+		$('.label-group').find('.label-card').removeClass('hover');
+		
 		if ($(this).hasClass('checked')) {
 			$(this).removeClass('checked');
 			$(this).find('.label-card').removeClass('hover');
