@@ -744,7 +744,7 @@ ul.list-blue {
 
 .modal-content {
   max-height: 70vh;
-  overflow: scroll; }
+  overflow-y: scroll; }
 
 .article h1, .article .h1, .article h2, .article .h2, .article h3, .article .h3, .article h4, .article .h4, .article h5, .article .h5, .article h6, .article .h6 {
   font-weight: 500;
