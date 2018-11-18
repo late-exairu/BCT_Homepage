@@ -673,6 +673,9 @@ ul.list-blue {
 		}
 	}
 	.col-xl-9 {
+		& > .row > div {
+			margin-top: -1px;
+		}
 		.card-border {
 			p:last-child {
 				letter-spacing: -1px;
@@ -768,7 +771,7 @@ ul.list-blue {
 
 .card-border {
   border: 1px solid;
-  padding: 1rem 1rem 0;
+	padding: 1rem 1rem 0;
 }
 
 .promo-code {
