@@ -301,14 +301,25 @@ $(document).ready(function () {
 
 	$('.label-group').click(function (e) {
 		e.preventDefault();
+		if ($(this).find('select').length > 0) {
+			$(".single-notice .package").html($(this).find('select')[0].innerText);
+		}
+		else {
+			$(".single-notice .package").html($(this).find('.label-card .fz-20')[0].childNodes[0].data + "BCT");
+		}
+
 		if ($(this).hasClass('checked')) {
 			$(this).removeClass('checked');
 			$(this).find('.label-card').removeClass('hover');
 			$(this).find('input[type=radio]').prop('checked', false);
+
+			$(".single-notice").css('visibility', 'hidden');
 		} else {
 			$('.label-group').removeClass('checked');
 			$(this).addClass('checked');
 			$(this).find('input[type=radio]').prop('checked', true);
+
+			$(".single-notice").css('visibility', 'visible');
 		}
 	});
 
