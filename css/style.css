@@ -631,6 +631,8 @@ ul.list-blue {
 .promo-code {
   color: #CCC;
   font-weight: 500; }
+  .promo-code .col > a {
+    color: #CCC !important; }
 
 .owl-2 .slide {
   padding-top: 165px;
