@@ -746,7 +746,7 @@ ul.list-blue {
 
 .modal-content {
   max-height: 70vh;
-  overflow-y: auto;
+  overflow-y: scroll;
   /* The Close Button */ }
   .modal-content .close {
     color: #aaaaaa;
@@ -1085,6 +1085,11 @@ form .button {
   .tips .tip {
     line-height: 1.28;
     margin-bottom: 15px; }
+
+.instructions {
+  font-weight: 500;
+  line-height: 1.28;
+  margin-bottom: 15px; }
 
 .inputGroup .col-img {
   max-width: 33.6%; }
