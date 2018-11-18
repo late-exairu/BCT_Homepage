@@ -562,6 +562,8 @@ ul.list-blue {
       .section-8 .video-wrapper {
         margin-left: 0 !important;
         padding-left: 0 !important; } }
+  .section-8 .col-xl-9 > .row > div {
+    margin-top: -1px; }
   .section-8 .col-xl-9 .card-border p:last-child {
     letter-spacing: -1px;
     word-spacing: -1px; }
