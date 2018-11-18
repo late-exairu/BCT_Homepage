@@ -324,20 +324,20 @@ ul.list-blue {
 	}
   }
   .owl-dots {
-	position: relative;
-	.owl-dot {
-	  span {
-		width: 8px;
-		height: 8px;
-		margin: 5px;
-		background-color: transparent;
-		border: 1px solid #878787;
-		transition: 0.2s;
-	  }
-	  &.active span, &:hover span {
-		background-color: #878787;
-	  }
-	}
+		position: relative;
+		.owl-dot {
+			span {
+				width: 8px;
+				height: 8px;
+				margin: 5px;
+				background-color: transparent;
+				border: 1px solid #878787;
+				transition: 0.2s;
+			}
+			&.active span, &:hover span {
+				background-color: #878787;
+			}
+		}
   }
 }
 
