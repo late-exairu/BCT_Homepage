@@ -906,10 +906,15 @@ ul.list-blue {
 
 #youtubeModal {
   .modal-content {
-	background-color: #000;
-	border: 0;
-	border-radius: 0;
+		background-color: #000;
+		border: 0;
+		border-radius: 0;
   }
+}
+
+.modal-content {
+	max-height: 70vh;
+	overflow: scroll;
 }
 
 .article {

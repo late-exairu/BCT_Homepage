@@ -739,6 +739,10 @@ ul.list-blue {
   border: 0;
   border-radius: 0; }
 
+.modal-content {
+  max-height: 70vh;
+  overflow: scroll; }
+
 .article h1, .article .h1, .article h2, .article .h2, .article h3, .article .h3, .article h4, .article .h4, .article h5, .article .h5, .article h6, .article .h6 {
   font-weight: 500;
   letter-spacing: initial; }
