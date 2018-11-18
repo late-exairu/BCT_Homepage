@@ -1290,7 +1290,9 @@ form .button {
       height: 20%; }
     .label-group .label-card > .row:last-child {
       height: 20%;
-      background-color: #EEE; }
+      background-color: #EEE;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px; }
   .label-group input {
     display: none; }
   .label-group input:checked ~ .label-card:before, .label-group input:checked ~ .label-card:after {
