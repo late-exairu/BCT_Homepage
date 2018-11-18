@@ -744,7 +744,20 @@ ul.list-blue {
 
 .modal-content {
   max-height: 70vh;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  /* The Close Button */ }
+  .modal-content .close {
+    color: #aaaaaa;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 28px;
+    font-weight: bold; }
+  .modal-content .close:hover,
+  .modal-content .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer; }
 
 .article h1, .article .h1, .article h2, .article .h2, .article h3, .article .h3, .article h4, .article .h4, .article h5, .article .h5, .article h6, .article .h6 {
   font-weight: 500;
