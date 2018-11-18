@@ -534,9 +534,8 @@ ul.list-blue {
   max-height: 700px;
   padding-top: 200px;
   padding-bottom: 228px;
-  background: url(../img/bg.png) center top;
-  background-size: cover;
-  background-attachment: fixed; }
+  background: url(../img/bg.png);
+  background-size: cover; }
   .section-7 .row > div:last-child h2 {
     margin-bottom: 45px; }
   .section-7 .row > div:last-child p {

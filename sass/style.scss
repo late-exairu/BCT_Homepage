@@ -632,9 +632,9 @@ ul.list-blue {
 	max-height: 700px;
   padding-top: 200px;
   padding-bottom: 228px;
-  background: url(../img/bg.png) center top;
+  background: url(../img/bg.png);
 	background-size: cover;
-	background-attachment: fixed;
+	//background-attachment: fixed;
 	
 	.row > div:last-child {
 		h2 {
