@@ -259,7 +259,7 @@ h1, .h1, h2, .h2 {
 
 .terminal-switch-wrap {
   line-height: 1;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
   color: #0080CA; }
 
@@ -746,7 +746,7 @@ ul.list-blue {
 
 .modal-content {
   max-height: 70vh;
-  overflow-y: auto;
+  overflow-y: scroll;
   /* The Close Button */ }
   .modal-content .close {
     color: #aaaaaa;
@@ -946,7 +946,11 @@ ul.list-blue {
     .navbar-brand img {
       max-width: inherit; }
   .terminal-switch-wrap {
-    font-size: 0; }
+    font-size: 10px; }
+    .terminal-switch-wrap > div:first-child {
+      padding-right: 5px !important; }
+    .terminal-switch-wrap > div:last-child {
+      max-width: 50px; }
     .terminal-switch-wrap img {
       width: 30px; }
   .promo {

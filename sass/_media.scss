@@ -290,7 +290,13 @@
 		}
 	}
 	.terminal-switch-wrap {
-		font-size: 0;
+		font-size: 10px;
+		& > div:first-child {
+			padding-right: 5px !important;
+		}
+		& > div:last-child {
+			max-width: 50px;
+		}
 		img {
 			width: 30px;
 		}
