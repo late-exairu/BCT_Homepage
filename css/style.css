@@ -593,10 +593,16 @@ ul.list-blue {
     .section-11 .row p {
       width: 550px;
       font-size: 18px;
-      margin: 0; }
+      margin: 0;
+      white-space: nowrap; }
   @media (max-width: 992px) {
     .section-11 .row p {
-      width: auto; } }
+      width: auto;
+      white-space: normal;
+      font-size: 14px; } }
+  @media (max-width: 575px) {
+    .section-11 .row p {
+      font-size: 10px; } }
 
 @media (max-width: 768px) {
   .section-12 .row {
