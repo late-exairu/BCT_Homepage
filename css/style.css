@@ -746,7 +746,7 @@ ul.list-blue {
 
 .modal-content {
   max-height: 70vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   /* The Close Button */ }
   .modal-content .close {
     color: #aaaaaa;
