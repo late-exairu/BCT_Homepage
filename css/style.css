@@ -369,6 +369,13 @@ ul.list-blue {
     padding: 121px 0; }
   .section-2 .kartynka {
     align-self: center; }
+  .section-2 ul.list-blue li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #00A1FF;
+    font-size: 22px;
+    line-height: 22px; }
 
 .section-3 {
   padding-top: 43px;
