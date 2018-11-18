@@ -777,6 +777,9 @@ ul.list-blue {
 .promo-code {
 	color: #CCC;
 	font-weight: 500;
+	.col > a {
+		color: #CCC !important;
+	}
 }
 .owl-2 {
   .slide {
