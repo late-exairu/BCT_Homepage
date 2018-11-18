@@ -305,14 +305,14 @@ $(document).ready(function () {
 	$('.label-group').click(function (e) {
 		e.preventDefault();
 		if ($(this).find('select').length > 0) {
-			$(".single-notice .package").html($(this).find('select')[0].innerText);
+			$(".single-notice .package").html($(this).find('select')[0].innerText + " BCT");
 		}
 		else {
-			$(".single-notice .package").html($(this).find('.label-card .fz-20')[0].childNodes[0].data + "BCT");
+			$(".single-notice .package").html($(this).find('.label-card .row:nth-child(2) .fz-20')[0].childNodes[0].data + "BCT");
 		}
 
 		$('.label-group').find('.label-card').removeClass('hover');
-		
+
 		if ($(this).hasClass('checked')) {
 			$(this).removeClass('checked');
 			$(this).find('.label-card').removeClass('hover');

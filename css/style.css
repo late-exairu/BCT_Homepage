@@ -322,9 +322,6 @@ ul.list-blue {
   .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background-color: #878787; }
 
-.single-notice span {
-  text-decoration: underline; }
-
 .video-wrap {
   padding: 80px 0;
   background-color: #000; }
