@@ -987,15 +987,13 @@ ul.list-blue {
 }
 
 .modal-content {
-	max-height: 70vh;
-	overflow-y: auto;
-	
+		padding: 40px 0 30px 30px !important;
 	/* The Close Button */
 	.close {
 		color: #aaaaaa;
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 24px;
+    top: 6px;
 		font-size: 28px;
 		font-weight: bold;
 	}
@@ -1005,6 +1003,11 @@ ul.list-blue {
 		color: #000;
 		text-decoration: none;
 		cursor: pointer;
+	}
+
+	.content-wrapper {
+		max-height: 70vh;
+		overflow-y: auto;
 	}
 }
 
