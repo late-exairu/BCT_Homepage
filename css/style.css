@@ -545,7 +545,8 @@ ul.list-blue {
   padding-bottom: 228px;
   background: url(../img/bg.png);
   background-size: initial;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
   .section-7 .row > div:last-child h2 {
     margin-bottom: 45px; }
   .section-7 .row > div:last-child p {

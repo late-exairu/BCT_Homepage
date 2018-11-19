@@ -643,6 +643,7 @@ ul.list-blue {
   background: url(../img/bg.png);
 	background-size: initial;
 	background-position: center;
+	background-attachment: fixed;
 	
 	.row > div:last-child {
 		h2 {
