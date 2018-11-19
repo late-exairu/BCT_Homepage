@@ -847,7 +847,9 @@ ul.list-blue {
   white-space: nowrap;
   text-overflow: ellipsis;
   background: linear-gradient(to bottom, #f3f3f3 0%, #dcdcdc 100%);
-  border-color: 1px solid #0080CA; }
+  border-color: 1px solid #0080CA;
+  margin: 0 10px;
+  padding: 3px 0; }
   .package-select:after {
     content: ' ';
     display: block;
@@ -896,7 +898,8 @@ ul.list-blue {
     border-top: 0 none;
     background: #fff;
     box-sizing: border-box;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 3px; }
     .package-select ul li {
       padding: 5px;
       cursor: pointer;
@@ -998,7 +1001,16 @@ ul.list-blue {
     margin-right: -350px; }
   .payment-img-slim {
     max-width: initial !important;
-    margin-right: -350px !important; } }
+    margin-right: -350px !important; }
+  .package-select {
+    margin: 0; }
+    .package-select > span {
+      font-size: 19px; }
+  .label-group {
+    min-height: 290px;
+    min-width: 275px !important; }
+    .label-group .label-card .row:nth-child(2) .fz-20 {
+      font-size: 19px; } }
 
 @media (min-width: 1350px) {
   .container {
@@ -1019,9 +1031,7 @@ ul.list-blue {
     height: 280px !important; }
     .label-group img {
       width: 100% !important;
-      margin: 0 !important; }
-    .label-group .package-select {
-      margin: 0 10px; } }
+      margin: 0 !important; } }
 
 @media (min-width: 1500px) {
   .fancybox-navigation .fancybox-button--arrow_left {
@@ -1402,7 +1412,8 @@ form .button {
 .label-group {
   display: block;
   margin-bottom: 0;
-  height: 250px; }
+  height: 250px;
+  min-width: 235px; }
   .label-group .label-card {
     width: 100%;
     cursor: pointer;
