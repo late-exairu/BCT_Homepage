@@ -201,7 +201,7 @@
 											<div class="col-12 px-0">
 												<img src="img/bct_j.png" alt="">
 											</div>
-											<div class="fz-11 gray col-xl-6 offset-xl-6">10+ Terminals <br> for your syndicate</div>
+											<div class="fz-11 gray col-xl-6 offset-xl-6"><span class="terminal-count">10</span>+ Terminals <br> for your syndicate</div>
 										</div>
 										<div class="row align-items-center justify-content-center mx-0 py-0">
 											<div class="col-12 fz-18 mx-2 pr-1 pl-1">
@@ -551,6 +551,7 @@
 				var value=$tgt.attr('total');
 				$('.package-select').attr('total', value);
 				$(this).closest('.label-group').find('.label-card .row:last-child div').html("$" + $tgt.attr('usd'));
+				$(".terminal-count").html(parseInt($tgt.attr('usd').replace(/,/g, "")) / 1000);
 				$(".single-notice .package").html(value);
 				$(this).closest('.label-group').trigger('click', ['no-hidden']);
 			}
