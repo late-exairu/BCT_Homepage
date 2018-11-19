@@ -305,10 +305,15 @@ $(document).ready(function () {
 	$('.label-group').click(function (e, param) {
 		e.preventDefault();
 		if ($(this).find('.package-select').length > 0) {
-			$(".single-notice .package").html($(this).find('.label-card .row:nth-child(2) .package-select > span')[0].childNodes[0].data + "BCT");
+			
+			var value=$(this).find('.label-card .row:nth-child(2) .package-select').attr('total');
+			$(".single-notice .package").html(value + " BCT");
+			// $(".single-notice .package").html($(this).find('.label-card .row:nth-child(2) .package-select > span')[0].childNodes[0].data + "BCT");
 		}
 		else {
-			$(".single-notice .package").html($(this).find('.label-card .row:nth-child(2) div')[0].childNodes[0].data + "BCT");
+			var value=$(this).find('.label-card .row:nth-child(2) div').attr('total');
+			// $(".single-notice .package").html($(this).find('.label-card .row:nth-child(2) div')[0].childNodes[0].data + "BCT");
+			$(".single-notice .package").html(value + " BCT");
 		}
 
 		$('.label-group').find('.label-card').removeClass('hover');
