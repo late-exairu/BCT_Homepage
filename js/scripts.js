@@ -44,8 +44,8 @@ $(document).ready(function () {
 		autoplayTimeout: 5000,
 		smartSpeed: 1000,
 		onChanged: function (event) {
-			//$(event.target).trigger('stop.owl.autoplay');
-			//$(event.target).trigger('play.owl.autoplay');
+			$(event.target).trigger('stop.owl.autoplay');
+			$(event.target).trigger('play.owl.autoplay');
 		}
 	});
 
@@ -66,6 +66,7 @@ $(document).ready(function () {
 		},
 		margin: 10,
 		dots: true,
+		dotsEach:true,
 		nav: true,
 		navText: ["", ""],
 	});
