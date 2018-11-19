@@ -806,27 +806,27 @@ ul.list-blue {
     background-position: center;
     &.slide-1 {
       background-image: url(../img/bg-1.jpg);
-	  .container { max-width: 1040px; }
+	  .container { max-width: 910px; }
     }
     &.slide-2 { 
       background-image: url(../img/bg-2.jpg);
-	  .container { max-width: 840px; }
+	  .container { max-width: 980px; }
     }
     &.slide-3 {
       background-image: url(../img/bg-3.jpg);
-	  .container { max-width: 1130px; }
+	  .container { max-width: 1150px; }
     }
     &.slide-4 {
       background-image: url(../img/bg-4.jpg);
-	  .container { max-width: 840px; }
+	  .container { max-width: 980px; }
     }
     &.slide-5 {
       background-image: url(../img/bg-5.jpg);
-	  .container { max-width: 740px; }
+	  .container { max-width: 980px; }
     }
     &.slide-6 {
       background-image: url(../img/bg-6.jpg);
-	  .container { max-width: 1100px; }
+	  .container { max-width: 980px; }
     }
     &:after {
       content: '';
