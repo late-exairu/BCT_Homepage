@@ -302,18 +302,19 @@ $(document).ready(function () {
 		}
 	);
 
-	$('.label-group').click(function (e) {
+	$('.label-group').click(function (e, param) {
 		e.preventDefault();
-		if ($(this).find('select').length > 0) {
-			$(".single-notice .package").html($(this).find('select')[0].innerText + " BCT");
+		if ($(this).find('.package-select').length > 0) {
+			$(".single-notice .package").html($(this).find('.label-card .row:nth-child(2) .package-select > span')[0].childNodes[0].data + "BCT");
 		}
 		else {
-			$(".single-notice .package").html($(this).find('.label-card .row:nth-child(2) .package-select span')[0].childNodes[0].data + "BCT");
+			$(".single-notice .package").html($(this).find('.label-card .row:nth-child(2) div')[0].childNodes[0].data + "BCT");
 		}
 
 		$('.label-group').find('.label-card').removeClass('hover');
 
 		if ($(this).hasClass('checked')) {
+			if (param == "no-hidden") return;
 			$(this).removeClass('checked');
 			$(this).find('.label-card').removeClass('hover');
 			$(this).find('input[type=radio]').prop('checked', false);

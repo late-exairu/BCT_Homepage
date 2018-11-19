@@ -193,8 +193,8 @@
 												
 												<div class="package-select">
 													<span>
-														100000 
-														<span class="text-blue">+40000 bonus</span>
+														100,000 
+														<span class="text-blue">+40,000 bonus</span>
 													</span>
 													<ul class="hidden">        
 													</ul>
@@ -513,10 +513,10 @@
 
 		packages.forEach(function(item, i){
 			if (i > 2) {
-				html.push('<li bct="'+ item.bct + '" bonus="'+ item.bonus + '" total="'+ item.total + '" usd="'+ item.usd + '">' + item.bct + ' <span class="text-blue">+'+ item.bonus + ' bonus</span></li>');
+				html.push('<li bct="'+ item.bct + '" bonus="'+ item.bonus + '" total="'+ item.total + '" usd="'+ item.usd + '">' + Number(item.bct).toLocaleString('en-US') + ' <span class="text-blue">+'+ Number(item.bonus).toLocaleString('en-US') + ' bonus</span></li>');
 			}
 		});
-
+		
 		$('.package-select ul').html(html.join(''));
 
 		var lists = $('.package-select');
@@ -536,7 +536,7 @@
 				$('.package-select > span').html($tgt.html());
 				var value=$tgt.attr('bct');
 				$(".single-notice .package").html(value);
-				$(this).closest('.label-group').trigger('click');
+				$(this).closest('.label-group').trigger('click', ['no-hidden']);
 			}
 		})
 		$(document).click(function(e) {
