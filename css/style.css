@@ -552,7 +552,8 @@ ul.list-blue {
   .section-7 .row > div:last-child p {
     text-align: left;
     margin: 0;
-    margin-bottom: 45px; }
+    margin-bottom: 45px;
+    padding-right: 5%; }
 
 .section-8 {
   padding: 100px 0 150px;
@@ -572,12 +573,6 @@ ul.list-blue {
         padding-left: 0 !important; } }
   .section-8 .col-xl-9 > .row > div {
     margin-top: -1px; }
-  .section-8 .col-xl-9 .card-border p:last-child {
-    letter-spacing: -1px;
-    word-spacing: -1px; }
-  .section-8 .col-xl-9 > .row > div:last-child .card-border p:last-child {
-    letter-spacing: 0px;
-    word-spacing: -2px; }
 
 .section-11 {
   padding: 64px 0;
