@@ -830,7 +830,8 @@ ul.list-blue {
   white-space: nowrap;
   text-overflow: ellipsis;
   background: linear-gradient(to bottom, #f3f3f3 0%, #dcdcdc 100%);
-  border-color: 1px solid #0080CA; }
+  border-color: 1px solid #0080CA;
+  margin: 0 10px; }
   .package-select:after {
     content: ' ';
     display: block;
@@ -1385,7 +1386,8 @@ form .button {
 .label-group {
   display: block;
   margin-bottom: 0;
-  height: 250px; }
+  height: 250px;
+  min-width: 235px; }
   .label-group .label-card {
     width: 100%;
     cursor: pointer;
