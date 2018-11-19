@@ -278,7 +278,7 @@ ul.list-blue {
   padding-left: 0;
   list-style: none;
   li {
-	padding-left: 18px;
+	padding-left: 40px;
 	position: relative;
 	&:before {
 	  content: "•";
@@ -409,8 +409,9 @@ ul.list-blue {
     position: absolute;
     left: 0;
     color: #00A1FF;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 41px;
+		line-height: 22px;
+		top:2px;
 	}
 }
 .section-3 {
