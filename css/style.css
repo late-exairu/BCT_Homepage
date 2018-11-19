@@ -551,6 +551,23 @@ ul.list-blue {
           /*white-space: nowrap;*/ }
       .section-6 .row > div:first-child .informs-wrapper .list-blue {
         margin-bottom: 45px; }
+      .section-6 .row > div:first-child .informs-wrapper li a {
+        display: block; }
+        .section-6 .row > div:first-child .informs-wrapper li a:after {
+          content: '';
+          width: 12px;
+          height: 12px;
+          position: relative;
+          top: 7px;
+          background: url(../img/plus.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          display: block;
+          float: right;
+          transform: rotate(45deg);
+          transition: .3s ease; }
+        .section-6 .row > div:first-child .informs-wrapper li a.collapsed:after {
+          transform: rotate(0deg); }
 
 .reel {
   width: 100% !important;
