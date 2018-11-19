@@ -831,7 +831,8 @@ ul.list-blue {
   text-overflow: ellipsis;
   background: linear-gradient(to bottom, #f3f3f3 0%, #dcdcdc 100%);
   border-color: 1px solid #0080CA;
-  margin: 0 10px; }
+  margin: 0 10px;
+  padding: 3px 0; }
   .package-select:after {
     content: ' ';
     display: block;
@@ -880,7 +881,8 @@ ul.list-blue {
     border-top: 0 none;
     background: #fff;
     box-sizing: border-box;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 3px; }
     .package-select ul li {
       padding: 5px;
       cursor: pointer;
