@@ -680,6 +680,9 @@ ul.list-blue {
 					transform: rotate(45deg);
 					transition: .3s ease;
 				}
+				&:hover{
+					color: #0080CA;
+				}
 			}
 			li div{
 				font-size: 15px;

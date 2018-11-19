@@ -569,6 +569,8 @@ ul.list-blue {
           float: right;
           transform: rotate(45deg);
           transition: .3s ease; }
+        .section-6 .row > div:first-child .informs-wrapper li a:hover {
+          color: #0080CA; }
       .section-6 .row > div:first-child .informs-wrapper li div {
         font-size: 15px; }
 
