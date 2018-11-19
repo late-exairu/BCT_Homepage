@@ -194,7 +194,8 @@ h1, .h1, h2, .h2 {
       pointer-events: none; } }
 
 .navbar-brand {
-  padding: 4px 0; }
+  padding: 4px 0;
+  margin-right: 25px; }
 
 .navbar-brand img {
   width: 154px; }
