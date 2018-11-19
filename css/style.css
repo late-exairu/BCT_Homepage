@@ -528,7 +528,7 @@ ul.list-blue {
         .section-6 .row > div:first-child .informs-wrapper .d-none h3 {
           margin-bottom: 45px;
           line-height: 1;
-          white-space: nowrap; }
+          /*white-space: nowrap;*/ }
       .section-6 .row > div:first-child .informs-wrapper .list-blue {
         margin-bottom: 45px; }
 
@@ -1117,6 +1117,12 @@ ul.list-blue {
       margin: 0 !important; } }
 
 @media (max-width: 399px) {
+  .navbar-brand {
+    margin: 0 15px 0 0; }
+  .promo {
+    font-size: 10px; }
+  .terminal-switch-wrap {
+    margin: 0; }
   .br {
     display: none; } }
 
