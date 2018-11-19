@@ -420,6 +420,18 @@
 
 @media (max-width: 399px) {
 
+	.navbar-brand{
+		margin: 0 15px 0 0;
+	}
+
+	.promo{
+		font-size: 10px;
+	}
+
+	.terminal-switch-wrap{
+		margin: 0;
+	}
+
 	.br {
 		display: none;
 	}
