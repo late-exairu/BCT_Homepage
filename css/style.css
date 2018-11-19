@@ -987,7 +987,8 @@ ul.list-blue {
     left: 50%;
     margin-left: -750px; }
   .fancybox-navigation .fancybox-button--arrow_right {
-    right: 50%; } }
+    right: 50%;
+    margin-right: -750px; } }
 
 @media (max-width: 1349px) {
   .li {
