@@ -661,36 +661,35 @@ ul.list-blue {
 						display: none;	
 					}
 					a {
+						position: relative;
 						display: block;
 						color: inherit;
 						/*margin-bottom: 10px;*/
-						padding: 6px 0 4px;
+						padding: 5px 25px 5px 0;
 						&.collapsed {
 							margin-bottom: 0;
 							&:after {
-								transform: rotate(0deg);
+								transform: translateY(-50%) rotate(0deg);
 							}
 						}
 						&:after {
 							content: '';
 							width: 12px;
 							height: 12px;
-							position: relative;
-							top: 5px;
+							position: absolute;
+							top: 50%;
+							right: 5px;
+							transform: translateY(-50%) rotate(45deg);
 							background: url(../img/plus.svg);
 							background-size: contain;
 							background-repeat: no-repeat;
 							display: block;
 							float: right;
-							transform: rotate(45deg);
 							transition: .3s ease;
 						}
 						&:hover {
 							color: #0080CA;
 						}
-					}
-					div {
-						font-size: 15px;
 					}
 				}
 			}
