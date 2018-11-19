@@ -392,6 +392,17 @@ ul.list-blue {
 .section-4 {
   padding-top: 40px;
   padding-bottom: 96px; }
+  .section-4 p {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .6s ease;
+    height: 0;
+    margin-bottom: 0; }
+    .section-4 p.current {
+      visibility: visible;
+      opacity: 1;
+      height: auto;
+      margin-bottom: 1rem; }
 
 .owl-header {
   margin-bottom: 0 !important; }
@@ -425,19 +436,19 @@ ul.list-blue {
     .owl-header .owl-dots .owl-dot:nth-child(1):before {
       content: "Global Wallet"; }
     .owl-header .owl-dots .owl-dot:nth-child(2):before {
-      content: "Global OrderBook"; }
+      content: "Global Order Book"; }
     .owl-header .owl-dots .owl-dot:nth-child(3):before {
-      content: "Global Portfolio"; }
+      content: "Smart Order Router"; }
     .owl-header .owl-dots .owl-dot:nth-child(4):before {
-      content: "Global Order History"; }
-    .owl-header .owl-dots .owl-dot:nth-child(5):before {
       content: "Global Liquidity"; }
+    .owl-header .owl-dots .owl-dot:nth-child(5):before {
+      content: "Dedicated Terminal"; }
     .owl-header .owl-dots .owl-dot:nth-child(6):before {
-      content: "Basic Mode"; }
+      content: "Hardware Key"; }
     .owl-header .owl-dots .owl-dot:nth-child(7):before {
-      content: "Advanced Mode"; }
+      content: "ComplianceGuard"; }
     .owl-header .owl-dots .owl-dot:nth-child(8):before {
-      content: "App's"; }
+      content: "Curated App Store"; }
 
 .owl-body {
   max-width: 800px;

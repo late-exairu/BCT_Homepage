@@ -83,6 +83,9 @@ $(document).ready(function () {
 		onChanged: function (event) {
 			$(event.target).trigger('stop.owl.autoplay');
 			$(event.target).trigger('play.owl.autoplay');
+			var currentTextIndex = event.page.index;
+			$('.section-4 p').removeClass('current');
+			$('.section-4 p').eq(currentTextIndex).addClass('current');
 		}
 	});
 
