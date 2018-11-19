@@ -189,41 +189,16 @@
 											</div>
 										</div>
 										<div class="row align-items-center justify-content-center mx-0 py-0">
-											<div class="col-12 fz-18 mx-2">
-												<select class="token-select">
-													<option>20,000</option>
-													<option>30,000</option>
-													<option>40,000</option>
-													<option>50,000</option>
-													<option>60,000</option>
-													<option>70,000</option>
-													<option>80,000</option>
-													<option>90,000</option>
-													<option selected="selected">100,000</option>
-													<option>150,000</option>
-													<option>200,000</option>
-													<option>300,000</option>
-													<option>400,000</option>
-													<option>500,000</option>
-													<option>600,000</option>
-													<option>700,000</option>
-													<option>800,000</option>
-													<option>900,000</option>
-													<option>1,000,000</option>
-													<option>1,250,000</option>
-													<option>1,500,000</option>
-													<option>1,750,000</option>
-													<option>2,000,000</option>
-													<option>2,500,000</option>
-													<option>3,000,000</option>
-													<option>4,000,000</option>
-													<option>5,000,000</option>
-													<option>6,000,000</option>
-													<option>7,000,000</option>
-													<option>8,000,000</option>
-													<option>9,000,000</option>
-													<option>10,000,000</option>
-												</select>
+											<div class="col-12 fz-18 mx-2 pr-1 pl-1">
+												
+												<div class="package-select">
+													<span>
+														100000 
+														<span class="text-blue">+40000 bonus</span>
+													</span>
+													<ul class="hidden">        
+													</ul>
+												</div>
 											</div>
 											<div class="fz-11 gray">10+ Terminals for your syndicate</div>
 										</div>
@@ -308,6 +283,269 @@
 	<script src="libs/selectize.min.js"></script>
 	<script src="js/scripts.js"></script>
 
+	<script type="text/javascript">
+
+		var html=[];
+		var packages = [
+			{
+				bct: 3000,
+				bonus: 300,
+				usd: 300,
+				total: 3300
+			},
+			{
+				bct: 6000,
+				bonus: 1500,
+				usd: 600,
+				total: 7500
+			},
+			{
+				bct: 10000,
+				bonus: 3500,
+				usd: 100,
+				total: 13500
+			},
+			{
+				bct: 20000,
+				bonus: 7000,
+				usd: 2000,
+				total: 27000
+			},
+			{
+				bct: 30000,
+				bonus: 10500,
+				usd: 3000,
+				total: 40500
+			},
+			{
+				bct: 40000,
+				bonus: 14000,
+				usd: 4000,
+				total: 54000
+			},
+			{
+				bct: 50000,
+				bonus: 20000,
+				usd: 5000,
+				total: 70000
+			},
+			{
+				bct: 60000,
+				bonus: 24000,
+				usd: 6000,
+				total: 84000
+			},
+			{
+				bct: 70000,
+				bonus: 28000,
+				usd: 7000,
+				total: 98000
+			},
+			{
+				bct: 80000,
+				bonus: 32000,
+				usd: 8000,
+				total: 112000
+			},
+			{
+				bct: 90000,
+				bonus: 36000,
+				usd: 9000,
+				total: 12600
+			},
+			{
+				bct: 100000,
+				bonus: 40000,
+				usd: 10000,
+				total: 140000
+			},
+			{
+				bct: 150000,
+				bonus: 67500,
+				usd: 15000,
+				total: 217000
+			},
+			{
+				bct: 200000,
+				bonus: 90000,
+				usd: 20000,
+				total: 290000
+			},
+			{
+				bct: 300000,
+				bonus: 135000,
+				usd: 30000,
+				total: 435000
+			},
+			{
+				bct: 400000,
+				bonus: 180000,
+				usd: 40000,
+				total: 580000
+			},
+			{
+				bct: 500000,
+				bonus: 250000,
+				usd: 50000,
+				total: 750000
+			},
+			{
+				bct: 600000,
+				bonus: 300000,
+				usd: 60000,
+				total: 900000
+			},
+			{
+				bct: 700000,
+				bonus: 350000,
+				usd: 70000,
+				total: 1050000
+			},
+			{
+				bct: 800000,
+				bonus: 400000,
+				usd: 80000,
+				total: 1200000
+			},
+			{
+				bct: 900000,
+				bonus: 450000,
+				usd: 90000,
+				total: 1350000
+			},
+			{
+				bct: 1000000,
+				bonus: 500000,
+				usd: 100000,
+				total: 1500000
+			},
+			{
+				bct: 1000000,
+				bonus: 500000,
+				usd: 100000,
+				total: 1500000
+			},
+			{
+				bct: 1250000,
+				bonus: 750000,
+				usd: 125000,
+				total: 2000000
+			},
+			{
+				bct: 1500000,
+				bonus: 900000,
+				usd: 150000,
+				total: 2400000
+			},
+			{
+				bct: 1750000,
+				bonus: 1050000,
+				usd: 175000,
+				total: 2800000
+			},
+			{
+				bct: 2000000,
+				bonus: 1200000,
+				usd: 200000,
+				total: 3200000
+			},
+			{
+				bct: 2000000,
+				bonus: 1200000,
+				usd: 200000,
+				total: 3200000
+			},
+			{
+				bct: 2500000,
+				bonus: 1750000,
+				usd: 250000,
+				total: 4250000
+			},
+			{
+				bct: 3000000,
+				bonus: 2100000,
+				usd: 300000,
+				total: 5100000
+			},
+			{
+				bct: 4000000,
+				bonus: 2800000,
+				usd: 400000,
+				total: 6800000
+			},
+			{
+				bct: 5000000,
+				bonus: 4000000,
+				usd: 500000,
+				total: 9000000
+			},
+			{
+				bct: 6000000,
+				bonus: 4800000,
+				usd: 600000,
+				total: 10800000
+			},
+			{
+				bct: 7000000,
+				bonus: 5600000,
+				usd: 700000,
+				total: 12600000
+			},
+			{
+				bct: 8000000,
+				bonus: 7200000,
+				usd: 800000,
+				total: 15200000
+			},
+			{
+				bct: 9000000,
+				bonus: 8100000,
+				usd: 900000,
+				total: 17100000
+			},
+			{
+				bct: 10000000,
+				bonus: 10000000,
+				usd: 1000000,
+				total: 20000000
+			}
+		]
+
+		packages.forEach(function(item, i){
+			if (i > 2) {
+				html.push('<li bct="'+ item.bct + '" bonus="'+ item.bonus + '" total="'+ item.total + '" usd="'+ item.usd + '">' + item.bct + ' <span class="text-blue">+'+ item.bonus + ' bonus</span></li>');
+			}
+		});
+
+		$('.package-select ul').html(html.join(''));
+
+		var lists = $('.package-select');
+
+		lists.on('click',function(e) {
+
+			e.stopPropagation();
+			e.preventDefault()
+			if($(this).find('ul').hasClass('hidden')) {
+				$(this).find('ul').removeClass('hidden');
+			}
+			else {
+				$(this).find('ul').addClass('hidden');
+			}
+			var $tgt = $(e.target);
+			if ($tgt.is('li')) {
+				$('.package-select > span').html($tgt.html());
+				var value=$tgt.attr('bct');
+			// 	// $('#test_select').val( value);
+				$(".single-notice .package").html(value);
+				$(this).closest('.label-group').trigger('click');
+			}
+			
+			
+		})
+		$(document).click(function(e) {
+			$('.package-select').find('ul').addClass('hidden');
+		});
+	</script>
 </body>
 
 </html>

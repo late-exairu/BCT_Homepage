@@ -978,6 +978,102 @@ ul.list-blue {
 	}
 }
 
+.package-select {
+	
+	font-size: 1.0rem;
+	border-radius: 4px;
+	border-color: #d5d5d5;
+	box-shadow: none;
+	position: relative;
+	font-weight: 700;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	background: linear-gradient(to bottom, #f3f3f3 0%, #dcdcdc 100%);
+	border-color: 1px solid #0080CA;
+
+
+	// position: relative;
+	// display: inline-block;
+	// font-family: sans-serif;
+	// font-size: 93%;
+	// margin: 30px 50px;
+	// border
+		
+	&:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+		border-color: #808080 transparent transparent transparent;
+		
+		
+    width: 6px !important;
+    height: 6px !important;
+    right: 6px !important;
+    border: 2px solid !important;
+    margin-top: -2px !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    transform: translateY(-50%) rotate(45deg) !important;
+	}
+	& > span {
+    font-size: 1.0rem;
+    border-radius: 4px;
+    border-color: #d5d5d5;
+    box-shadow: none;
+    padding: 2px 30px 1px 15px;
+    font-weight: 700;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: linear-gradient(to bottom, #f3f3f3 0%, #dcdcdc 100%);
+		border-color: 1px solid #0080CA;
+	}
+
+	ul {		
+		position: absolute;
+		border: 1px solid #333;
+		width: 100%;
+		max-height: 200px;
+		overflow: auto;
+		z-index: 10000;
+		padding: 0;
+		transition: width 0.1s;
+		border-radius: 0 0 3px 3px;
+    z-index: 10;
+    border: 1px solid #d0d0d0;
+    border-top: 0 none;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+		li {
+			padding: 5px;
+			cursor: pointer;
+			font-size: 12px;
+
+			&:hover {
+				background-color: #EEE;
+			}
+			&:last-child {
+				border-bottom: none;
+			}
+			span {
+				pointer-events: none;
+			}
+		}
+		
+		&.hidden {
+			display: none;
+		}
+	}
+}
+
 @import "media";
 @import "payment";
 @import "cart";

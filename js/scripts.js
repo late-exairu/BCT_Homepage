@@ -308,7 +308,7 @@ $(document).ready(function () {
 			$(".single-notice .package").html($(this).find('select')[0].innerText + " BCT");
 		}
 		else {
-			$(".single-notice .package").html($(this).find('.label-card .row:nth-child(2) .fz-20')[0].childNodes[0].data + "BCT");
+			$(".single-notice .package").html($(this).find('.label-card .row:nth-child(2) .package-select span')[0].childNodes[0].data + "BCT");
 		}
 
 		$('.label-group').find('.label-card').removeClass('hover');
