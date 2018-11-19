@@ -982,7 +982,16 @@ ul.list-blue {
     margin-right: -350px; }
   .payment-img-slim {
     max-width: initial !important;
-    margin-right: -350px !important; } }
+    margin-right: -350px !important; }
+  .package-select {
+    margin: 0; }
+    .package-select > span {
+      font-size: 19px; }
+  .label-group {
+    min-height: 290px;
+    min-width: 275px !important; }
+    .label-group .label-card .row:nth-child(2) .fz-20 {
+      font-size: 19px; } }
 
 @media (min-width: 1350px) {
   .container {
@@ -1003,9 +1012,7 @@ ul.list-blue {
     height: 280px !important; }
     .label-group img {
       width: 100% !important;
-      margin: 0 !important; }
-    .label-group .package-select {
-      margin: 0 10px; } }
+      margin: 0 !important; } }
 
 @media (min-width: 1500px) {
   .fancybox-navigation .fancybox-button--arrow_left {
