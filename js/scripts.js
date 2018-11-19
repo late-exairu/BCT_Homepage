@@ -41,7 +41,7 @@ $(document).ready(function () {
 		items: 1,
 		navText: ["", ""],
 		loop: true,
-		autoplayTimeout: 5000,
+		autoplayTimeout: 10000,
 		smartSpeed: 1000,
 		onChanged: function (event) {
 			$(event.target).trigger('stop.owl.autoplay');
@@ -80,6 +80,7 @@ $(document).ready(function () {
 		nav: true,
 		navText: ["", ""],
 		dotsContainer: ".owl-header .owl-dots",
+		autoplayTimeout: 10000,
 		onChanged: function (event) {
 			$(event.target).trigger('stop.owl.autoplay');
 			$(event.target).trigger('play.owl.autoplay');
