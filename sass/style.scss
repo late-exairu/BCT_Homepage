@@ -930,7 +930,7 @@ ul.list-blue {
   }
   .owl-nav {
 	[class*="owl-"] {
-	  top: 40%;
+	  top: calc(50% - 35px);
 	}
   }
 }

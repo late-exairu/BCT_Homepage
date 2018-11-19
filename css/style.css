@@ -744,7 +744,7 @@ ul.list-blue {
     padding-left: 10px; }
 
 .owl-3 .owl-nav [class*="owl-"] {
-  top: 40%; }
+  top: calc(50% - 35px); }
 
 .page-footer {
   padding: 16px 0;
