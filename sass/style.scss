@@ -1027,12 +1027,16 @@ ul.list-blue {
     border-radius: 4px;
     border-color: #d5d5d5;
     box-shadow: none;
-    padding: 2px 30px 1px 15px;
+    padding-right: 10px;
     font-weight: 700;
     white-space: nowrap;
     text-overflow: ellipsis;
     background: linear-gradient(to bottom, #f3f3f3 0%, #dcdcdc 100%);
 		border-color: 1px solid #0080CA;
+
+		& > span {
+			font-size: 12px;
+		}
 	}
 
 	ul {		

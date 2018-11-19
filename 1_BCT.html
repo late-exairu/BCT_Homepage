@@ -535,12 +535,9 @@
 			if ($tgt.is('li')) {
 				$('.package-select > span').html($tgt.html());
 				var value=$tgt.attr('bct');
-			// 	// $('#test_select').val( value);
 				$(".single-notice .package").html(value);
 				$(this).closest('.label-group').trigger('click');
 			}
-			
-			
 		})
 		$(document).click(function(e) {
 			$('.package-select').find('ul').addClass('hidden');
