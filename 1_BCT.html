@@ -513,7 +513,7 @@
 
 		packages.forEach(function(item, i){
 			if (i > 2) {
-				html.push('<li bct="'+ item.bct + '" bonus="'+ item.bonus + '" total="'+ Number(item.total).toLocaleString('en-US') + '" usd="'+ item.usd + '">' + Number(item.bct).toLocaleString('en-US') + ' <span class="text-blue">+'+ Number(item.bonus).toLocaleString('en-US') + ' bonus</span></li>');
+				html.push('<li bct="'+ item.bct + '" bonus="'+ item.bonus + '" total="'+ Number(item.total).toLocaleString('en-US') + '" usd="'+ Number(item.usd).toLocaleString('en-US') + '">' + Number(item.bct).toLocaleString('en-US') + ' <span class="text-blue">+'+ Number(item.bonus).toLocaleString('en-US') + ' bonus</span></li>');
 			}
 		});
 		
@@ -536,6 +536,7 @@
 				$('.package-select > span').html($tgt.html());
 				var value=$tgt.attr('total');
 				$('.package-select').attr('total', value);
+				$(this).closest('.label-group').find('.label-card .row:last-child div').html("$" + $tgt.attr('usd'));
 				$(".single-notice .package").html(value);
 				$(this).closest('.label-group').trigger('click', ['no-hidden']);
 			}
