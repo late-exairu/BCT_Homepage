@@ -966,7 +966,14 @@ ul.list-blue {
     right: 50%;
     margin-right: -640px; }
   .offset-lg-1 {
-    margin-left: 8.333333% !important; } }
+    margin-left: 8.333333% !important; }
+  .label-group {
+    height: 280px !important; }
+    .label-group img {
+      width: 100% !important;
+      margin: 0 !important; }
+    .label-group .package-select {
+      margin: 0 10px; } }
 
 @media (min-width: 1500px) {
   .fancybox-navigation .fancybox-button--arrow_left {

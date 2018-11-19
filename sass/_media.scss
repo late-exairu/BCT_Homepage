@@ -172,6 +172,16 @@
 	.offset-lg-1 {
 		margin-left: 8.333333% !important;
 	}
+	.label-group {
+		height: 280px !important;
+		img {
+			width: 100% !important;
+			margin: 0 !important;
+		}
+		.package-select {
+			margin: 0 10px;
+		}
+	}
 }
 
 @media (min-width: 1500px) {
