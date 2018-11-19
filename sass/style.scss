@@ -628,6 +628,12 @@ ul.list-blue {
   padding-top: 100px;
 	padding-bottom: 150px;
 
+	h2, h3 {
+		display: inline;
+	}
+	h3 {
+		margin: 10px;
+	}
 	.rotator-wrapper {
 		width: 100%;
 		height: 100%;
