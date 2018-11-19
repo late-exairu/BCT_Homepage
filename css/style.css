@@ -273,13 +273,10 @@ ul.list-blue {
   padding-left: 0;
   list-style: none; }
   ul.list-blue li {
-    padding-left: 40px;
-    position: relative; }
-    ul.list-blue li:before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: #00A1FF; }
+    position: relative;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 5px;
+    margin-bottom: 5px; }
 
 .owl-brands {
   padding: 4px 0;
@@ -552,7 +549,13 @@ ul.list-blue {
       .section-6 .row > div:first-child .informs-wrapper .list-blue {
         margin-bottom: 45px; }
       .section-6 .row > div:first-child .informs-wrapper li a {
-        display: block; }
+        display: block;
+        color: inherit;
+        margin-bottom: 10px; }
+        .section-6 .row > div:first-child .informs-wrapper li a.collapsed {
+          margin-bottom: 0; }
+          .section-6 .row > div:first-child .informs-wrapper li a.collapsed:after {
+            transform: rotate(0deg); }
         .section-6 .row > div:first-child .informs-wrapper li a:after {
           content: '';
           width: 12px;
@@ -566,8 +569,8 @@ ul.list-blue {
           float: right;
           transform: rotate(45deg);
           transition: .3s ease; }
-        .section-6 .row > div:first-child .informs-wrapper li a.collapsed:after {
-          transform: rotate(0deg); }
+      .section-6 .row > div:first-child .informs-wrapper li div {
+        font-size: 15px; }
 
 .reel {
   width: 100% !important;

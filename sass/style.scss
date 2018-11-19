@@ -279,14 +279,17 @@ ul.list-blue {
   padding-left: 0;
   list-style: none;
   li {
-	padding-left: 40px;
+	//padding-left: 40px;
 	position: relative;
-	&:before {
-	  content: "•";
-	  position: absolute;
-	  left: 0;
-	  color: #00A1FF;
-	}
+	border-bottom: 1px solid gainsboro;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	// &:before {
+	//   content: "•";
+	//   position: absolute;
+	//   left: 0;
+	//   color: #00A1FF;
+	// }
   }
 }
 
@@ -655,6 +658,14 @@ ul.list-blue {
 			}
 			li a{
 				display: block;
+				color: inherit;
+				margin-bottom: 10px;
+				&.collapsed {
+					margin-bottom: 0;
+					&:after{
+						transform: rotate(0deg);
+					}
+				}
 				&:after{
 					content: '';
 					width: 12px;
@@ -669,9 +680,10 @@ ul.list-blue {
 					transform: rotate(45deg);
 					transition: .3s ease;
 				}
-				&.collapsed:after{
-					transform: rotate(0deg);
-				}
+			}
+			li div{
+				font-size: 15px;
+				//padding-top: 10px;
 			}
 		}
 	}
