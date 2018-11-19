@@ -550,9 +550,7 @@ ul.list-blue {
   .section-7 .row > div:last-child h2 {
     margin-bottom: 45px; }
   .section-7 .row > div:last-child p {
-    text-align: justify;
-    word-spacing: -1px;
-    letter-spacing: 1px;
+    text-align: left;
     margin: 0;
     margin-bottom: 45px; }
 
