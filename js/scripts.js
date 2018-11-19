@@ -346,4 +346,13 @@ $(document).ready(function () {
 	function () {
 		$(this.previousElementSibling).removeClass('hover');
 	});
+
+
+	$('[data-fancybox="gallery"]').fancybox({
+		btnTpl: {
+		arrowLeft: '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left" title="{{PREV}}"></button>',
+		arrowRight: '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right" title="{{NEXT}}"></button>',
+		},
+	});
+
 });

@@ -347,6 +347,32 @@ ul.list-blue {
   }
 }
 
+.fancybox-navigation
+{
+	.fancybox-button {
+		position: absolute;
+		padding: 0;
+		margin: 0;
+		width: 42px;
+		height: 42px;
+		transform: translateY(-50%);
+		border-radius: 50%;
+		top: 50%;
+		transition: 0.2s;
+		background-color: rgba(213, 213, 213, 0.25) !important;
+		background-image: url(../img/arrow.png) !important;
+		background-size: cover !important;
+	}
+	.fancybox-button--arrow_left {
+		left: 0;
+	}
+
+	.fancybox-button--arrow_right {
+		right: 0;
+		transform: translateY(-50%) rotate(180deg);
+	}
+}
+
 .video-wrap {
   padding: 80px 0;
   background-color: #000;
