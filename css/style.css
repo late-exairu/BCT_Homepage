@@ -1047,7 +1047,9 @@ ul.list-blue {
     height: 280px !important; }
     .label-group img {
       width: 100% !important;
-      margin: 0 !important; } }
+      margin: 0 !important; }
+  .payment-img-slim {
+    max-width: initial !important; } }
 
 @media (min-width: 1500px) {
   .fancybox-navigation .fancybox-button--arrow_left {
