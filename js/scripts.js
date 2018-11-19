@@ -108,6 +108,7 @@ $(document).ready(function () {
 		margin: 10,
 		autoHeight: true,
 		dots: true,
+		dotsEach: true,
 		nav: true,
 		navText: ["", ""],
 		onChanged: function (event) {
