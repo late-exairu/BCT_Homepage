@@ -543,7 +543,8 @@ ul.list-blue {
   padding-top: 200px;
   padding-bottom: 228px;
   background: url(../img/bg.png);
-  background-size: cover; }
+  background-size: initial;
+  background-position: center; }
   .section-7 .row > div:last-child h2 {
     margin-bottom: 45px; }
   .section-7 .row > div:last-child p {
