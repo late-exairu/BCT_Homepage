@@ -904,9 +904,9 @@ ul.list-blue {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     margin-top: 3px; }
     .package-select ul li {
-      padding: 5px;
+      padding: 6px;
       cursor: pointer;
-      font-size: 12px; }
+      font-size: 15px; }
       .package-select ul li:hover {
         background-color: #EEE; }
       .package-select ul li:last-child {
