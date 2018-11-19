@@ -273,10 +273,13 @@ ul.list-blue {
   padding-left: 0;
   list-style: none; }
   ul.list-blue li {
-    position: relative;
-    border-bottom: 1px solid gainsboro;
-    padding-bottom: 5px;
-    margin-bottom: 5px; }
+    padding-left: 40px;
+    position: relative; }
+    ul.list-blue li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #00A1FF; }
 
 .owl-brands {
   padding: 4px 0;
@@ -548,31 +551,38 @@ ul.list-blue {
           /*white-space: nowrap;*/ }
       .section-6 .row > div:first-child .informs-wrapper .list-blue {
         margin-bottom: 45px; }
-      .section-6 .row > div:first-child .informs-wrapper li a {
-        display: block;
-        color: inherit;
-        margin-bottom: 10px; }
-        .section-6 .row > div:first-child .informs-wrapper li a.collapsed {
-          margin-bottom: 0; }
-          .section-6 .row > div:first-child .informs-wrapper li a.collapsed:after {
-            transform: rotate(0deg); }
-        .section-6 .row > div:first-child .informs-wrapper li a:after {
-          content: '';
-          width: 12px;
-          height: 12px;
-          position: relative;
-          top: 7px;
-          background: url(../img/plus.svg);
-          background-size: contain;
-          background-repeat: no-repeat;
-          display: block;
-          float: right;
-          transform: rotate(45deg);
-          transition: .3s ease; }
-        .section-6 .row > div:first-child .informs-wrapper li a:hover {
-          color: #0080CA; }
-      .section-6 .row > div:first-child .informs-wrapper li div {
-        font-size: 15px; }
+        .section-6 .row > div:first-child .informs-wrapper .list-blue li {
+          border-bottom: 1px solid gainsboro;
+          padding-bottom: 5px;
+          margin-bottom: 5px;
+          padding-left: 0; }
+          .section-6 .row > div:first-child .informs-wrapper .list-blue li:before {
+            display: none; }
+          .section-6 .row > div:first-child .informs-wrapper .list-blue li a {
+            display: block;
+            color: inherit;
+            margin-bottom: 10px; }
+            .section-6 .row > div:first-child .informs-wrapper .list-blue li a.collapsed {
+              margin-bottom: 0; }
+              .section-6 .row > div:first-child .informs-wrapper .list-blue li a.collapsed:after {
+                transform: rotate(0deg); }
+            .section-6 .row > div:first-child .informs-wrapper .list-blue li a:after {
+              content: '';
+              width: 12px;
+              height: 12px;
+              position: relative;
+              top: 7px;
+              background: url(../img/plus.svg);
+              background-size: contain;
+              background-repeat: no-repeat;
+              display: block;
+              float: right;
+              transform: rotate(45deg);
+              transition: .3s ease; }
+            .section-6 .row > div:first-child .informs-wrapper .list-blue li a:hover {
+              color: #0080CA; }
+          .section-6 .row > div:first-child .informs-wrapper .list-blue li div {
+            font-size: 15px; }
 
 .reel {
   width: 100% !important;
