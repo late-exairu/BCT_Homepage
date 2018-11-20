@@ -862,7 +862,7 @@ ul.list-blue {
 		}
 		p {
 			/*width: 550px;*/
-			font-size: 18px;
+			//font-size: 18px;
 			margin: 0;
 			/*white-space: nowrap;*/
 		}
@@ -877,6 +877,10 @@ ul.list-blue {
 			}
 		}
 	}
+}
+
+.error{
+	color: red !important;
 }
 
 .section-12 {
