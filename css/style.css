@@ -532,8 +532,10 @@ ul.list-blue {
     color: inherit; }
 
 .section-6 {
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 150px; }
+  .section-6 .container {
+    max-width: 770px; }
   .section-6 h2, .section-6 h3 {
     display: inline; }
   .section-6 h2 {
@@ -1016,6 +1018,9 @@ ul.list-blue {
     line-height: 1.3; }
   .fz-11 {
     font-size: 11px;
+    line-height: 1.3; }
+  .fz-19 {
+    font-size: 19px;
     line-height: 1.3; }
   .fz-20 {
     font-size: 20px;
@@ -1526,7 +1531,9 @@ form .button {
         max-width: fit-content;
         margin-left: -13%; }
     .label-group .label-card > .row:nth-child(2) {
-      height: 20%; }
+      height: 20%;
+      position: relative;
+      top: -15px; }
     .label-group .label-card > .row:last-child {
       height: 20%;
       background-color: #EEE;

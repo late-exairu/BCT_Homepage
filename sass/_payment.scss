@@ -337,6 +337,8 @@ form .button {
 		}
 		& > .row:nth-child(2) {
 			height: 20%;
+			position: relative;
+			top: -15px;
 		}
 		& > .row:last-child {
 			height: 20%;
