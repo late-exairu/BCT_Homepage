@@ -1287,7 +1287,19 @@ ul.list-blue {
   .terminal-switch-wrap {
     margin: 0; }
   .br {
-    display: none; } }
+    display: none; }
+  .section-2 .cmb-4 {
+    margin-bottom: 0; }
+  .section-2 .py-4 {
+    padding: 1rem 0 !important; }
+  .section-2 .mb-5 {
+    margin-bottom: 1rem !important; }
+  .section-3, .section-4 {
+    padding: 1rem 0; }
+  .section-10 div.desc, .section-10 h2 {
+    margin-bottom: 1rem; }
+  .section-12 .row {
+    padding: 50px 0px 10px !important; } }
 
 hr {
   border-color: #ccc;
