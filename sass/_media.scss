@@ -13,6 +13,26 @@
 	.form-group {
 		margin-bottom: 20px;
 	}
+	.rotator-wrapper.size-768 {
+    height: 0px !important;
+	}
+	.rotator-wrapper.size-992 {
+    height: auto !important;
+		width: 470px !important;
+		.reel-indicator-bar {
+			width: 280px !important;
+			margin-left: 95px;
+		}
+		.reel-indicator {
+			margin-left: 85px;
+		}
+	}
+	.rotator-wrapper.size-1200 {
+    height: 0px !important;
+	}
+	.rotator-wrapper.size-1350 {
+    height: 0px !important;
+	}
 
 }
 
@@ -38,6 +58,27 @@
 	.offset-lg-1 {
 		margin-left: -6% !important;
 	}
+	.rotator-wrapper.size-768 {
+    height: auto !important;
+		width: 380px !important;
+    margin-left: -10%;
+		.reel-indicator-bar {
+			width: 220px !important;
+			margin-left: 75px;
+		}
+		.reel-indicator {
+			margin-left: 65px;
+		}
+	}
+	.rotator-wrapper.size-992 {
+    height: 0px !important;
+	}
+	.rotator-wrapper.size-1200 {
+    height: 0px !important;
+	}
+	.rotator-wrapper.size-1350 {
+    height: 0px !important;
+	}
 }
 
 @media (min-width: 992px) {
@@ -52,6 +93,26 @@
 		.abbr {
 			font-size: 15px !important;
 		}
+	}
+	.rotator-wrapper.size-768 {
+    height: 0px !important;
+	}
+	.rotator-wrapper.size-992 {
+    height: auto !important;
+		width: 470px !important;
+		.reel-indicator-bar {
+			width: 280px !important;
+			margin-left: 95px;
+		}
+		.reel-indicator {
+			margin-left: 85px;
+		}
+	}
+	.rotator-wrapper.size-1200 {
+    height: 0px !important;
+	}
+	.rotator-wrapper.size-1350 {
+    height: 0px !important;
 	}
 }
 
@@ -158,6 +219,26 @@
 			}
 		}
 	}
+	.rotator-wrapper.size-768 {
+    height: 0px !important;
+	}
+	.rotator-wrapper.size-992 {
+    height: 0px !important;
+	}
+	.rotator-wrapper.size-1200 {
+    height: auto !important;
+		width: 550px !important;
+		.reel-indicator-bar {
+			width: 340px !important;
+			margin-left: 100px;
+		}
+		.reel-indicator {
+			margin-left: 90px;
+		}
+	}
+	.rotator-wrapper.size-1350 {
+    height: 0px !important;
+	}
 }
 
 @media (min-width: 1350px) {
@@ -199,6 +280,27 @@
 	}
 	.payment-img-slim {
 		max-width: initial !important;
+	}
+	.rotator-wrapper.size-768 {
+    height: 0px !important;
+	}
+	.rotator-wrapper.size-992 {
+    height: 0px !important;
+	}
+	.rotator-wrapper.size-1200 {
+    height: 0px !important;
+	}
+	.rotator-wrapper.size-1350 {
+		height: auto !important;
+		width: 645px !important;
+    margin-left: -10%;
+		.reel-indicator-bar {
+			width: 430px !important;
+			margin-left: 110px;
+		}
+		.reel-indicator {
+			margin-left: 100px;
+		}
 	}
 }
 
