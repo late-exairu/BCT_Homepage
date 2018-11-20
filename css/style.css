@@ -573,9 +573,7 @@ ul.list-blue {
             display: block;
             color: inherit;
             padding: 6px 25px 6px 0;
-            font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue,Helvetica, Arial, sans-serif;
             font-weight: 600;
-            font-size: 14px;
             margin-bottom: 10px; }
             .section-6 .row > div:first-child .informs-wrapper .list-blue li a.collapsed {
               margin-bottom: 0; }
@@ -598,9 +596,7 @@ ul.list-blue {
             .section-6 .row > div:first-child .informs-wrapper .list-blue li a:hover {
               color: #0080CA; }
           .section-6 .row > div:first-child .informs-wrapper .list-blue li div {
-            font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue,Helvetica, Arial, sans-serif;
-            font-weight: 400;
-            font-size: 14px; }
+            font-weight: 400; }
   .section-6 .padding-bottom {
     padding-bottom: 86px; }
 
