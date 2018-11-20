@@ -428,7 +428,8 @@ ul.list-blue {
 		padding: 121px 0;
 	}
 	.kartynka {
-		align-self: center;
+		margin: 0 auto;
+		flex-basis: auto;
 	}
 	ul.list-blue li:before {
     content: "•";

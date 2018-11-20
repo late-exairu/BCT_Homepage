@@ -392,7 +392,8 @@ ul.list-blue {
   .section-2 .video-wrap {
     padding: 121px 0; }
   .section-2 .kartynka {
-    align-self: center; }
+    margin: 0 auto;
+    flex-basis: auto; }
   .section-2 ul.list-blue li:before {
     content: "•";
     position: absolute;
