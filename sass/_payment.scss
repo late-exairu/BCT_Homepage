@@ -330,9 +330,8 @@ form .button {
 		& > .row:first-child {
 			height: 60%;
 			img {
-				width: 126%;
-				max-width: fit-content;
-				margin-left: -13%;
+				width: 100%;
+				/*max-width: fit-content;*/
 			}
 		}
 		& > .row:nth-child(2) {
@@ -345,6 +344,29 @@ form .button {
 			background-color: #EEE;
 			border-bottom-left-radius: 6px;
 			border-bottom-right-radius: 6px;
+		}
+
+		.coin-img{
+			max-width: 266px;
+		}
+
+		.bonus{
+			font-size: 15px;
+			position: absolute;
+			bottom: 63px;
+
+			@media (max-width: 1200px) {
+				bottom: 53px;
+			}
+
+			@media (max-width: 768px) {
+				font-size: 12px;
+			}
+
+			@media (max-width: 575px) {
+				font-size: 13px;
+				bottom: 57px;
+			}
 		}
 	}
 	input {

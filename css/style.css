@@ -1539,9 +1539,8 @@ form .button {
     .label-group .label-card > .row:first-child {
       height: 60%; }
       .label-group .label-card > .row:first-child img {
-        width: 126%;
-        max-width: fit-content;
-        margin-left: -13%; }
+        width: 100%;
+        /*max-width: fit-content;*/ }
     .label-group .label-card > .row:nth-child(2) {
       height: 20%;
       position: relative;
@@ -1551,6 +1550,22 @@ form .button {
       background-color: #EEE;
       border-bottom-left-radius: 6px;
       border-bottom-right-radius: 6px; }
+    .label-group .label-card .coin-img {
+      max-width: 266px; }
+    .label-group .label-card .bonus {
+      font-size: 15px;
+      position: absolute;
+      bottom: 63px; }
+      @media (max-width: 1200px) {
+        .label-group .label-card .bonus {
+          bottom: 53px; } }
+      @media (max-width: 768px) {
+        .label-group .label-card .bonus {
+          font-size: 12px; } }
+      @media (max-width: 575px) {
+        .label-group .label-card .bonus {
+          font-size: 13px;
+          bottom: 57px; } }
   .label-group input {
     display: none; }
   .label-group input:checked ~ .label-card:before, .label-group input:checked ~ .label-card:after {
