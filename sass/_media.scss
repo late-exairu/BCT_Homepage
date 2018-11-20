@@ -114,6 +114,12 @@
 	.rotator-wrapper.size-1350 {
     height: 0px !important;
 	}
+
+	#license-agreement {
+		.modal-dialog {
+			max-width: 800px;
+		}
+	}
 }
 
 @media (min-width: 1200px) {
