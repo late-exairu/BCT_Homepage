@@ -643,23 +643,23 @@ ul.list-blue {
 		display: none;
 	}
 
-	.rotator-wrapper.size-992 {
-    height: auto;
-		width: 345px !important;
-		.reel-indicator-bar {
-			width: 280px !important;
-			margin-left: 30px;
-		}
-		.reel-indicator {
-			margin-left: 12px;
-		}
-	}
-	.rotator-wrapper {
-		width: 470px !important;
-		height: 0px;
-		margin: 0 auto;
-    overflow: hidden;
-	}
+	// .rotator-wrapper.size-992 {
+  //   height: auto;
+	// 	width: 345px !important;
+	// 	.reel-indicator-bar {
+	// 		width: 280px !important;
+	// 		margin-left: 30px;
+	// 	}
+	// 	.reel-indicator {
+	// 		margin-left: 12px;
+	// 	}
+	// }
+	// .rotator-wrapper {
+	// 	width: 470px !important;
+	// 	height: 0px;
+	// 	margin: 0 auto;
+  //   overflow: hidden;
+	// }
 	.row > div:first-child {
     justify-content: flex-end;
 		display: flex;
@@ -754,11 +754,11 @@ ul.list-blue {
   overflow: visible !important;
 }
 .reel-indicator-bar {
-  width: 420px;
+  width: 98%;
   background: url('https://dlcdnimgs.asus.com/websites/global/products/kG8zmnBbP9T4sqBA/images/reelbar.png') center/100% no-repeat;
   height: 18px;
-  margin: 0 0 0 1%;
-	margin-left: 100px;
+  margin: 0 1%;
+	//margin-left: 100px;
 }
 .reel-indicator {
   background: url('https://dlcdnimgs.asus.com/websites/global/products/kG8zmnBbP9T4sqBA/images/bar_dot.png') center/100% no-repeat;
@@ -766,7 +766,7 @@ ul.list-blue {
   height: 18px !important;
   background-color: transparent !important;
 	top: 100% !important;
-	margin-left: 90px;
+	margin-left: 1%;
 }
 .reel-preloader{
 	display: none !important;
