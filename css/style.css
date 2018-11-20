@@ -613,6 +613,13 @@ ul.list-blue {
             font-weight: 400;
             font-size: 14px; }
 
+#baby {
+  position: absolute;
+  right: -100px;
+  top: 130px;
+  width: 100%;
+  transform: scale(1.3); }
+
 .reel {
   width: 100% !important;
   overflow: visible !important; }
