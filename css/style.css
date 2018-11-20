@@ -677,7 +677,9 @@ ul.list-blue {
       .section-11 .row .coin-img img.coin-Y {
         display: block;
         width: 100%;
-        height: auto; }
+        height: auto;
+        position: relative;
+        right: -40px; }
     .section-11 .row p {
       /*width: 550px;*/
       margin: 0;
@@ -1115,6 +1117,8 @@ ul.list-blue {
     padding-left: 15px !important; } }
 
 @media (max-width: 991px) {
+  .section-11 .row .coin-img img.coin-Y {
+    right: 0px; }
   .owl-4 .owl-nav [class*="owl-"].owl-prev {
     left: -10px; }
   .owl-4 .owl-nav [class*="owl-"].owl-next {
