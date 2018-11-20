@@ -536,6 +536,8 @@ ul.list-blue {
   padding-bottom: 150px; }
   .section-6 h2, .section-6 h3 {
     display: inline; }
+  .section-6 h2 {
+    font-size: 42px; }
   .section-6 h3 {
     margin: 10px; }
   .section-6 .mobile {
@@ -612,6 +614,8 @@ ul.list-blue {
             font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue,Helvetica, Arial, sans-serif;
             font-weight: 400;
             font-size: 14px; }
+  .section-6 .padding-bottom {
+    padding-bottom: 86px; }
 
 #baby {
   position: absolute;

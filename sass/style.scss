@@ -633,6 +633,9 @@ ul.list-blue {
 	h2, h3 {
 		display: inline;
 	}
+	h2{
+		font-size: 42px;
+	}
 	h3 {
 		margin: 10px;
 	}
@@ -732,6 +735,9 @@ ul.list-blue {
 				}
 			}
 		}
+	}
+	.padding-bottom{
+		padding-bottom: 86px;
 	}
 }
 
