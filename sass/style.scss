@@ -857,10 +857,10 @@ ul.list-blue {
 			}
 		}
 		p {
-			width: 550px;
+			/*width: 550px;*/
 			font-size: 18px;
 			margin: 0;
-			white-space: nowrap;
+			/*white-space: nowrap;*/
 		}
 	}
 
@@ -870,13 +870,6 @@ ul.list-blue {
 				width: auto;
 				white-space: normal;
 				font-size: 14px;
-			}
-		}
-	}
-	@media (max-width: 575px) {
-		.row{
-			p {
-				font-size: 10px;
 			}
 		}
 	}
