@@ -751,8 +751,8 @@ ul.list-blue {
     color: #CCC !important; }
 
 .owl-2 .slide {
-  padding-top: 165px;
-  padding-bottom: 165px;
+  /*padding-top: 165px;
+    padding-bottom: 165px;*/
   background-size: cover;
   background-position: center; }
   .owl-2 .slide.slide-1 {
