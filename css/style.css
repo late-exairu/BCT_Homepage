@@ -955,6 +955,9 @@ ul.list-blue {
     .package-select ul.hidden {
       display: none; }
 
+#navbarSupportedContent {
+  display: none !important; }
+
 @media (min-width: 576px) {
   .fz-30 {
     font-size: 20px;

@@ -1227,6 +1227,10 @@ ul.list-blue {
 	}
 }
 
+#navbarSupportedContent{
+	display: none!important;
+}
+
 @import "media";
 @import "payment";
 @import "cart";
