@@ -539,6 +539,15 @@
 			}
 		}
 	}
+	
+	.navbar-brand {
+		width: 30px;
+		overflow: hidden;
+		direction: rtl;
+		img {
+		  max-width: inherit;
+		}
+	}
 }
 
 @media (max-width: 575px) {
@@ -555,17 +564,7 @@
 	.h4, h4 {
 	  font-size: 1.25rem;
 	}
-	
-	.navbar-brand {
-		width: 30px;
-		overflow: hidden;
-		direction: rtl;
-		img {
-		  max-width: inherit;
-		}
-	}
 	.terminal-switch-wrap {
-		font-size: 10px;
 		& > div:first-child {
 			padding-right: 5px !important;
 		}

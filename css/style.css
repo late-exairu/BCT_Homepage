@@ -268,10 +268,19 @@ h1, .h1, h2, .h2 {
       margin: 0 auto; } }
 
 .terminal-switch-wrap {
-  line-height: 1;
-  font-size: 12px;
+  line-height: 1.2;
+  font-size: 16px;
   font-weight: 600;
-  color: #0080CA; }
+  color: #0080CA;
+  text-transform: uppercase;
+  text-align: right; }
+  @media (max-width: 768px) {
+    .terminal-switch-wrap {
+      font-size: 12px;
+      font-weight: 400; } }
+  @media (max-width: 420px) {
+    .terminal-switch-wrap {
+      font-size: 0; } }
 
 ul.list-blue {
   padding-left: 0;
@@ -1203,7 +1212,13 @@ ul.list-blue {
     display: block !important; }
     .section-6 .mobile h2, .section-6 .mobile h3 {
       display: block !important;
-      margin: 0 !important; } }
+      margin: 0 !important; }
+  .navbar-brand {
+    width: 30px;
+    overflow: hidden;
+    direction: rtl; }
+    .navbar-brand img {
+      max-width: inherit; } }
 
 @media (max-width: 575px) {
   h1, .h1 {
@@ -1214,20 +1229,12 @@ ul.list-blue {
     font-size: 1.5rem; }
   .h4, h4 {
     font-size: 1.25rem; }
-  .navbar-brand {
-    width: 30px;
-    overflow: hidden;
-    direction: rtl; }
-    .navbar-brand img {
-      max-width: inherit; }
-  .terminal-switch-wrap {
-    font-size: 10px; }
-    .terminal-switch-wrap > div:first-child {
-      padding-right: 5px !important; }
-    .terminal-switch-wrap > div:last-child {
-      max-width: 50px; }
-    .terminal-switch-wrap img {
-      width: 30px; }
+  .terminal-switch-wrap > div:first-child {
+    padding-right: 5px !important; }
+  .terminal-switch-wrap > div:last-child {
+    max-width: 50px; }
+  .terminal-switch-wrap img {
+    width: 30px; }
   .promo {
     font-size: 11px; }
   .button-lg {

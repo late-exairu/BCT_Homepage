@@ -274,10 +274,21 @@ h1, .h1, h2, .h2 {
 
 }
 .terminal-switch-wrap {
-  line-height: 1;
-  font-size: 12px;
+  line-height: 1.2;
+  font-size: 16px;
   font-weight: 600;
   color: #0080CA;
+  text-transform: uppercase;
+  text-align: right;
+
+	@media (max-width: 768px) {
+  		font-size: 12px;
+  		font-weight: 400;
+	}
+
+	@media (max-width: 420px) {
+  		font-size: 0;
+	}
 }
 
 ul.list-blue {
