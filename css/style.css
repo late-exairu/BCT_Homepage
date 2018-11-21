@@ -1195,7 +1195,7 @@ ul.list-blue {
   h1, .h1 {
     font-size: 2rem; }
   h2, .h2 {
-    font-size: 1.75rem; }
+    font-size: 1.75rem !important; }
   .h3, h3 {
     font-size: 1.5rem; }
   .h4, h4 {
