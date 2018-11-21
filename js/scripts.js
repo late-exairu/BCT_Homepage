@@ -188,7 +188,9 @@ $(document).ready(function () {
 		};
 		
 		var player = new Vimeo.Player('player', options);
-		player.play();
+		player.ready().then(function() {
+			player.play();
+		});
 
 		// var videoId = $(this).attr('data-id');
 		// var player = new YT.Player('player', {

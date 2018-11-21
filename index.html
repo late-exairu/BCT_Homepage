@@ -1127,6 +1127,7 @@
 	<script src="libs/mask/jquery.mask.min.js"></script>
 	<script src="js/scripts.js"></script>
 
+	<!-- Youtube mode as video player.
 	<script>
 		function onYouTubeIframeAPIReady() {
 			console.log('YouTubeIframeAPIReady');
@@ -1146,16 +1147,42 @@
 				'onStateChange': onBigPlayerStateChange
 				}
 			});
-
+	
 			$('#videoOverlay').click(function () {
 				$('#videoOverlay').addClass('hidden');
 				bigPlayer.playVideo();
 			});
 		}
-</script>
+	</script> -->
 <script src="https://www.youtube.com/player_api"></script>
 <script src="https://player.vimeo.com/api/player.js"></script>
 
+<script>
+	// Vimeo mode as video player.
+	var options = {
+		id: 302044197,
+		height: '780',
+		width: '1280',
+		title: false,
+		byline: false,
+		portrait: false,
+		loop: false
+	};
+	
+	var player = new Vimeo.Player('bigPlayer', options);
+
+	player.on('ended', function() {
+		$('#videoOverlay').removeClass('hidden');
+	});
+
+	$('#videoOverlay').click(function () {
+		player.play().then(function() {
+			setTimeout(() => {
+				$('#videoOverlay').addClass('hidden');
+			}, 300);
+		});
+	});
+</script>
 </body>
 
 </html>
