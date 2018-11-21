@@ -175,29 +175,45 @@ $(document).ready(function () {
 	});
 
 	$('.video-modal').click(function (e) {
+		
 		var videoId = $(this).attr('data-id');
-		var player = new YT.Player('player', {
+		var options = {
+			id: videoId,
 			height: '780',
 			width: '1280',
-			videoId: videoId,
-			playerVars: {
-				rel: 0
-			},
-			events: {
-				'onReady': onPlayerReady,
-				'onStateChange': onPlayerStateChange
-			}
-		});
+			title: false,
+			byline: false,
+			portrait: false,
+			loop: true
+		};
+		
+		var player = new Vimeo.Player('player', options);
+		player.play();
 
-		function onPlayerReady(event) {
-			event.target.playVideo();
-		}
+		// var videoId = $(this).attr('data-id');
+		// var player = new YT.Player('player', {
+		// 	height: '780',
+		// 	width: '1280',
+		// 	videoId: videoId,
+		// 	playerVars: {
+		// 		rel: 0
+		// 	},
+		// 	events: {
+		// 		'onReady': onPlayerReady,
+		// 		'onStateChange': onPlayerStateChange
+		// 	}
+		// });
 
-		function onPlayerStateChange(event) {
-			if (event.data === 0) {
-				$('#youtubeModal').modal('hide')
-			}
-		}
+		// function onPlayerReady(event) {
+		// 	event.target.playVideo();
+		// }
+
+		// function onPlayerStateChange(event) {
+		// 	if (event.data === 0) {
+		// 		$('#youtubeModal').modal('hide')
+		// 	}
+		// }
+
 		$('#youtubeModal').modal('show')
 	});
 	$('#youtubeModal').on('hide.bs.modal', function () {

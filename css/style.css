@@ -844,7 +844,8 @@ ul.list-blue {
 #youtubeModal .modal-content {
   background-color: #000;
   border: 0;
-  border-radius: 0; }
+  border-radius: 0;
+  padding: 20px !important; }
 
 .modal-content {
   padding: 40px 0 30px 30px !important;
