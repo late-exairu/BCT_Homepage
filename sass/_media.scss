@@ -681,8 +681,23 @@
 	.section-12 .row {
 		padding: 20px 0px 40px !important;
 	}
-	
 	.label-group {
 		margin: 0 30px;
+		&:not(.more-options) {
+			height: 230px !important;
+			
+			.label-card {
+				& > .row:first-child {
+					height: 50% !important;
+				}
+				& > .row:nth-child(2) {
+					height: 20% !important;
+					top: 0!important;
+				}
+				& > .row:last-child {
+					height: 30% !important;
+				}
+			}
+		}
 	}
 }

@@ -1283,7 +1283,16 @@ ul.list-blue {
   .section-12 .row {
     padding: 20px 0px 40px !important; }
   .label-group {
-    margin: 0 30px; } }
+    margin: 0 30px; }
+    .label-group:not(.more-options) {
+      height: 230px !important; }
+      .label-group:not(.more-options) .label-card > .row:first-child {
+        height: 50% !important; }
+      .label-group:not(.more-options) .label-card > .row:nth-child(2) {
+        height: 20% !important;
+        top: 0 !important; }
+      .label-group:not(.more-options) .label-card > .row:last-child {
+        height: 30% !important; } }
 
 hr {
   border-color: #ccc;
