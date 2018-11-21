@@ -1255,6 +1255,7 @@ ul.list-blue {
     padding-left: 40px;
     padding-right: 40px; }
   .label-group {
+    margin: 0 60px;
     height: 260px !important; }
     .label-group img {
       width: 80% !important;
@@ -1280,7 +1281,9 @@ ul.list-blue {
   .section-10 div.desc, .section-10 h2 {
     margin-bottom: 1rem; }
   .section-12 .row {
-    padding: 20px 0px 40px !important; } }
+    padding: 20px 0px 40px !important; }
+  .label-group {
+    margin: 0 30px; } }
 
 hr {
   border-color: #ccc;
