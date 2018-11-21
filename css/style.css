@@ -1280,6 +1280,9 @@ form .button {
   flex: 1 1;
   overflow: hidden; }
 
+.show-overflow {
+  overflow: visible; }
+
 .selectize-input {
   display: block !important; }
 
