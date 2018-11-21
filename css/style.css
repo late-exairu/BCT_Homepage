@@ -4,6 +4,10 @@
 * {
   outline: none !important; }
 
+input,
+textarea {
+  -webkit-appearance: none; }
+
 a {
   color: #0080CA;
   transition: 0.2s;
