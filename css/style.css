@@ -899,9 +899,6 @@ ul.list-blue {
     position: absolute;
     top: 50%;
     right: 15px;
-    margin-top: -3px;
-    width: 0;
-    height: 0;
     border-style: solid;
     border-width: 5px 5px 0 5px;
     border-color: #808080 transparent transparent transparent;
@@ -909,12 +906,11 @@ ul.list-blue {
     height: 6px !important;
     right: 6px !important;
     border: 2px solid !important;
-    margin-top: -2px !important;
+    margin-top: 0px !important;
     border-top: 0 !important;
     border-left: 0 !important;
     transform: translateY(-50%) rotate(45deg) !important; }
   .package-select > span {
-    /*font-size: 1.0rem;*/
     border-radius: 4px;
     border-color: #d5d5d5;
     box-shadow: none;
@@ -924,8 +920,6 @@ ul.list-blue {
     text-overflow: ellipsis;
     background: linear-gradient(to bottom, #f3f3f3 0%, #dcdcdc 100%);
     border-color: 1px solid #0080CA; }
-    .package-select > span > span {
-      /*font-size: 12px;*/ }
   .package-select ul {
     position: absolute;
     border: 1px solid #333;
