@@ -1232,6 +1232,11 @@ ul.list-blue {
 	display: none!important;
 }
 
+.twitter-timeline-wrap{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
 @import "media";
 @import "payment";
 @import "cart";

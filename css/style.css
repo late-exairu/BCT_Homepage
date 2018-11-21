@@ -966,6 +966,10 @@ ul.list-blue {
 #navbarSupportedContent {
   display: none !important; }
 
+.twitter-timeline-wrap {
+  border: 1px solid #ccc;
+  border-radius: 5px; }
+
 @media (min-width: 576px) {
   .fz-30 {
     font-size: 20px;
