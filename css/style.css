@@ -278,9 +278,6 @@ h1, .h1, h2, .h2 {
     .terminal-switch-wrap {
       font-size: 12px;
       font-weight: 400; } }
-  @media (max-width: 420px) {
-    .terminal-switch-wrap {
-      font-size: 0; } }
 
 ul.list-blue {
   padding-left: 0;
@@ -1197,7 +1194,7 @@ ul.list-blue {
 
 @media (max-width: 767px) {
   .promo {
-    font-size: 12px; }
+    font-size: 11px; }
   .owl-header .owl-dots {
     margin-left: -5px;
     margin-right: -5px; }
@@ -1244,7 +1241,8 @@ ul.list-blue {
   .terminal-switch-wrap img {
     width: 30px; }
   .promo {
-    font-size: 11px; }
+    font-size: 11px;
+    display: none; }
   .button-lg {
     width: 100%;
     font-size: 14px !important;
