@@ -448,19 +448,20 @@ ul.list-blue {
   .owl-header .owl-dots {
     margin-bottom: 4px; }
   .owl-header .owl-dots .owl-dot {
-    padding-right: 10px;
-    padding-left: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 0;
     flex: 0 0 25%;
-    max-width: 25%;
+    max-width: calc(25% - 20px);
     margin-bottom: 12px;
     background: 0;
-    border: 0; }
+    border: 0;
+    cursor: pointer; }
     .owl-header .owl-dots .owl-dot:before {
       display: block;
       padding: 5px 1px 4px;
       border: 1px solid #222222;
       transition: 0.2s;
-      cursor: pointer;
       height: 100%; }
     .owl-header .owl-dots .owl-dot:hover:before {
       color: #fff;
@@ -1196,9 +1197,7 @@ ul.list-blue {
     margin-left: -5px;
     margin-right: -5px; }
     .owl-header .owl-dots .owl-dot {
-      padding-left: 5px;
-      padding-right: 5px;
-      margin-bottom: 10px;
+      margin: 0px 10px 10px;
       font-size: 12px; }
   .section-3, .section-5, .section-7, .section-8 {
     padding-top: 4rem;
@@ -1254,7 +1253,7 @@ ul.list-blue {
     margin: 2px !important; }
   .owl-header .owl-dots .owl-dot {
     flex: 0 0 50%;
-    max-width: 50%; }
+    max-width: calc(50% - 20px); }
   .owl-2 .slide {
     padding-top: 50px;
     padding-bottom: 50px; }
