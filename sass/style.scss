@@ -326,6 +326,7 @@ ul.list-blue {
 	  border-radius: 50%;
 	  top: 50%;
 	  transition: 0.2s;
+	  opacity: 0.66;
 	  background-color: rgba(213, 213, 213, 0.25) !important;
 	  background-image: url(../img/arrow.png) !important;
 	  background-size: cover !important;
@@ -337,7 +338,7 @@ ul.list-blue {
 		transform: translateY(-50%) rotate(180deg);
 	  }
 	  &:not(.disabled):hover {
-		opacity: 0.65;
+		opacity: 1;
 	  }
 	}
 	.disabled{
