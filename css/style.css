@@ -954,7 +954,8 @@ ul.list-blue {
     .package-select ul li {
       padding: 6px;
       cursor: pointer;
-      font-size: 15px; }
+      font-size: 15px;
+      list-style-type: none; }
       .package-select ul li:hover {
         background-color: #EEE; }
       .package-select ul li:last-child {
