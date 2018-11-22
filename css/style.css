@@ -860,6 +860,9 @@ ul.list-blue {
   border-radius: 0;
   padding: 20px !important; }
 
+.timeline-TweetList-tweet > div {
+  padding: 10px; }
+
 .modal-content {
   padding: 40px 30px 30px 30px !important;
   /* The Close Button */ }

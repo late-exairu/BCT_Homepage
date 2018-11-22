@@ -1102,7 +1102,15 @@ ul.list-blue {
 
   }
 }
+.timeline-TweetList-tweet {
+ & > div {
+		padding: 10px;
+ }
+}
 
+.timeline-Tweet {
+	//pointer-events: none;
+}
 .modal-content {
 		padding: 40px 30px 30px 30px !important;
 	/* The Close Button */
