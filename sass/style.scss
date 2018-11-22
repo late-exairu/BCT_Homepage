@@ -1240,6 +1240,12 @@ ul.list-blue {
 	border-radius: 5px;
 }
 
+.modal-dialog{
+	p,li{
+		padding-right: 30px;
+	}
+}
+
 @import "media";
 @import "payment";
 @import "cart";

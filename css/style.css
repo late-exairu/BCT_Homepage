@@ -972,6 +972,9 @@ ul.list-blue {
   border: 1px solid #ccc;
   border-radius: 5px; }
 
+.modal-dialog p, .modal-dialog li {
+  padding-right: 30px; }
+
 @media (min-width: 576px) {
   .fz-30 {
     font-size: 20px;
