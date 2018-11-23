@@ -281,6 +281,13 @@ h1, .h1, h2, .h2 {
 	text-align: right;
 	font-family: Arial,sans-serif;
 
+	a {
+		color: #000;
+		&:hover {
+			color: #00A1FF;
+		}
+	}
+
 	@media (max-width: 768px) {
   		font-size: 12px;
   		font-weight: 400;

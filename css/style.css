@@ -274,6 +274,10 @@ h1, .h1, h2, .h2 {
   color: #0080CA;
   text-align: right;
   font-family: Arial,sans-serif; }
+  .terminal-switch-wrap a {
+    color: #000; }
+    .terminal-switch-wrap a:hover {
+      color: #00A1FF; }
   @media (max-width: 768px) {
     .terminal-switch-wrap {
       font-size: 12px;
