@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
-	$("#article-product .modal-content").load("article_product.html");
-	$("#article-customer .modal-content").load("article_customer.html");
+	$("#article-product .modal-content .content-wrapper").load("article_product.html");
+	$("#article-customer .modal-content .content-wrapper").load("article_customer.html");
 
 	const numberWithCommas = (x) => {
 		return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
