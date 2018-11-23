@@ -923,6 +923,21 @@ ul.list-blue {
 .article hr {
   margin: 1rem 0; }
 
+#article-product .article h2 {
+  font-size: 30px; }
+
+#article-product .article h3 {
+  font-size: 24px; }
+
+#article-product .article .form-row, #article-product .article p {
+  font-size: 14px; }
+
+#article-product .article .timeline-Tweet-media {
+  font-size: 14px; }
+
+#article-product .article .timeline-Tweet-media {
+  font-size: 14px; }
+
 .timeline-Body {
   margin-right: 30px; }
 
