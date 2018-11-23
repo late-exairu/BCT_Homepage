@@ -157,11 +157,6 @@
 			max-width: 800px;
 		}
 	}
-	#article-product, #article-customer {
-		.modal-dialog {
-			max-width: 880px;
-		}
-	}
 
 	#baby{
 		position: absolute;
@@ -172,6 +167,13 @@
 }
 
 @media (min-width: 1200px) {
+
+		#article-product,
+		#article-customer {
+			.modal-dialog {
+				max-width: 1280px;
+			}
+		}
 
 	h1, .h1 {
 	  font-size: 75px;

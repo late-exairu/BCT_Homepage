@@ -1051,8 +1051,6 @@ ul.list-blue {
       font-size: 15px !important; }
   #license-agreement .modal-dialog {
     max-width: 800px; }
-  #article-product .modal-dialog, #article-customer .modal-dialog {
-    max-width: 880px; }
   #baby {
     position: absolute;
     right: -50px;
@@ -1060,6 +1058,9 @@ ul.list-blue {
     transform: scale(0.8); } }
 
 @media (min-width: 1200px) {
+  #article-product .modal-dialog,
+  #article-customer .modal-dialog {
+    max-width: 1280px; }
   h1, .h1 {
     font-size: 75px;
     letter-spacing: -1.9px; }
