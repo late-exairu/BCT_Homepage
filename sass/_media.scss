@@ -152,9 +152,14 @@
   //   height: 0px !important;
 	// }
 
-	#license-agreement, #article-product {
+	#license-agreement {
 		.modal-dialog {
 			max-width: 800px;
+		}
+	}
+	#article-product, #article-customer {
+		.modal-dialog {
+			max-width: 880px;
 		}
 	}
 
@@ -640,7 +645,7 @@
 		}
 	}
 
-	#article-product {
+	#article-product, #article-customer {
 		iframe {
 			height: 270px !important;
 		}
