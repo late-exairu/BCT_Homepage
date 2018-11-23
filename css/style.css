@@ -881,7 +881,7 @@ ul.list-blue {
   margin-left: 40px; }
 
 .modal-dialog .modal-content {
-  padding: 40px 30px 30px 30px !important;
+  padding: 40px 0px 30px 30px !important;
   /* The Close Button */ }
 
 .modal-dialog .close {
@@ -918,6 +918,9 @@ ul.list-blue {
 
 .article hr {
   margin: 1rem 0; }
+
+.timeline-Body {
+  margin-right: 30px; }
 
 .package-select {
   /*font-size: 1.0rem;*/
@@ -1255,6 +1258,9 @@ ul.list-blue {
       max-width: inherit; } }
 
 @media (max-width: 575px) {
+  .timeline-Body {
+    margin-left: -15px;
+    margin-right: 15px; }
   h1, .h1 {
     font-size: 2rem; }
   h2, .h2 {
