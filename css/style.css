@@ -870,6 +870,9 @@ ul.list-blue {
 .timeline-TweetList-tweet > div {
   padding: 10px; }
 
+.MediaCard-media {
+  text-align: -webkit-center; }
+
 .timeline-Tweet-media {
   margin-right: 20px;
   margin-left: 20px; }
