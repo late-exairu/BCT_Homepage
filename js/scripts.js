@@ -366,15 +366,16 @@ $(document).ready(function () {
 	});
 
 
-	$('[data-fancybox="gallery"]').fancybox({
-		btnTpl: {
-		arrowLeft: '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left" title="{{PREV}}"></button>',
-		arrowRight: '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right" title="{{NEXT}}"></button>',
-		},
-	});
-
 	$('.modal .close').click(function (e) {
-		console.log("fdfdf");
 		$('.modal').modal('hide')
 	});
+
+	if ($('[data-fancybox="gallery"]').length){
+		$('[data-fancybox="gallery"]').fancybox({
+			btnTpl: {
+				arrowLeft: '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left" title="{{PREV}}"></button>',
+				arrowRight: '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right" title="{{NEXT}}"></button>',
+			},
+		});
+	}
 });

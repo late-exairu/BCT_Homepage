@@ -1134,7 +1134,8 @@ ul.list-blue {
 }
 .modal-dialog {
 	.modal-content {
-			padding: 40px 30px 30px 30px !important;
+			// DON'T CHANGE THIS LINE
+			padding: 40px 0px 30px 30px !important;
 		/* The Close Button */
 	}
 	.close {
@@ -1177,6 +1178,10 @@ ul.list-blue {
 	hr {
 		margin: 1rem 0;
 	}
+}
+
+.timeline-Body{
+	margin-right: 30px;
 }
 
 .package-select {
