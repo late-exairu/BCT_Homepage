@@ -1118,16 +1118,20 @@ ul.list-blue {
 .timeline-Tweet {
 	//pointer-events: none;
 }
-.modal-content {
-		padding: 40px 30px 30px 30px !important;
-	/* The Close Button */
+.modal-dialog {
+	.modal-content {
+			padding: 40px 30px 30px 30px !important;
+		/* The Close Button */
+	}
 	.close {
 		color: #aaaaaa;
-    position: absolute;
-    right: 24px;
-    top: 6px;
+		position: absolute;
+		right: 24px;
+		top: 6px;
 		font-size: 28px;
 		font-weight: bold;
+		z-index: 1 !important;
+		pointer-events: all;
 	}
 
 	.close:hover,
@@ -1135,6 +1139,8 @@ ul.list-blue {
 		color: #000;
 		text-decoration: none;
 		cursor: pointer;
+		z-index: 1 !important;
+		pointer-events: all;
 	}
 
 	.content-wrapper {

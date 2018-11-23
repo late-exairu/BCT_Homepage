@@ -172,9 +172,6 @@ $(document).ready(function () {
 
 	$('[data-toggle="tooltip"]').tooltip();
 	
-	$('.modal .close').click(function (e) {
-		$('.modal').modal('hide')
-	});
 
 	$('.video-modal').click(function (e) {
 		
@@ -375,4 +372,8 @@ $(document).ready(function () {
 		},
 	});
 
+	$('.modal .close').click(function (e) {
+		console.log("fdfdf");
+		$('.modal').modal('hide')
+	});
 });

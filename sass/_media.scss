@@ -639,6 +639,12 @@
 			margin: 0 !important;
 		}
 	}
+
+	#article-product {
+		iframe {
+			height: 270px !important;
+		}
+	}
 }
 
 @media (max-width: 399px) {

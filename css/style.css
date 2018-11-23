@@ -867,24 +867,31 @@ ul.list-blue {
 .timeline-TweetList-tweet > div {
   padding: 10px; }
 
-.modal-content {
+.modal-dialog .modal-content {
   padding: 40px 30px 30px 30px !important;
   /* The Close Button */ }
-  .modal-content .close {
-    color: #aaaaaa;
-    position: absolute;
-    right: 24px;
-    top: 6px;
-    font-size: 28px;
-    font-weight: bold; }
-  .modal-content .close:hover,
-  .modal-content .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer; }
-  .modal-content .content-wrapper {
-    max-height: 70vh;
-    overflow-y: auto; }
+
+.modal-dialog .close {
+  color: #aaaaaa;
+  position: absolute;
+  right: 24px;
+  top: 6px;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 1 !important;
+  pointer-events: all; }
+
+.modal-dialog .close:hover,
+.modal-dialog .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 1 !important;
+  pointer-events: all; }
+
+.modal-dialog .content-wrapper {
+  max-height: 70vh;
+  overflow-y: auto; }
 
 .article h1, .article .h1, .article h2, .article .h2, .article h3, .article .h3, .article h4, .article .h4, .article h5, .article .h5, .article h6, .article .h6 {
   font-weight: 500;
@@ -1279,7 +1286,9 @@ ul.list-blue {
     height: 260px !important; }
     .label-group img {
       width: 80% !important;
-      margin: 0 !important; } }
+      margin: 0 !important; }
+  #article-product iframe {
+    height: 270px !important; } }
 
 @media (max-width: 399px) {
   .navbar-brand {
