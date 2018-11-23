@@ -1132,6 +1132,18 @@ ul.list-blue {
 	margin-right: 20px;
 	margin-left: 40px;
 }
+.MediaCard-widthConstrain {
+	img {
+		width: 1024px !important;
+	}
+}
+#two-screen-request {
+	.modal-dialog {
+		.modal-content {
+			padding: 40px 30px 30px !important;
+		}
+	}
+}
 .modal-dialog {
 	.modal-content {
 			// DON'T CHANGE THIS LINE
