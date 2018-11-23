@@ -276,10 +276,10 @@ h1, .h1, h2, .h2 {
 .terminal-switch-wrap {
   line-height: 1.2;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   color: #0080CA;
-  text-transform: uppercase;
-  text-align: right;
+	text-align: right;
+	font-family: Arial,sans-serif;
 
 	@media (max-width: 768px) {
   		font-size: 12px;
