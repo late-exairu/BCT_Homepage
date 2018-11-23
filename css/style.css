@@ -873,9 +873,12 @@ ul.list-blue {
 .MediaCard-media {
   text-align: -webkit-center; }
 
+.timeline-Tweet-metadata {
+  margin-left: 40px; }
+
 .timeline-Tweet-media {
   margin-right: 20px;
-  margin-left: 20px; }
+  margin-left: 40px; }
 
 .modal-dialog .modal-content {
   padding: 40px 30px 30px 30px !important;
@@ -1300,7 +1303,9 @@ ul.list-blue {
   #article-product iframe {
     height: 270px !important; }
   .timeline-Tweet-media iframe {
-    height: 200px !important; } }
+    height: 200px !important; }
+  .timeline-Tweet-media {
+    margin-left: 20px !important; } }
 
 @media (max-width: 399px) {
   .navbar-brand {
