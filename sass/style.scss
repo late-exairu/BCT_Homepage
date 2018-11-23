@@ -1185,21 +1185,71 @@ ul.list-blue {
 		margin: 1rem 0;
 	}
 }
-#article-product .article {
+
+//font-family: Helvetica, Helvetica, Arial, sans-serif;
+.TweetAuthor-name {
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: 700;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-right: 4px;
+}
+.TweetAuthor-screenName {
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: 300;
+	padding-right: 4px;
+}
+.timeline-Tweet-text[dir=ltr] {
+	text-align: left;
+	direction: ltr;
+	font-size: 18px;
+	line-height: 27px;
+}
+.timeline-Tweet-media {
 	h2 {
-		font-size: 30px;
+		font-size: 30px !important;
+		font-weight: 600 !important;
 	}
+	/* subtitle */
 	h3 {
-		font-size: 24px;
+		font-size: 24px !important;
+		font-weight: 600 !important;
+		font-family: 'Helvetica';
+		letter-spacing: 0;
+		line-height: 30px;
 	}
+
+	p, a {
+		font-size: 18px !important;
+		font-style: normal;
+		font-weight: 200 !important;
+		font-family: Helvetica !important;
+	}
+
+	.blockquote {
+		padding: 1rem 0 1rem 3rem !important;
+	}
+}
+.timeline-TweetList li, .timeline-TweetList p {
+	padding-right: 0px !important;
+	font-size: 18px;
+	line-height: 27px;
+	font-family: 'Helvetica';
+	font-weight: 200;
+}
+.timeline-TweetList-tweet h2 {
+	font-weight: 600;
+	letter-spacing: -1.2px;
+}
+#article-product .article {
 	.form-row, p {
-		font-size: 14px;
-	}
-	.timeline-Tweet-media {
-		font-size: 14px;
-	}
-	.timeline-Tweet-media {
-		font-size: 14px;
+		font-family: Helvetica, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
 	}
 }
 .timeline-Body{
