@@ -867,6 +867,10 @@ ul.list-blue {
 .timeline-TweetList-tweet > div {
   padding: 10px; }
 
+.timeline-Tweet-media {
+  margin-right: 20px;
+  margin-left: 20px; }
+
 .modal-dialog .modal-content {
   padding: 40px 30px 30px 30px !important;
   /* The Close Button */ }
@@ -1288,7 +1292,9 @@ ul.list-blue {
       width: 80% !important;
       margin: 0 !important; }
   #article-product iframe {
-    height: 270px !important; } }
+    height: 270px !important; }
+  .timeline-Tweet-media iframe {
+    height: 200px !important; } }
 
 @media (max-width: 399px) {
   .navbar-brand {

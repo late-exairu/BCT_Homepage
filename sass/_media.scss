@@ -645,6 +645,12 @@
 			height: 270px !important;
 		}
 	}
+
+	.timeline-Tweet-media {
+		iframe {
+			height: 200px !important;
+		}
+	}
 }
 
 @media (max-width: 399px) {
