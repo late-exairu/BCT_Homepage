@@ -1109,6 +1109,11 @@ ul.list-blue {
 
   }
 }
+.timeline-TweetList {
+	li {
+    padding-right: 0px !important;
+	}
+}
 .timeline-TweetList-tweet {
  & > div {
 		padding: 10px;
