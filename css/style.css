@@ -903,7 +903,7 @@ ul.list-blue {
   pointer-events: all; }
 
 .modal-dialog .content-wrapper {
-  max-height: 70vh;
+  max-height: calc(100vh - 194px);
   overflow-y: auto;
   overflow-x: hidden; }
 
