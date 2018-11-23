@@ -1161,7 +1161,12 @@ ul.list-blue {
 	.content-wrapper {
 		max-height: 70vh;
 		overflow-y: auto;
+		overflow-x: hidden;
 	}
+}
+
+.timeline-TweetList-tweet{
+	list-style-type: none;
 }
 
 .article {
