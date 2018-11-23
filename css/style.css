@@ -864,7 +864,7 @@ ul.list-blue {
   border-radius: 0;
   padding: 20px !important; }
 
-.timeline-TweetList li {
+.timeline-TweetList li, .timeline-TweetList p {
   padding-right: 0px !important; }
 
 .timeline-TweetList-tweet > div {
