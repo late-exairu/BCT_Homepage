@@ -661,8 +661,8 @@ ul.list-blue {
   max-height: 700px;
   padding-top: 200px;
   padding-bottom: 228px;
-  background: url(../img/bg.png);
-  background-size: initial;
+  background: url(../img/updated_bg.png);
+  background-size: cover;
   background-position: center;
   background-attachment: fixed; }
   .section-7 .row > div:last-child h2 {
