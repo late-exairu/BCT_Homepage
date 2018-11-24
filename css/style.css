@@ -148,6 +148,9 @@ h1, .h1, h2, .h2 {
     padding-left: 10px;
     padding-right: 10px; }
 
+.main-page .navbar > .container {
+  justify-content: space-between; }
+
 .navbar__back {
   display: flex;
   align-items: center;
@@ -167,6 +170,9 @@ h1, .h1, h2, .h2 {
   line-height: 24px;
   margin-top: 0px;
   font-size: 20px; }
+
+.navbar > .container {
+  justify-content: flex-start; }
 
 .navbar-light {
   border-bottom: 1px solid #D6D6D6;
@@ -209,7 +215,7 @@ h1, .h1, h2, .h2 {
   padding-top: 1px;
   line-height: 1.2;
   text-transform: uppercase;
-  margin-right: auto; }
+  margin-right: 20px; }
 
 .button {
   display: inline-block;
@@ -793,7 +799,7 @@ ul.list-blue {
 
 .promo-code {
   color: #CCC;
-  font-weight: 500; }
+  font-weight: 200; }
   .promo-code .col > a {
     color: #CCC !important; }
 
@@ -895,7 +901,7 @@ ul.list-blue {
   color: #474747 !important; }
 
 .outro {
-  font-size: 12px;
+  font-size: 16pt;
   /*max-width: 720px;*/
   margin: 0 auto; }
 
@@ -1507,7 +1513,7 @@ form .button {
 .order-nav {
   font-size: 14px;
   display: flex;
-  margin: 8px auto;
+  margin: 8px 0;
   padding: 0;
   list-style: none;
   line-height: 1.3;
