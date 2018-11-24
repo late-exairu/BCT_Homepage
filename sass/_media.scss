@@ -558,8 +558,18 @@
 
 @media (max-width: 575px) {
 
+	.modal-dialog .modal-content {
+		padding: 40px 0px 30px 15px !important;
+	}
+	.modal-dialog .content-wrapper > p,
+	.modal-dialog .content-wrapper > h3,
+	.modal-dialog .content-wrapper > h4,
+	.modal-dialog li:not(.timeline-TweetList-tweet) {
+		padding-left: 15px;
+	}
+
 	.timeline-Body{
-		margin-left: -15px;
+		margin-left: 0px;
 		margin-right: 15px;
 	}
 
