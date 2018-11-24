@@ -287,7 +287,7 @@ ul.list-blue {
   padding-left: 0;
   list-style: none; }
   ul.list-blue li {
-    padding-left: 40px;
+    padding-left: 20px;
     position: relative; }
     ul.list-blue li:before {
       content: "•";
@@ -299,7 +299,8 @@ ul.list-blue {
   padding: 4px 0;
   background: linear-gradient(#EDEDED, transparent 17px); }
   .owl-brands .owl-item img {
-    width: auto; }
+    width: auto;
+    height: 62px; }
 
 .owl-theme .owl-nav {
   margin-top: 0; }
