@@ -952,6 +952,15 @@
 					</p>
 				</div>
 			</div>
+			<div class="row align-items-center justify-content-center">
+				<div class="col-12 align-items-center justify-content-center" style="display: flex;">
+					<div class="video-wrapper">
+						<img class="back-image" src="img/front2.png" alt="">
+						<div id="video-player" class="align-items-center justify-content-center"></div>
+						<div id="initial-image"></div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -1234,6 +1243,32 @@
 			}, 300);
 		});
 	});
+
+	
+	var options2 = {
+		id: 302544722,
+		height: '488',
+		width: '1280',
+		title: false,
+		byline: false,
+		portrait: false,
+		loop: false
+	};
+	
+	var player2 = new Vimeo.Player('video-player', options2);
+
+	player2.on('ended', function() {
+		$('#initial-image').removeClass('hidden');
+	});
+
+	$('#initial-image').click(function () {
+		player.play().then(function() {
+			setTimeout(() => {
+				$('#initial-image').addClass('hidden');
+			}, 300);
+		});
+	});
+
 </script>
 <script src="libs/jquery.reel.js"></script>
 
