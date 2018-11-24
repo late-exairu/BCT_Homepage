@@ -151,6 +151,9 @@ h1, .h1, h2, .h2 {
 .main-page .navbar > .container {
   justify-content: space-between; }
 
+.main-page .navbar .promo {
+  margin-right: auto; }
+
 .navbar__back {
   display: flex;
   align-items: center;
