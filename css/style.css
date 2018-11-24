@@ -441,8 +441,6 @@ ul.list-blue {
 .section-4 {
   padding-top: 40px;
   padding-bottom: 96px; }
-  .section-4 h2 {
-    margin-bottom: 12px !important; }
   .section-4 p {
     visibility: hidden;
     opacity: 0;
@@ -454,6 +452,8 @@ ul.list-blue {
       opacity: 1;
       height: auto;
       margin-bottom: 1rem; }
+  .section-4 button.owl-dot:nth-child(9) {
+    display: none; }
 
 .owl-header {
   margin-bottom: 0 !important; }
@@ -501,6 +501,8 @@ ul.list-blue {
       content: "ComplianceGuard"; }
     .owl-header .owl-dots .owl-dot:nth-child(8):before {
       content: "Curated App Store"; }
+    .owl-header .owl-dots .owl-dot:nth-child(9):before {
+      content: "First Screen"; }
 
 .owl-body {
   max-width: 800px;
