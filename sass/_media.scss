@@ -547,11 +547,12 @@
 	}
 	
 	.navbar-brand {
-		width: 30px;
+		width: 110px;
 		overflow: hidden;
 		direction: rtl;
 		img {
-		  max-width: inherit;
+			max-width: inherit;
+			width: 100%;
 		}
 	}
 }

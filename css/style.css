@@ -1377,11 +1377,12 @@ ul.list-blue {
       display: block !important;
       margin: 0 !important; }
   .navbar-brand {
-    width: 30px;
+    width: 110px;
     overflow: hidden;
     direction: rtl; }
     .navbar-brand img {
-      max-width: inherit; } }
+      max-width: inherit;
+      width: 100%; } }
 
 @media (max-width: 575px) {
   .modal-dialog .modal-content {
