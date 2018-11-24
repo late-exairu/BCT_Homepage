@@ -957,7 +957,9 @@
 					<div class="video-wrapper">
 						<img class="back-image" src="img/front2.png" alt="">
 						<div id="video-player" class="align-items-center justify-content-center"></div>
-						<div id="initial-image"></div>
+						<div class="initial-image align-items-center justify-content-center">
+							<div class="initial-image__core"></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1258,13 +1260,13 @@
 	var player2 = new Vimeo.Player('video-player', options2);
 
 	player2.on('ended', function() {
-		$('#initial-image').removeClass('hidden');
+		$('.initial-image').removeClass('hidden');
 	});
 
-	$('#initial-image').click(function () {
-		player.play().then(function() {
+	$('.initial-image .initial-image__core').click(function () {
+		player2.play().then(function() {
 			setTimeout(() => {
-				$('#initial-image').addClass('hidden');
+				$('.initial-image').addClass('hidden');
 			}, 300);
 		});
 	});
