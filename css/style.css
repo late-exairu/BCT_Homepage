@@ -1043,6 +1043,9 @@ ul.list-blue {
 .timeline-Body {
   margin-right: 30px; }
 
+.MediaCard img {
+  width: 100%; }
+
 .package-select {
   /*font-size: 1.0rem;*/
   border-radius: 4px;
