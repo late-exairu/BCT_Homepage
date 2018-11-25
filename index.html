@@ -1339,22 +1339,24 @@
 		title: false,
 		byline: false,
 		portrait: false,
-		loop: false
+		autoplay: true,
+		loop: true,
+		muted: true,
 	};
 	
 	var player2 = new Vimeo.Player('video-player', options2);
 
-	player2.on('ended', function() {
-		$('.initial-image').removeClass('hidden');
-	});
+	// player2.on('ended', function() {
+	// 	$('.initial-image').removeClass('hidden');
+	// });
 
-	$('.initial-image .initial-image__core').click(function () {
+	// $('.initial-image .initial-image__core').click(function () {
 		player2.play().then(function() {
 			setTimeout(() => {
 				$('.initial-image').addClass('hidden');
 			}, 300);
 		});
-	});
+	// });
 
 </script>
 <script src="libs/jquery.reel.js"></script>
