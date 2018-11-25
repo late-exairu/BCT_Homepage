@@ -239,6 +239,12 @@ $(document).ready(function () {
 	});
 
 
+	$("#article-customer").on('hide.bs.modal', function () {
+		iframes = $("#article-customer iframe");
+		for(i = 0; i <= iframes.length; i++) {
+			$(iframes[i]).attr('src', $(iframes[i]).attr('src'));			
+		}
+	});
 	var select_html = '';
 	for (var i = 1; i <= 60; i++) {
 		select_html += `
