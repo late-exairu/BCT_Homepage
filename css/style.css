@@ -1005,7 +1005,7 @@ article.initial-video {
   margin-bottom: 10px;
   overflow: hidden; }
   .MediaCard-media > div > div.MediaCard-mediaContainer img, .MediaCard-media > div > div.MediaCard-mediaContainer iframe {
-    max-height: 34vw; }
+    max-height: 40vw; }
 
 .TweetAuthor-name {
   font-size: 18px;
