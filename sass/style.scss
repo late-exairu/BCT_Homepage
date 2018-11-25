@@ -1293,6 +1293,14 @@ article.initial-video {
 	}
 }
 
+.MediaCard-media > div > div.MediaCard-mediaContainer {
+	img, iframe {
+		max-height: 34vw;
+	}
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
 //font-family: Helvetica, Helvetica, Arial, sans-serif;
 .TweetAuthor-name {
 	font-size: 18px;
