@@ -1069,7 +1069,7 @@ article.initial-video {
   font-weight: 200; }
 
 .timeline-TweetList-tweet {
-  border-top: 40px solid rgba(0, 0, 0, 0.16); }
+  border-top: 40px solid #808080; }
   .timeline-TweetList-tweet h2 {
     font-weight: 600;
     letter-spacing: -1.2px;
