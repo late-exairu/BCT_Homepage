@@ -1054,9 +1054,11 @@ article.initial-video {
   font-family: 'Helvetica';
   font-weight: 200; }
 
-.timeline-TweetList-tweet h2 {
-  font-weight: 600;
-  letter-spacing: -1.2px; }
+.timeline-TweetList-tweet {
+  border-top: 40px solid rgba(0, 0, 0, 0.16); }
+  .timeline-TweetList-tweet h2 {
+    font-weight: 600;
+    letter-spacing: -1.2px; }
 
 #article-product .article .form-row, #article-product .article p {
   font-family: Helvetica, Helvetica, Arial, sans-serif;
