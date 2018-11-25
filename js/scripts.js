@@ -238,10 +238,16 @@ $(document).ready(function () {
 		$('.form-checked').toggleClass('hidden');
 	});
 
-
 	$("#article-customer").on('hide.bs.modal', function () {
-		iframes = $("#article-customer iframe");
-		for(i = 0; i <= iframes.length; i++) {
+		var iframes = $("#article-customer iframe");
+		for(var i = 0; i <= iframes.length; i++) {
+			$(iframes[i]).attr('src', $(iframes[i]).attr('src'));			
+		}
+	});
+
+	$("#article-product").on('hide.bs.modal', function () {
+		var iframes = $("#article-product iframe");
+		for(var i = 0; i <= iframes.length; i++) {
 			$(iframes[i]).attr('src', $(iframes[i]).attr('src'));			
 		}
 	});
