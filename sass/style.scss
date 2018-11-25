@@ -1346,6 +1346,24 @@ article.initial-video {
 
 	.blockquote {
 		padding: 1rem 0 1rem 3rem !important;
+		p {
+			font-weight: 600 !important;
+
+			&:before {
+				content: '';
+				width: 30px;
+				height: 30px;
+				background-image: url(img/blockquote.png) !important;
+				position: absolute;
+				left: 52px;
+			}
+		}
+		img {
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			left: 50px;
+		}
 	}
 }
 .timeline-TweetList li, .timeline-TweetList p {

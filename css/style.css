@@ -1046,6 +1046,20 @@ article.initial-video {
     font-family: Helvetica !important; }
   .timeline-Tweet-media .blockquote {
     padding: 1rem 0 1rem 3rem !important; }
+    .timeline-Tweet-media .blockquote p {
+      font-weight: 600 !important; }
+      .timeline-Tweet-media .blockquote p:before {
+        content: '';
+        width: 30px;
+        height: 30px;
+        background-image: url(img/blockquote.png) !important;
+        position: absolute;
+        left: 52px; }
+    .timeline-Tweet-media .blockquote img {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 50px; }
 
 .timeline-TweetList li, .timeline-TweetList p {
   padding-right: 0px !important;
