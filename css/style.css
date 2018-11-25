@@ -1058,7 +1058,10 @@ article.initial-video {
   border-top: 40px solid rgba(0, 0, 0, 0.16); }
   .timeline-TweetList-tweet h2 {
     font-weight: 600;
-    letter-spacing: -1.2px; }
+    letter-spacing: -1.2px;
+    padding: 20px 0 16px; }
+  .timeline-TweetList-tweet h3 {
+    padding: 20px 0 16px; }
 
 #article-product .article .form-row, #article-product .article p {
   font-family: Helvetica, Helvetica, Arial, sans-serif;
