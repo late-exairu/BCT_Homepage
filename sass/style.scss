@@ -1398,7 +1398,15 @@ article.initial-video {
 }
 
 .MediaCard img{width: 100%;}
-
+.gift-card {	
+	position: absolute;
+	z-index: 3;
+	margin-top: -11px;
+	left: 30px;
+	background: white;
+	padding: 0 5px;
+	font-size: 1rem;
+}
 .package-select {
 	
 	/*font-size: 1.0rem;*/
