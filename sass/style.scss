@@ -920,7 +920,7 @@ ul.list-blue {
 		button {
 			position: absolute;
 			top: 38%;
-			background-color: rgba(255, 255, 255, .3);
+			background-color: rgba(255, 255, 255, .2);
 			color: #AAA;
 			font-size: 44px;
 			line-height: 60px;
@@ -931,15 +931,20 @@ ul.list-blue {
 			cursor: pointer;
 			z-index: 3;
 			&:hover {
-				background-color: rgba(255, 255, 255, .5);
+				background-color: rgba(255, 255, 255, .3);
 				color: #EEE;
 			}
 
 			&.left-arrow {
 				left: -3%;
+				background-image: url(../img/arrow.png);
+				background-size: cover !important;
 			}
 			&.right-arrow {
 				right: -3%;
+				background-image: url(../img/arrow.png);
+				transform: translateY(-50%) rotate(180deg);
+				background-size: cover !important;
 			}
 			@media (max-width: 1200px) {
 				width: 50px !important;
