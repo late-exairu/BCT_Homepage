@@ -120,6 +120,12 @@
 
 @media (min-width: 992px) {
 
+	#article-product,
+	#article-customer {
+		.modal-dialog {
+			max-width: 600px;
+		}
+	}
 	.section-3 {
 	  background: radial-gradient(circle closest-corner at 50% 100%, transparent 50%, #CCD0D3);
 	}
@@ -168,12 +174,12 @@
 
 @media (min-width: 1200px) {
 
-		#article-product,
-		#article-customer {
-			.modal-dialog {
-				max-width: 1280px;
-			}
+	#article-product,
+	#article-customer {
+		.modal-dialog {
+			max-width: 750px;
 		}
+	}
 
 	h1, .h1 {
 	  font-size: 75px;
@@ -325,6 +331,12 @@
 		max-width: 1310px;
 	}
 
+	#article-product,
+	#article-customer {
+		.modal-dialog {
+			max-width: 942px;
+		}
+	}
 	.owl-body {
 	  .owl-4 {
 	    padding: 0 26%;

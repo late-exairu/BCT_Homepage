@@ -1215,6 +1215,9 @@ article.initial-video {
     font-size: 19px; } }
 
 @media (min-width: 992px) {
+  #article-product .modal-dialog,
+  #article-customer .modal-dialog {
+    max-width: 600px; }
   .section-3 {
     background: radial-gradient(circle closest-corner at 50% 100%, transparent 50%, #CCD0D3); }
   .inputGroup .tab-a {
@@ -1232,7 +1235,7 @@ article.initial-video {
 @media (min-width: 1200px) {
   #article-product .modal-dialog,
   #article-customer .modal-dialog {
-    max-width: 1280px; }
+    max-width: 750px; }
   h1, .h1 {
     font-size: 75px;
     letter-spacing: -1.9px; }
@@ -1319,6 +1322,9 @@ article.initial-video {
 @media (min-width: 1350px) {
   .container {
     max-width: 1310px; }
+  #article-product .modal-dialog,
+  #article-customer .modal-dialog {
+    max-width: 942px; }
   .owl-body .owl-4 {
     padding: 0 26%; }
   .section-6 h3, .section-6 .h3 {
