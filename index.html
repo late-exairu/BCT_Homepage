@@ -950,6 +950,8 @@
 						<div class="initial-image align-items-center justify-content-center">
 							<div class="initial-image__core"></div>
 						</div>
+						<button class="left-arrow"><</button>
+						<button class="right-arrow">></button>
 					</div>
 				</div>
 			</div>
@@ -1216,10 +1218,13 @@
 			}, 300);
 		});
 	});
-
-	
+	var playIndex = 0;
+	var	videoIDs = [
+		302544722,
+		302675746
+	]
 	var options2 = {
-		id: 302544722,
+		id: videoIDs[playIndex],
 		height: '488',
 		width: '1280',
 		title: false,
@@ -1243,6 +1248,29 @@
 			}, 300);
 		});
 	// });
+
+	$('.section-11 button.left-arrow').click(function () {
+		if (playIndex == 0) {
+			playIndex = videoIDs.length - 1;
+		}
+		else {
+			playIndex --;
+		}
+		player2.loadVideo(videoIDs[playIndex]).then(function(id) {
+			console.log("video loaded successfully!!");
+		})
+	});
+	$('.section-11 button.right-arrow').click(function () {
+		if (playIndex == videoIDs.length - 1) {
+			playIndex = 0;
+		}
+		else {
+			playIndex ++;
+		}
+		player2.loadVideo(videoIDs[playIndex]).then(function(id) {
+			console.log("video loaded successfully!!");
+		})
+	});
 
 </script>
 <script src="libs/jquery.reel.js"></script>
