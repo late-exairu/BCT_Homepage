@@ -1218,13 +1218,16 @@
 			}, 300);
 		});
 	});
+
+	var playFlag = false;
 	var playIndex = 0;
 	var	videoIDs = [
 		302544722,
 		302675746,
-		302822931,
 		302822870,
-		302821966
+		302822931,
+		302821966,
+		302869675
 	]
 	var options2 = {
 		id: videoIDs[playIndex],
@@ -1245,11 +1248,11 @@
 	// });
 
 	// $('.initial-image .initial-image__core').click(function () {
-		player2.play().then(function() {
-			setTimeout(() => {
-				$('.initial-image').addClass('hidden');
-			}, 300);
-		});
+	// 	player2.play().then(function() {
+	// 		setTimeout(() => {
+	// 			$('.initial-image').addClass('hidden');
+	// 		}, 300);
+	// 	});
 	// });
 
 	$('.section-11 button.left-arrow').click(function () {
@@ -1273,6 +1276,17 @@
 		player2.loadVideo(videoIDs[playIndex]).then(function(id) {
 			console.log("video loaded successfully!!");
 		})
+	});
+
+	window.addEventListener('scroll', function(e) {
+		if (!playFlag && window.scrollY > 9200) {
+			player2.play().then(function() {
+				setTimeout(() => {
+					$('.initial-image').addClass('hidden');
+				}, 300);
+				playFlag = true;
+			});
+		}
 	});
 
 </script>
