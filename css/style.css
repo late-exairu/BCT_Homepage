@@ -1505,7 +1505,9 @@ article.initial-video {
     height: 240px !important; }
     .label-group img {
       width: 100% !important;
-      margin: 0 !important; } }
+      margin: 0 !important; }
+  .order-form .row {
+    flex-direction: column-reverse !important; } }
 
 @media (max-width: 767px) {
   .promo {

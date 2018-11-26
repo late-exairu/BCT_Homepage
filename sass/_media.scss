@@ -545,6 +545,10 @@
 			margin: 0 !important;
 		}
 	}
+
+	.order-form .row {
+		flex-direction: column-reverse !important;
+	}
 }
 
 @media (max-width: 767px) {
