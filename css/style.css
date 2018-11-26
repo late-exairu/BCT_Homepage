@@ -370,6 +370,11 @@ ul.list-blue {
   right: 0;
   transform: translateY(-50%) rotate(180deg); }
 
+#ulAccordion span {
+  display: inline-block;
+  padding-left: 10px;
+  text-indent: -10px; }
+
 .video-wrap {
   padding: 80px 0;
   background-color: #000; }
