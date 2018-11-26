@@ -1004,7 +1004,25 @@ article.initial-video {
   margin-bottom: 10px;
   overflow: hidden; }
   .MediaCard-media > div > div.MediaCard-mediaContainer iframe, .MediaCard-media > div > div.MediaCard-mediaContainer video {
-    max-height: 27vw; }
+    max-height: 29vw; }
+    @media (max-width: 1500px) {
+      .MediaCard-media > div > div.MediaCard-mediaContainer iframe, .MediaCard-media > div > div.MediaCard-mediaContainer video {
+        max-height: 32vw !important; } }
+    @media (max-width: 1350px) {
+      .MediaCard-media > div > div.MediaCard-mediaContainer iframe, .MediaCard-media > div > div.MediaCard-mediaContainer video {
+        max-height: 28vw !important; } }
+    @media (max-width: 1200px) {
+      .MediaCard-media > div > div.MediaCard-mediaContainer iframe, .MediaCard-media > div > div.MediaCard-mediaContainer video {
+        max-height: 27vw !important; } }
+    @media (max-width: 992px) {
+      .MediaCard-media > div > div.MediaCard-mediaContainer iframe, .MediaCard-media > div > div.MediaCard-mediaContainer video {
+        max-height: 29vw !important; } }
+    @media (max-width: 768px) {
+      .MediaCard-media > div > div.MediaCard-mediaContainer iframe, .MediaCard-media > div > div.MediaCard-mediaContainer video {
+        max-height: 33vw !important; } }
+    @media (max-width: 575px) {
+      .MediaCard-media > div > div.MediaCard-mediaContainer iframe, .MediaCard-media > div > div.MediaCard-mediaContainer video {
+        max-height: 42vw !important; } }
 
 .TweetAuthor-name {
   font-size: 18px;
@@ -1075,6 +1093,9 @@ article.initial-video {
     padding: 20px 0 16px; }
   .timeline-TweetList-tweet h3 {
     padding: 20px 0 16px; }
+
+#article-product, #article-customer {
+  padding-right: 0 !important; }
 
 #article-product .article .form-row, #article-product .article p {
   font-family: Helvetica, Helvetica, Arial, sans-serif;
