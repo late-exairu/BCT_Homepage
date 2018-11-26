@@ -243,12 +243,22 @@ $(document).ready(function () {
 		for(var i = 0; i <= iframes.length; i++) {
 			$(iframes[i]).attr('src', $(iframes[i]).attr('src'));			
 		}
+
+		var videos = $("#article-customer video");
+		for(var i = 0; i <= videos.length; i++) {
+			$(videos[i]).attr('src', $(videos[i]).attr('src'));			
+		}
 	});
 
 	$("#article-product").on('hide.bs.modal', function () {
 		var iframes = $("#article-product iframe");
 		for(var i = 0; i <= iframes.length; i++) {
 			$(iframes[i]).attr('src', $(iframes[i]).attr('src'));			
+		}
+
+		var videos = $("#article-product video");
+		for(var i = 0; i <= videos.length; i++) {
+			$(videos[i]).attr('src', $(videos[i]).attr('src'));			
 		}
 	});
 	var select_html = '';
