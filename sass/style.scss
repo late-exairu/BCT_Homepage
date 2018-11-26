@@ -1294,8 +1294,11 @@ article.initial-video {
 }
 
 .MediaCard-media > div > div.MediaCard-mediaContainer {
-	img, iframe, video {
-		max-height: 40vw;
+	img {
+		max-height: 32vw;
+	}
+	iframe, video {
+		max-height: 27vw;
 	}
 	margin-bottom: 10px;
 	overflow: hidden;
