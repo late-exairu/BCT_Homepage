@@ -50,12 +50,13 @@ form .button {
 .order-nav {
 	font-size: 14px;
 	display: flex;
-	margin: 8px 0;
+	margin: 8px;// auto;
 	padding: 0;
 	list-style: none;
 	line-height: 1.3;
 	color: #D6D6D6;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
+	//overflow: hidden;
 
 	.item {
 		position: relative;
