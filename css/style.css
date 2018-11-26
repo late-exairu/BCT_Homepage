@@ -1004,8 +1004,6 @@ article.initial-video {
 .MediaCard-media > div > div.MediaCard-mediaContainer {
   margin-bottom: 10px;
   overflow: hidden; }
-  .MediaCard-media > div > div.MediaCard-mediaContainer img {
-    max-height: 32vw; }
   .MediaCard-media > div > div.MediaCard-mediaContainer iframe, .MediaCard-media > div > div.MediaCard-mediaContainer video {
     max-height: 27vw; }
 
