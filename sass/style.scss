@@ -1485,10 +1485,19 @@ article.initial-video {
 	position: absolute;
 	z-index: 3;
 	margin-top: -11px;
-	left: 30px;
+	left: 20px;
 	background: white;
 	padding: 0 5px;
-	font-size: 1rem;
+
+	
+	@media (max-width: 768px) {
+		margin-top: -7px;
+	}
+
+	@media (max-width: 575px) {
+		font-size: 11px;
+		margin-top: -5px;
+	}
 }
 .package-select {
 	
