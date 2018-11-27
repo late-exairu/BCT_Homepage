@@ -976,7 +976,10 @@ ul.list-blue {
 		.back-image {
 			z-index: 1;
 			width: 100%;
-			margin-left: 3;
+			margin-left: 3px;
+			@media (max-width: 768px) {
+				margin-left: 1px !important;
+			}
 		}
 		#video-player {
 			position: absolute;

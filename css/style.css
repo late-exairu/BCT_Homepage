@@ -767,7 +767,10 @@ ul.list-blue {
     .section-11 .video-wrapper .back-image {
       z-index: 1;
       width: 100%;
-      margin-left: 3; }
+      margin-left: 3px; }
+      @media (max-width: 768px) {
+        .section-11 .video-wrapper .back-image {
+          margin-left: 1px !important; } }
     .section-11 .video-wrapper #video-player {
       position: absolute;
       z-index: 2;
