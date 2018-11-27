@@ -1469,7 +1469,9 @@ article.initial-video {
 @media (max-width: 1199px) {
   .navbar-expand-xl > .container, .navbar-expand-xl > .container-fluid {
     padding-right: 15px !important;
-    padding-left: 15px !important; } }
+    padding-left: 15px !important; }
+  .TweetAuthor-screenName {
+    font-size: 16px; } }
 
 @media (max-width: 991px) {
   .section-11 .row .coin-img img.coin-Y {
@@ -1558,7 +1560,9 @@ article.initial-video {
   .small-brand {
     display: inline-block;
     width: 30px !important;
-    height: 30px !important; } }
+    height: 30px !important; }
+  .TweetAuthor-screenName {
+    font-size: 14px; } }
 
 @media (max-width: 575px) {
   .modal-dialog .modal-content {
