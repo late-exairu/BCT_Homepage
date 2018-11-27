@@ -1021,6 +1021,10 @@ ul.list-blue {
   max-height: calc(100vh - 194px);
   overflow-y: auto; }
 
+.license-list {
+  padding-left: 40px;
+  list-style: lower-alpha; }
+
 .timeline-TweetList-tweet {
   list-style-type: none; }
 
