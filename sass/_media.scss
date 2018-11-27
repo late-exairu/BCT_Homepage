@@ -454,11 +454,11 @@
 }
 
 @media (min-width: 1500px) {
-	.fancybox-navigation .fancybox-button--arrow_left {
+	.fancybox-inner .fancybox-navigation .fancybox-button--arrow_left {
 		left: 50%;
 		margin-left: -750px;
 	}
-	.fancybox-navigation .fancybox-button--arrow_right {
+	.fancybox-inner .fancybox-navigation .fancybox-button--arrow_right {
 		right: 50%;
 		margin-right: -750px;
 	}
