@@ -308,8 +308,7 @@ ul.list-blue {
   padding: 4px 0;
   background: linear-gradient(#EDEDED, transparent 17px); }
   .owl-brands .owl-item img {
-    width: auto;
-    height: 62px; }
+    width: auto; }
 
 .owl-theme .owl-nav {
   margin-top: 0; }
