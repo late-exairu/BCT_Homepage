@@ -454,11 +454,11 @@
 }
 
 @media (min-width: 1500px) {
-	.fancybox-navigation .fancybox-button--arrow_left {
+	.fancybox-inner .fancybox-navigation .fancybox-button--arrow_left {
 		left: 50%;
 		margin-left: -750px;
 	}
-	.fancybox-navigation .fancybox-button--arrow_right {
+	.fancybox-inner .fancybox-navigation .fancybox-button--arrow_right {
 		right: 50%;
 		margin-right: -750px;
 	}
@@ -773,8 +773,16 @@
 
 @media (max-width: 399px) {
 
+	.kartynka{
+		max-width: 75%;
+	}
+
 	.navbar-brand{
 		margin: 0 8px 0 0;
+
+		img{
+			width: 100px;
+		}
 	}
 
 	.promo{
