@@ -385,7 +385,7 @@ ul.list-blue {
   }
 }
 
-.fancybox-navigation
+.fancybox-inner .fancybox-navigation
 {
 	.fancybox-button {
 		position: absolute;
@@ -400,6 +400,10 @@ ul.list-blue {
 		background-color: rgba(213, 213, 213, 0.25) !important;
 		background-image: url(../img/arrow.png) !important;
 		background-size: cover !important;
+		opacity: 0.66;
+		&:hover{
+			opacity: 1;
+		}
 	}
 	.fancybox-button--arrow_left {
 		left: 0;
@@ -919,7 +923,7 @@ ul.list-blue {
 		button {
 			position: absolute;
 			top: 38%;
-			background-color: rgba(255, 255, 255, .2);
+			background-color: rgba(213, 213, 213, 0.25);
 			color: #AAA;
 			font-size: 44px;
 			line-height: 60px;
@@ -929,9 +933,10 @@ ul.list-blue {
 			border-radius: 50%;
 			cursor: pointer;
 			z-index: 3;
+			opacity: .66;
+			transition: .2s;
 			&:hover {
-				background-color: rgba(255, 255, 255, .3);
-				color: #EEE;
+				opacity: 1;
 			}
 
 			&.left-arrow {
