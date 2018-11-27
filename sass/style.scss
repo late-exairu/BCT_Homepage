@@ -331,7 +331,7 @@ ul.list-blue {
   background: linear-gradient(#EDEDED, transparent 17px);
   .owl-item img {
 		width: auto;
-		height: 62px;
+		//height: 62px;
   }
 }
 
@@ -502,9 +502,6 @@ ul.list-blue {
 .section-4 {  
   padding-top: 40px;
 	padding-bottom: 96px;
-	h2 {
-		//margin-bottom: 12px !important;
-	}
 	p{
 		visibility: hidden;
 		opacity: 0;
@@ -1257,9 +1254,6 @@ ul.list-blue {
 .timeline-Tweet-metadata {
 	margin-left: 40px;
 }
-.timeline-Tweet {
-	//pointer-events: none;
-}
 .timeline-Tweet-media {
 	margin-right: 20px;
 	margin-left: 40px;
@@ -1351,9 +1345,6 @@ article.initial-video {
 }
 
 .MediaCard-media > div > div.MediaCard-mediaContainer {
-	img {
-		//max-height: 32vw;
-	}
 	iframe, video {
 		max-height: 29vw;
 		
