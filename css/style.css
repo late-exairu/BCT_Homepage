@@ -1638,6 +1638,8 @@ article.initial-video {
 @media (max-width: 399px) {
   .navbar-brand {
     margin: 0 8px 0 0; }
+    .navbar-brand img {
+      width: 100px; }
   .promo {
     font-size: 10px; }
   .terminal-switch-wrap {
