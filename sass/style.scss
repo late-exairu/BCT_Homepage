@@ -1592,7 +1592,11 @@ article.initial-video {
 		}
 	}
 }
-
+.selectize-dropdown .active {
+	background-color: #00A1FF;
+	color: white;
+	font-weight: 600;
+}
 #navbarSupportedContent{
 	display: none!important;
 }

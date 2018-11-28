@@ -1251,6 +1251,11 @@ article.initial-video {
     .package-select ul.hidden {
       display: none; }
 
+.selectize-dropdown .active {
+  background-color: #00A1FF;
+  color: white;
+  font-weight: 600; }
+
 #navbarSupportedContent {
   display: none !important; }
 
