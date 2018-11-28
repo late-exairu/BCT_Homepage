@@ -1770,6 +1770,10 @@ form .button {
 .tooltip.show {
   opacity: 1; }
 
+@media (max-width: 1000px) {
+  .tooltip {
+    display: none; } }
+
 .tip {
   color: #9C9C9C;
   font-size: 15px;

@@ -114,6 +114,9 @@ form .button {
 	&.show {
 		opacity: 1;
 	}
+	@media (max-width: 1000px) {
+		display: none;
+	}
 }
 
 .tip {
