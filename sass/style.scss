@@ -568,7 +568,7 @@ ul.list-blue {
 	  }
 	}
 	&:nth-child(1):before {
-	  content: "Global Wallet";
+		content: "Dedicated Terminal";
 	}
 	&:nth-child(2):before {
 	  content: "Global Order Book";
@@ -580,7 +580,7 @@ ul.list-blue {
 	  content: "Global Liquidity";
 	}
 	&:nth-child(5):before {
-	  content: "Dedicated Terminal";
+		content: "Global Wallet";
 	}
 	&:nth-child(6):before {
 	  content: "Hardware Key";

@@ -493,7 +493,7 @@ ul.list-blue {
       background-color: #0080CA;
       font-weight: 600; }
     .owl-header .owl-dots .owl-dot:nth-child(1):before {
-      content: "Global Wallet"; }
+      content: "Dedicated Terminal"; }
     .owl-header .owl-dots .owl-dot:nth-child(2):before {
       content: "Global Order Book"; }
     .owl-header .owl-dots .owl-dot:nth-child(3):before {
@@ -501,7 +501,7 @@ ul.list-blue {
     .owl-header .owl-dots .owl-dot:nth-child(4):before {
       content: "Global Liquidity"; }
     .owl-header .owl-dots .owl-dot:nth-child(5):before {
-      content: "Dedicated Terminal"; }
+      content: "Global Wallet"; }
     .owl-header .owl-dots .owl-dot:nth-child(6):before {
       content: "Hardware Key"; }
     .owl-header .owl-dots .owl-dot:nth-child(7):before {
