@@ -683,7 +683,7 @@ ul.list-blue {
     padding-right: 5%; }
 
 .section-8 {
-  padding: 100px 0 150px;
+  padding: 100px 0 130px;
   max-height: 1365px; }
   .section-8 h2 {
     margin-bottom: 45px; }
@@ -1020,6 +1020,10 @@ ul.list-blue {
 .modal-dialog .content-wrapper {
   max-height: calc(100vh - 194px);
   overflow-y: auto; }
+
+.license-list {
+  padding-left: 40px;
+  list-style: lower-alpha; }
 
 .timeline-TweetList-tweet {
   list-style-type: none; }
