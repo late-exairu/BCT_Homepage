@@ -78,7 +78,7 @@ $(document).ready(function () {
 	var owl4Viewed = false;
 	owl4.owlCarousel({
 		items: 1,
-		startPosition:8,
+		//startPosition:8,
 		//autoplay: true,
 		loop: true,
 		nav: true,
