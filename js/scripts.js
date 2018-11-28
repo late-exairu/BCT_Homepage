@@ -90,10 +90,10 @@ $(document).ready(function () {
 			if (currentTextIndex != -1){
 				$(event.target).trigger('stop.owl.autoplay');
 				$(event.target).trigger('play.owl.autoplay');
-				if ($('.section-4 .owlTexts p').length == 9){
-					$('.section-4 .owlTexts p').eq(8).remove();
-					owl4.trigger('remove.owl.carousel', 8);
-				}
+				// if ($('.section-4 .owlTexts p').length == 9){
+				// 	$('.section-4 .owlTexts p').eq(8).remove();
+				// 	owl4.trigger('remove.owl.carousel', 8);
+				// }
 				$('.section-4 p').removeClass('current');
 				$('.section-4 p').eq(currentTextIndex).addClass('current');
 			}
@@ -140,7 +140,7 @@ $(document).ready(function () {
 		if ($('.section-4').length) {
 			if (window.pageYOffset + 400 > $('.section-4').offset().top) {
 				if (!owl4Viewed) {
-					owl4.trigger('to.owl.carousel', 8);
+					owl4.trigger('to.owl.carousel', 0);
 					owl4.trigger('play.owl.autoplay');
 					owl4Viewed = true;
 				}

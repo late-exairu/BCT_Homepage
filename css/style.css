@@ -459,8 +459,6 @@ ul.list-blue {
       opacity: 1;
       height: auto;
       margin-bottom: 1rem; }
-  .section-4 button.owl-dot:nth-child(9) {
-    display: none; }
 
 .owl-header {
   margin-bottom: 0 !important; }
@@ -508,8 +506,6 @@ ul.list-blue {
       content: "ComplianceGuard"; }
     .owl-header .owl-dots .owl-dot:nth-child(8):before {
       content: "Curated App Store"; }
-    .owl-header .owl-dots .owl-dot:nth-child(9):before {
-      content: "First Screen"; }
 
 .owl-body {
   max-width: 800px;

@@ -521,9 +521,9 @@ ul.list-blue {
 			//display: block;
 		}
 	}
-	button.owl-dot:nth-child(9){
-		display: none;
-	}
+	// button.owl-dot:nth-child(9){
+	// 	display: none;
+	// }
 }
 
 .owl-header {
@@ -591,9 +591,9 @@ ul.list-blue {
 	&:nth-child(8):before {
 	  content: "Curated App Store";
 	}
-	&:nth-child(9):before {
-		content: "First Screen";
-	}
+	// &:nth-child(9):before {
+	// 	content: "First Screen";
+	// }
   }
 }
 
