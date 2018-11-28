@@ -347,6 +347,26 @@
 	<script src="libs/countries.js"></script>
 	<script src="libs/mask/jquery.mask.min.js"></script>
 	<script src="js/scripts.js"></script>
+	
+	<script>
+		console.log("countries", countries);
+		var countries_list = '';
+		for (var i = 0; i < countries.length; i++) {
+			if (countries[i].name == "United States") {
+			countries_list += `
+			<option selected>` + countries[i].name + `</option>
+			`;
+			}
+			else {
+			countries_list += `
+			<option>` + countries[i].name + `</option>
+			`;
+			}
+		}
+		$(".basic-select.country").html(countries_list);
+		
+		$('select').selectize();
+	</script>
 </body>
 
 </html>
