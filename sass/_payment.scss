@@ -92,18 +92,18 @@ form .button {
 	background: #ebebeb;
 	color: inherit;
 	border: 1px solid #c3c3c3;
-	padding: 1rem .5rem .25rem;
+	//padding: 1rem .5rem .25rem;
 	position: relative;
-	max-width: 255px;
-	&:before {
-		content: '×';
-	position: absolute;
-	top: 6px;
-	right: 3px;
-	font-size: 20px;
-	line-height: .2;
-	cursor: pointer;
-	}
+	//max-width: 255px;
+	// &:before {
+	// 	content: '×';
+	// position: absolute;
+	// top: 6px;
+	// right: 3px;
+	// font-size: 20px;
+	// line-height: .2;
+	// cursor: pointer;
+	// }
 }
 
 .tooltip {
