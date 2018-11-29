@@ -1107,6 +1107,12 @@
 	// 		}, 300);
 	// 	});
 	// });
+	
+	var dots_list = '<button role="button" class="owl-dot active"><span></span></button>';
+	for (var i = 1; i < videoIDs.length; i++) {
+		dots_list += '<button role="button" class="owl-dot"><span></span></button>';
+	}
+	$(".section-11 .owl-dots").html(dots_list);
 
 	$('.section-11 button.left-arrow').click(function () {
 		if (playIndex == 0) {
@@ -1124,8 +1130,10 @@
 			})
 		}).catch(function(error) {
 			// an error occurred
-		});
+		});		
 
+		$('.section-11 .owl-dots .owl-dot').removeClass('active');
+		$('.section-11 .owl-dots .owl-dot:eq(' + playIndex + ')').addClass('active');
 	});
 	$('.section-11 button.right-arrow').click(function () {
 		if (playIndex == videoIDs.length - 1) {
@@ -1145,6 +1153,9 @@
 		}).catch(function(error) {
 			// an error occurred
 		});
+
+		$('.section-11 .owl-dots .owl-dot').removeClass('active');
+		$('.section-11 .owl-dots .owl-dot:eq(' + playIndex + ')').addClass('active');
 	});
 
 	window.addEventListener('scroll', function(e) {
