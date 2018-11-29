@@ -1062,7 +1062,7 @@
 	var	videoIDs = [
 		303414850,
 		303370757,
-		303415668,
+		303440052,
 		303374546,
 		303410008,
 		303375046
@@ -1080,6 +1080,15 @@
 	};
 	
 	var player2 = new Vimeo.Player('video-player', options2);
+
+	// player2.ready().then(function() {
+	// 	player2.setVolume(0).then(function(volume) {
+	// 		console.log("initial volume", volume);
+	// 	}).catch(function(error) {
+	// 		// an error occurred
+	// 	});
+	// });
+
 
 	// player2.on('ended', function() {
 	// 	$('.initial-image').removeClass('hidden');
@@ -1100,9 +1109,17 @@
 		else {
 			playIndex --;
 		}
-		player2.loadVideo(videoIDs[playIndex]).then(function(id) {
-			console.log("video loaded successfully!!");
-		})
+		player2.getVolume().then(function(originVolume) {
+			player2.loadVideo(videoIDs[playIndex]).then(function(id) {
+				player2.setVolume(originVolume).then(function(volume) {
+				}).catch(function(error) {
+					// an error occurred
+				});
+			})
+		}).catch(function(error) {
+			// an error occurred
+		});
+
 	});
 	$('.section-11 button.right-arrow').click(function () {
 		if (playIndex == videoIDs.length - 1) {
@@ -1111,9 +1128,17 @@
 		else {
 			playIndex ++;
 		}
-		player2.loadVideo(videoIDs[playIndex]).then(function(id) {
-			console.log("video loaded successfully!!");
-		})
+
+		player2.getVolume().then(function(originVolume) {
+			player2.loadVideo(videoIDs[playIndex]).then(function(id) {
+				player2.setVolume(originVolume).then(function(volume) {
+				}).catch(function(error) {
+					// an error occurred
+				});
+			})
+		}).catch(function(error) {
+			// an error occurred
+		});
 	});
 
 	window.addEventListener('scroll', function(e) {
