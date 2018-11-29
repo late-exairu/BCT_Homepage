@@ -828,6 +828,14 @@ ul.list-blue {
       border-radius: 30px; }
     .section-11 .owl-dots .owl-dot.active span {
       background-color: #fff; }
+    @media (max-width: 768px) {
+      .section-11 .owl-dots .owl-dot {
+        height: 0 !important;
+        width: 15px; } }
+    @media (max-width: 575px) {
+      .section-11 .owl-dots .owl-dot {
+        height: 0 !important;
+        width: 12px; } }
   @media (max-width: 992px) {
     .section-11 .row p {
       width: auto;
