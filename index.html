@@ -1060,12 +1060,12 @@
 	var playFlag = false;
 	var playIndex = 0;
 	var	videoIDs = [
-		302544722,
-		302675746,
-		302822870,
-		302822931,
-		302821966,
-		302869675
+		303414850,
+		303370757,
+		303410008,
+		303374546,
+		303375046,
+		303415668
 	]
 	var options2 = {
 		id: videoIDs[playIndex],
@@ -1117,7 +1117,7 @@
 	});
 
 	window.addEventListener('scroll', function(e) {
-		if (!playFlag && window.scrollY > 9200) {
+		if (!playFlag && window.scrollY > 10000) {
 			player2.play().then(function() {
 				setTimeout(() => {
 					$('.initial-image').addClass('hidden');
