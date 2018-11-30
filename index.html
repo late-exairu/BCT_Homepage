@@ -1057,9 +1057,7 @@
 
 	$('#videoOverlay').click(function () {
 		player.play().then(function() {
-			setTimeout(() => {
-				$('#videoOverlay').addClass('hidden');
-			}, 300);
+			$('#videoOverlay').addClass('hidden');
 		});
 	});
 
