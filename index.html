@@ -1163,7 +1163,7 @@
 	});
 
 	window.addEventListener('scroll', function(e) {
-		if (!playFlag && window.scrollY > $(".section-11").offset().top - $(".section-11").height() * 0.8) {
+		if (!playFlag && window.scrollY > $(".section-11").offset().top - $(".section-11").height() * 0.5) {
 			player2.play().then(function() {
 				setTimeout(() => {
 					$('.initial-image').addClass('hidden');
