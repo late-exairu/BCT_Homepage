@@ -126,7 +126,6 @@ $(document).ready(function () {
 			$(event.target).find('.owl-dots').css('opacity', '1');
 		}
 	});
-
 	$(window).on("scroll", function (e) {
 		if ($('.section-9').length) {
 			if (window.pageYOffset + 500 > $('.section-9').offset().top) {
