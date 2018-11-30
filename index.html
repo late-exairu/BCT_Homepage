@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css"/>
 	<link rel="stylesheet" href="css/selectize.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
-	
+
 	<script>
 		(function(h,o,t,j,a,r){
 			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -1011,19 +1011,17 @@
 
 	$('#videoOverlay').click(function () {
 		player.play().then(function() {
-			setTimeout(() => {
-				$('#videoOverlay').addClass('hidden');
-			}, 300);
+			$('#videoOverlay').addClass('hidden');
 		});
 	});
 
 	var playFlag = false;
 	var playIndex = 0;
 	var	videoIDs = [
-		303414850, 303370757, 303440052, 303374546,
-		303410008, 303375046, 303402554, 303405799,
-		303373363, 303374352, 303401223, 303375829,
-		303403824, 303403806, 303403860, 303403841
+		303414850, 303370757, 303440052,
+		303374546, 303410008, 303375046,
+		303373363, 303374352, 303401223,
+		303403824, 303403806, 303403841
 	]
 	var options2 = {
 		id: videoIDs[playIndex],
@@ -1090,7 +1088,7 @@
 	});
 
 	window.addEventListener('scroll', function(e) {
-		if (!playFlag && window.scrollY > $(".section-11").offset().top - $(".section-11").height() * 0.8) {
+		if (!playFlag && window.scrollY > $(".section-11").offset().top - $(".section-11").height() * 0.5) {
 			player2.play().then(function() {
 				setTimeout(() => {
 					$('.initial-image').addClass('hidden');
