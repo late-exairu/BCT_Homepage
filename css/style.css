@@ -1174,7 +1174,7 @@ article.initial-video {
   .timeline-TweetList-tweet h3 {
     padding: 20px 0 16px; }
 
-#article-product, #article-customer {
+#article-product, #article-customer, #videos-archive {
   padding-right: 0 !important; }
 
 #article-product .article .form-row, #article-product .article p {
@@ -1336,6 +1336,7 @@ article.initial-video {
     display: none !important; } }
 
 @media (min-width: 992px) {
+  #videos-archive .modal-dialog,
   #article-product .modal-dialog,
   #article-customer .modal-dialog {
     max-width: 600px; }
@@ -1357,6 +1358,7 @@ article.initial-video {
     line-height: 1.3; } }
 
 @media (min-width: 1200px) {
+  #videos-archive .modal-dialog,
   #article-product .modal-dialog,
   #article-customer .modal-dialog {
     max-width: 750px; }
@@ -1452,6 +1454,7 @@ article.initial-video {
 @media (min-width: 1350px) {
   .container {
     max-width: 1310px; }
+  #videos-archive .modal-dialog,
   #article-product .modal-dialog,
   #article-customer .modal-dialog {
     max-width: 942px; }
@@ -1661,7 +1664,7 @@ article.initial-video {
     .label-group img {
       width: 80% !important;
       margin: 0 !important; }
-  #article-product iframe, #article-customer iframe {
+  #article-product iframe, #article-customer iframe, #videos-archive iframe {
     height: 270px !important; }
   .timeline-Tweet-media iframe {
     height: 200px !important; }

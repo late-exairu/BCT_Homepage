@@ -2,6 +2,7 @@ $(document).ready(function () {
 
 	$("#article-product .modal-content .content-wrapper").load("article_product.html");
 	$("#article-customer .modal-content .content-wrapper").load("article_customer.html");
+	$("#videos-archive .modal-content .content-wrapper").load("article_video.html");
 
 	const numberWithCommas = (x) => {
 		return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");

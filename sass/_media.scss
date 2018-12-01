@@ -135,6 +135,7 @@
 
 @media (min-width: 992px) {
 
+	#videos-archive,
 	#article-product,
 	#article-customer {
 		.modal-dialog {
@@ -194,6 +195,7 @@
 
 @media (min-width: 1200px) {
 
+	#videos-archive,
 	#article-product,
 	#article-customer {
 		.modal-dialog {
@@ -358,7 +360,8 @@
 	.container {
 		max-width: 1310px;
 	}
-
+	
+	#videos-archive,
 	#article-product,
 	#article-customer {
 		.modal-dialog {
@@ -755,7 +758,7 @@
 		}
 	}
 
-	#article-product, #article-customer {
+	#article-product, #article-customer, #videos-archive {
 		iframe {
 			height: 270px !important;
 		}
