@@ -1931,7 +1931,8 @@ form .button {
     color: inherit; }
   .inputGroup input:checked ~ label .tab-a:hover, .inputGroup input:checked ~ label .tab-a.active, .inputGroup label:hover .tab-a:hover, .inputGroup label:hover .tab-a.active, .inputGroup .label-wrap .tab-a:hover, .inputGroup .label-wrap .tab-a.active {
     border-color: #0080CA;
-    background-color: #E9F2F9; }
+    background-color: #E9F2F9;
+    border-width: 2px; }
   .inputGroup input:checked ~ label .tab-a.active:before, .inputGroup label:hover .tab-a.active:before, .inputGroup .label-wrap .tab-a.active:before {
     border-bottom-color: #0080CA;
     border-right-color: #0080CA; }

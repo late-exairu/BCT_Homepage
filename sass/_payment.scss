@@ -278,6 +278,7 @@ form .button {
 			&:hover, &.active {
 				border-color: #0080CA;
 				background-color: #E9F2F9;
+				border-width: 2px;
 			}
 			&.active {
 				&:before {
