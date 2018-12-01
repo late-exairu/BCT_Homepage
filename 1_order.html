@@ -141,7 +141,7 @@
 				
 			<div class="row align-items-center justify-content-center">
 				<div class="col-lg-6 col-xl-5">
-					<form class="mt-2 bt-md-4" action="#!">
+					<form class="mt-2 bt-md-4 order-1">
 						<h3 class="text-blue mb-2">Your Blockchain Terminal</h3>
 						<div class="form-row align-items-end fz-30 py-3">
 							<div class="col">Blockchain Terminal Price</div>
@@ -151,14 +151,23 @@
 							<div class="form-row" style="position: relative;">
 								<p class="gift-card">Gift Card</p>
 								<div class="col">
+									<div class="loader">
+										<div class="spinner">
+											<div class="rect1"></div>
+											<div class="rect2"></div>
+											<div class="rect3"></div>
+											<div class="rect4"></div>
+											<div class="rect5"></div>
+										</div>
+									</div>
 									<input type="text" class="input" placeholder="Redeem Your Code">
 								</div>
 								<div class="col-auto">
-									<a class="button button-lg button-gray button-auto" href="#!">Apply</a>
+									<a class="button button-lg button-gray button-auto apply">Apply</a>
 								</div>
 							</div>
 						</div>
-						<p class="my-2 text-danger">We are sorry, but this Gift-Card is either invalid or has already been used once before, please use another code or contact support@bct.io for service.</p>
+						<p class="my-2 text-danger hidden">We are sorry, but this Gift-Card is either invalid or has already been used once before, please use another code or contact support@bct.io for service.</p>
 						<div class="mt-5 pb-0 pb-5">
 							<a class="button button-lg btn-block" href="1_order-2.html">BUY NOW</a>
 						</div>
@@ -303,6 +312,23 @@
 	<script src="libs/selectize.min.js"></script>
 	<script src="libs/mask/jquery.mask.min.js"></script>
 	<script src="js/scripts.js"></script>
+	<script>
+		$(".button.apply").click(() => {
+			$("form.order-1").addClass("loading");
+			setTimeout(() => {
+				$("form.order-1").removeClass("loading");
+				$("p.text-danger").removeClass("hidden");
+			}, 2200);
+		});
+
+
+		$('form.order-1 div.form-group input').keydown(function (e) {
+			var key = e.charCode || e.keyCode || 0;
+			if (key == 13) {
+				$("a.button.apply").trigger("click");
+			}
+		});
+	</script>
 
 </body>
 
