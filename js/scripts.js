@@ -291,10 +291,7 @@ $(document).ready(function () {
 		$(this).addClass('active');
 		$('.pills').removeClass('active');
 		var href = $(this).attr('href');
-		var btnLabel = $(this).attr('btn-label');
 		$(href).addClass('active');
-		console.log("btnLabel", btnLabel);
-		$('span.pay-mode').html(btnLabel);
 
 		var text = $(href + " p.tip span").length > 0 ? $(href + " p.tip span")[0].innerText : ' ';
 		$('body').append('<input id="clipboard">');
