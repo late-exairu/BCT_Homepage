@@ -1272,6 +1272,11 @@ p.text-danger.hidden {
   60% {
     top: -6px; } }
 
+.tab-contents section {
+  display: none; }
+  .tab-contents section.current {
+    display: flex; }
+
 #article-product, #article-customer, #videos-archive {
   padding-right: 0 !important; }
 

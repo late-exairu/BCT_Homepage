@@ -1648,6 +1648,12 @@ p.text-danger.hidden {
 	}
 }
 
+.tab-contents section {
+	display: none;
+	&.current {
+		display: flex;
+	}
+}
 #article-product, #article-customer, #videos-archive {
 	padding-right: 0 !important;
 }

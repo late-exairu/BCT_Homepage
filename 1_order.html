@@ -86,101 +86,677 @@
 				<li class="item">Payment</li>
 				<li class="item">Receipt</li>
 			</ul>
-
 		</div>
 	</nav>
-
-	<section class="py-1">
-		<div class="container my-auto">
-			<div id="navbarSupportedContent">
-				<ul class="order-nav d-flex d-lg-none">
-					<li class="item current">Order</li>
-					<li class="item">BCT</li>
-					<li class="item">Shipping</li>
-					<li class="item">Payment</li>
-					<li class="item">Receipt</li>
-				</ul>
+		<section class="py-1">
+			<div class="container my-auto">
+				<div id="navbarSupportedContent">
+					<ul class="order-nav d-flex d-lg-none">
+						<li class="item current">Order</li>
+						<li class="item">BCT</li>
+						<li class="item">Shipping</li>
+						<li class="item">Payment</li>
+						<li class="item">Receipt</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<section class="max-flex order-form">
-		<div class="container my-auto">
-				<!-- <div class="row align-items-end justify-content-center flex-column-reverse flex-md-row">
-					<div class="form col-lg-6 col-md-6 justify-content-start">
-						<form action="#!">
+	<div class="tab-contents max-flex d-flex flex-column">
+		<section class="max-flex order-form current">
+			<div class="container my-auto">	
+				<div class="row align-items-center justify-content-center">
+					<div class="col-lg-6 col-xl-5">
+						<form class="mt-2 bt-md-4 order-1">
 							<h3 class="text-blue mb-2">Your Blockchain Terminal</h3>
-							<div class="form-row align-items-end fz-30 my-2">
+							<div class="form-row align-items-end fz-30 py-3">
 								<div class="col">Blockchain Terminal Price</div>
 								<div class="col-auto font-weight-medium">$999.99</div>
 							</div>
-							<div class="form-group my-2">
+							<div class="form-group my-2 py-2">
 								<div class="form-row" style="position: relative;">
-									<p class="gift-card fz-15">Gift Card</p>
+									<p class="gift-card">Gift Card</p>
 									<div class="col">
+										<div class="loader">
+											<div class="spinner">
+												<div class="rect1"></div>
+												<div class="rect2"></div>
+												<div class="rect3"></div>
+												<div class="rect4"></div>
+												<div class="rect5"></div>
+											</div>
+										</div>
 										<input type="text" class="input" placeholder="Redeem Your Code">
 									</div>
 									<div class="col-auto">
-										<a class="button button-lg button-gray button-auto" href="#!">Apply</a>
+										<a class="button button-lg button-gray button-auto apply">Apply</a>
 									</div>
 								</div>
 							</div>
-							<div class="mt-5 pt-2 mb-2">
-								<a class="button button-lg btn-block" href="1_order-2.html">Next</a>
+							<p class="my-2 text-danger hidden">We are sorry, but this Gift-Card is either invalid or has already been used once before, please use another code or contact support@bct.io for service.</p>
+							<div class="mt-5 pb-0 pb-5">
+								<a class="button button-lg btn-block" href="1_order-2.html">BUY NOW</a>
 							</div>
 						</form>
 					</div>
-					<div class="terminal col-lg-6 col-md-6">
-						<div class="rotator-wrapper size-1350">
-							<img src="img/360/00000.png" data-speed="0.2" class="reel" data-indicator="3" data-images="img/360/000##.png|0..36"
-							data-cursor="url(https://dlcdnimgs.asus.com/websites/global/products/kG8zmnBbP9T4sqBA/images/bar_arr.png),move">
-							<div class="reel-indicator-bar"></div>
-						</div>
+					<div class="col-md-8 col-lg py-3 order-md-1">
+						<img src="img/cart_1.png" alt="">
 					</div>
-				</div> -->
-				
-			<div class="row align-items-center justify-content-center">
-				<div class="col-lg-6 col-xl-5">
-					<form class="mt-2 bt-md-4 order-1">
-						<h3 class="text-blue mb-2">Your Blockchain Terminal</h3>
-						<div class="form-row align-items-end fz-30 py-3">
-							<div class="col">Blockchain Terminal Price</div>
-							<div class="col-auto font-weight-medium">$999.99</div>
-						</div>
-						<div class="form-group my-2 py-2">
-							<div class="form-row" style="position: relative;">
-								<p class="gift-card">Gift Card</p>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="max-flex order-form">
+			<div class="container my-auto">
+					
+				<div class="row align-items-center justify-content-center">
+					<div class="col-lg-6 col-xl-5">
+						<form class="mt-0 mt-md-4" action="#!">
+							<h3 class="text-blue mb-2 mt-2 mt-md-4">Your Blockchain Terminal</h3>
+							<div class="form-row align-items-end fz-30 py-3">
+								<div class="col">Blockchain Terminal Price</div>
+								<div class="col-auto font-weight-medium">$999.99</div>
+							</div>
+							<div class="form-row promo-code align-items-end fz-30 my-2">
 								<div class="col">
-									<div class="loader">
-										<div class="spinner">
-											<div class="rect1"></div>
-											<div class="rect2"></div>
-											<div class="rect3"></div>
-											<div class="rect4"></div>
-											<div class="rect5"></div>
+										<a class="gray" href="/gift_certificate/Norman_Ly">Gift Certificate (Norman Ly)</a>
+										</div>
+								<div class="col-auto">-$999.99</div>
+							</div>
+							<hr class="my-2">
+							<div class="form-row align-items-end fz-30 font-weight-medium text-blue my-2">
+								<div class="col">Total</div>
+								<div class="col-auto">$0.00</div>
+							</div>
+							<div class="py-3 pb-5">
+								<a class="button button-lg btn-block" href="1_BCT.html">BUY NOW</a>
+							</div>
+						</form>
+					</div>
+					<div class="col-md-8 col-lg py-3">
+						<img src="img/cart_1.png" alt="">
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="max-flex show-overflow">
+			<div class="container my-auto">
+
+				<div class="row justify-content-center mt-0 mt-85">
+					<!-- <div class="col-lg-6 col-xl-3 py-3 rtl-xl d-none d-xl-block">
+						<img src="img/slim.png" alt="" class="img-slim">
+					</div> -->
+					<div class="col-xl order-xl-first py-0 py-md-3">
+						
+						<h3 class="text-blue pb-1 mt-2 mt-md-4">How much did you spend on trading fees this year?</h3>
+
+						<!-- <p class="single-notice fz-20 mb-4">
+							<span class="package font-weight-medium">3,300 BCT</span> will be transferred to your terminal (from the terminal of
+							<span class="owner font-weight-medium">Norman Ly</span>)
+						</p>
+
+						<p class="fz-20 mb-4">
+							BCT is used just like Binance’s BNB (you receive a 50% discount when paying with BCT).<br/> 
+							The price of BCT is fixed at $0.10 (except this one-time-discount for new purchasers). <br/> 
+							Like the terminal, the purchase of BCT is covered by a 60-day money back guarantee. 
+						</p> 
+						-->
+
+						<p class="fz-24 my-3">
+							Please select a BCT package that you feel will cover your trading fees.<br>
+							Similar to Binance's BNB, BCT tokens are used to pay for trading fees and provide you with  a 50% discount.
+						</p>
+
+						<p class="tip font-weight-medium"></p>
+
+						<form action="#!">
+							<div class="row text-center font-weight-medium pt-3 pb-4">
+								<div class="col-sm-6 col-lg-6 col-xl-3 mb-3">
+									<label class="label-group">
+										<input type="radio" name="radio"/>
+										<div class="label-card">
+											<div class="fz-18 row align-items-center justify-content-center mx-0 py-0">
+												<div class="col-9 px-0">
+													<img class="coin-img" src="img/bct_s.png" alt="">
+												</div>
+											</div>
+											<div class="row align-items-center justify-content-center mx-0 py-0">
+												<div class="fz-20 mb-1" total="3,300">3,000 <span class="text-blue">+ 300 Bonus</span></div>
+											</div>										
+											<div class="fz-18 row align-items-center justify-content-center mx-0 py-0">
+												<p class="col-12 mb-0 fz-19 mt-1">Small Pack</p>
+												<div class="col-12 fz-19 text-blue">$299.99</div>
+											</div>
+										</div>
+									</label>
+								</div>
+								<div class="col-sm-6 col-lg-6 col-xl-3 mb-3">
+									<label class="label-group">
+										<input type="radio" name="radio" />
+										<div class="label-card">
+											<div class="fz-18 row align-items-center justify-content-center mx-0 py-0">
+												<div class="col-9 px-0">
+													<img class="coin-img" src="img/bct_m.png" alt="">
+												</div>
+											</div>
+											<div class="row align-items-center justify-content-center mx-0 py-0">
+												<div class="fz-20 mb-1" total="7,500">6,000 <span class="text-blue">+ 1,500 Bonus</span></div>
+											</div>
+											<!-- <div class="fz-15 gray">BCT Tokens</div> -->
+											<!-- <p class="mb-0 fz-15">Medium</p> -->
+											
+											<div class="fz-18 align-items-center row justify-content-center mx-0 py-0">
+												<p class="col-12 mb-0 fz-19 mt-1">Medium Pack</p>
+												<div class="col-12 fz-19 text-blue">$599.99</div>
+											</div>
+										</div>
+									</label>
+								</div>
+								<div class="col-sm-6 col-lg-6 col-xl-3 mb-3">
+									<label class="label-group checked">
+										<input type="radio" name="radio" checked/>
+										<div class="label-card">
+											<div class="fz-18 row align-items-center justify-content-center mx-0 py-0">
+												<div class="col-9 px-0">
+													<img class="coin-img" src="img/bct_l.png" alt="">
+												</div>
+											</div>
+											<div class="row align-items-center justify-content-center mx-0 py-0">
+												<div class="fz-20 mb-1" total="13,500">10,000 <span class="text-blue">+ 6,000 Bonus</span></div>
+											</div>
+											<!-- <div class="fz-15 gray">BCT Tokens</div> -->
+											<!-- <p class="mb-0 fz-15">Large</p> -->
+
+											<div class="fz-18 align-items-center row justify-content-center mx-0 py-0">
+												<p class="col-12 mb-0 fz-19 mt-1">Large Pack</p>
+												<div class="col-12 fz-19 text-blue">$999.99</div>
+											</div>
+										</div>
+									</label>
+								</div>
+								<div class="col-sm-6 col-lg-6 col-xl-3 mb-3">
+									<label class="label-group more-options">
+										<input type="radio" name="radio"/>
+										<div class="label-card">
+											<div class="row align-items-center justify-content-center mx-0 py-0">
+												<div class="col-10 px-0">
+													<img class="coin-img" src="img/bct_j.png" alt="">
+												</div>
+												<div class="bonus fz-11 gray col-xl-12">
+													+ <span class="terminal-count">10</span> Terminals for your syndicate
+												</div>
+											</div>
+											<div class="row align-items-center justify-content-center mx-0 py-0">
+												<div class="col-12 fz-18 mx-2 pr-1 pl-1 mb-1">
+													
+													<div class="fz-20 package-select" total="140,000">
+														<span>
+															100,000 
+															<span class="text-blue">+ 100,000 bonus</span>
+														</span>
+														<ul class="hidden">        
+														</ul>
+													</div>
+												</div>
+											</div>
+											<!-- <div class="fz-18 text-blue">+40,000 Bonus BCT</div> -->
+											<!-- <p class="mb-0 fz-15">Jumbo</p> -->
+											<div class="fz-18 align-items-center row justify-content-center mx-0 py-0">
+												<p class="col-12 mb-0 fz-19 mt-1">Jumbo Pack</p>
+												<div class="col-12 fz-19 text-blue">$10,000</div>
+											</div>
+										</div>
+									</label>
+								</div>
+							</div>
+							
+
+							<div class="row pb-3 justify-content-start">
+								<div class="col-sm-6 col-lg-3">
+									<a class="button button-lg btn-block mt-auto" href="1_shipping.html">Next</a>
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</div>
+					
+			</div>
+		</section>
+
+		<section class="max-flex">
+			<div class="container my-auto">
+
+				<div class="row align-items-center justify-content-center">
+					<div class="col-lg-6 col-xl-3 py-3 rtl-xl d-none d-xl-block">
+						<img src="img/slim.png" alt="" class="img-slim">
+					</div>
+					<div class="col-xl order-xl-first pb-5 mt-2 mt-md-4">
+						<h3 class="text-blue">Shipping Your Terminal</h3>
+
+						<form class="delivery-form" action="#!">
+							<div class="row">
+								<div class="col-lg-6 d-flex flex-column py-3">
+									<h4 class="mb-3">Enter your name and address</h4>
+									<div class="form-group">
+										<input type="text" class="input" placeholder="First Name">
+									</div>
+									<div class="form-group">
+										<input type="text" class="input" placeholder="Last Name">
+									</div>
+									<div class="row row-1">
+										<div class="col-7">
+											<div class="form-group">
+												<input type="text" class="input" placeholder="Street Address">
+											</div>
+										</div>
+										<div class="col">
+											<div class="form-group">
+												<input type="text" class="input" placeholder="Address 2">
+											</div>
 										</div>
 									</div>
-									<input type="text" class="input" placeholder="Redeem Your Code">
+									<div class="row row-1">
+										<div class="col">
+											<div class="has-label">
+												<label class="label">Zip Code</label>
+												<input type="text" class="input" placeholder="" value="04106">
+											</div>
+										</div>
+										<div class="col-7">
+											<div class="form-group">
+												<input type="text" class="input" placeholder="City, State">
+											</div>
+										</div>
+									</div>
+									<div class="has-label form-group">
+										<label class="label">Country</label>
+										<select class="basic-select country">
+												<option>United States</option>
+												<option>bbb</option>
+												<option>ccc</option>
+												<option>ddd</option>
+												<option>eee</option>
+										</select>
+									</div>
+									<div class="form-group mb-0">
+										<input type="text" class="input" placeholder="Additional instructions to find address">
+									</div>
 								</div>
-								<div class="col-auto">
-									<a class="button button-lg button-gray button-auto apply">Apply</a>
+								<div class="col-lg-6 d-flex flex-column py-3">
+									<h4 class="mb-3">Your Contact Information</h4>
+									<div class="form-group">
+										<input type="email" class="input" placeholder="Email Address">
+									</div>
+									<div class="form-group">
+										<input type="phone" class="input" placeholder="Phone Number">
+									</div>
+									<div class="tips">
+										<p class="tip">Terminals will be shipped on a first come, first serve basis.  Once your terminal is ready, we will connect you with our shipping provider to establish the time and cost of delivery. There is no shipping cost to deliver the terminal to an address within the United States.</p>
+									</div>
+									<!-- <div class="form-row justify-content-between fz-20 pb-3 mt-2">
+										<div class="col-auto">Shipping</div>
+										<div class="col-auto font-weight-medium">$80</div>
+									</div> -->
+									<a class="button button-lg btn-block mt-auto" href="1_payment.html">Next</a>
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="max-flex">
+			<div class="container my-auto">
+							
+				<div class="row justify-content-center align-items-center">
+
+					<div class="col-lg-6 py-3 rtl-xl d-none d-lg-block offset-lg-1">
+						<img src="img/monitor-18.png" alt="" class="payment-img-slim">
+					</div>
+
+					<div class="col-lg-5 order-lg-first pt-0 py-md-3 fz-25 mt-2 mt-md-4">
+						<h3 class="text-blue mb-2">Payment Method</h3>
+				
+						<div class="inputGroup text-center py-3 font-weight-medium">
+							<div class="label-wrap">
+								<div class="d-flex justify-content-between">
+									<div class="active form-row tab-a" href="#pills-0" data-toggle="pill">
+										<div class="col-auto my-2">
+											<img src="img/credit.svg" alt="">
+										</div>
+										<div class="abbr mb-1">CARD</div> 
+										<!-- <div class="title mb-2">Litecoin</div> -->
+									</div>
+
+									<div class="tab-a form-row mx-0" href="#pills-1" data-toggle="pill">
+										<div class="col-auto my-2">
+											<img src="img/coin-btc.svg" alt="">
+										</div>
+										<div class="abbr mb-1">BTC</div> 
+										<!-- <div class="title mb-2">Bitcoin</div> -->
+									</div>
+
+									<div class="tab-a form-row mx-0" href="#pills-2" data-toggle="pill">
+										<div class="col-auto my-2">
+											<img src="img/coin-eth.svg" alt="">
+										</div>
+										<div class="abbr mb-1">ETH</div> 
+										<!-- <div class="title mb-2">Ethereum</div> -->
+									</div>
+
+									<div class="tab-a form-row mx-0" href="#pills-3" data-toggle="pill">
+										<div class="col-auto my-2">
+											<img src="img/coin-ltc.svg" alt="">
+										</div>
+										<div class="abbr mb-1">LTC</div> 
+										<!-- <div class="title mb-2">Litecoin</div> -->
+									</div>
+									<!-- <div class="tab-a form-row d-inline-flex align-items-center mx-0" href="#pills-4" data-toggle="pill">
+										<div class="col-auto pl-0 pr-1">
+											<img src="img/coin-xrp.svg" alt="">
+										</div>
+										<div class="col px-0">
+											<div>Ripple</div>
+											<div class="fz-10 font-weight-bold">XRP</div> 
+										</div>
+									</div>
+									<div class="tab-a form-row d-inline-flex align-items-center mx-0" href="#pills-5" data-toggle="pill">
+										<div class="col-auto pl-0 pr-1">
+											<img src="img/coin-usdt.svg" alt="">
+										</div>
+										<div class="col px-0">
+											<div>Tether</div>
+											<div class="fz-10 font-weight-bold">USDT</div> 
+										</div>
+									</div>
+									<div class="tab-a form-row d-inline-flex align-items-center mx-0" href="#pills-6" data-toggle="pill">
+										<div class="col-auto pl-0 pr-1">
+											<img src="img/coin-bch.svg" alt="">
+										</div>
+										<div class="col px-0">
+											<div>Bitcoin Cash</div>
+											<div class="fz-10 font-weight-bold">BCH</div> 
+										</div>
+									</div> -->
+								</div>
+							</div>
+						</div>    
+
+						<form class="pay-form pb-5" action="#!">
+							<div class="form-row align-items-end py-1 fz-22">
+								<div class="col">Blockchain Terminal</div>
+								<div class="col-auto font-weight-medium">$999.99</div>
+							</div>
+							<div class="form-row align-items-end py-1 fz-22">
+								<div class="col">Discount</div>
+								<div class="col-auto font-weight-medium">-$999.99</div>
+							</div>
+							<div class="form-row align-items-end py-1 fz-22">
+								<div class="col">7,500 BCT</div>
+								<div class="col-auto font-weight-medium">$599.99</div>
+							</div>
+							<hr>
+							<div class="form-row align-items-end text-blue font-weight-medium pb-3 fz-22">
+								<div class="col">Total</div>
+								<div class="col-auto">$679.99</div>
+							</div>
+
+							<div class="pills active" id="pills-0">
+								<div class="form-group pt-2 mt-1">
+									<input class="input card cc-number" type="text" name="" placeholder="Card Number">
+								</div>
+								<div class="form-row">
+									<div class="col-6">
+										<div class="form-group">
+											<input class="input date" type="text" name="" placeholder="Valid Thru">
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="form-group">
+											<input class="input cvv cc-cvc" type="text" name="" placeholder="CVV/CVC">
+										</div>
+									</div>
+								</div>
+								<div class="form-group pb-1">
+									<input class="input user" type="text" name="" placeholder="Cardholder Name">
+								</div>
+								<a class="button button-lg btn-block mt-2" href="1_receipt-card.html">
+									<span>Confirm payment with Credit Card</span>
+								</a>
+							</div>
+
+							<div class="pills" id="pills-1">
+								<div class="form-row align-items-end text-blue font-weight-medium mt-2 pb-2">
+									<div class="col">Due Amount</div>
+									<div class="col-auto">0.11 BTC</div>
+								</div>
+								<div class="text-center mt-3">
+									<img src="img/qr-code.png" alt="" width="140">
+								</div>
+								<p class="tip text-center pb-3">Payment address <br> <span class="font-weight-medium text-blue">0x0123213137326763245763434756</span></p>
+								<a class="button button-lg btn-block" href="1_receipt-coin.html">
+									Confirm payment with Bitcoin
+								</a>
+							</div>
+							<div class="pills" id="pills-2">
+								<div class="form-row align-items-end text-blue font-weight-medium mt-2 pb-2">
+									<div class="col">Due Amount</div>
+									<div class="col-auto">0.92 ETH</div>
+								</div>
+								<div class="text-center mt-3">
+									<img src="img/qr-code.png" alt="" width="140">
+								</div>
+								<p class="tip text-center pb-3">Payment address <br> <span class="font-weight-medium text-blue">dfgdfgdfg</span></p>
+								<a class="button button-lg btn-block" href="1_receipt-coin.html">
+									Confirm payment with Ether
+								</a>
+							</div>
+							<div class="pills" id="pills-3">
+								<div class="form-row align-items-end text-blue font-weight-medium mt-2 pb-2">
+									<div class="col">Due Amount</div>
+									<div class="col-auto">0.46 LTC</div>
+								</div>
+								<div class="text-center mt-3">
+									<img src="img/qr-code.png" alt="" width="140">
+								</div>
+								<p class="tip text-center pb-3">Payment address <br> <span class="font-weight-medium text-blue">dfgsdfgdfgsdfg</span></p>
+								<a class="button button-lg btn-block" href="1_receipt-coin.html">
+									Confirm payment with Litecoin
+								</a>
+							</div>
+							<!-- <div class="pills" id="pills-4">
+								<div class="form-row align-items-end text-blue font-weight-medium mb-2 pb-1">
+									<div class="col">Pay in XRP</div>
+									<div class="col-auto">0.76 XRP</div>
+								</div>
+								<div class="text-center mb-3">
+									<img src="img/qr-code.png" alt="" width="140">
+								</div>
+								<p class="tip text-center">Receiving address <br> <span class="font-weight-medium text-blue">234234234234d</span></p>
+								<a class="button button-lg btn-block" href="1_receipt-coin.html">Confirm</a>
+							</div>
+							<div class="pills" id="pills-5">
+								<div class="form-row align-items-end text-blue font-weight-medium mb-2 pb-1">
+									<div class="col">Pay in USDT</div>
+									<div class="col-auto">0.40 USDT</div>
+								</div>
+								<div class="text-center mb-3">
+									<img src="img/qr-code.png" alt="" width="140">
+								</div>
+								<p class="tip text-center">Receiving address <br> <span class="font-weight-medium text-blue">3df34rf34s</span></p>
+								<a class="button button-lg btn-block" href="1_receipt-coin.html">Confirm</a>
+							</div>
+							<div class="pills" id="pills-6">
+								<div class="form-row align-items-end text-blue font-weight-medium mb-2 pb-1">
+									<div class="col">Pay in BCH</div>
+									<div class="col-auto">0.50 BCH</div>
+								</div>
+								<div class="text-center mb-3">
+									<img src="img/qr-code.png" alt="" width="140">
+								</div>
+								<p class="tip text-center">Receiving address <br> <span class="font-weight-medium text-blue">3df34rf34s</span></p>
+								<a class="button button-lg btn-block" href="1_receipt-coin.html">Confirm</a>
+							</div> -->
+						</form>
+
+					</div>
+
+				</div>
+					
+			</div>
+		</section>
+
+		<section class="max-flex">
+			<div class="container my-auto pb-5">
+				<div class="row justify-content-center">
+					<div class="col-xl-10">
+						<h3 class="text-blue mt-2 mt-md-4">Your order has been submitted successfully.</h3>
+						<div class="row payment-info fz-20">
+							<div class="col-md-6 py-3 pr-5">
+								<div class="fz-30">Order Details:</div>
+								<hr class="separator">
+								<div class="form-row justify-content-between">
+									<div class="col-auto">Order ID</div>
+									<div class="col-auto">019284575616191</div>
+								</div>
+								<div class="form-row justify-content-between">
+									<div class="col-auto">Payment Method</div>
+									<div class="col-auto">Credit Card</div>
+								</div>
+								<div class="form-row justify-content-between">
+									<div class="col-auto">Payment</div>
+									<div class="col-auto">$679.99</div>
+								</div>
+								<hr class="separator">
+								<div class="form-row justify-content-between">
+									<div class="col-auto">Credit card</div>
+									<div class="col-auto">$xxxx xxxx xxxx xx48</div>
+								</div>
+							</div>
+							<div class="col-md-6 py-3 pr-5">
+								<div class="fz-30">Shipping address:</div>
+								<hr class="separator">
+								<div class="form-row justify-content-between">
+									<div class="col-auto">Name</div>
+									<div class="col-auto">First Last Name</div>
+								</div>
+								<div class="form-row justify-content-between">
+									<div class="col-auto">Telephone</div>
+									<div class="col-auto">2222222222222</div>
+								</div>
+								<div class="form-row justify-content-between">
+									<div class="col-auto">Address</div>
+									<div class="col-auto">South Portland, ME</div>
+								</div>
+								<div class="form-row justify-content-between">
+									<div class="col-auto">City</div>
+									<div class="col-auto">South Portland</div>
+								</div>
+								<div class="form-row justify-content-between">
+									<div class="col-auto">Zip</div>
+									<div class="col-auto">04106</div>
+								</div>
+								<hr class="separator">
+								<div class="form-row justify-content-between">
+									<div class="col-auto">Email</div>
+									<div class="col-auto">my.email@my.domain.com</div>
 								</div>
 							</div>
 						</div>
-						<p class="my-2 text-danger hidden">We are sorry, but this Gift-Card is either invalid or has already been used once before, please use another code or contact support@bct.io for service.</p>
-						<div class="mt-5 pb-0 pb-5">
-							<a class="button button-lg btn-block" href="1_order-2.html">BUY NOW</a>
-						</div>
-					</form>
+					</div>
 				</div>
-				<div class="col-md-8 col-lg py-3 order-md-1">
-					<img src="img/cart_1.png" alt="">
-				</div>
+
 			</div>
+		</section>
 
-		</div>
-	</section>
 
+		<section class="max-flex">
+			<div class="container my-auto">
+
+				<div class="row justify-content-center">
+					<div class="col-xl-11">
+						<h3 class="text-blue pt-3">Your order has been submitted successfully.</h3>
+						<div class="row payment-info fz-20">
+							<div class="col-md-7 py-3">
+								<div class="fz-30">Order Details:</div>
+								<div class="row justify-content-center">
+									<div class="col d-flex flex-column">
+										<hr class="separator">
+										<div class="form-row justify-content-between">
+											<div class="col-auto">Order ID</div>
+											<div class="col-auto">019284575616191</div>
+										</div>
+										<div class="form-row justify-content-between">
+											<div class="col-auto">Payment Method</div>
+											<div class="col-auto">Bitcoin</div>
+										</div>
+										<div class="form-row justify-content-between">
+											<div class="col-auto">Order Price USD</div>
+											<div class="col-auto">$918.99</div>
+										</div>
+										<div class="form-row justify-content-between">
+											<div class="col-auto">Order Price BTC</div>
+											<div class="col-auto">$0.14BTC</div>
+										</div>
+										<hr class="separator">
+										<div class="form-row justify-content-between">
+											<div class="col-auto">Due Amount</div>
+											<div class="col-auto">$0.14BTC</div>
+										</div>
+									</div>
+									<div class="qr-code col-sm-3 col-sm-4 col-lg-auto text-center mt-2 mt-sm-0">
+										<img src="img/qr-code.png" alt="" width="156">
+									</div>
+								</div>
+								<hr class="separator">
+								<div class="form-row justify-content-between mt-auto">
+									<div class="col-auto">Receiving address:</div>
+									<div class="col-auto">0x0123232546574378746456445736343</div>
+								</div>
+							</div>
+							<div class="shipping-address col-md-5 py-3">
+								<div class="fz-30">Shipping address:</div>
+								<hr class="separator">
+								<div class="form-row justify-content-between">
+									<div class="col-auto">Name</div>
+									<div class="col-auto">First Last Name</div>
+								</div>
+								<div class="form-row justify-content-between">
+									<div class="col-auto">Telephone</div>
+									<div class="col-auto">2222222222222</div>
+								</div>
+								<div class="form-row justify-content-between">
+									<div class="col-auto">Address</div>
+									<div class="col-auto">South Portland, ME</div>
+								</div>
+								<div class="form-row justify-content-between">
+									<div class="col-auto">City</div>
+									<div class="col-auto">South Portland</div>
+								</div>
+								<div class="form-row justify-content-between">
+									<div class="col-auto">Zip</div>
+									<div class="col-auto">04106</div>
+								</div>
+								<hr class="separator">
+								<div class="form-row justify-content-between">
+									<div class="col-auto">Email</div>
+									<div class="col-auto">my.email@my.domain.com</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</div>
 	<footer class="page-footer text-center text-white mt-auto">
 		<div class="container">
 			<p class="outro fz-17">
@@ -327,6 +903,15 @@
 			if (key == 13) {
 				$("a.button.apply").trigger("click");
 			}
+		});
+
+
+		$('ul.order-nav li').click(function () {
+			$('ul.order-nav li').removeClass('current');
+			$(this).addClass('current');
+			var currentIndex = $(this).index();
+			$('.tab-contents section').removeClass('current');
+			$('.tab-contents section').eq(currentIndex).addClass('current');
 		});
 	</script>
 
