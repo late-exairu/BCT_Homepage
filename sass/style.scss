@@ -1586,12 +1586,9 @@ p.text-danger.hidden {
 		border-radius:100%;
 	 left:-18px;
 			-webkit-animation: sk 1.2s infinite ease-in-out;
-	}
-		 
-	
-	
+	}	
 	@keyframes sk {
-	1% {
+		1% {
 			top: -15px;
 	 
 		}
@@ -1613,8 +1610,7 @@ p.text-danger.hidden {
 		}
 		30% {
 		 left:15px;
-				 background:#FEDD31;
-	 
+			background:#FEDD31;
 		}
 		35% {
 		 top:5px;
