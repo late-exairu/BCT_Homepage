@@ -183,6 +183,10 @@ h1, .h1, h2, .h2 {
     width: 30px;
     text-align: left;
     cursor: pointer; }
+    .navbar > .container .order-back.hidden {
+      display: none; }
+    .navbar > .container .order-back img {
+      padding-top: 24%; }
 
 .navbar-light {
   border-bottom: 1px solid #D6D6D6;

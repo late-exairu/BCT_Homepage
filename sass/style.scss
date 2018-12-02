@@ -160,6 +160,13 @@ h1, .h1, h2, .h2 {
 			width: 30px;
 			text-align: left;
 			cursor: pointer;
+
+			&.hidden {
+				display: none;
+			}
+			img {
+				padding-top: 24%;
+			}
 		}
 	}
 }
