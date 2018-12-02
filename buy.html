@@ -744,54 +744,9 @@
 	<script src="https://unpkg.com/page-scroll-to-id@1.5.9/jquery.malihu.PageScroll2id.js"></script>
 	<script src="libs/owl-carousel-2/owl.carousel.min.js"></script>
 	<script src="libs/selectize.min.js"></script>
-	<script src="libs/mask/jquery.mask.min.js"></script>
+	<script src="libs/selectize.min.js"></script>
+	<script src="libs/countries.js"></script>
 	<script src="js/scripts.js"></script>
-	<script>
-		$(".button.apply").click(() => {
-			$("form.order-1").addClass("loading");
-			setTimeout(() => {
-				$("form.order-1").removeClass("loading");
-				$("p.text-danger").removeClass("hidden");
-			}, 2200);
-		});
-
-
-		$('form.order-1 div.form-group input').keydown(function (e) {
-			var key = e.charCode || e.keyCode || 0;
-			if (key == 13) {
-				$("a.button.apply").trigger("click");
-			}
-		});
-
-
-		$('ul.order-nav li').click(function () {
-			var currentIndex = $("ul.order-nav li.current").index();
-			var index = $(this).index();
-			if (index <= currentIndex) {
-				$('ul.order-nav li').removeClass('current done');
-				$(this).addClass('current');
-				$('.tab-contents section').removeClass('current');
-				$('.tab-contents section').eq(index).addClass('current');
-				for(var i = 0; i < index; i++) {
-					$('ul.order-nav li').eq(i).addClass('done');
-				}
-			}
-		});
-
-		function goTab(index, param) {
-			$('ul.order-nav li').removeClass('current done');
-			$('ul.order-nav li').eq(index).addClass('current');
-			$('.tab-contents section').removeClass('current');
-			$('.tab-contents section').eq(index).addClass('current');
-			for(var i = 0; i < index; i++) {
-				$('ul.order-nav li').eq(i).addClass('done');
-			}
-			if (param != null) {
-				$('.tab-contents section.current div.container').addClass('hidden');
-				$('.tab-contents section.current div.container').eq(param).removeClass('hidden');
-			}
-		}
-	</script>
 
 </body>
 
