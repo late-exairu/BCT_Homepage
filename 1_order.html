@@ -905,19 +905,24 @@
 			var currentIndex = $("ul.order-nav li.current").index();
 			var index = $(this).index();
 			if (index <= currentIndex) {
-				$('ul.order-nav li').removeClass('current');
+				$('ul.order-nav li').removeClass('current done');
 				$(this).addClass('current');
 				$('.tab-contents section').removeClass('current');
 				$('.tab-contents section').eq(index).addClass('current');
+				for(var i = 0; i < index; i++) {
+					$('ul.order-nav li').eq(i).addClass('done');
+				}
 			}
 		});
 
 		function goTab(index, param) {
-			console.log(index, param)
-			$('ul.order-nav li').removeClass('current');
+			$('ul.order-nav li').removeClass('current done');
 			$('ul.order-nav li').eq(index).addClass('current');
 			$('.tab-contents section').removeClass('current');
 			$('.tab-contents section').eq(index).addClass('current');
+			for(var i = 0; i < index; i++) {
+				$('ul.order-nav li').eq(i).addClass('done');
+			}
 			if (param != null) {
 				$('.tab-contents section.current div.container').addClass('hidden');
 				$('.tab-contents section.current div.container').eq(param).removeClass('hidden');
