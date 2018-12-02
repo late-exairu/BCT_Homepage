@@ -175,7 +175,14 @@ h1, .h1, h2, .h2 {
   font-size: 20px; }
 
 .navbar > .container {
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: relative; }
+  .navbar > .container .order-back {
+    position: absolute;
+    left: -30px;
+    width: 30px;
+    text-align: left;
+    cursor: pointer; }
 
 .navbar-light {
   border-bottom: 1px solid #D6D6D6;
