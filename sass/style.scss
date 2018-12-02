@@ -1653,6 +1653,9 @@ p.text-danger.hidden {
 	&.current {
 		display: flex;
 	}
+	div.container.hidden {
+		display: none;
+	}
 }
 #article-product, #article-customer, #videos-archive {
 	padding-right: 0 !important;

@@ -1276,6 +1276,8 @@ p.text-danger.hidden {
   display: none; }
   .tab-contents section.current {
     display: flex; }
+  .tab-contents section div.container.hidden {
+    display: none; }
 
 #article-product, #article-customer, #videos-archive {
   padding-right: 0 !important; }
