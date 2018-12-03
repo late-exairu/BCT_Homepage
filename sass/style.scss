@@ -1050,7 +1050,8 @@ ul.list-blue {
 	.owl-dots {
 		position: relative;
 		text-align: center;
-    margin-top: -25px;
+		margin-top: -25px;
+		z-index: 20;
 	}
 	.owl-dots .owl-dot {
 		position: relative;

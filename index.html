@@ -1033,48 +1033,34 @@
 	}
 	$(".section-11 .owl-dots").html(dots_list);
 
-	$('.section-11 button.left-arrow').click(function () {
-		if (playIndex == 0) {
-			playIndex = videoIDs.length - 1;
-		}
-		else {
-			playIndex --;
-		}
+	function player2LoadVideo() {
 		player2.getVolume().then(function(originVolume) {
 			player2.loadVideo(videoIDs[playIndex]).then(function(id) {
 				player2.setVolume(originVolume).then(function(volume) {
 				}).catch(function(error) {
-					// an error occurred
-				});
-			})
-		}).catch(function(error) {
-			// an error occurred
-		});		
-
-		$('.section-11 .owl-dots .owl-dot').removeClass('active');
-		$('.section-11 .owl-dots .owl-dot:eq(' + playIndex + ')').addClass('active');
-	});
-	$('.section-11 button.right-arrow').click(function () {
-		if (playIndex == videoIDs.length - 1) {
-			playIndex = 0;
-		}
-		else {
-			playIndex ++;
-		}
-
-		player2.getVolume().then(function(originVolume) {
-			player2.loadVideo(videoIDs[playIndex]).then(function(id) {
-				player2.setVolume(originVolume).then(function(volume) {
-				}).catch(function(error) {
-					// an error occurred
+				// an error occurred
 				});
 			})
 		}).catch(function(error) {
 			// an error occurred
 		});
-
 		$('.section-11 .owl-dots .owl-dot').removeClass('active');
 		$('.section-11 .owl-dots .owl-dot:eq(' + playIndex + ')').addClass('active');
+	}
+
+	$('.section-11 button.left-arrow').click(function () {
+		playIndex = (playIndex == 0) ? videoIDs.length - 1 : (playIndex - 1);
+		player2LoadVideo();
+	});
+
+	$('.section-11 button.right-arrow').click(function () {
+		playIndex = (playIndex == videoIDs.length - 1) ? 0 : (playIndex + 1);
+		player2LoadVideo();
+	});
+
+	$('.section-11 .owl-dots .owl-dot').click(function () {
+		playIndex = +$(this).index();
+		player2LoadVideo();
 	});
 
 	window.addEventListener('scroll', function(e) {

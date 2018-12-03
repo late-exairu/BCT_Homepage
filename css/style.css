@@ -822,7 +822,8 @@ ul.list-blue {
   .section-11 .owl-dots {
     position: relative;
     text-align: center;
-    margin-top: -25px; }
+    margin-top: -25px;
+    z-index: 20; }
   .section-11 .owl-dots .owl-dot {
     position: relative;
     display: inline-block;
