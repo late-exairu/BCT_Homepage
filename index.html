@@ -782,7 +782,7 @@
 							</div>
 						</div>
 						<div class="mt-5 pt-2 mb-2">
-							<a class="button button-lg btn-block" href="buy.html">Next</a>
+							<a class="button button-lg btn-block" href="buy.html?order=2">Next</a>
 						</div>
 					</form>
 				</div>
@@ -978,33 +978,6 @@
 	<script src="libs/mask/jquery.mask.min.js"></script>
 	<script src="js/scripts.js"></script>
 
-	<!-- Youtube mode as video player.
-	<script>
-		function onYouTubeIframeAPIReady() {
-			console.log('YouTubeIframeAPIReady');
-			var bigPlayer;
-			function onBigPlayerStateChange(event) {
-				if (event.data === 0) {
-					bigPlayer.stopVideo();
-					$('#videoOverlay').removeClass('hidden');
-				}
-			}
-			bigPlayer = new YT.Player('bigPlayer', {
-				height: '780',
-				width: '1280',
-				videoId: 'iRXy2jQZPrM',
-				playerVars: {rel: 0},
-				events: {
-				'onStateChange': onBigPlayerStateChange
-				}
-			});
-	
-			$('#videoOverlay').click(function () {
-				$('#videoOverlay').addClass('hidden');
-				bigPlayer.playVideo();
-			});
-		}
-	</script> -->
 <script src="https://www.youtube.com/player_api"></script>
 <script src="https://player.vimeo.com/api/player.js"></script>
 
