@@ -311,7 +311,7 @@ $('form.order-1 div.form-group input').keypress(function (e) {
 	}
 });
 
-console.log("countries", countries);
+//console.log("countries", countries);
 var countries_list = '';
 for (var i = 0; i < countries.length; i++) {
 	if (countries[i].name == "United States") {
