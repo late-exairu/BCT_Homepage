@@ -1879,11 +1879,13 @@ form .button {
   .order-nav .item {
     position: relative;
     padding: 0 3px;
-    margin: 0 15px; }
+    margin: 0 15px;
+    cursor: default; }
     .order-nav .item.done {
       font-weight: bold;
       color: #0080CA;
-      padding-left: 20px; }
+      padding-left: 20px;
+      cursor: pointer; }
       .order-nav .item.done:after {
         content: '';
         position: absolute;
@@ -1894,6 +1896,7 @@ form .button {
         transform: translateY(-50%);
         background: url(../img/check.svg) 0 0 no-repeat; }
     .order-nav .item.current {
+      cursor: pointer;
       font-weight: bold;
       color: #0080CA;
       border-bottom: 2px solid; }
