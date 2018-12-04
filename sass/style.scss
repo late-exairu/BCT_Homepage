@@ -1022,7 +1022,7 @@ ul.list-blue {
 			&.right-arrow {
 				right: -3%;
 				background-image: url(../img/arrow.png);
-				transform: translateY(-50%) rotate(180deg);
+				transform: rotate(180deg);
 				background-size: cover !important;
 			}
 			@media (max-width: 1200px) {
