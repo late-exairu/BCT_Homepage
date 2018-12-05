@@ -1681,7 +1681,9 @@ p.text-danger.hidden {
   .promo {
     display: none; }
   .navbar-light .container {
-    justify-content: flex-start; } }
+    justify-content: flex-start; }
+  .section-1 img {
+    padding: 30px !important; } }
 
 @media (max-width: 767px) {
   .promo {
@@ -1727,7 +1729,10 @@ p.text-danger.hidden {
     width: 30px !important;
     height: 30px !important; }
   .TweetAuthor-screenName {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .section-2 img#baby {
+    padding-left: 30px;
+    top: 0; } }
 
 @media (max-width: 575px) {
   .modal-dialog .modal-content {
