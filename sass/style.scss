@@ -167,6 +167,13 @@ h1, .h1, h2, .h2 {
 			img {
 				padding-top: 24%;
 			}
+
+			@media (max-width: 1199px) {
+				left: -18px;
+			}
+			@media (max-width: 580px) {
+				display: none;
+			}
 		}
 	}
 }

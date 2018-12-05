@@ -1,3 +1,4 @@
+// functions
 function getUrlVars() {
     var vars = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
@@ -6,17 +7,103 @@ function getUrlVars() {
     return vars;
 }
 
-function getUrlParam(parameter, defaultvalue){
+function getUrlParam(parameter, defaultvalue) {
     var urlparameter = defaultvalue;
-    if(window.location.href.indexOf(parameter) > -1){
+    if(window.location.href.indexOf(parameter) > -1) {
         urlparameter = getUrlVars()[parameter];
-        }
+	}
     return urlparameter;
 }
+
+function goTab(index, param) {
+	$('ul.order-nav li').removeClass('current done');
+	$('ul.order-nav li').eq(index).addClass('current');
+	$('.tab-contents section').removeClass('current');
+	$('.tab-contents section').eq(index).addClass('current');
+	for(var i = 0; i < index; i++) {
+		$('ul.order-nav li').eq(i).addClass('done');
+	}
+	if (param != null) {
+		$('.tab-contents section.current div.container').addClass('hidden');
+		$('.tab-contents section.current div.container').eq(param).removeClass('hidden');
+	}
+	if (index == 0) {
+		$(".order-back").addClass("hidden");
+	}
+	else {
+		$(".order-back").removeClass("hidden");
+	}
+}
+
+
+// order form header functionality
+$('ul.order-nav li').click(function () {
+	var currentIndex = $("ul.order-nav li.current").index();
+	var index = $(this).index();
+	if (index <= currentIndex) {
+		$('ul.order-nav li').removeClass('current done');
+		$(this).addClass('current');
+		$('.tab-contents section').removeClass('current');
+		$('.tab-contents section').eq(index).addClass('current');
+		for(var i = 0; i < index; i++) {
+			$('ul.order-nav li').eq(i).addClass('done');
+		}
+	}
+
+	if (index == 0) {
+		$(".order-back").addClass("hidden");
+	}
+	else {
+		$(".order-back").removeClass("hidden");
+	}
+});
+
+$(".order-back").click(function () {
+	var currentIndex = $("ul.order-nav li.current").index();
+	if (currentIndex > 0) currentIndex--;
+
+	$('ul.order-nav li').removeClass('current done');
+	$('ul.order-nav li').eq(currentIndex).addClass('current');
+	$('.tab-contents section').removeClass('current');
+	$('.tab-contents section').eq(currentIndex).addClass('current');
+	for(var i = 0; i < currentIndex; i++) {
+		$('ul.order-nav li').eq(i).addClass('done');
+	}
+
+	if (currentIndex == 0) {
+		$(".order-back").addClass("hidden");
+	}
+	else {
+		$(".order-back").removeClass("hidden");
+	}
+});
+
+
+// skip one stage of order form when it come from latest section of main page.
 if (getUrlParam("order", 0) == 2) {
 	goTab(0, 1);
 }
 
+
+// order tab page
+$(".button.apply").click(() => {
+	$("form.order-1").addClass("loading");
+	setTimeout(() => {
+		$("form.order-1").removeClass("loading");
+		$("p.text-danger").removeClass("hidden");
+	}, 2200);
+});
+
+$('form.order-1 div.form-group input').keypress(function (e) {
+	var key = e.charCode || e.keyCode || 0;
+	if (key == 13) {
+		$("a.button.apply").trigger("click");
+		e.preventDefault();
+	}
+});
+
+
+// payment tab page
 $('.tab-a').click(function () {
 	$('.tab-a').removeClass('active');
 	$(this).addClass('active');
@@ -33,7 +120,8 @@ $('.tab-a').click(function () {
 });
 
 
-var html=[];
+// coin tab page
+var packagesHtml=[];
 
 var packages = [
 	{
@@ -261,16 +349,15 @@ var packages = [
 ]
 packages.forEach(function(item, i){
 	if (i > 2) {
-		html.push('<li bct="'+ item.bct + '" bonus="'+ item.bct + '" total="'+ Number(item.bct*2).toLocaleString('en-US') + '" usd="'+ Number(item.usd).toLocaleString('en-US') + '">' + Number(item.bct).toLocaleString('en-US') + ' <span class="text-blue">+ '+ Number(item.bct).toLocaleString('en-US') + ' bonus</span></li>');
+		packagesHtml.push('<li bct="'+ item.bct + '" bonus="'+ item.bct + '" total="'+ Number(item.bct*2).toLocaleString('en-US') + '" usd="'+ Number(item.usd).toLocaleString('en-US') + '">' + Number(item.bct).toLocaleString('en-US') + ' <span class="text-blue">+ '+ Number(item.bct).toLocaleString('en-US') + ' bonus</span></li>');
 	}
 });
 
-$('.package-select ul').html(html.join(''));
+$('.package-select ul').html(packagesHtml.join(''));
 
 var lists = $('.package-select');
 
 lists.on('click',function(e) {
-
 	e.stopPropagation();
 	e.preventDefault()
 	if($(this).find('ul').hasClass('hidden')) {
@@ -282,36 +369,21 @@ lists.on('click',function(e) {
 	var $tgt = $(e.target);
 	if ($tgt.is('li')) {
 		$('.package-select > span').html($tgt.html());
-		var value=$tgt.attr('total');
+		var value = $tgt.attr('total');
 		$('.package-select').attr('total', value);
 		$(this).closest('.label-group').find('.label-card .row:last-child div').html("$" + $tgt.attr('usd'));
 		$(".terminal-count").html(parseInt($tgt.attr('usd').replace(/,/g, "")) / 1000);
 		$(".single-notice .package").html(value);
 		$(this).closest('.label-group').trigger('click', ['no-hidden']);
 	}
-})
+});
+
 $(document).click(function(e) {
 	$('.package-select').find('ul').addClass('hidden');
 });
 
 
-$(".button.apply").click(() => {
-	$("form.order-1").addClass("loading");
-	setTimeout(() => {
-		$("form.order-1").removeClass("loading");
-		$("p.text-danger").removeClass("hidden");
-	}, 2200);
-});
-
-$('form.order-1 div.form-group input').keypress(function (e) {
-	var key = e.charCode || e.keyCode || 0;
-	if (key == 13) {
-		$("a.button.apply").trigger("click");
-		e.preventDefault();
-	}
-});
-
-//console.log("countries", countries);
+// shipping tab page
 var countries_list = '';
 for (var i = 0; i < countries.length; i++) {
 	if (countries[i].name == "United States") {
@@ -328,64 +400,3 @@ for (var i = 0; i < countries.length; i++) {
 $(".basic-select.country").html(countries_list);
 
 $('select').selectize();
-
-$('ul.order-nav li').click(function () {
-	var currentIndex = $("ul.order-nav li.current").index();
-	var index = $(this).index();
-	if (index <= currentIndex) {
-		$('ul.order-nav li').removeClass('current done');
-		$(this).addClass('current');
-		$('.tab-contents section').removeClass('current');
-		$('.tab-contents section').eq(index).addClass('current');
-		for(var i = 0; i < index; i++) {
-			$('ul.order-nav li').eq(i).addClass('done');
-		}
-	}
-
-	if (index == 0) {
-		$(".order-back").addClass("hidden");
-	}
-	else {
-		$(".order-back").removeClass("hidden");
-	}
-});
-
-$(".order-back").click(function () {
-	var currentIndex = $("ul.order-nav li.current").index();
-	if (currentIndex > 0) currentIndex--;
-
-	$('ul.order-nav li').removeClass('current done');
-	$('ul.order-nav li').eq(currentIndex).addClass('current');
-	$('.tab-contents section').removeClass('current');
-	$('.tab-contents section').eq(currentIndex).addClass('current');
-	for(var i = 0; i < currentIndex; i++) {
-		$('ul.order-nav li').eq(i).addClass('done');
-	}
-
-	if (currentIndex == 0) {
-		$(".order-back").addClass("hidden");
-	}
-	else {
-		$(".order-back").removeClass("hidden");
-	}
-});
-
-function goTab(index, param) {
-	$('ul.order-nav li').removeClass('current done');
-	$('ul.order-nav li').eq(index).addClass('current');
-	$('.tab-contents section').removeClass('current');
-	$('.tab-contents section').eq(index).addClass('current');
-	for(var i = 0; i < index; i++) {
-		$('ul.order-nav li').eq(i).addClass('done');
-	}
-	if (param != null) {
-		$('.tab-contents section.current div.container').addClass('hidden');
-		$('.tab-contents section.current div.container').eq(param).removeClass('hidden');
-	}
-	if (index == 0) {
-		$(".order-back").addClass("hidden");
-	}
-	else {
-		$(".order-back").removeClass("hidden");
-	}
-}

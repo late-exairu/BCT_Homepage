@@ -801,7 +801,8 @@
 	<footer class="page-footer text-center text-white mt-auto" style="text-align: justify">
 		<div class="container">
 			<p class="outro fz-17">
-				© 2018 BCT Inc - All rights reserved. BCT Inc, a Saint Vincent and the Grenadines company, is the developer of Blockchain Terminal, an institutional-grade cryptocurrency platform and app store that unites traditional investment with the emerging cryptocurrency industry. Blockchain Terminal users will purchase apps and crypto-trading tools developed by third-party blockchain developers using BCT tokens. BCT Inc has a non-profit mandate and is a wholly owned Cayman subsidiary of the BCT Foundation, a non-profit Cayman Islands foundation. BCT is a utility, not a security.  Furthermore, the Blockchain Terminal and BCT are inseparable components of the Blockchain Terminal. BCT can only be transferred or used within the Blockchain Terminal. A minimum balance of 3,000 BCTs is required to operate the terminal. Use of the Blockchain Terminal is governed by its <a class="underline" target="_blank" data-toggle="modal" href="#license-agreement">License Agreement</a> and End User License Agreement.</p>
+				2018 BCT Inc - All rights reserved. BCT Inc, a Cayman Islands company, is the developer of the Blockchain Terminal, an institutional-grade cryptocurrency platform and app store that unites traditional investment with the emerging cryptocurrency industry. The Blockchain Terminal users will purchase apps and crypto-trading tools developed by third-party blockchain developers using BCT tokens.  BCT Inc has a non-profit mandate and is a wholly owned Cayman subsidiary of the BCT Foundation, a non-profit Cayman Islands foundation. Use of the Blockchain Terminal is governed by its <a class="underline" target="_blank" data-toggle="modal" href="#license-agreement">License Agreement</a> and End User License Agreement.
+			</p>
 		</div>
 	</footer>
 	
@@ -976,106 +977,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 	<script src="libs/selectize.min.js"></script>
 	<script src="libs/mask/jquery.mask.min.js"></script>
+	<script src="libs/jquery.reel.js"></script>
+
+	<script src="https://www.youtube.com/player_api"></script>
+	<script src="https://player.vimeo.com/api/player.js"></script>
+
 	<script src="js/scripts.js"></script>
-
-<script src="https://www.youtube.com/player_api"></script>
-<script src="https://player.vimeo.com/api/player.js"></script>
-
-<script>
-	// Vimeo mode as video player.
-	var options = {
-		id: 303372392,
-		height: '780',
-		width: '1280',
-		title: false,
-		byline: false,
-		portrait: false,
-		loop: false
-	};
-	
-	var player = new Vimeo.Player('bigPlayer', options);
-
-	player.on('ended', function() {
-		$('#videoOverlay').removeClass('hidden');
-	});
-
-	$('#videoOverlay').click(function () {
-		player.play().then(function() {
-			$('#videoOverlay').addClass('hidden');
-		});
-	});
-
-	var playFlag = false;
-	var playIndex = 0;
-	var	videoIDs = [
-		303414850, 303370757, 303440052,
-		303374546, 303410008, 303375046,
-		303373363, 303374352, 303401223,
-		303403824, 303403806, 303403841
-	]
-	var options2 = {
-		id: videoIDs[playIndex],
-		height: '488',
-		width: '1280',
-		title: false,
-		byline: false,
-		portrait: false,
-		autoplay: true,
-		loop: true,
-		muted: true,
-	};
-	
-	var player2 = new Vimeo.Player('video-player', options2);
-	
-	var dots_list = '<button role="button" class="owl-dot active"><span></span></button>';
-	for (var i = 1; i < videoIDs.length; i++) {
-		dots_list += '<button role="button" class="owl-dot"><span></span></button>';
-	}
-	$(".section-11 .owl-dots").html(dots_list);
-
-	function player2LoadVideo() {
-		player2.getVolume().then(function(originVolume) {
-			player2.loadVideo(videoIDs[playIndex]).then(function(id) {
-				player2.setVolume(originVolume).then(function(volume) {
-				}).catch(function(error) {
-				// an error occurred
-				});
-			})
-		}).catch(function(error) {
-			// an error occurred
-		});
-		$('.section-11 .owl-dots .owl-dot').removeClass('active');
-		$('.section-11 .owl-dots .owl-dot:eq(' + playIndex + ')').addClass('active');
-	}
-
-	$('.section-11 button.left-arrow').click(function () {
-		playIndex = (playIndex == 0) ? videoIDs.length - 1 : (playIndex - 1);
-		player2LoadVideo();
-	});
-
-	$('.section-11 button.right-arrow').click(function () {
-		playIndex = (playIndex == videoIDs.length - 1) ? 0 : (playIndex + 1);
-		player2LoadVideo();
-	});
-
-	$('.section-11 .owl-dots .owl-dot').click(function () {
-		playIndex = +$(this).index();
-		player2LoadVideo();
-	});
-
-	window.addEventListener('scroll', function(e) {
-		if (!playFlag && window.scrollY > $(".section-11").offset().top - $(".section-11").height() * 0.5) {
-			player2.play().then(function() {
-				setTimeout(() => {
-					$('.initial-image').addClass('hidden');
-				}, 300);
-				playFlag = true;
-			});
-		}
-	});
-
-</script>
-<script src="libs/jquery.reel.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 
