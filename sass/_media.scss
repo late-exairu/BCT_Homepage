@@ -570,6 +570,9 @@
 			justify-content: flex-start;
 		}
 	}
+	.section-1 img {
+		padding: 30px !important;
+	}
 }
 
 @media (max-width: 767px) {
@@ -648,6 +651,10 @@
 	}
 	.TweetAuthor-screenName {
 		font-size: 14px;
+	}
+	.section-2 img#baby {
+		padding-left: 30px;
+    top: 0;
 	}
 }
 
