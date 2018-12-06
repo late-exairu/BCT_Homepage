@@ -2025,14 +2025,14 @@ form .button {
     right: 0;
     bottom: 0; }
   .inputGroup .tab-a:after {
-    width: 3px;
-    height: 6px;
+    width: 4px;
+    height: 8px;
     border: 1px solid #fff;
     border-top: 0;
     border-left: 0;
     transform: rotate(42deg);
     position: absolute;
-    right: 2px;
+    right: 3px;
     bottom: 2px; }
   .inputGroup .tab-a .abbr {
     font-size: 16px;
