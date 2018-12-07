@@ -22,6 +22,23 @@ $('#videoOverlay').click(function () {
     });
 });
 
+// order tab page
+$(".button.apply").click(() => {
+	$(".section-12 form").addClass("loading");
+	setTimeout(() => {
+		$(".section-12 form").removeClass("loading");
+		$("p.text-danger").removeClass("hidden");
+	}, 2200);
+});
+
+$('.section-12 form div.form-group input').keypress(function (e) {
+	var key = e.charCode || e.keyCode || 0;
+	if (key == 13) {
+		$("button.button.apply").trigger("click");
+		e.preventDefault();
+	}
+});
+
 var playFlag = false;
 var playIndex = 0;
 var	videoIDs = [
