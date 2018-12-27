@@ -188,14 +188,7 @@ $(document).ready(function () {
 		navText: ["", ""],
 	});
 
-
-	$('.scroll-id').mPageScroll2id({
-		scrollSpeed: 900,
-		offset: 64,
-	});
-
 	$('[data-toggle="tooltip"]').tooltip();
-	
 
 	$('.video-modal').click(function (e) {
 		

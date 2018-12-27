@@ -36,9 +36,9 @@ var err = {
 // =============================================================================
 
 gulp.task('sass', function() {
-	gulp.src('sass/*.scss')
+	gulp.src('sass/*.sass')
 		.pipe( wait(100) )
-		.pipe( sass() )
+		.pipe( sass().on('error', sass.logError) )
 		.pipe( gulp.dest('css/') );
 });
 
@@ -149,7 +149,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('watch', ['sass', 'css', 'browser-sync'], function() {
 	gulp.watch('img/sprite.svg');
-	gulp.watch('sass/*.scss', ['sass']);
+	gulp.watch('sass/*.sass', ['sass']);
 	gulp.watch('css/style.css', ['css']);
 	gulp.watch('img/svg/*.svg', ['sprite']);
 	gulp.watch('css/style.css', browserSync.reload);
