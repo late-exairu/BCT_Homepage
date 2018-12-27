@@ -196,7 +196,6 @@ h1, .h1, h2, .h2 {
 
 .navbar-light {
   border-bottom: 1px solid #D6D6D6;
-  box-shadow: 0 0 17px #EDEDED;
   min-height: 60px;
   padding: 10px 0; }
   .navbar-light .nav-item {
@@ -863,36 +862,33 @@ ul.list-blue {
 .error {
   color: red !important; }
 
-@media (max-width: 768px) {
-  .section-12 .row {
-    padding: 50px 0px 60px !important; }
-  .section-12 .terminal {
-    padding: 40px !important; }
-  .section-12 a.apply {
-    top: 11px !important; } }
-
-.section-12 .row {
+.section-12 {
   padding: 100px 0px 150px; }
-
-.section-12 .form {
-  display: flex; }
-  .section-12 .form form > div {
-    margin: 30px 0 0 0 !important; }
-  .section-12 .form form h3 {
-    margin: 0 !important; }
-  .section-12 .form form input {
-    padding-right: 10px; }
-  .section-12 .form form a.apply {
-    display: inline;
-    position: absolute;
-    right: 20px;
-    top: 14px;
-    font-size: 14px;
-    font-weight: 400; }
-
-.section-12 .terminal {
-  position: relative;
-  top: 5px; }
+  @media (max-width: 768px) {
+    .section-12 {
+      padding: 50px 0px 60px; }
+      .section-12 .terminal {
+        padding: 40px !important; }
+      .section-12 a.apply {
+        top: 11px !important; } }
+  .section-12 .form {
+    display: flex; }
+    .section-12 .form form > div {
+      margin: 30px 0 0 0 !important; }
+    .section-12 .form form h3 {
+      margin: 0 !important; }
+    .section-12 .form form input {
+      padding-right: 10px; }
+    .section-12 .form form a.apply {
+      display: inline;
+      position: absolute;
+      right: 20px;
+      top: 14px;
+      font-size: 14px;
+      font-weight: 400; }
+  .section-12 .terminal {
+    position: relative;
+    top: 5px; }
 
 .card-border {
   border: 1px solid;
@@ -965,10 +961,17 @@ ul.list-blue {
   right: 10px; }
 
 .owl-5 .owl-dots {
-  position: relative;
-  top: 10px;
+  margin-top: 10px;
   opacity: 0;
   transition: .3s ease; }
+
+@media (max-width: 575px) {
+  .owl-7 {
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
+
+.owl-7 .owl-dots {
+  margin-top: 10px; }
 
 .section-9 .owl-carousel.owl-drag .owl-item {
   height: 800px; }

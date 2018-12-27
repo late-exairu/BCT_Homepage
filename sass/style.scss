@@ -180,7 +180,7 @@ h1, .h1, h2, .h2 {
 
 .navbar-light {
   border-bottom: 1px solid #D6D6D6;
-  box-shadow: 0 0 17px #EDEDED;
+  // box-shadow: 0 0 17px #EDEDED;
   min-height: 60px;
   padding: 10px 0;
 
@@ -1104,19 +1104,15 @@ ul.list-blue {
 }
 
 .section-12 {
+	padding: 100px 0px 150px;
 	@media (max-width: 768px) {
-		.row {
-			padding: 50px 0px 60px !important;
-		}
+		padding: 50px 0px 60px;
 		.terminal {
 			padding: 40px !important;
 		}
 		a.apply {
 			top: 11px !important;
 		}
-	}
-	.row {
-    padding: 100px 0px 150px;
 	}
 	.form {
 		display: flex;
@@ -1229,11 +1225,20 @@ ul.list-blue {
   }
 }
 
-.owl-5 .owl-dots{
-  position: relative;
-  top: 10px;
+.owl-5 .owl-dots {
+  margin-top: 10px;
   opacity: 0;
   transition: .3s ease;
+}
+
+.owl-7 {
+	@media (max-width: 575px) {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.owl-dots {
+	  margin-top: 10px;
+	}
 }
 
 .section-9 {

@@ -167,6 +167,27 @@ $(document).ready(function () {
 		navText: ["", ""],
 	});
 
+	$(".owl-7").owlCarousel({
+		responsive: {
+			0: {
+				items: 1,
+				nav: false,
+			},
+			576: {
+				items: 1,
+				nav: true,
+			},
+			768: {
+				items: 2,
+			},
+			992: {
+				items: 3,
+			},
+		},
+		margin: 30,
+		navText: ["", ""],
+	});
+
 
 	$('.scroll-id').mPageScroll2id({
 		scrollSpeed: 900,
