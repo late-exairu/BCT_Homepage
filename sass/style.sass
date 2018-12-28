@@ -33,22 +33,81 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6
 	line-height: 1.1
 h1, .h1, h2, .h2
 	color: $blue-1
+@media (min-width: $xl)
+  h1, .h1
+    font-size: 75px
+    letter-spacing: -1.9px
+  h2, .h2
+    font-size: 65px
+    letter-spacing: -1.9px
+  h3, .h3
+    font-size: 50px
+    letter-spacing: -1.9px
+  h4, .h4
+    font-size: 30px
+  h5, .h5
+    font-size: 26px
+@media (max-width: $sm - $point)
+  h1, .h1
+    font-size: 2rem
+  h2, .h2
+    font-size: 1.75rem
+  .h3, h3
+    font-size: 1.5rem
+  .h4, h4
+    font-size: 1.25rem
+  .h5, h5
+    font-size: 1.125rem
 
 .fz-11
 	font-size: 11px
 	line-height: 1.3
-.fz-10
-	font-size: 10px
-	line-height: 1
 .fz-0
 	font-size: 0
+@media (min-width: $sm)
+  .fz-30
+    font-size: 20px
+    line-height: 1.3
+@media (min-width: $xl)
+  .fz-30
+    font-size: 30px
+    letter-spacing: -1px
+    line-height: 1.35
+  .fz-25
+    font-size: 25px
+    line-height: 1.3
+  .fz-24
+    font-size: 24px
+    line-height: 1.3
+  .fz-22
+    font-size: 22px
+    line-height: 1.3
+  .fz-21
+    font-size: 21px
+    line-height: 1.3
+  .fz-20
+    font-size: 20px
+    line-height: 1.3
+  .fz-19
+    font-size: 19px
+    line-height: 1.3
+  .fz-15
+    font-size: 15px
+    line-height: 1.3
+@media (min-width: 1500px)
+  .fz-15
+    font-size: 16px
+    line-height: 1.3
+@media (max-width: $md - $point)
+  .fz-15
+    font-size: 13px
+    line-height: 1.3
 
 .font-weight-medium
 	font-weight: 500
 
 .text-inherit
 	color: inherit
-
 .text-blue
 	color: $blue-1
 
@@ -58,92 +117,6 @@ h1, .h1, h2, .h2
 	[class^="col"]
 		padding-left: 10px
 		padding-right: 10px
-
-#allContent
-	min-height: 100vh
-	display: flex
-	flex-direction: column
-
-.main-page .navbar
-	> .container
-		justify-content: space-between
-	.promo
-		margin-right: auto
-
-.navbar
-	&__back
-		display: flex
-		align-items: center
-		cursor: pointer
-		transform: opacity .25s
-	&__back-icon
-		display: block
-		width: 30px
-		fill: $blue-1
-	&__back-text
-		text-transform: uppercase
-		color: $blue-1
-		font-weight: 900
-		margin-left: 10px
-		line-height: 24px
-		margin-top: 0px
-		font-size: 20px
-	> .container
-		justify-content: space-between
-		position: relative
-		.order-back
-			position: absolute
-			left: -30px
-			width: 30px
-			text-align: left
-			cursor: pointer
-			&.hidden
-				display: none
-			img
-				padding-top: 24%
-			@media (max-width: 1199px)
-				left: -18px
-			@media (max-width: 580px)
-				display: none
-
-.navbar-light
-	border-bottom: 1px solid #D6D6D6
-	min-height: 60px
-	padding: 10px 0
-	.nav-item
-		margin-left: 4px
-	.button
-		margin: 10px 0
-	.navbar-nav .nav-link
-		font-size: 14px
-		font-weight: 500
-		color: inherit !important
-		transition: 0.2s
-		&:hover
-			opacity: 0.65
-	.navbar-collapse .nav-item
-		margin-left: 17px
-		margin-right: 17px
-		pointer-events: none
-	.navbar-right .nav-link
-		color: $blue-1 !important
-	@media (max-width: 1349px)
-		.navbar-collapse .nav-item
-			margin-left: 12px
-			margin-right: 12px
-			pointer-events: none
-
-.navbar-brand
-	padding: 4px 0
-	margin-right: 25px
-	img
-		width: 154px
-
-.promo
-	padding-top: 1px
-	line-height: 1.2
-	text-transform: uppercase
-	margin-right: auto
 
 .button
 	display: inline-block
@@ -183,34 +156,6 @@ h1, .h1, h2, .h2
 .button-auto
 	min-width: auto
 
-.reel
-	height: auto !important
-
-.section-1
-	min-height: calc(100vh - 60px)
-	flex-grow: 1
-	.img
-		max-width: 580px
-		width: 100%
-	@media (max-width: 991px)
-		.container
-			margin: 0 auto
-
-.terminal-switch-wrap
-	line-height: 1.2
-	font-size: 16px
-	font-weight: 400
-	color: $blue-1
-	text-align: right
-	font-family: Arial,sans-serif
-	a
-		color: #000
-		&:hover
-			color: $blue-2
-	@media (max-width: 767px)
-		font-size: 12px
-		font-weight: 400
-
 ul.list-blue
 	padding-left: 0
 	list-style: none
@@ -222,6 +167,48 @@ ul.list-blue
 			position: absolute
 			left: 0
 			color: $blue-2
+
+#allContent
+	min-height: 100vh
+	display: flex
+	flex-direction: column
+
+.navbar
+	border-bottom: 1px solid #D6D6D6
+	min-height: 60px
+	padding: 10px 0
+.navbar-brand
+	padding: 4px 0
+	margin-right: 25px
+	img
+		width: 154px
+.promo
+	line-height: 1.2
+	text-transform: uppercase
+	margin-right: auto
+.terminal-switch-wrap
+	line-height: 1.2
+	font-weight: 400
+	@media (max-width: $md - $point)
+		font-size: 12px
+	@media (max-width: 399px)
+		img 
+			width: 26px
+
+.page-footer
+	padding: 16px 0
+	background-color: #ebebeb
+	color: #474747
+
+.section-1
+	min-height: calc(100vh - 60px)
+	flex-grow: 1
+	.img
+		max-width: 580px
+		width: 100%
+	@media (max-width: $lg - $point)
+		.container
+			margin: 0 auto
 
 .owl-brands
 	padding: 4px 0
@@ -557,27 +544,6 @@ ul.list-blue
 	top: -30px
 	transform: scale(1)
 
-.reel
-	width: 100% !important
-	overflow: visible !important
-
-.reel-indicator-bar
-	width: 98%
-	background: url("https://dlcdnimgs.asus.com/websites/global/products/kG8zmnBbP9T4sqBA/images/reelbar.png") (center / 100%) no-repeat
-	height: 18px
-	margin: 0px 1%
-
-.reel-indicator
-	background: url("https://dlcdnimgs.asus.com/websites/global/products/kG8zmnBbP9T4sqBA/images/bar_dot.png") (center / 100%) no-repeat
-	width: 36px !important
-	height: 18px !important
-	background-color: transparent !important
-	top: 100% !important
-	margin-left: -5px
-
-.reel-preloader
-	display: none !important
-
 .section-7
 	max-height: 700px
 	padding-top: 200px
@@ -607,7 +573,7 @@ ul.list-blue
 	.video-wrapper
 		flex: 0 0 86.3333%
 		max-width: 86.3333%
-		@media (max-width: 767px)
+		@media (max-width: $md - $point)
 			margin-left: 0 !important
 			padding-left: 0 !important
 	.col-xl-9
@@ -638,7 +604,7 @@ ul.list-blue
 			z-index: 1
 			width: 100%
 			margin-left: 3px
-			@media (max-width: 767px)
+			@media (max-width: $md - $point)
 				margin-left: 1px !important
 		#video-player
 			position: absolute
@@ -705,17 +671,17 @@ ul.list-blue
 				background-image: url(../img/arrow.png)
 				transform: rotate(180deg)
 				background-size: cover !important
-			@media (max-width: 1199px)
+			@media (max-width: $xl - $point)
 				width: 50px !important
 				height: 50px !important
 				font-size: 38px !important
 				line-height: 50px !important
-			@media (max-width: 767px)
+			@media (max-width: $md - $point)
 				width: 36px !important
 				height: 36px !important
 				font-size: 30px !important
 				line-height: 36px !important
-			@media (max-width: 575px)
+			@media (max-width: $sm - $point)
 				width: 30px !important
 				height: 30px !important
 				font-size: 24px !important
@@ -741,28 +707,23 @@ ul.list-blue
 			border-radius: 30px
 		&.active span
 			background-color: #fff
-		@media (max-width: 767px)
+		@media (max-width: $md - $point)
 			height: 0 !important
 			width: 15px
-		@media (max-width: 575px)
+		@media (max-width: $sm - $point)
 			height: 0 !important
 			width: 12px
-	@media (max-width: 991px)
+	@media (max-width: $lg - $point)
 		.row
 			p
 				width: auto
 				white-space: normal
 				font-size: 14px
 
-.error
-	color: red !important
-
 .section-12
 	padding: 100px 0px 150px
-	@media (max-width: 767px)
+	@media (max-width: $md - $point)
 		padding: 50px 0px 60px
-		.terminal
-			padding: 40px !important
 		a.apply
 			top: 11px !important
 	.form
@@ -781,9 +742,37 @@ ul.list-blue
 				top: 14px
 				font-size: 14px
 				font-weight: 400
-	.terminal
-		position: relative
-		top: 5px
+
+.reel-panning, .reel-panning *, .reel
+	cursor: ew-resize !important
+.reel
+	width: 100% !important
+	overflow: visible !important
+	.reel-indicator
+		width: 18px !important
+		height: 18px !important
+		margin: -9px 0 -9px 1%
+		border: 2px solid #D6D6D6
+		border-radius: 50%
+		background-color: #fff !important
+		z-index: 9
+.reel-indicator-bar
+	border-top: 2px solid #D6D6D6
+	position: relative
+	width: 98%
+	margin: 0 1%
+	&:before, &:after 
+		content: ''
+		position: absolute
+		top: -3px
+		border: 2px solid #D6D6D6
+		border-radius: 50%
+	&:before 
+		left: 0
+	&:after 
+		right: 0
+.reel-preloader
+	display: none !important
 
 .card-border
 	border: 1px solid
@@ -859,7 +848,7 @@ ul.list-blue
 	transition: .3s ease
 
 .owl-7
-	@media (max-width: 575px)
+	@media (max-width: $sm - $point)
 		padding-left: 0 !important
 		padding-right: 0 !important
 	.owl-dots
@@ -870,7 +859,7 @@ ul.list-blue
 		height: 800px
 		.slide
 			height: 100%
-		@media (max-width: 767px)
+		@media (max-width: $md - $point)
 			height: 400px
 
 .section-10
@@ -891,14 +880,6 @@ ul.list-blue
 	.owl-nav
 		[class*="owl-"]
 			top: calc(50% - 35px)
-
-.page-footer
-	padding: 16px 0
-	background-color: #ebebeb
-	color: #474747 !important
-
-.outro
-	margin: 0 auto
 
 .copyright
 	font-size: 12px
@@ -1003,15 +984,15 @@ article.initial-video
 		max-height: 29vw
 		@media (max-width: 1499px)
 			max-height: 32vw !important
-		@media (max-width: 1349px)
+		@media (max-width: $xxl - $point)
 			max-height: 28vw !important
-		@media (max-width: 1199px)
+		@media (max-width: $xl - $point)
 			max-height: 27vw !important
-		@media (max-width: 991px)
+		@media (max-width: $lg - $point)
 			max-height: 29vw !important
-		@media (max-width: 767px)
+		@media (max-width: $md - $point)
 			max-height: 33vw !important
-		@media (max-width: 575px)
+		@media (max-width: $sm - $point)
 			max-height: 42vw !important
 
 .TweetAuthor-name
@@ -1195,9 +1176,9 @@ p.text-danger.hidden
 	left: 20px
 	background: white
 	padding: 0 5px
-	@media (max-width: 767px)
+	@media (max-width: $md - $point)
 		margin-top: -7px
-	@media (max-width: 575px)
+	@media (max-width: $sm - $point)
 		font-size: 11px
 		margin-top: -5px
 
@@ -1286,6 +1267,11 @@ p.text-danger.hidden
 .modal-dialog
 	p, li
 		padding-right: 30px
+
+@media (min-width: $sm)
+  .px
+    padding-left: 50px !important
+    padding-right: 50px !important
 
 @import "media"
 @import "payment"

@@ -1,15 +1,4 @@
-@media (min-width: 576px)
-  .fz-30
-    font-size: 20px
-    line-height: 1.3
-  .fz-40
-    font-size: 20px
-    line-height: 1.3
-
-  .px
-    padding-left: 50px !important
-    padding-right: 50px !important
-
+@media (min-width: $sm)
   .form-group
     margin-bottom: 20px
 
@@ -24,9 +13,7 @@
     > span
       font-size: 15px
 
-@media (min-width: 768px)
-  .page-footer
-    padding: 16px 0
+@media (min-width: $md)
 
   .inputGroup .tab-a
     width: 120px !important
@@ -53,17 +40,13 @@
     > span
       font-size: 19px
 
-  .fz-17
-    font-size: 15px
-    line-height: 1.3
-
   .brand
     display: inline !important
 
   .small-brand
     display: none !important
 
-@media (min-width: 992px)
+@media (min-width: $lg)
   #videos-archive,
   #article-product,
   #article-customer
@@ -88,65 +71,12 @@
     top: 75px
     transform: scale(0.8)
 
-  .fz-40
-    font-size: 32px
-    line-height: 1.3
-
-@media (min-width: 1200px)
+@media (min-width: $xl)
   #videos-archive,
   #article-product,
   #article-customer
     .modal-dialog
       max-width: 750px
-
-  h1, .h1
-    font-size: 75px
-    letter-spacing: -1.9px
-  h2, .h2
-    font-size: 65px
-    letter-spacing: -1.9px
-  h3, .h3
-    font-size: 50px
-    letter-spacing: -1.9px
-  h4, .h4
-    font-size: 30px
-  h5, .h5
-    font-size: 26px
-
-  .fz-40
-    font-size: 35px
-    line-height: 1.3
-  .fz-30
-    font-size: 30px
-    letter-spacing: -1px
-    line-height: 1.35
-  .fz-25
-    font-size: 25px
-    line-height: 1.3
-  .fz-24
-    font-size: 24px
-    line-height: 1.3
-  .fz-22
-    font-size: 22px
-    line-height: 1.3
-  .fz-21
-    font-size: 21px
-    line-height: 1.3
-  .fz-20
-    font-size: 20px
-    line-height: 1.3
-  .fz-19
-    font-size: 19px
-    line-height: 1.3
-  .fz-17
-    font-size: 17px
-    line-height: 1.3
-  .fz-15
-    font-size: 15px
-    line-height: 1.3
-  .fz-11
-    font-size: 11px
-    line-height: 1.3
 
   .button-lg
     font-size: 20px
@@ -192,16 +122,12 @@
         .fz-20
           font-size: 17px
 
-  .rotator-wrapper.size-1350
-    height: auto !important
-    max-width: 590px
-
   #baby
     position: absolute
     right: -75px
     top: 100px
 
-@media (min-width: 1350px)
+@media (min-width: $xxl)
   .container
     max-width: 1310px
 
@@ -250,16 +176,6 @@
     > span
       font-size: 19px
 
-  .fz-40
-    font-size: 40px
-    line-height: 1.3
-  .fz-17
-    font-size: 18px
-    line-height: 1.3
-  .fz-15
-    font-size: 15px
-    line-height: 1.3
-
 @media (min-width: 1500px)
   .fancybox-inner .fancybox-navigation .fancybox-button--arrow_left
     left: 50%
@@ -269,15 +185,11 @@
     right: 50%
     margin-right: -750px
 
-  .fz-15
-    font-size: 16px
-    line-height: 1.3
-
-@media (max-width: 1349px)
+@media (max-width: $xxl - $point)
   .li
     padding: 10px 15px
 
-@media (max-width: 1199px)
+@media (max-width: $xl - $point)
   .navbar-expand-xl > .container, .navbar-expand-xl > .container-fluid
     padding-right: 15px !important
     padding-left: 15px !important
@@ -285,7 +197,7 @@
   .TweetAuthor-screenName
     font-size: 16px
 
-@media (max-width: 991px)
+@media (max-width: $lg - $point)
   .section-11 .row .coin-img img.coin-Y
     right: 0px
 
@@ -308,27 +220,6 @@
     padding-right: 15px !important
     padding-left: 15px !important
 
-  .order-nav .item.done
-    padding-left: 12px !important
-    &:after
-      content: ''
-      top: 40% !important
-      width: 10px !important
-      height: 10px !important
-      background: url(../img/check.svg) 0 0 no-repeat !important
-      background-size: contain !important
-
-  .order-nav .item
-    position: relative
-    font-size: 12px
-    padding: 0 !important
-    margin-right: 3% !important
-    margin-left: 3% !important
-    &:first-child
-      margin-left: 0 !important
-    &:last-child
-      margin-right: 0 !important
-
   .label-group
     height: 240px !important
     img
@@ -341,14 +232,10 @@
   .promo
     display: none
 
-  .navbar-light
-    .container
-      justify-content: flex-start
-
   .section-1 img
     padding: 30px !important
 
-@media (max-width: 767px)
+@media (max-width: $md - $point)
   .promo
     font-size: 11px
 
@@ -359,10 +246,6 @@
       .owl-dot
         margin: 0px 10px 10px
         font-size: 12px
-
-  .fz-15
-    font-size: 13px
-    line-height: 1.3
 
   .section-3, .section-5, .section-7, .section-8
     padding-top: 4rem
@@ -394,10 +277,6 @@
     img
       max-width: inherit
 
-  .fz-17
-    font-size: 14px
-    line-height: 1.3
-
   .brand
     display: none
 
@@ -413,7 +292,7 @@
     padding-left: 30px
     top: 0
 
-@media (max-width: 575px)
+@media (max-width: $sm - $point)
   .modal-dialog .modal-content
     padding: 40px 0px 30px 15px !important
 
@@ -426,23 +305,6 @@
   .timeline-Body
     margin-left: 0px
     margin-right: 15px
-
-  h1, .h1
-    font-size: 2rem
-  h2, .h2
-    font-size: 1.75rem !important
-  .h3, h3
-    font-size: 1.5rem
-  .h4, h4
-    font-size: 1.25rem
-
-  .terminal-switch-wrap
-    > div:first-child
-      padding-right: 5px !important
-    > div:last-child
-      max-width: 50px
-    img
-      width: 30px
 
   .promo
     font-size: 11px
@@ -512,9 +374,6 @@
 
   .promo
     font-size: 10px
-
-  .terminal-switch-wrap
-    margin: 0
 
   .br
     display: none
