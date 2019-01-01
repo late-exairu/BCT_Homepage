@@ -826,6 +826,14 @@ h1, .h1, h2, .h2 {
 .reel-preloader {
   display: none !important; }
 
+.section-9 .owl-carousel.owl-drag .owl-item {
+  height: 800px; }
+  .section-9 .owl-carousel.owl-drag .owl-item .slide {
+    height: 100%; }
+  @media (max-width: 767.98px) {
+    .section-9 .owl-carousel.owl-drag .owl-item {
+      height: 400px; } }
+
 .owl-2 .slide {
   background-size: cover;
   background-position: center; }
@@ -884,22 +892,6 @@ h1, .h1, h2, .h2 {
 .owl-2 .owl-nav [class*="owl-"].owl-next {
   right: 10px; }
 
-@media (max-width: 575.98px) {
-  .owl-7 {
-    padding-left: 0 !important;
-    padding-right: 0 !important; } }
-
-.owl-7 .owl-dots {
-  margin-top: 10px; }
-
-.section-9 .owl-carousel.owl-drag .owl-item {
-  height: 800px; }
-  .section-9 .owl-carousel.owl-drag .owl-item .slide {
-    height: 100%; }
-  @media (max-width: 767.98px) {
-    .section-9 .owl-carousel.owl-drag .owl-item {
-      height: 400px; } }
-
 .section-10 {
   padding-top: 100px;
   padding-bottom: 140px; }
@@ -917,6 +909,14 @@ h1, .h1, h2, .h2 {
 
 .owl-3 .owl-nav [class*="owl-"] {
   top: calc(50% - 35px); }
+
+@media (max-width: 575.98px) {
+  .owl-6 {
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
+
+.owl-6 .owl-dots {
+  margin-top: 10px; }
 
 .section-13 {
   background-image: url(https://discountknowledge.com/storage/app/media/uploaded-files/Perfect-Desktop.jpg);

@@ -155,9 +155,11 @@ $(document).ready(function () {
 			},
 			768: {
 				items: 2,
+				nav: true,
 			},
 			992: {
 				items: 3,
+				nav: true,
 			},
 		},
 		margin: 30,
