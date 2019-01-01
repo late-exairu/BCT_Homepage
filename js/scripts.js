@@ -99,22 +99,25 @@ $(document).ready(function () {
 		responsive: {
 			0: {
 				items: 1,
+				nav: false,
 			},
 			768: {
 				items: 2,
+				nav: false,
 			},
 			992: {
 				items: 3,
+				nav: true,
 			},
 			1200: {
 				margin: 80,
+				nav: true,
 			},
 		},
 		margin: 10,
 		autoHeight: true,
 		dots: true,
 		dotsEach: true,
-		nav: true,
 		navText: ["", ""],
 		onChanged: function (event) {
 			$(".owl-5 .owl-dots").css('opacity', '0');

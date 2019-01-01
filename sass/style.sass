@@ -105,7 +105,7 @@ h1, .h1, h2, .h2
 	.fz-15
 		font-size: 15px
 		line-height: 1.3
-@media (min-width: 1500px)
+@media (min-width: xxl)
 	.fz-15
 		font-size: 16px
 		line-height: 1.3
@@ -121,6 +121,10 @@ h1, .h1, h2, .h2
 	color: inherit
 .text-blue
 	color: $blue-1
+
+.container
+	@media (min-width: $xxl)
+		max-width: 1310px
 
 .row-1
 	margin-left: -10px
@@ -162,6 +166,13 @@ h1, .h1, h2, .h2
 	border-radius: 6px
 	padding: 8px 20px 10px
 	min-width: 196px
+.button-lg
+	@media (min-width: $xl)
+		font-size: 20px
+	@media (max-width: $sm - $point)
+		width: 100%
+		font-size: 14px
+		padding: 11px 18px
 .button-md
 	min-width: 130px
 .button-auto
@@ -183,18 +194,13 @@ h1, .h1, h2, .h2
 	border: 1px solid
 	padding: 1rem 1rem 0
 
-@media (min-width: $sm)
-	.px
+.px
+	@media (min-width: $lg)
 		padding-left: 50px !important
 		padding-right: 50px !important
-@media (min-width: $xl)
-	.px
+	@media (min-width: $xl)
 		padding-left: 88px !important
 		padding-right: 88px !important
-@media (max-width: $sm - $point)
-	.px
-		padding-left: 40px
-		padding-right: 40px
 
 .owl-theme
 	.owl-nav
@@ -234,6 +240,15 @@ h1, .h1, h2, .h2
 				transition: 0.2s
 			&.active span, &:hover span
 				background-color: #878787
+	@media (max-width: $sm - $point)
+		.owl-nav
+			[class*="owl-"]
+				width: 30px
+				height: 30px
+		.owl-dots
+			.owl-dot
+				span
+					margin: 2px
 
 #allContent
 	min-height: 100vh
@@ -249,10 +264,16 @@ h1, .h1, h2, .h2
 	margin-right: 25px
 	img
 		width: 154px
+	@media (max-width: 399px)
+		margin-right: 8px
+		img
+			width: 100px
 .promo
 	line-height: 1.2
 	text-transform: uppercase
 	margin-right: auto
+	@media (max-width: $lg - $point)
+		display: none
 .terminal-switch-wrap
 	line-height: 1.2
 	font-weight: 400
@@ -435,6 +456,14 @@ h1, .h1, h2, .h2
 	@media (min-width: $xxl)
 		.owl-4
 			padding: 0 26%
+	@media (max-width: $lg - $point)
+		.owl-4
+			.owl-nav
+				[class*="owl-"]
+					&.owl-prev
+						left: -10px
+					&.owl-next
+						right: -10px
 
 .section-5
 	padding: 90px 0 60px
@@ -450,8 +479,11 @@ h1, .h1, h2, .h2
 		padding: 4rem 0 3rem
 .owl-5 .owl-dots
 	margin-top: 10px
-	opacity: 0
 	transition: .3s ease
+	@media (min-width: $lg)
+		opacity: 0
+	@media (max-width: $lg - $point)
+		opacity: 1 !important
 .video-modal
 	cursor: pointer
 	.img-video
@@ -494,85 +526,44 @@ h1, .h1, h2, .h2
 
 .section-6
 	padding: 150px 0 150px
-	.container
-		max-width: 770px
-	h2, h3
-		display: inline
-	h2
-		font-size: 42px
-	h3
-		margin: 10px
-		@media (min-width: $xxl)
-			font-size: 48px
-	.mobile
-		display: none
-	.row > div:first-child
-		justify-content: flex-end
-		display: flex
-		.informs-wrapper
-			max-width: 100%
-			.d-none
-				display: block !important
-				h2
-					line-height: 1
-				h3
-					line-height: 1
-			.list-blue
-				margin-bottom: 45px
-				li
-					border-bottom: 1px solid #D6D6D6
-					padding-left: 0
-					padding-top: 20px
-					padding-bottom: 20px
-					&:before
-						display: none
-					&:first-child
-						border-top: 1px solid #D6D6D6
-					a
-						position: relative
-						display: block
-						color: inherit
-						padding: 6px 25px 6px 0
-						font-weight: 600
-						margin-bottom: 10px
-						&.collapsed
-							margin-bottom: 0
-							&:after
-								transform: translateY(-50%) rotate(0deg)
-						&:after
-							content: ''
-							width: 12px
-							height: 12px
-							position: absolute
-							top: 50%
-							right: 5px
-							transform: translateY(-50%) rotate(45deg)
-							background: url(../img/plus.svg)
-							background-size: contain
-							background-repeat: no-repeat
-							display: block
-							float: right
-							transition: .3s ease
-						&:hover
-							color: $blue-1
-					div
-						font-weight: 400
-	.padding-bottom
-		padding-bottom: 86px
 	@media (max-width: $md - $point)
 		padding-top: 4rem
 		padding-bottom: 4rem
-		.desktop
-			display: none !important
-		.mobile
-			display: block !important
-			h2, h3
-				display: block !important
-				margin: 0 !important
-#ulAccordion span
-	display: inline-block
-	padding-left: 10px
-	text-indent: -10px
+#ulAccordion
+	list-style: none
+	padding-left: 0
+	margin-bottom: 45px
+	> li
+		border-bottom: 1px solid #D6D6D6
+		padding-top: 20px
+		padding-bottom: 20px
+		&:first-child
+			border-top: 1px solid #D6D6D6
+		> a
+			position: relative
+			display: block
+			color: $blue-1
+			padding: 6px 25px 6px 0
+			font-weight: 600
+			margin-bottom: 10px
+			&:after
+				content: ''
+				width: 12px
+				height: 12px
+				position: absolute
+				top: 50%
+				right: 5px
+				transform: translateY(-50%) rotate(45deg)
+				background: url(../img/plus.svg)
+				background-size: cover
+				transition: .3s ease
+			&.collapsed
+				color: inherit
+				margin-bottom: 0
+				&:after
+					transform: translateY(-50%) rotate(0deg)
+			&:hover
+				color: $blue-1
 
 .section-7
 	padding-top: 200px
@@ -607,6 +598,112 @@ h1, .h1, h2, .h2
 	.col-xl-9
 		& > .row > div
 			margin-top: -1px
+	@media (max-width: $md - $point)
+		padding-top: 4rem
+		padding-bottom: 3rem
+
+.section-9
+	.owl-carousel.owl-drag .owl-item
+		height: 800px
+		.slide
+			height: 100%
+		@media (max-width: $md - $point)
+			height: 400px
+.owl-2
+	.slide
+		background-size: cover
+		background-position: center
+		&.slide-1
+			background-image: url(../img/bg-1.jpg)
+			.container
+				max-width: 910px
+		&.slide-2
+			background-image: url(../img/bg-2.jpg)
+			.container
+				max-width: 980px
+		&.slide-3
+			background-image: url(../img/bg-3.jpg)
+			.container
+				max-width: 1150px
+		&.slide-4
+			background-image: url(../img/bg-4.jpg)
+			.container
+				max-width: 980px
+		&.slide-5
+			background-image: url(../img/bg-5.jpg)
+			.container
+				max-width: 980px
+		&.slide-6
+			background-image: url(../img/bg-6.jpg)
+			.container
+				max-width: 980px
+		&:after
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			left: 0
+			top: 0
+			background: rgba(0, 0, 0, 0.7)
+			z-index: 1
+		.container
+			position: relative
+			z-index: 2
+			min-height: 300px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			p
+				padding: 0 10px
+	.owl-dots
+		position: absolute
+		bottom: 10px
+		left: 0
+		right: 0
+	.owl-nav
+		[class*="owl-"]
+			&.owl-prev
+				left: 10px
+				@media (min-width: $xxl)
+					left: 50%
+					margin-left: -640px
+			&.owl-next
+				right: 10px
+				@media (min-width: $xxl)
+					right: 50%
+					margin-right: -640px
+	@media (max-width: $sm - $point)
+		.slide
+			padding-top: 50px
+			padding-bottom: 50px
+			.container
+				min-height: 340px
+		.owl-dots
+			bottom: 30px
+
+.section-10
+	padding-top: 100px
+	padding-bottom: 140px
+	div.desc, h2
+		margin-bottom: 45px
+	@media (max-width: $md - $point)
+		padding-top: 4rem
+		padding-bottom: 4rem
+	@media (max-width: 399px)
+		div.desc, h2 
+			margin-bottom: 1rem
+.owl-3
+	a
+		font-size: 15px
+		img
+			border: 1px solid #222222
+			padding: 10px
+		p
+			color: #878787
+			padding-left: 10px
+	.owl-nav
+		[class*="owl-"]
+			top: calc(50% - 35px)
 
 .section-11
 	padding: 64px 0
@@ -747,6 +844,8 @@ h1, .h1, h2, .h2
 				width: auto
 				white-space: normal
 				font-size: 14px
+			.coin-img img.coin-Y
+				right: 0px
 
 .section-12
 	padding: 100px 0 150px
@@ -785,96 +884,6 @@ h1, .h1, h2, .h2
 .reel-preloader
 	display: none !important
 
-.section-9
-	.owl-carousel.owl-drag .owl-item
-		height: 800px
-		.slide
-			height: 100%
-		@media (max-width: $md - $point)
-			height: 400px
-.owl-2
-	.slide
-		background-size: cover
-		background-position: center
-		&.slide-1
-			background-image: url(../img/bg-1.jpg)
-			.container
-				max-width: 910px
-		&.slide-2
-			background-image: url(../img/bg-2.jpg)
-			.container
-				max-width: 980px
-		&.slide-3
-			background-image: url(../img/bg-3.jpg)
-			.container
-				max-width: 1150px
-		&.slide-4
-			background-image: url(../img/bg-4.jpg)
-			.container
-				max-width: 980px
-		&.slide-5
-			background-image: url(../img/bg-5.jpg)
-			.container
-				max-width: 980px
-		&.slide-6
-			background-image: url(../img/bg-6.jpg)
-			.container
-				max-width: 980px
-		&:after
-			content: ''
-			position: absolute
-			width: 100%
-			height: 100%
-			left: 0
-			top: 0
-			background: rgba(0, 0, 0, 0.7)
-			z-index: 1
-		.container
-			position: relative
-			z-index: 2
-			min-height: 300px
-			display: flex
-			flex-direction: column
-			justify-content: center
-			p
-				padding: 0 10px
-	.owl-dots
-		position: absolute
-		bottom: 10px
-		left: 0
-		right: 0
-	.owl-nav
-		[class*="owl-"]
-			&.owl-prev
-				left: 10px
-			&.owl-next
-				right: 10px
-
-.section-10
-	padding-top: 100px
-	padding-bottom: 140px
-	div.desc, h2
-		margin-bottom: 45px
-.owl-3
-	a
-		font-size: 15px
-		img
-			border: 1px solid #222222
-			padding: 10px
-		p
-			color: #878787
-			padding-left: 10px
-	.owl-nav
-		[class*="owl-"]
-			top: calc(50% - 35px)
-
-.owl-6
-	@media (max-width: $sm - $point)
-		padding-left: 0 !important
-		padding-right: 0 !important
-	.owl-dots
-		margin-top: 10px
-
 .section-13 
 	background-image: url(https://discountknowledge.com/storage/app/media/uploaded-files/Perfect-Desktop.jpg)
 	background-repeat: no-repeat
@@ -884,6 +893,13 @@ h1, .h1, h2, .h2
 		min-height: 90vh
 		display: flex
 		flex-direction: column
+
+.owl-6
+	@media (max-width: $sm - $point)
+		padding-left: 0 !important
+		padding-right: 0 !important
+	.owl-dots
+		margin-top: 10px
 
 .timeline-TweetList
 	li, p
@@ -899,10 +915,6 @@ h1, .h1, h2, .h2
 .timeline-Tweet-metadata
 	margin-left: 40px
 
-.timeline-Tweet-media
-	margin-right: 20px
-	margin-left: 40px
-
 .MediaCard-widthConstrain
 	img
 		width: 1024px !important
@@ -916,6 +928,8 @@ h1, .h1, h2, .h2
 	.modal-content
 		// DON'T CHANGE THIS LINE
 		padding: 40px 0px 30px 30px !important
+		@media (max-width: $sm - $point)
+			padding-left: 15px !important
 	.close
 		color: #aaaaaa
 		position: absolute
@@ -935,6 +949,12 @@ h1, .h1, h2, .h2
 	.content-wrapper
 		max-height: calc(100vh - 194px)
 		overflow-y: auto
+	@media (max-width: $sm - $point)
+		.content-wrapper 
+			> p, h3, h4
+				padding-left: 15px
+		li:not(.timeline-TweetList-tweet)
+			padding-left: 15px
 
 article.initial-video
 	margin-right: 30px
@@ -958,28 +978,35 @@ article.initial-video
 .timeline-TweetList-tweet
 	list-style-type: none
 
-.fancybox-inner .fancybox-navigation
-	.fancybox-button
-		position: absolute
-		padding: 0
-		margin: 0
-		width: 42px
-		height: 42px
-		transform: translateY(-50%)
-		border-radius: 50%
-		top: 50%
-		transition: 0.2s
-		background-color: rgba(213, 213, 213, 0.25) !important
-		background-image: url(../img/arrow.png) !important
-		background-size: cover !important
-		opacity: 0.66
-		&:hover
-			opacity: 1
+.fancybox-inner 
+	.fancybox-navigation
+		.fancybox-button
+			position: absolute
+			padding: 0
+			margin: 0
+			width: 42px
+			height: 42px
+			transform: translateY(-50%)
+			border-radius: 50%
+			top: 50%
+			transition: 0.2s
+			background-color: rgba(213, 213, 213, 0.25) !important
+			background-image: url(../img/arrow.png) !important
+			background-size: cover !important
+			opacity: 0.66
+			&:hover
+				opacity: 1
 	.fancybox-button--arrow_left
 		left: 0
+		@media (min-width: xxl)
+			left: 50%
+			margin-left: -750px
 	.fancybox-button--arrow_right
 		right: 0
 		transform: translateY(-50%) rotate(180deg)
+		@media (min-width: xxl)
+			right: 50%
+			margin-right: -750px
 
 .MediaCard-media > div > div.MediaCard-mediaContainer
 	margin-bottom: 10px
@@ -1013,6 +1040,10 @@ article.initial-video
 	line-height: 27px
 	font-weight: 300
 	padding-right: 4px
+	@media (max-width: $xl - $point)
+		font-size: 16px
+	@media (max-width: $md - $point)
+		font-size: 14px
 
 .timeline-Tweet-text[dir=ltr]
 	text-align: left
@@ -1021,6 +1052,8 @@ article.initial-video
 	line-height: 27px
 
 .timeline-Tweet-media
+	margin-right: 20px
+	margin-left: 40px
 	h2
 		font-size: 30px !important
 		font-weight: 600 !important
@@ -1051,6 +1084,10 @@ article.initial-video
 			height: 30px
 			position: absolute
 			left: 50px
+	@media (max-width: $sm - $point)
+		margin-left: 20px !important
+		iframe
+			height: 200px !important
 
 .timeline-TweetList li, .timeline-TweetList p
 	padding-right: 0px !important
@@ -1077,6 +1114,18 @@ article.initial-video
 
 #article-product, #article-customer, #videos-archive
 	padding-right: 0 !important
+	@media (min-width: $lg)
+		.modal-dialog
+			max-width: 600px
+	@media (min-width: $xl)
+		.modal-dialog
+			max-width: 750px
+	@media (min-width: $xxl)
+		.modal-dialog
+			max-width: 942px
+	@media (max-width: $sm - $point)
+		iframe
+			height: 270px !important
 
 #article-product .article
 	.form-row, p
@@ -1087,9 +1136,17 @@ article.initial-video
 
 .timeline-Body
 	margin-right: 30px
+	@media (max-width: $sm - $point)
+		margin-left: 0px
+		margin-right: 15px
 
 .MediaCard img
 	width: 100%
+
+#license-agreement
+	@media (min-width: $lg)
+		.modal-dialog
+			max-width: 800px
 
 #navbarSupportedContent
 	display: none !important
@@ -1102,5 +1159,4 @@ article.initial-video
 	p, li
 		padding-right: 30px
 
-@import "media"
 @import "payment"
