@@ -5,9 +5,12 @@ hr
 form .button
   font-size: 20px
 
+.form-row
+  position: relative
+
 .error
   color: red !important
-  
+
 .navbar
   > .container
     position: relative
@@ -582,3 +585,136 @@ form .button
   display: none
   &.active
     display: block
+
+
+form.loading
+  opacity: 0.5
+  .loader
+    display: block !important
+
+p.text-danger.hidden
+  display: none
+
+.loader
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  font-size: 10px
+  line-height: 0
+  display: none
+  .spinner > div
+    background: $blue-3
+    height: 40px
+    width: 6px
+    display: inline-block
+    animation: sk-stretchdelay 1.2s infinite ease-in-out
+    &.rect1
+      animation-delay: -1.1s
+    &.rect2
+      animation-delay: -1.1s
+    &.rect3
+      animation-delay: -1.0s
+    &.rect4
+      animation-delay: -0.9s
+    &.rect5
+      animation-delay: -0.8s
+@keyframes sk-stretchdelay
+  0%, 40%, 100%
+    transform: scaleY(0.4)
+  20%
+    transform: scaleY(1)
+
+.package-select
+  border-radius: 4px
+  border-color: #d5d5d5
+  box-shadow: none
+  position: relative
+  font-weight: 700
+  white-space: nowrap
+  text-overflow: ellipsis
+  background: linear-gradient(to bottom, #f3f3f3 0%, #dcdcdc 100%)
+  border-color: 1px solid $blue-1
+  margin: 0 10px
+  padding: 3px 0
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    top: 50%
+    right: 15px
+    border-style: solid
+    border-width: 5px 5px 0 5px
+    border-color: #808080 transparent transparent transparent
+    width: 6px !important
+    height: 6px !important
+    right: 6px !important
+    border: 2px solid !important
+    margin-top: 0px !important
+    border-top: 0 !important
+    border-left: 0 !important
+    transform: translateY(-50%) rotate(45deg) !important
+  > span
+    border-radius: 4px
+    border-color: #d5d5d5
+    box-shadow: none
+    padding-right: 10px
+    font-weight: 700
+    white-space: nowrap
+    text-overflow: ellipsis
+    background: linear-gradient(to bottom, #f3f3f3 0%, #dcdcdc 100%)
+    border-color: 1px solid $blue-1
+  ul
+    position: absolute
+    border: 1px solid #333
+    width: 100%
+    max-height: 200px
+    overflow: auto
+    z-index: 10000
+    padding: 0
+    transition: width 0.1s
+    border-radius: 0 0 3px 3px
+    z-index: 10
+    border: 1px solid #d0d0d0
+    border-top: 0 none
+    background: #fff
+    box-sizing: border-box
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)
+    margin-top: 3px
+    li
+      padding: 6px
+      cursor: pointer
+      font-size: 15px
+      list-style-type: none
+      &:hover
+        background-color: #EEE
+      &:last-child
+        border-bottom: none
+      span
+        pointer-events: none
+    &.hidden
+      display: none
+
+.gift-card
+  position: absolute
+  z-index: 3
+  margin-top: -11px
+  left: 20px
+  background: white
+  padding: 0 5px
+  @media (max-width: $md - $point)
+    margin-top: -7px
+  @media (max-width: $sm - $point)
+    font-size: 11px
+    margin-top: -5px
+
+.selectize-dropdown .active
+  background-color: $blue-2
+  color: #fff
+  font-weight: 600
+
+.promo-code
+  color: #CCC
+  font-weight: 200
+  .col > a
+    color: #CCC !important
