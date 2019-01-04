@@ -57,21 +57,28 @@ $(document).ready(function () {
 		responsive: {
 			0: {
 				items: 1,
+				nav: false,
 			},
 			768: {
 				items: 2,
+				nav: false,
+			},
+			992: {
+				items: 2,
+				nav: true,
 			},
 			1200: {
 				items: 3,
+				nav: true,
 			},
 			1350: {
 				items: 4,
+				nav: true,
 			},
 		},
 		margin: 10,
 		dots: true,
-		dotsEach:true,
-		nav: true,
+		dotsEach: true,
 		navText: ["", ""],
 	});
 

@@ -264,7 +264,7 @@ h1, .h1, h2, .h2
 	margin-right: 25px
 	img
 		width: 154px
-	@media (max-width: 399px)
+	@media (max-width: $xs - $point)
 		margin-right: 8px
 		img
 			width: 100px
@@ -279,7 +279,7 @@ h1, .h1, h2, .h2
 	font-weight: 400
 	@media (max-width: $md - $point)
 		font-size: 12px
-	@media (max-width: 399px)
+	@media (max-width: $xs - $point)
 		img 
 			width: 26px
 
@@ -299,6 +299,8 @@ h1, .h1, h2, .h2
 			margin: 0 auto
 .owl-brands
 	padding: 4px 0
+	border-top: 1px solid #D6D6D6
+	border-bottom: 1px solid #D6D6D6
 	// box-shadow: 0 7px 34px rgba(0, 0, 0, 0.1) inset
 	.owl-item img
 		width: auto
@@ -525,7 +527,7 @@ h1, .h1, h2, .h2
 		padding: 20px !important
 
 .section-6
-	padding: 150px 0 150px
+	padding: 150px 0
 	@media (max-width: $md - $point)
 		padding-top: 4rem
 		padding-bottom: 4rem
@@ -581,34 +583,11 @@ h1, .h1, h2, .h2
 		padding-bottom: 3rem
 
 .section-8
-	padding: 100px 0 130px
-	max-height: 1365px
-	h2
-		margin-bottom: 45px
-	.desc
-		margin-bottom: 45px
-	.options
-		margin-top: 45px
-	.video-wrapper
-		flex: 0 0 86.3333%
-		max-width: 86.3333%
-		@media (max-width: $md - $point)
-			margin-left: 0 !important
-			padding-left: 0 !important
-	.col-xl-9
-		& > .row > div
-			margin-top: -1px
+	padding: 100px 0
 	@media (max-width: $md - $point)
 		padding-top: 4rem
 		padding-bottom: 3rem
 
-.section-9
-	.owl-carousel.owl-drag .owl-item
-		height: 800px
-		.slide
-			height: 100%
-		@media (max-width: $md - $point)
-			height: 400px
 .owl-2
 	.slide
 		background-size: cover
@@ -616,27 +595,40 @@ h1, .h1, h2, .h2
 		&.slide-1
 			background-image: url(../img/bg-1.jpg)
 			.container
-				max-width: 910px
+				@media (min-width: $xxl)
+					max-width: 910px
 		&.slide-2
 			background-image: url(../img/bg-2.jpg)
 			.container
-				max-width: 980px
+				@media (min-width: $xxl)
+					max-width: 980px
 		&.slide-3
 			background-image: url(../img/bg-3.jpg)
 			.container
-				max-width: 1150px
+				@media (min-width: $xxl)
+					max-width: 1150px
 		&.slide-4
 			background-image: url(../img/bg-4.jpg)
 			.container
-				max-width: 980px
+				@media (min-width: $xxl)
+					max-width: 980px
 		&.slide-5
 			background-image: url(../img/bg-5.jpg)
 			.container
-				max-width: 980px
+				@media (min-width: $xxl)
+					max-width: 980px
 		&.slide-6
 			background-image: url(../img/bg-6.jpg)
 			.container
-				max-width: 980px
+				@media (min-width: $xxl)
+					max-width: 980px
+		.container
+			position: relative
+			z-index: 2
+			min-height: 300px
+			display: flex
+			flex-direction: column
+			justify-content: center
 		&:after
 			content: ''
 			position: absolute
@@ -646,15 +638,6 @@ h1, .h1, h2, .h2
 			top: 0
 			background: rgba(0, 0, 0, 0.7)
 			z-index: 1
-		.container
-			position: relative
-			z-index: 2
-			min-height: 300px
-			display: flex
-			flex-direction: column
-			justify-content: center
-			p
-				padding: 0 10px
 	.owl-dots
 		position: absolute
 		bottom: 10px
@@ -672,38 +655,65 @@ h1, .h1, h2, .h2
 				@media (min-width: $xxl)
 					right: 50%
 					margin-right: -640px
+	.owl-item
+		height: 800px
+		.slide
+			height: 100%
+		@media (max-width: $md - $point)
+			height: 400px
+		@media (max-width: $xs - $point)
+			height: 470px
 	@media (max-width: $sm - $point)
 		.slide
 			padding-top: 50px
 			padding-bottom: 50px
 			.container
-				min-height: 340px
-		.owl-dots
-			bottom: 30px
+				min-height: auto
 
 .section-10
 	padding-top: 100px
 	padding-bottom: 140px
-	div.desc, h2
-		margin-bottom: 45px
 	@media (max-width: $md - $point)
 		padding-top: 4rem
 		padding-bottom: 4rem
-	@media (max-width: 399px)
-		div.desc, h2 
-			margin-bottom: 1rem
 .owl-3
-	a
-		font-size: 15px
+	a 
+		color: #878787
 		img
 			border: 1px solid #222222
 			padding: 10px
 		p
-			color: #878787
-			padding-left: 10px
+			padding: 0 10px
+		&:hover
+			color: $blue-2
 	.owl-nav
 		[class*="owl-"]
 			top: calc(50% - 35px)
+.fancybox-inner 
+	.fancybox-navigation
+		.fancybox-button
+			padding: 0
+			width: 42px
+			height: 42px
+			margin-top: -21px
+			border-radius: 50%
+			top: 50%
+			transition: 0.2s
+			background-color: rgba(213, 213, 213, 0.25) !important
+			background-image: url(../img/arrow.png) !important
+			background-size: cover !important
+			opacity: 0.66
+			&:hover
+				opacity: 1
+			&[disabled]
+				opacity: 0
+			@media (max-width: $lg - $point)
+				display: none
+		.fancybox-button--arrow_left
+			left: 15px
+		.fancybox-button--arrow_right
+			right: 15px
+			transform: rotate(180deg)
 
 .section-11
 	padding: 64px 0
@@ -977,36 +987,6 @@ article.initial-video
 
 .timeline-TweetList-tweet
 	list-style-type: none
-
-.fancybox-inner 
-	.fancybox-navigation
-		.fancybox-button
-			position: absolute
-			padding: 0
-			margin: 0
-			width: 42px
-			height: 42px
-			transform: translateY(-50%)
-			border-radius: 50%
-			top: 50%
-			transition: 0.2s
-			background-color: rgba(213, 213, 213, 0.25) !important
-			background-image: url(../img/arrow.png) !important
-			background-size: cover !important
-			opacity: 0.66
-			&:hover
-				opacity: 1
-	.fancybox-button--arrow_left
-		left: 0
-		@media (min-width: xxl)
-			left: 50%
-			margin-left: -750px
-	.fancybox-button--arrow_right
-		right: 0
-		transform: translateY(-50%) rotate(180deg)
-		@media (min-width: xxl)
-			right: 50%
-			margin-right: -750px
 
 .MediaCard-media > div > div.MediaCard-mediaContainer
 	margin-bottom: 10px
