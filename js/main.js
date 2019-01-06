@@ -1,4 +1,3 @@
-
 // Vimeo mode as video player.
 var options = {
     id: 303372392,
@@ -9,16 +8,32 @@ var options = {
     portrait: false,
     loop: false
 };
-
 var player = new Vimeo.Player('bigPlayer', options);
-
 player.on('ended', function() {
     $('#videoOverlay').removeClass('hidden');
 });
-
 $('#videoOverlay').click(function () {
     player.play().then(function() {
         $('#videoOverlay').addClass('hidden');
+    });
+});
+
+var options3 = {
+    id: 303414850,
+    height: '780',
+    width: '1280',
+    title: false,
+    byline: false,
+    portrait: false,
+    loop: false
+};
+var player3 = new Vimeo.Player('videoPlayer', options3);
+player3.on('ended', function() {
+    $('#videoPlayerOverlay').removeClass('hidden');
+});
+$('#videoPlayerOverlay').click(function () {
+    player3.play().then(function() {
+        $('#videoPlayerOverlay').addClass('hidden');
     });
 });
 
