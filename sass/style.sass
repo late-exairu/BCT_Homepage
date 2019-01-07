@@ -326,9 +326,6 @@ h1, .h1, h2, .h2
 			margin-top: -75px
 		@media (max-width: $md - $point)
 			margin-top: -50px
-	.video-overlay
-		background: url("../img/video.png")
-		background-size: cover
 .video-overlay
 	position: absolute
 	top: 0
@@ -336,8 +333,13 @@ h1, .h1, h2, .h2
 	bottom: 0
 	left: 0
 	background-color: #000
+	background-size: cover
 	cursor: pointer
 	transition: 0.2s
+	&#videoOverlay
+		background: url("../img/video.png")
+	&#videoPlayerOverlay
+		background-image: url(https://i.vimeocdn.com/video/742445080.webp?mw=3100&mh=1798&q=70)
 	&.hidden
 		visibility: hidden
 		opacity: 0
@@ -360,7 +362,8 @@ h1, .h1, h2, .h2
 			opacity: .9
 
 .section-3
-	padding: 90px 0
+	padding-top: 15rem
+	padding-bottom: 3.5rem
 	background: #CCD0D3
 	img
 		height: auto
@@ -374,7 +377,8 @@ h1, .h1, h2, .h2
 		padding: 3rem 0 2rem
 
 .section-4
-	padding: 90px 0
+	padding-top: 15rem
+	padding-bottom: 6rem
 	p
 		visibility: hidden
 		opacity: 0
@@ -478,7 +482,8 @@ h1, .h1, h2, .h2
 						right: -10px
 
 .section-5
-	padding: 90px 0 60px
+	padding-top: 15rem
+	padding-bottom: 3rem
 	color: rgba(255, 255, 255, 0.25)
 	background-color: #000
 	.owl-5-wrap
@@ -537,7 +542,7 @@ h1, .h1, h2, .h2
 		padding: 20px !important
 
 .section-6
-	padding: 150px 0
+	padding-top: 15rem
 	@media (max-width: $md - $point)
 		padding-top: 4rem
 		padding-bottom: 4rem
@@ -578,8 +583,8 @@ h1, .h1, h2, .h2
 				color: $blue-1
 
 .section-7
-	padding-top: 200px
-	padding-bottom: 110px
+	padding-top: 15rem
+	padding-bottom: 6rem
 	background-image: url(../img/updated_bg.png)
 	background-size: cover
 	background-position: center center
@@ -746,7 +751,7 @@ h1, .h1, h2, .h2
 				padding: 0 4%
 
 .section-12
-	padding: 100px 0 150px
+	padding-top: 15rem
 	@media (max-width: $md - $point)
 		padding: 50px 0px 60px
 .reel-panning, .reel-panning *, .reel
@@ -783,14 +788,43 @@ h1, .h1, h2, .h2
 	display: none !important
 
 .section-13 
+	position: relative
 	background-image: url(https://discountknowledge.com/storage/app/media/uploaded-files/Perfect-Desktop.jpg)
 	background-repeat: no-repeat
 	background-position: center center
 	background-size: cover
+	&:before 
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background-color: rgba(0, 0, 0, .4)
 	.container
+		position: relative
 		min-height: 90vh
 		display: flex
 		flex-direction: column
+
+.section-14
+	padding-top: 15rem
+
+.section-15
+	padding-top: 15rem
+	padding-bottom: 6rem
+
+.section-16
+	padding-top: 15rem
+
+.section-17
+	padding-top: 15rem
+	padding-bottom: 6rem
+	padding-top: 15rem
+
+.section-18
+	padding-top: 15rem
+	padding-bottom: 6rem
 
 .owl-6
 	@media (max-width: $sm - $point)

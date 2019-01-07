@@ -168,7 +168,7 @@ $(document).ready(function () {
 				nav: true,
 			},
 			992: {
-				items: 2,
+				items: 3,
 				nav: true,
 			},
 		},
