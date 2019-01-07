@@ -15,9 +15,12 @@ a
 	&:hover
 		color: $blue-2
 
-img
+img, video
 	max-width: 100%
 	height: auto
+
+video 
+	display: block
 
 body
 	font-family: "Roboto", sans-serif
@@ -816,6 +819,12 @@ h1, .h1, h2, .h2
 
 .section-16
 	padding-top: 15rem
+.owl-6
+	@media (max-width: $sm - $point)
+		padding-left: 0 !important
+		padding-right: 0 !important
+	.owl-dots
+		margin-top: 10px
 
 .section-17
 	padding-top: 15rem
@@ -826,90 +835,91 @@ h1, .h1, h2, .h2
 	padding-top: 15rem
 	padding-bottom: 6rem
 
-.owl-6
-	@media (max-width: $sm - $point)
-		padding-left: 0 !important
-		padding-right: 0 !important
-	.owl-dots
-		margin-top: 10px
-
-.timeline-TweetList
-	li, p
-		padding-right: 0px !important
-
-.timeline-TweetList-tweet
-	> div
-		padding: 10px
-
-.MediaCard-media
-	text-align: center
-
-.timeline-Tweet-metadata
-	margin-left: 40px
-
-.MediaCard-widthConstrain
-	img
-		width: 1024px !important
-
-#two-screen-request
-	.modal-dialog
-		.modal-content
-			padding: 40px 30px 30px !important
-
 .modal-dialog
 	.modal-content
-		// DON'T CHANGE THIS LINE
-		padding: 40px 0px 30px 30px !important
-		@media (max-width: $sm - $point)
-			padding-left: 15px !important
+		max-height: 100%
+		padding: 40px 0 40px 30px
+	.content-wrapper
+		padding-right: 30px
+		overflow-y: auto
+		> p:last-of-type
+			margin-bottom: 0
+	@media (max-width: $sm - $point)
+		.modal-content
+			padding-left: 15px
+		.content-wrapper
+			padding-right: 15px
 	.close
 		color: #aaaaaa
 		position: absolute
-		right: 24px
-		top: 6px
-		font-size: 28px
-		font-weight: bold
-		z-index: 1 !important
-		pointer-events: all
-		&:hover,
-		&:focus
-			color: #000
-			text-decoration: none
-			cursor: pointer
-			z-index: 1 !important
-			pointer-events: all
-	.content-wrapper
-		max-height: calc(100vh - 194px)
-		overflow-y: auto
-	@media (max-width: $sm - $point)
-		.content-wrapper 
-			> p, h3, h4
-				padding-left: 15px
-		li:not(.timeline-TweetList-tweet)
-			padding-left: 15px
+		right: 14px
+		top: 14px
+		font-size: 30px
+		font-weight: 300
+		line-height: 10px
+		opacity: 1
+		transition: .2s
+		&:hover
+			color: $blue-2 !important
+@media (min-width: $xl)
+	.modal-xl
+		max-width: 942px
+.modal-dialog-centered
+	height: calc(100% - (.5rem * 2))
+	@media (min-width: 576px)
+		height: calc(100% - (1.75rem * 2))
 
-article.initial-video
-	margin-right: 30px
-	position: relative
-	video
-		width: 100%
-	.customer-overlay
-		top: 0
-		width: 100%
-		height: 99%
-		display: flex
-		position: absolute
-		background-color: rgba(0, 0, 0, 0.5)
-		p
-			color: #fff
+#article-product .article
+	.form-row, p
+		font-size: 18px
 
 .license-list
 	padding-left: 40px
 	list-style: lower-alpha
 
-.timeline-TweetList-tweet
-	list-style-type: none
+.initial-video
+	position: relative
+	.customer-overlay
+		display: flex
+		justify-content: center
+		align-items: center
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background-color: rgba(0, 0, 0, 0.5)
+		color: #fff
 
+.timeline-TweetList
+	font-size: 18px
+	line-height: 27px
+	font-weight: 300
+.timeline-TweetList-tweet
+	border-top: 40px solid #808080
+	h2
+		font-weight: 600
+		letter-spacing: -1.2px
+		padding: 20px 0 16px
+	h3
+		padding: 20px 0 16px
+	> div
+		padding: 10px
+.TweetAuthor-name
+	font-size: 18px
+	line-height: 27px
+.TweetAuthor-screenName
+	font-size: 18px
+	line-height: 27px
+	@media (max-width: $xl - $point)
+		font-size: 1rem
+	@media (max-width: $md - $point)
+		font-size: 14px	
+.timeline-Tweet-text[dir=ltr]
+	text-align: left
+	direction: ltr
+	font-size: 18px
+	line-height: 27px
 .MediaCard-media > div > div.MediaCard-mediaContainer
 	margin-bottom: 10px
 	overflow: hidden
@@ -927,32 +937,6 @@ article.initial-video
 			max-height: 33vw !important
 		@media (max-width: $sm - $point)
 			max-height: 42vw !important
-
-.TweetAuthor-name
-	font-size: 18px
-	line-height: 27px
-	font-weight: 700
-	overflow: hidden
-	text-overflow: ellipsis
-	white-space: nowrap
-	padding-right: 4px
-
-.TweetAuthor-screenName
-	font-size: 18px
-	line-height: 27px
-	font-weight: 300
-	padding-right: 4px
-	@media (max-width: $xl - $point)
-		font-size: 16px
-	@media (max-width: $md - $point)
-		font-size: 14px
-
-.timeline-Tweet-text[dir=ltr]
-	text-align: left
-	direction: ltr
-	font-size: 18px
-	line-height: 27px
-
 .timeline-Tweet-media
 	margin-right: 20px
 	margin-left: 40px
@@ -962,14 +946,12 @@ article.initial-video
 	h3
 		font-size: 24px !important
 		font-weight: 600 !important
-		font-family: 'Helvetica'
 		letter-spacing: 0
 		line-height: 30px
 	p, a
 		font-size: 18px !important
 		font-style: normal
 		font-weight: 200 !important
-		font-family: Helvetica !important
 	.blockquote
 		padding: 1rem 0 1rem 3rem !important
 		p
@@ -990,75 +972,7 @@ article.initial-video
 		margin-left: 20px !important
 		iframe
 			height: 200px !important
-
-.timeline-TweetList li, .timeline-TweetList p
-	padding-right: 0px !important
-	font-size: 18px
-	line-height: 27px
-	font-family: 'Helvetica'
-	font-weight: 200
-
-.timeline-TweetList-tweet
-	border-top: 40px solid #808080
-	h2
-		font-weight: 600
-		letter-spacing: -1.2px
-		padding: 20px 0 16px
-	h3
-		padding: 20px 0 16px
-
-.tab-contents section
-	display: none
-	&.current
-		display: flex
-	div.container.hidden
-		display: none
-
-#article-product, #article-customer, #videos-archive
-	padding-right: 0 !important
-	@media (min-width: $lg)
-		.modal-dialog
-			max-width: 600px
-	@media (min-width: $xl)
-		.modal-dialog
-			max-width: 750px
-	@media (min-width: $xxl)
-		.modal-dialog
-			max-width: 942px
-	@media (max-width: $sm - $point)
-		iframe
-			height: 270px !important
-
-#article-product .article
-	.form-row, p
-		font-family: Helvetica, Helvetica, Arial, sans-serif
-		font-size: 18px
-		font-style: normal
-		font-weight: 200
-
-.timeline-Body
-	margin-right: 30px
-	@media (max-width: $sm - $point)
-		margin-left: 0px
-		margin-right: 15px
-
-.MediaCard img
+.NaturalImage-image
 	width: 100%
-
-#license-agreement
-	@media (min-width: $lg)
-		.modal-dialog
-			max-width: 800px
-
-#navbarSupportedContent
-	display: none !important
-
-.twitter-timeline-wrap
-	border: 1px solid #ccc
-	border-radius: 5px
-
-.modal-dialog
-	p, li
-		padding-right: 30px
 
 @import "payment"

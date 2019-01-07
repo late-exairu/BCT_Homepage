@@ -322,11 +322,6 @@ $(document).ready(function () {
 
 });
 
-
-$('.modal .close').click(function (e) {
-	$('.modal').modal('hide')
-});
-
 if ($('[data-fancybox="gallery"]').length){
 	$('[data-fancybox="gallery"]').fancybox({
 		btnTpl: {
