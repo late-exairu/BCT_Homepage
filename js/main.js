@@ -28,14 +28,14 @@ var options3 = {
     loop: false
 };
 var player3 = new Vimeo.Player('videoPlayer', options3);
-player3.on('ended', function() {
-    $('#videoPlayerOverlay').removeClass('hidden');
-});
-$('#videoPlayerOverlay').click(function () {
-    player3.play().then(function() {
-        $('#videoPlayerOverlay').addClass('hidden');
-    });
-});
+// player3.on('ended', function() {
+//     $('#videoPlayerOverlay').removeClass('hidden');
+// });
+// $('#videoPlayerOverlay').click(function () {
+//     player3.play().then(function() {
+//         $('#videoPlayerOverlay').addClass('hidden');
+//     });
+// });
 
 // order tab page
 $(".button.apply").click(() => {

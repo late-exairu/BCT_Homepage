@@ -310,8 +310,10 @@ h1, .h1, h2, .h2
 		width: auto
 
 .section-2
-	padding-top: 9rem
 	overflow: hidden
+	> .container
+		padding-top: 15rem
+		padding-bottom: 15rem
 	@media (max-width: $lg - $point)
 		padding-top: 6rem
 	.video-wrap
@@ -341,8 +343,8 @@ h1, .h1, h2, .h2
 	transition: 0.2s
 	&#videoOverlay
 		background: url("../img/video.png")
-	&#videoPlayerOverlay
-		background-image: url(https://i.vimeocdn.com/video/742445080.webp?mw=3100&mh=1798&q=70)
+	// &#videoPlayerOverlay
+	// 	background-image: url(https://i.vimeocdn.com/video/742445080.webp?mw=3100&mh=1798&q=70)
 	&.hidden
 		visibility: hidden
 		opacity: 0
@@ -366,7 +368,7 @@ h1, .h1, h2, .h2
 
 .section-3
 	padding-top: 15rem
-	padding-bottom: 3.5rem
+	padding-bottom: 12.5rem
 	background: #CCD0D3
 	img
 		height: auto
@@ -381,7 +383,7 @@ h1, .h1, h2, .h2
 
 .section-4
 	padding-top: 15rem
-	padding-bottom: 6rem
+	padding-bottom: 15rem
 	p
 		visibility: hidden
 		opacity: 0
@@ -486,7 +488,7 @@ h1, .h1, h2, .h2
 
 .section-5
 	padding-top: 15rem
-	padding-bottom: 3rem
+	padding-bottom: 12rem
 	color: rgba(255, 255, 255, 0.25)
 	background-color: #000
 	.owl-5-wrap
@@ -546,6 +548,7 @@ h1, .h1, h2, .h2
 
 .section-6
 	padding-top: 15rem
+	padding-bottom: 7.5rem
 	@media (max-width: $md - $point)
 		padding-top: 4rem
 		padding-bottom: 4rem
@@ -587,7 +590,7 @@ h1, .h1, h2, .h2
 
 .section-7
 	padding-top: 15rem
-	padding-bottom: 6rem
+	padding-bottom: 13rem
 	background-image: url(../img/updated_bg.png)
 	background-size: cover
 	background-position: center center
@@ -755,6 +758,12 @@ h1, .h1, h2, .h2
 
 .section-12
 	padding-top: 15rem
+	padding-bottom: 7.5rem
+	@media (min-width: $xl)
+		form 
+			padding-left: 170px
+			h4
+				margin-right: -70px
 	@media (max-width: $md - $point)
 		padding: 50px 0px 60px
 .reel-panning, .reel-panning *, .reel
@@ -809,31 +818,38 @@ h1, .h1, h2, .h2
 		min-height: 90vh
 		display: flex
 		flex-direction: column
+		padding-top: 6rem
+		padding-bottom: 6rem
 
 .section-14
 	padding-top: 15rem
+	padding-bottom: 7.5rem
 
 .section-15
 	padding-top: 15rem
-	padding-bottom: 6rem
+	padding-bottom: 15rem
 
 .section-16
 	padding-top: 15rem
+	padding-bottom: 7.5rem
 .owl-6
 	@media (max-width: $sm - $point)
 		padding-left: 0 !important
 		padding-right: 0 !important
+	@media (min-width: $xl)
+		.owl-nav [class*="owl-"]
+			width: 84px
+			height: 84px
 	.owl-dots
 		margin-top: 10px
 
 .section-17
 	padding-top: 15rem
-	padding-bottom: 6rem
-	padding-top: 15rem
+	padding-bottom: 15rem
 
 .section-18
-	padding-top: 15rem
-	padding-bottom: 6rem
+	padding-top: 13rem
+	padding-bottom: 15rem
 
 .modal-dialog
 	.modal-content
