@@ -6,7 +6,18 @@ $(document).ready(function () {
 
 	const numberWithCommas = (x) => {
 		return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-	}
+	};
+
+  var tooltipWindow = $('<div class="tool-window"></div>').appendTo('body');
+  $('#ulAccordion > li > a').mousemove(function(e) {
+    var text = $(this).parent().html();
+    $(tooltipWindow).addClass('active').css({
+      left: e.clientX + 'px',
+      top: e.clientY + 'px',
+    }).html(text);
+  }).mouseleave(function() {
+    $(tooltipWindow).removeClass('active');
+  });
 
 	$(".owl-brands").owlCarousel({
 		responsive: {
@@ -159,13 +170,9 @@ $(document).ready(function () {
 				items: 1,
 				nav: false,
 			},
-			576: {
-				items: 1,
-				nav: true,
-			},
 			768: {
 				items: 2,
-				nav: true,
+				nav: false,
 			},
 			992: {
 				items: 3,

@@ -338,9 +338,10 @@ h1, .h1, h2, .h2 {
   .section-2 > .container {
     padding-top: 15rem;
     padding-bottom: 15rem; }
-  @media (max-width: 991.98px) {
-    .section-2 {
-      padding-top: 6rem; } }
+    @media (max-width: 1199.98px) {
+      .section-2 > .container {
+        padding-top: 6rem;
+        padding-bottom: 6rem; } }
   .section-2 .video-wrap {
     padding: 121px 0;
     background-color: #000; }
@@ -372,7 +373,7 @@ h1, .h1, h2, .h2 {
   cursor: pointer;
   transition: 0.2s; }
   .video-overlay#videoOverlay {
-    background: url("../img/video.png"); }
+    background-image: url("../img/video.png"); }
   .video-overlay.hidden {
     visibility: hidden;
     opacity: 0; }
@@ -404,12 +405,13 @@ h1, .h1, h2, .h2 {
   @media (min-width: 992px) {
     .section-3 {
       background: radial-gradient(circle closest-corner at 50% 100%, transparent 50%, #CCD0D3); } }
+  @media (max-width: 1199.98px) {
+    .section-3 {
+      padding-top: 6rem;
+      padding-bottom: 5rem; } }
   @media (max-width: 991.98px) {
     .section-3 img {
       max-width: 150px; } }
-  @media (max-width: 767.98px) {
-    .section-3 {
-      padding: 3rem 0 2rem; } }
 
 .section-4 {
   padding-top: 15rem;
@@ -425,9 +427,10 @@ h1, .h1, h2, .h2 {
       opacity: 1;
       height: auto;
       margin-bottom: 1rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 1199.98px) {
     .section-4 {
-      padding: 3rem 0; } }
+      padding-top: 6rem;
+      padding-bottom: 6rem; } }
 
 .owl-header {
   margin-bottom: 0 !important; }
@@ -523,9 +526,10 @@ h1, .h1, h2, .h2 {
     transition: .2s; }
   .section-5 .owl-5-wrap:hover p {
     color: #fff; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 1199.98px) {
     .section-5 {
-      padding: 4rem 0 3rem; } }
+      padding-top: 6rem;
+      padding-bottom: 3rem; } }
 
 .owl-5 .owl-dots {
   margin-top: 10px;
@@ -579,10 +583,10 @@ h1, .h1, h2, .h2 {
 .section-6 {
   padding-top: 15rem;
   padding-bottom: 7.5rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 1199.98px) {
     .section-6 {
-      padding-top: 4rem;
-      padding-bottom: 4rem; } }
+      padding-top: 6rem;
+      padding-bottom: 3rem; } }
 
 #ulAccordion {
   list-style: none;
@@ -619,6 +623,45 @@ h1, .h1, h2, .h2 {
           transform: translateY(-50%) rotate(0deg); }
       #ulAccordion > li > a:hover {
         color: #0080CA; }
+  @media (min-width: 992px) {
+    #ulAccordion > li > a {
+      margin-bottom: 0; }
+      #ulAccordion > li > a:not(:hover) {
+        color: inherit; }
+      #ulAccordion > li > a:after {
+        display: none; }
+    #ulAccordion [data-parent="#ulAccordion"] {
+      display: none !important; } }
+
+.tool-window {
+  display: none; }
+  @media (min-width: 992px) {
+    .tool-window {
+      display: block;
+      font-size: 20px;
+      line-height: 1.3;
+      position: fixed;
+      z-index: 1030;
+      width: 470px;
+      background-color: #fff;
+      padding: 1rem;
+      border: 1px solid #000;
+      box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+      pointer-events: none;
+      transition: opacity .2s;
+      opacity: 0; }
+      .tool-window.active {
+        opacity: 1; }
+      .tool-window > a {
+        display: block;
+        color: #0080CA;
+        font-weight: 600;
+        margin-bottom: 1rem; }
+      .tool-window .collapse {
+        display: block !important; }
+      .tool-window .list-blue {
+        font-size: 25px;
+        margin-bottom: 0; } }
 
 .section-7 {
   padding-top: 15rem;
@@ -627,16 +670,13 @@ h1, .h1, h2, .h2 {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
-  @media (max-width: 1349.98px) {
+  @media (max-width: 1199.98px) {
     .section-7 {
-      padding-top: 130px; } }
+      padding-top: 6rem;
+      padding-bottom: 6rem; } }
   @media (max-width: 991.98px) {
     .section-7 {
       background-size: inherit; } }
-  @media (max-width: 767.98px) {
-    .section-7 {
-      padding-top: 4rem;
-      padding-bottom: 3rem; } }
 
 .section-8 {
   padding: 100px 0; }
@@ -812,9 +852,10 @@ h1, .h1, h2, .h2 {
       padding-left: 170px; }
       .section-12 form h4 {
         margin-right: -70px; } }
-  @media (max-width: 767.98px) {
+  @media (max-width: 1199.98px) {
     .section-12 {
-      padding: 50px 0px 60px; } }
+      padding-top: 6rem;
+      padding-bottom: 3rem; } }
 
 .reel-panning, .reel-panning *, .reel {
   cursor: ew-resize !important; }
@@ -885,14 +926,26 @@ h1, .h1, h2, .h2 {
       right: 0;
       top: 3%;
       padding: 0 2%; }
+  @media (max-width: 1199.98px) {
+    .section-14 {
+      padding-top: 6rem;
+      padding-bottom: 3rem; } }
 
 .section-15 {
   padding-top: 15rem;
   padding-bottom: 15rem; }
+  @media (max-width: 1199.98px) {
+    .section-15 {
+      padding-top: 6rem;
+      padding-bottom: 6rem; } }
 
 .section-16 {
   padding-top: 15rem;
   padding-bottom: 7.5rem; }
+  @media (max-width: 1199.98px) {
+    .section-16 {
+      padding-top: 6rem;
+      padding-bottom: 3rem; } }
 
 @media (max-width: 575.98px) {
   .owl-6 {
@@ -910,10 +963,18 @@ h1, .h1, h2, .h2 {
 .section-17 {
   padding-top: 15rem;
   padding-bottom: 15rem; }
+  @media (max-width: 1199.98px) {
+    .section-17 {
+      padding-top: 6rem;
+      padding-bottom: 6rem; } }
 
 .section-18 {
   padding-top: 13rem;
   padding-bottom: 15rem; }
+  @media (max-width: 1199.98px) {
+    .section-18 {
+      padding-top: 5rem;
+      padding-bottom: 6rem; } }
 
 .modal-dialog .modal-content {
   max-height: 100%;
@@ -922,6 +983,16 @@ h1, .h1, h2, .h2 {
 .modal-dialog .content-wrapper {
   padding-right: 30px;
   overflow-y: auto; }
+  .modal-dialog .content-wrapper::-webkit-scrollbar-button {
+    display: none; }
+  .modal-dialog .content-wrapper::-webkit-scrollbar-track {
+    display: none; }
+  .modal-dialog .content-wrapper::-webkit-scrollbar-thumb {
+    display: none; }
+  .modal-dialog .content-wrapper::-webkit-resizer {
+    display: none; }
+  .modal-dialog .content-wrapper::-webkit-scrollbar {
+    display: none; }
   .modal-dialog .content-wrapper > p:last-of-type {
     margin-bottom: 0; }
 
@@ -1058,7 +1129,9 @@ h1, .h1, h2, .h2 {
         content: '';
         width: 30px;
         height: 30px;
-        background-image: url(img/blockquote.png) !important;
+        background-image: url(../img/blockquote.png);
+        background-size: cover;
+        background-position: center center;
         position: absolute;
         left: 52px; }
     .timeline-Tweet-media .blockquote img {
