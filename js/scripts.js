@@ -14,7 +14,7 @@ $(document).ready(function () {
     $(tooltipWindow).addClass('active').css({
       left: e.clientX + 'px',
       top: e.clientY + 'px',
-    }).html(text);
+    }).html(text).find('[data-parent="#ulAccordion"]').attr("id", "").attr("class", "");
   }).mouseleave(function() {
     $(tooltipWindow).removeClass('active');
   });
