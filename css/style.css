@@ -209,7 +209,7 @@ h1, .h1, h2, .h2 {
       content: "•";
       position: absolute;
       left: 0;
-      color: #00A1FF; }
+      color: #0080CA; }
 
 .card-border {
   border: 1px solid;
@@ -1101,12 +1101,11 @@ form .button {
 .error {
   color: red !important; }
 
-.tab-contents section {
+.tab-contents section:not(.current) {
   display: none; }
-  .tab-contents section.current {
-    display: flex; }
-  .tab-contents section div.container.hidden {
-    display: none; }
+
+.tab-contents section .container.hidden {
+  display: none; }
 
 .navbar > .container {
   position: relative; }
@@ -1336,8 +1335,8 @@ form.loading {
 .promo-code {
   color: #CCC;
   font-weight: 200; }
-  .promo-code .col > a {
-    color: #CCC !important; }
+  .promo-code a {
+    color: inherit !important; }
 
 p.text-danger.hidden {
   display: none; }
@@ -1755,10 +1754,6 @@ p.text-danger.hidden {
 @media (min-width: 576px) {
   .form-group {
     margin-bottom: 20px; } }
-
-@media (max-width: 991.98px) {
-  .order-form .row {
-    flex-direction: column-reverse !important; } }
 
 @media (min-width: 1200px) {
   .img-slim {

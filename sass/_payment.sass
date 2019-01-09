@@ -24,10 +24,9 @@ form .button
 	color: red !important
 
 .tab-contents section
-	display: none
-	&.current
-		display: flex
-	div.container.hidden
+	&:not(.current)
+		display: none
+	.container.hidden
 		display: none
 
 .navbar
@@ -246,8 +245,8 @@ form.loading
 .promo-code
 	color: #CCC
 	font-weight: 200
-	.col > a
-		color: #CCC !important
+	a
+		color: inherit !important
 
 p.text-danger.hidden
 	display: none
@@ -813,11 +812,6 @@ p.text-danger.hidden
 @media (min-width: $sm)
 	.form-group
 		margin-bottom: 20px
-
-.order-form
-	@media (max-width: $lg - $point)
-		.row	
-			flex-direction: column-reverse !important
 
 .img-slim
 	@media (min-width: $xl)
