@@ -353,33 +353,29 @@ packages.forEach(function(item, i){
 	}
 });
 
-$('.package-select ul').html(packagesHtml.join(''));
-
-var lists = $('.package-select');
-
+$('.more-options .package-select ul').html(packagesHtml.join(''));
+var lists = $('.more-options .package-select');
 lists.on('click',function(e) {
 	e.stopPropagation();
 	e.preventDefault()
 	if($(this).find('ul').hasClass('hidden')) {
 		$(this).find('ul').removeClass('hidden');
-	}
-	else {
+	} else {
 		$(this).find('ul').addClass('hidden');
-	}
+	};
 	var $tgt = $(e.target);
 	if ($tgt.is('li')) {
-		$('.package-select > span').html($tgt.html());
+		$('.more-options .package-select > span').html($tgt.html());
 		var value = $tgt.attr('total');
-		$('.package-select').attr('total', value);
-		$(this).closest('.label-group').find('.label-card .row:last-child div').html("$" + $tgt.attr('usd'));
-		$(".terminal-count").html(parseInt($tgt.attr('usd').replace(/,/g, "")) / 1000);
+		$('.more-options .package-select').attr('total', value);
+		$(this).closest('.label-group').find('.label-footer div:last-child').html("$" + $tgt.attr('usd'));
+		$(".more-options .terminal-count").html(parseInt($tgt.attr('usd').replace(/,/g, "")) / 1000);
 		$(".single-notice .package").html(value);
 		$(this).closest('.label-group').trigger('click', ['no-hidden']);
 	}
 });
-
 $(document).click(function(e) {
-	$('.package-select').find('ul').addClass('hidden');
+	$('.more-options .package-select').find('ul').addClass('hidden');
 });
 
 
