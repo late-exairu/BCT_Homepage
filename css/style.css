@@ -623,14 +623,18 @@ h1, .h1, h2, .h2 {
       #ulAccordion > li > a:hover {
         color: #0080CA; }
   @media (min-width: 992px) {
-    #ulAccordion > li > a {
-      margin-bottom: 0; }
-      #ulAccordion > li > a:not(:hover) {
-        color: inherit; }
-      #ulAccordion > li > a:after {
-        display: none; }
-    #ulAccordion [data-parent="#ulAccordion"] {
-      display: none !important; } }
+    #ulAccordion {
+      margin-bottom: -50px; }
+      #ulAccordion > li > a {
+        display: inline-block;
+        padding-right: 0;
+        margin-bottom: 0; }
+        #ulAccordion > li > a:not(:hover) {
+          color: inherit; }
+        #ulAccordion > li > a:after {
+          display: none; }
+      #ulAccordion [data-parent="#ulAccordion"] {
+        display: none !important; } }
 
 .tool-window {
   display: none; }

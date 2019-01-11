@@ -591,8 +591,11 @@ h1, .h1, h2, .h2
 			&:hover
 				color: $blue-1
 	@media (min-width: $lg)
+		margin-bottom: -50px
 		> li
 			> a
+				display: inline-block
+				padding-right: 0
 				margin-bottom: 0
 				&:not(:hover)
 					color: inherit
