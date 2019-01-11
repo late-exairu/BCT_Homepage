@@ -16,7 +16,10 @@ $(document).ready(function () {
       top: e.clientY + 'px',
     }).html(text).find('[data-parent="#ulAccordion"]').attr("id", "").attr("class", "");
   }).mouseleave(function() {
-    $(tooltipWindow).removeClass('active');
+    tooltipWindow.removeClass('active');
+  });
+  $(window).on("scroll", function() {
+  	tooltipWindow.removeClass('active');
   });
 
 	$(".owl-brands").owlCarousel({

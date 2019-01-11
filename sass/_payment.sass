@@ -259,7 +259,7 @@ p.text-danger.hidden
 	position: absolute
 	z-index: 3
 	margin-top: -11px
-	left: 20px
+	left: 15px
 	background: white
 	padding: 0 5px
 	@media (max-width: $md - $point)
@@ -374,11 +374,12 @@ p.text-danger.hidden
 	@media (min-width: $xl)
 		direction: rtl
 .img-slim
-	@media (min-width: $xl)
-		transform: rotateY(180deg)
-		max-width: initial
-		width: 800px
-		margin-right: -350px
+	transform: rotateY(180deg)
+	max-width: initial
+	width: 800px
+	margin-right: -350px
+	position: relative
+	z-index: -1
 		
 .tab-a
 	height: 100%

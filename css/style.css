@@ -594,11 +594,9 @@ h1, .h1, h2, .h2 {
   padding-left: 0;
   margin-bottom: 0; }
   #ulAccordion > li {
-    border-bottom: 1px solid #D6D6D6;
+    border-top: 1px solid #D6D6D6;
     padding-top: 10px;
     padding-bottom: 10px; }
-    #ulAccordion > li:first-child {
-      border-top: 1px solid #D6D6D6; }
     #ulAccordion > li > a {
       position: relative;
       display: block;
@@ -935,6 +933,8 @@ h1, .h1, h2, .h2 {
 .section-15 {
   padding-top: 15rem;
   padding-bottom: 15rem; }
+  .section-15 .list-blue li {
+    margin-bottom: .25rem; }
   @media (max-width: 1199.98px) {
     .section-15 {
       padding-top: 6rem;
@@ -1423,7 +1423,7 @@ p.text-danger.hidden {
   position: absolute;
   z-index: 3;
   margin-top: -11px;
-  left: 20px;
+  left: 15px;
   background: white;
   padding: 0 5px; }
   @media (max-width: 767.98px) {
@@ -1544,12 +1544,13 @@ p.text-danger.hidden {
   .rtl-xl {
     direction: rtl; } }
 
-@media (min-width: 1200px) {
-  .img-slim {
-    transform: rotateY(180deg);
-    max-width: initial;
-    width: 800px;
-    margin-right: -350px; } }
+.img-slim {
+  transform: rotateY(180deg);
+  max-width: initial;
+  width: 800px;
+  margin-right: -350px;
+  position: relative;
+  z-index: -1; }
 
 .tab-a {
   height: 100%;
