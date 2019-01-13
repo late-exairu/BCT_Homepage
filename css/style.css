@@ -958,7 +958,9 @@ h1, .h1, h2, .h2 {
       padding-bottom: 3rem; } }
 
 .owl-6 .card-border {
-  min-height: 146px; }
+  max-width: 348px;
+  min-height: 194px;
+  margin: 0 auto; }
 
 .owl-6 .avatar {
   width: 48px !important;
