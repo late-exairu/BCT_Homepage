@@ -136,6 +136,9 @@ h1, .h1, h2, .h2 {
 .text-blue {
   color: #0080CA; }
 
+.text-gray {
+  color: #D6D6D6; }
+
 @media (min-width: 1350px) {
   .container {
     max-width: 1310px; } }
@@ -951,6 +954,10 @@ h1, .h1, h2, .h2 {
     .section-16 {
       padding-top: 6rem;
       padding-bottom: 3rem; } }
+
+.owl-6 .avatar {
+  width: 48px !important;
+  border-radius: 50%; }
 
 @media (max-width: 575.98px) {
   .owl-6 {

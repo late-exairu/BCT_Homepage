@@ -183,6 +183,7 @@ $(document).ready(function () {
 			},
 		},
 		margin: 30,
+		autoHeight: true,
 		navText: ["", ""],
 	});
 
