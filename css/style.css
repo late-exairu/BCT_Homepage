@@ -361,7 +361,8 @@ h1, .h1, h2, .h2 {
     margin-right: -25px; }
     @media (min-width: 992px) {
       .section-2 .baby {
-        margin-top: -75px; } }
+        margin-top: -75px;
+        margin-bottom: -28px; } }
     @media (max-width: 767.98px) {
       .section-2 .baby {
         margin-top: -50px; } }
@@ -900,12 +901,20 @@ h1, .h1, h2, .h2 {
   display: none !important; }
 
 .section-13 {
-  position: relative;
-  background-image: url(../img/desktop.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; }
+  position: relative; }
   .section-13:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../img/desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: .5; }
+  .section-13:after {
     content: '';
     position: absolute;
     top: 0;
@@ -919,7 +928,8 @@ h1, .h1, h2, .h2 {
     display: flex;
     flex-direction: column;
     padding-top: 6rem;
-    padding-bottom: 6rem; }
+    padding-bottom: 6rem;
+    z-index: 3; }
 
 .section-14 {
   padding-top: 15rem;
@@ -950,8 +960,9 @@ h1, .h1, h2, .h2 {
 .section-16 {
   padding-top: 15rem;
   padding-bottom: 7.5rem; }
-  .section-16 h2 {
-    margin-bottom: 9rem; }
+  @media (min-width: 1200px) {
+    .section-16 h2 {
+      margin-bottom: 9rem !important; } }
   @media (max-width: 1199.98px) {
     .section-16 {
       padding-top: 6rem;
