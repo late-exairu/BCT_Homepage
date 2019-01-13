@@ -950,10 +950,15 @@ h1, .h1, h2, .h2 {
 .section-16 {
   padding-top: 15rem;
   padding-bottom: 7.5rem; }
+  .section-16 h2 {
+    margin-bottom: 9rem; }
   @media (max-width: 1199.98px) {
     .section-16 {
       padding-top: 6rem;
       padding-bottom: 3rem; } }
+
+.owl-6 .card-border {
+  min-height: 146px; }
 
 .owl-6 .avatar {
   width: 48px !important;
